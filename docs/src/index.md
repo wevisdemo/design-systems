@@ -2,7 +2,7 @@
   import Navbar from '../../ui/build/components/navbar.vue'
 </script>
 
-# Wevis Design Systems
+# WeVis Design Systems
 
 test import vue navbar
 <Navbar />
