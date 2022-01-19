@@ -4,9 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "compile": "mitosis compile"
+    "compile": "mitosis compile",
+    "build:tailwind": "tailwindcss -i ./src/styles/global.css -o ./build/style.css"
   },
   "devDependencies": {
-    "@builder.io/mitosis-cli": "^0.0.10"
+    "@builder.io/mitosis-cli": "^0.0.10",
+    "tailwindcss": "^3.0.15"
   }
 }

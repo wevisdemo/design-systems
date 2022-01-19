@@ -4,7 +4,7 @@ interface VwNavbarProps {
 
 export default function VwNavbar(props: VwNavbarProps) {
   return (
-    <div>
+    <div class="flex flex-row">
       <svg
         width="110"
         height="37"
