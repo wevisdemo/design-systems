@@ -21,7 +21,10 @@ module.exports = {
       {
         text: 'Components',
         link: '/components/',
-        children: [{ text: 'Navbar', link: '/components/navbar' }],
+        children: [
+          { text: 'Navbar', link: '/components/navbar' },
+          { text: 'Footer', link: '/components/footer' },
+        ],
       },
     ],
   },
