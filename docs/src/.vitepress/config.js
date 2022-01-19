@@ -16,11 +16,12 @@ module.exports = {
     sidebar: [
       {
         text: 'Introduction',
-        children: [{ text: 'Welcome', link: '/' }],
+        link: '/',
       },
       {
         text: 'Components',
-        children: [],
+        link: '/components/',
+        children: [{ text: 'Navbar', link: '/components/navbar' }],
       },
     ],
   },
