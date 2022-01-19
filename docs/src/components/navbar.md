@@ -1,12 +1,15 @@
 <script setup>
-  import Navbar from '../../../ui/build/components/navbar.vue'
+  import VwNavbar from '../../../ui/build/components/navbar.vue'
 </script>
 
 # Navbar
 
 Navigation bar at the top of the page
 
-<Navbar />
+<VwNavbar />
+```vue
+<VwNavbar />
+```
 
 ## Props
 
@@ -20,30 +23,30 @@ Navigation bar at the top of the page
 
 **1. With title**
 
-<Navbar title="SOME PROJECT" />
+<VwNavbar title="SOME PROJECT" />
 
 ```vue
-<Navbar title="SOME PROJECT" />
+<VwNavbar title="SOME PROJECT" />
 ```
 
 **2. With slot**
 
-<Navbar title="SOME PROJECT">
+<VwNavbar title="SOME PROJECT">
   <div>item1</div>
   <div>item2</div>
-</Navbar>
+</VwNavbar>
 
 ```vue
-<Navbar title="SOME PROJECT">
+<VwNavbar title="SOME PROJECT">
   <div>item1</div>
   <div>item2</div>
-</Navbar>
+</VwNavbar>
 ```
 
 **3. Black theme**
 
-<Navbar :black="true" title="SOME PROJECT" />
+<VwNavbar :black="true" title="SOME PROJECT" />
 
 ```vue
-<Navbar :black="true" title="SOME PROJECT" />
+<VwNavbar :black="true" title="SOME PROJECT" />
 ```
