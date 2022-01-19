@@ -1,8 +1,4 @@
-interface VwNavbarProps {
-  children: JSX.Element;
-}
-
-export default function VwNavbar(props: VwNavbarProps) {
+export default function VwNavbar(props) {
   return (
     <div class="flex flex-row">
       <svg
