@@ -1,0 +1,12 @@
+{
+  "name": "design-systems",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile": "mitosis compile"
+  },
+  "devDependencies": {
+    "@builder.io/mitosis-cli": "^0.0.10"
+  }
+}
