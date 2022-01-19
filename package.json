@@ -3,20 +3,29 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "private": true,
   "scripts": {
-    "zx": "zx",
-    "mitosis": "mitosis",
-    "dev": "concurrently --kill-others \"yarn mitosis:watch\" \"yarn tailwind:watch\"",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "mitosis:watch": "chokidar --initial \"src/components/**/*.jsx\" -c \"yarn zx scripts/compile-mitosis.mjs {event} {path}\"",
-    "tailwind:watch": "tailwindcss -i src/styles/global.css -o build/style.css --watch"
+    "turbo": "turbo"
+  },
+  "turbo": {
+    "baseBranch": "origin/main",
+    "pipeline": {
+      "dev": {
+        "cache": false
+      }
+    }
   },
   "devDependencies": {
-    "@builder.io/mitosis-cli": "^0.0.10",
-    "chokidar-cli": "^3.0.0",
-    "concurrently": "^7.0.0",
-    "tailwindcss": "^3.0.15",
-    "zx": "^4.3.0"
+    "turbo": "^1.0.28"
+  },
+  "workspaces": {
+    "packages": [
+      "docs",
+      "ui"
+    ],
+    "nohoist": [
+      "**/vue",
+      "**/vue/**"
+    ]
   }
 }
