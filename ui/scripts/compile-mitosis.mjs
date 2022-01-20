@@ -1,7 +1,7 @@
 #!/usr/bin/env zx
 import 'zx/globals';
 
-const OUTPUT_DIR = 'build/components';
+const OUTPUT_DIR = 'components';
 
 const event = process.argv[process.argv.length - 2];
 

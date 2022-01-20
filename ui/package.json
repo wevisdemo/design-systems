@@ -8,7 +8,7 @@
     "mitosis": "mitosis",
     "dev": "concurrently --kill-others \"yarn mitosis:watch\" \"yarn tailwind:watch\"",
     "mitosis:watch": "chokidar --initial \"src/components/**/*.jsx\" -c \"yarn zx scripts/compile-mitosis.mjs {event} {path}\"",
-    "tailwind:watch": "tailwindcss -i src/styles/global.css -o build/style.css --watch"
+    "tailwind:watch": "tailwindcss -i src/styles/components.css -o components/styles.css --watch"
   },
   "devDependencies": {
     "@builder.io/mitosis-cli": "^0.0.10",

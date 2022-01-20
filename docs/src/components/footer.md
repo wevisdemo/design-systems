@@ -1,5 +1,5 @@
 <script setup>
-  import WvFooter from '../../../ui/build/components/footer.vue'
+  import WvFooter from '../../../ui/components/footer.vue'
 </script>
 
 # Footer

@@ -1,5 +1,5 @@
 <script setup>
-  import VwNavbar from '../../../ui/build/components/navbar.vue'
+  import VwNavbar from '../../../ui/components/navbar.vue'
 </script>
 
 # Navbar
