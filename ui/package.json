@@ -6,9 +6,12 @@
   "scripts": {
     "zx": "zx",
     "mitosis": "mitosis",
-    "dev": "concurrently --kill-others \"yarn mitosis:watch\" \"yarn tailwind:watch\"",
-    "mitosis:watch": "chokidar --initial \"src/components/**/*.jsx\" -c \"yarn zx scripts/compile-mitosis.mjs {event} {path}\"",
-    "tailwind:watch": "tailwindcss -i src/styles/components.css -o components/styles.css --watch"
+    "dev": "yarn zx scripts/compile-mitosis.mjs vue src/components/**/*.jsx && concurrently --kill-others \"yarn mitosis:watch\" \"yarn tailwind:watch\"",
+    "build": "yarn mitosis:build && yarn tailwind:build",
+    "mitosis:watch": "chokidar \"src/components/**/*.jsx\" -c \"if [ '{event}' = 'change' ] || [ '{event}' = 'add' ]; then yarn zx scripts/compile-mitosis.mjs vue {path}; fi;\"",
+    "mitosis:build": "yarn zx scripts/compile-mitosis.mjs vue,react,svelte src/components/**/*.jsx",
+    "tailwind:watch": "tailwindcss -i src/styles/components.css -o components/styles.css --watch",
+    "tailwind:build": "tailwindcss -i src/styles/components.css -o components/styles.css --minify"
   },
   "devDependencies": {
     "@builder.io/mitosis-cli": "^0.0.10",
