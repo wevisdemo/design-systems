@@ -12,6 +12,11 @@
     "pipeline": {
       "dev": {
         "cache": false
+      },
+      "build": {
+        "dependsOn": [
+          "^build"
+        ]
       }
     }
   },
@@ -24,8 +29,10 @@
       "ui"
     ],
     "nohoist": [
-      "**/vue",
-      "**/vue/**"
+      "docs/vitepress",
+      "docs/vitepress/**",
+      "ui/@builder.io/mitosis-cli",
+      "ui/@builder.io/mitosis-cli/**"
     ]
   }
 }
