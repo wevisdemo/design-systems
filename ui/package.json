@@ -1,8 +1,7 @@
 {
   "name": "@wevisdemo/ui",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "license": "MIT",
-  "private": "false",
   "scripts": {
     "zx": "zx",
     "mitosis": "mitosis",
@@ -11,8 +10,7 @@
     "mitosis:watch": "chokidar \"src/components/**/*.jsx\" -c \"if [ '{event}' = 'change' ] || [ '{event}' = 'add' ]; then npm run zx scripts/compile-mitosis.mjs vue {path}; fi;\"",
     "mitosis:build": "npm run zx scripts/compile-mitosis.mjs vue,react,svelte \"src/components/**/*.jsx\"",
     "tailwind:watch": "postcss src/styles/components.css --output components/styles.css --watch",
-    "tailwind:build": "postcss src/styles/components.css --output components/styles.css --env production && postcss src/components/**/*.css --dir components --env production",
-    "publish": "npm publish"
+    "tailwind:build": "postcss src/styles/components.css --output components/styles.css --env production && postcss src/components/**/*.css --dir components --env production"
   },
   "devDependencies": {
     "@builder.io/mitosis-cli": "^0.0.10",
@@ -28,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wevisdemo/design-systems.git"
+    "url": "https://github.com/wevisdemo/design-systems.git"
   },
   "files": [
     "/components"
