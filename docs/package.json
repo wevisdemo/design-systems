@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "vitepress dev src",
     "build": "vitepress build src",
-    "serve": "vitepress serve src"
+    "serve": "vitepress serve src",
+    "@wevisdemo/ui": "*"
   }
 }
