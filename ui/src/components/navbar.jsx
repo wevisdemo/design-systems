@@ -5,7 +5,7 @@ export default function VwNavbar(props) {
         props.black ? 'bg-black text-white' : 'bg-white text-black'
       }`}
     >
-      <div class="flex-1">
+      <div class="flex-1 flex justify-start">
         <a href={props.homeHref || '/'}>
           <svg
             width="110"
