@@ -1,0 +1,23 @@
+.vw__navbar {
+  @apply flex flex-row px-3 py-2;
+}
+
+.vw__navbar--black {
+  @apply bg-black text-white;
+}
+
+.vw__navbar--white {
+  @apply bg-white text-black;
+}
+
+.vw__navbar__logo {
+  @apply flex-1 flex justify-start;
+}
+
+.vw__navbar__title {
+  @apply hidden md:flex items-center;
+}
+
+.vw__navbar__slot {
+  @apply flex-1 flex flex-row items-center justify-end space-x-2;
+}

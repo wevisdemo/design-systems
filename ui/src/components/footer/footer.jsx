@@ -1,11 +1,11 @@
 export default function WvFooter(props) {
   return (
     <div
-      class={`flex flex-row p-5 ${
-        props.black ? 'bg-black text-white' : 'bg-white text-black'
+      class={`vw__footer ${
+        props.black ? 'vw__footer--black' : 'vw__footer--white'
       }`}
     >
-      <div class="flex-1 flex items-center">
+      <div class="vw__footer__logo">
         <svg
           width="64"
           height="29"
@@ -18,8 +18,8 @@ export default function WvFooter(props) {
         </svg>
       </div>
 
-      <div class="flex flex-row items-center space-x-2">
-        <span class="text-xs">Follow Us</span>
+      <div class="vw__footer__follow">
+        <span class="vw__footer__follow__label">Follow Us</span>
         <a
           target="_blank"
           rel="noreferrer noopener"

@@ -1,0 +1,23 @@
+.vw__footer {
+  @apply flex flex-row p-5;
+}
+
+.vw__footer--black {
+  @apply bg-black text-white;
+}
+
+.vw__footer--white {
+  @apply bg-white text-black;
+}
+
+.vw__footer__logo {
+  @apply flex-1 flex items-center;
+}
+
+.vw__footer__follow {
+  @apply flex flex-row items-center space-x-2;
+}
+
+.vw__footer__follow__label {
+  @apply text-xs;
+}

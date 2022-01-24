@@ -1,11 +1,11 @@
 export default function VwNavbar(props) {
   return (
     <div
-      class={`flex flex-row px-3 py-2 ${
-        props.black ? 'bg-black text-white' : 'bg-white text-black'
+      class={`vw__navbar ${
+        props.black ? 'vw__navbar--black' : 'vw__navbar--white'
       }`}
     >
-      <div class="flex-1 flex justify-start">
+      <div class="vw__navbar__logo">
         <a href={props.homeHref || '/'}>
           <svg
             width="110"
@@ -24,11 +24,9 @@ export default function VwNavbar(props) {
         </a>
       </div>
 
-      <div class="hidden md:flex items-center">{props.title}</div>
+      <div class="vw__navbar__title">{props.title}</div>
 
-      <div class="flex-1 flex flex-row items-center justify-end space-x-2">
-        {props.children}
-      </div>
+      <div class="vw__navbar__slot">{props.children}</div>
     </div>
   );
 }
