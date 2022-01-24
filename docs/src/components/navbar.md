@@ -6,7 +6,10 @@
 
 Navigation bar at the top of the page
 
-<VwNavbar />
+<ClientOnly>
+  <VwNavbar />
+</ClientOnly>
+
 ```vue
 <VwNavbar />
 ```
@@ -23,7 +26,9 @@ Navigation bar at the top of the page
 
 **1. With title**
 
-<VwNavbar title="SOME PROJECT" />
+<ClientOnly>
+  <VwNavbar title="SOME PROJECT" />
+</ClientOnly>
 
 ```vue
 <VwNavbar title="SOME PROJECT" />
@@ -31,10 +36,12 @@ Navigation bar at the top of the page
 
 **2. With slot**
 
-<VwNavbar title="SOME PROJECT">
-  <div>item1</div>
-  <div>item2</div>
-</VwNavbar>
+<ClientOnly>
+  <VwNavbar title="SOME PROJECT">
+    <div>item1</div>
+    <div>item2</div>
+  </VwNavbar>
+</ClientOnly>
 
 ```vue
 <VwNavbar title="SOME PROJECT">
@@ -45,7 +52,9 @@ Navigation bar at the top of the page
 
 **3. Black theme**
 
-<VwNavbar :black="true" title="SOME PROJECT" />
+<ClientOnly>
+  <VwNavbar :black="true" title="SOME PROJECT" />
+</ClientOnly>
 
 ```vue
 <VwNavbar :black="true" title="SOME PROJECT" />

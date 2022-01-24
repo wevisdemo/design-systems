@@ -6,7 +6,9 @@
 
 Footer at the bottom of the page
 
-<WvFooter />
+<ClientOnly>
+  <WvFooter />
+</ClientOnly>
 
 ```vue
 <WvFooter />
@@ -22,7 +24,9 @@ Footer at the bottom of the page
 
 **Black theme**
 
-<WvFooter :black="true" />
+<ClientOnly>
+  <WvFooter :black="true" />
+</ClientOnly>
 
 ```vue
 <WvFooter :black="true" />
