@@ -1,4 +1,4 @@
-export default function VwNavbar(props) {
+export default function WvNavbar(props) {
   return (
     <div
       class={`vw__navbar ${
