@@ -10,14 +10,18 @@
     "build": "yarn mitosis:build && yarn tailwind:build",
     "mitosis:watch": "chokidar \"src/components/**/*.jsx\" -c \"if [ '{event}' = 'change' ] || [ '{event}' = 'add' ]; then yarn zx scripts/compile-mitosis.mjs vue {path}; fi;\"",
     "mitosis:build": "yarn zx scripts/compile-mitosis.mjs vue,react,svelte src/components/**/*.jsx",
-    "tailwind:watch": "tailwindcss -i src/styles/components.css -o components/styles.css --watch",
-    "tailwind:build": "tailwindcss -i src/styles/components.css -o components/styles.css --minify"
+    "tailwind:watch": "postcss src/styles/components.css --output components/styles.css --watch",
+    "tailwind:build": "postcss src/styles/components.css --output components/styles.css --env production"
   },
   "devDependencies": {
     "@builder.io/mitosis-cli": "^0.0.10",
+    "autoprefixer": "^10.4.2",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^7.0.0",
+    "cssnano": "^5.0.16",
     "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.0.2",
     "tailwindcss": "^3.0.15",
     "zx": "^4.3.0"
   }
