@@ -1,14 +1,8 @@
-<script setup>
-  import WvFooter from '@wevisdemo/ui/components/footer.vue'
-</script>
-
 # Footer
 
 Footer at the bottom of the page
 
-<ClientOnly>
-  <WvFooter />
-</ClientOnly>
+<WvFooter />
 
 ```vue
 <WvFooter />
@@ -24,9 +18,7 @@ Footer at the bottom of the page
 
 **Black theme**
 
-<ClientOnly>
-  <WvFooter :black="true" />
-</ClientOnly>
+<WvFooter :black="true" />
 
 ```vue
 <WvFooter :black="true" />

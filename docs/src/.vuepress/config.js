@@ -1,4 +1,5 @@
 module.exports = {
+  lang: 'en-US',
   title: 'WeVis Design System',
   description:
     'WeVis design system documentation and cross-framework UI components',
@@ -15,15 +16,16 @@ module.exports = {
     ],
     sidebar: [
       {
-        text: 'Introduction',
-        link: '/',
+        title: 'Introduction',
+        path: '/',
       },
       {
-        text: 'Components',
-        link: '/components/',
+        title: 'Components',
+        path: '/components/',
+        collapsable: false,
         children: [
-          { text: 'Navbar', link: '/components/navbar' },
-          { text: 'Footer', link: '/components/footer' },
+          { title: 'Navbar', path: '/components/navbar' },
+          { title: 'Footer', path: '/components/footer' },
         ],
       },
     ],

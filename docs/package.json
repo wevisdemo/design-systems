@@ -4,12 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "vitepress": "^0.21.6"
+    "vuepress": "^1.9.7"
+  },
+  "dependencies": {
+    "@wevisdemo/ui": "*"
   },
   "scripts": {
-    "dev": "vitepress dev src",
-    "build": "vitepress build src",
-    "serve": "vitepress serve src",
-    "@wevisdemo/ui": "*"
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
   }
 }
