@@ -4,8 +4,10 @@ Navigation bar at the top of the page
 
 <WvNavbar />
 
-```vue
-<WvNavbar />
+```jsx
+import WvNavbar from '@wevisdemo/ui/components/navbar.{vue,jsx,svelte}';
+
+<WvNavbar />;
 ```
 
 ## Props
@@ -26,7 +28,7 @@ Navigation bar at the top of the page
   <div>item2</div>
 </WvNavbar>
 
-```vue
+```html
 <WvNavbar title="SOME PROJECT">
   <div>item1</div>
   <div>item2</div>
@@ -35,17 +37,17 @@ Navigation bar at the top of the page
 
 **With title and black theme**
 
-<WvNavbar :black="true" title="SOME PROJECT" />
+<WvNavbar black title="SOME PROJECT" />
 
-```vue
-<WvNavbar :black="true" title="SOME PROJECT" />
+```html
+<WvNavbar black title="SOME PROJECT" />
 ```
 
 **With logo addon**
 
 <WvNavbar logoAddonSrc="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/sparkles_2728.png" />
 
-```vue
+```html
 <WvNavbar
   logoAddonSrc="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/sparkles_2728.png"
 />

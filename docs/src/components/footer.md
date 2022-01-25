@@ -4,8 +4,10 @@ Footer at the bottom of the page
 
 <WvFooter />
 
-```vue
-<WvFooter />
+```jsx
+import WvFooter from '@wevisdemo/ui/components/footer.{vue,jsx,svelte}';
+
+<WvFooter />;
 ```
 
 ## Props
@@ -18,8 +20,8 @@ Footer at the bottom of the page
 
 **Black theme**
 
-<WvFooter :black="true" />
+<WvFooter black />
 
-```vue
-<WvFooter :black="true" />
+```html
+<WvFooter black />
 ```

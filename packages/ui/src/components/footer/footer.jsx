@@ -2,13 +2,13 @@ export default function WvFooter(props) {
   return (
     <div
       class={`wv_footer ${
-        props.black ? 'wv_footer--black' : 'wv_footer--white'
+        props.black !== undefined ? 'wv_footer--black' : 'wv_footer--white'
       }`}
     >
       <div class="wv_footer__logo">
         <svg
           viewBox="0 0 64 29"
-          fill={props.black ? 'white' : 'black'}
+          fill={props.black !== undefined ? 'white' : 'black'}
           xmlns="http://www.w3.org/2000/svg"
         >
           <path d="M49.3977 0.400024V5.56151L51.6001 6.12438C52.3466 6.29606 52.3495 6.82797 52.0019 8.10849L48.9019 20.1341H48.617L45.4828 10.7765L41.9668 21.9128L44.0211 28.7545H54.2385L61.3019 6.41144C61.3304 6.31474 61.3829 6.22656 61.4545 6.15484C61.5261 6.08312 61.6146 6.0301 61.7121 6.00055L63.9916 5.56151V0.400024H49.3977Z" />
@@ -27,7 +27,7 @@ export default function WvFooter(props) {
             width="30"
             height="30"
             viewBox="0 0 30 30"
-            fill={props.black ? 'white' : 'black'}
+            fill={props.black !== undefined ? 'white' : 'black'}
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -46,7 +46,7 @@ export default function WvFooter(props) {
             width="30"
             height="30"
             viewBox="0 0 30 30"
-            fill={props.black ? 'white' : 'black'}
+            fill={props.black !== undefined ? 'white' : 'black'}
             xmlns="http://www.w3.org/2000/svg"
           >
             <path d="M22.2 11.325C22.2 11.475 22.2 11.625 22.2 11.775C22.2 16.65 18.45 22.35 11.625 22.35C9.52499 22.35 7.57499 21.75 5.92499 20.7C6.22499 20.7 6.52499 20.775 6.82499 20.775C8.54999 20.775 10.125 20.175 11.4 19.2C9.74999 19.2 8.39999 18.075 7.94999 16.65C8.17499 16.725 8.39999 16.725 8.62499 16.725C8.99999 16.725 9.29999 16.65 9.59999 16.575C7.87499 16.2 6.59999 14.7 6.59999 12.975C6.59999 12.975 6.59999 12.975 6.59999 12.9C7.12499 13.2 7.64999 13.35 8.24999 13.35C7.34999 12.6 6.74999 11.475 6.74999 10.2C6.74999 9.52498 6.89999 8.84998 7.27499 8.32498C9.07499 10.575 11.85 12.075 14.925 12.225C14.85 11.925 14.85 11.7 14.85 11.4C14.85 9.37498 16.5 7.72498 18.525 7.72498C19.575 7.72498 20.55 8.17498 21.225 8.92498C22.05 8.77498 22.875 8.47498 23.55 8.02498C23.25 8.92498 22.65 9.59997 21.9 10.05C22.65 9.97497 23.4 9.74998 24 9.44998C23.55 10.125 22.875 10.8 22.2 11.325Z" />
@@ -70,18 +70,18 @@ export default function WvFooter(props) {
               width="17"
               height="16"
               rx="5"
-              fill={props.black ? 'white' : 'black'}
+              fill={props.black !== undefined ? 'white' : 'black'}
             />
             <path
               d="M18.25 15C18.25 16.9049 16.6001 18.5 14.5 18.5C12.3999 18.5 10.75 16.9049 10.75 15C10.75 13.0951 12.3999 11.5 14.5 11.5C16.6001 11.5 18.25 13.0951 18.25 15Z"
-              stroke={props.black ? 'black' : 'white'}
+              stroke={props.black !== undefined ? 'black' : 'white'}
             />
             <ellipse
               cx="19.8125"
               cy="10"
               rx="1.0625"
               ry="1"
-              fill={props.black ? 'black' : 'white'}
+              fill={props.black !== undefined ? 'black' : 'white'}
             />
           </svg>
         </a>
@@ -94,7 +94,7 @@ export default function WvFooter(props) {
             width="30"
             height="30"
             viewBox="0 0 30 30"
-            fill={props.black ? 'white' : 'black'}
+            fill={props.black !== undefined ? 'white' : 'black'}
             xmlns="http://www.w3.org/2000/svg"
           >
             <path d="M16.1015 15.0993C16.1015 19.0199 12.9447 22.1983 9.05087 22.1983C5.15701 22.1983 2 19.0192 2 15.0993C2 11.1793 5.15677 8 9.05087 8C12.945 8 16.1015 11.1786 16.1015 15.0993ZM23.8363 15.0993C23.8363 18.7897 22.2579 21.7827 20.3108 21.7827C18.3638 21.7827 16.7854 18.7897 16.7854 15.0993C16.7854 11.4088 18.3636 8.41586 20.3106 8.41586C22.2577 8.41586 23.836 11.4078 23.836 15.0993H23.8363ZM27 15.0993C27 18.405 26.445 21.0865 25.7601 21.0865C25.0752 21.0865 24.5204 18.4057 24.5204 15.0993C24.5204 11.7928 25.0755 9.11198 25.7601 9.11198C26.4447 9.11198 27 11.7925 27 15.0993Z" />
@@ -109,7 +109,7 @@ export default function WvFooter(props) {
             width="30"
             height="30"
             viewBox="0 0 30 30"
-            fill={props.black ? 'white' : 'black'}
+            fill={props.black !== undefined ? 'white' : 'black'}
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
