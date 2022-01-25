@@ -10,23 +10,16 @@ Navigation bar at the top of the page
 
 ## Props
 
-| Name     | Type    | Default     |
-| -------- | ------- | ----------- |
-| title    | string  | `undefined` |
-| homeHref | string  | `/`         |
-| black    | boolean | `false`     |
+| Name         | Type    | Default     |
+| ------------ | ------- | ----------- |
+| homeHref     | string  | `/`         |
+| logoAddonSrc | string  | `undefined` |
+| title        | string  | `undefined` |
+| black        | boolean | `false`     |
 
 ## Examples
 
-**1. With title**
-
-<WvNavbar title="SOME PROJECT" />
-
-```vue
-<WvNavbar title="SOME PROJECT" />
-```
-
-**2. With slot**
+**With title and slot**
 
 <WvNavbar title="SOME PROJECT">
   <div>item1</div>
@@ -40,10 +33,20 @@ Navigation bar at the top of the page
 </WvNavbar>
 ```
 
-**3. Black theme**
+**With title and black theme**
 
 <WvNavbar :black="true" title="SOME PROJECT" />
 
 ```vue
 <WvNavbar :black="true" title="SOME PROJECT" />
+```
+
+**With logo addon**
+
+<WvNavbar logoAddonSrc="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/sparkles_2728.png" />
+
+```vue
+<WvNavbar
+  logoAddonSrc="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/sparkles_2728.png"
+/>
 ```

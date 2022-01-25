@@ -1,5 +1,5 @@
 .wv_navbar {
-  @apply flex flex-row px-3 py-2;
+  @apply flex flex-row px-3 py-2 md:px-4 md:py-3;
 }
 
 .wv_navbar--black {
@@ -12,6 +12,14 @@
 
 .wv_navbar__logo {
   @apply flex-1 flex justify-start;
+}
+
+.wv_navbar__logo__wevis {
+  @apply h-6 md:h-8;
+}
+
+.wv_navbar__logo__addon {
+  @apply h-full max-h-6 md:max-h-8;
 }
 
 .wv_navbar__title {
