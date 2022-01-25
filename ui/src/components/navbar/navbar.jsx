@@ -1,11 +1,11 @@
 export default function WvNavbar(props) {
   return (
     <div
-      class={`vw__navbar ${
-        props.black ? 'vw__navbar--black' : 'vw__navbar--white'
+      class={`wv_navbar ${
+        props.black ? 'wv_navbar--black' : 'wv_navbar--white'
       }`}
     >
-      <div class="vw__navbar__logo">
+      <div class="wv_navbar__logo">
         <a href={props.homeHref || '/'}>
           <svg
             width="110"
@@ -24,9 +24,9 @@ export default function WvNavbar(props) {
         </a>
       </div>
 
-      <div class="vw__navbar__title">{props.title}</div>
+      <div class="wv_navbar__title">{props.title}</div>
 
-      <div class="vw__navbar__slot">{props.children}</div>
+      <div class="wv_navbar__slot">{props.children}</div>
     </div>
   );
 }

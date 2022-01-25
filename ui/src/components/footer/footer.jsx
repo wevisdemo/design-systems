@@ -1,11 +1,11 @@
 export default function WvFooter(props) {
   return (
     <div
-      class={`vw__footer ${
-        props.black ? 'vw__footer--black' : 'vw__footer--white'
+      class={`wv_footer ${
+        props.black ? 'wv_footer--black' : 'wv_footer--white'
       }`}
     >
-      <div class="vw__footer__logo">
+      <div class="wv_footer__logo">
         <svg
           width="64"
           height="29"
@@ -18,8 +18,8 @@ export default function WvFooter(props) {
         </svg>
       </div>
 
-      <div class="vw__footer__follow">
-        <span class="vw__footer__follow__label">Follow Us</span>
+      <div class="wv_footer__follow">
+        <span class="wv_footer__follow__label">Follow Us</span>
         <a
           target="_blank"
           rel="noreferrer noopener"
