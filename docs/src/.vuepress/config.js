@@ -1,5 +1,6 @@
 module.exports = {
   lang: 'en-US',
+  base: process.env.VUEPRESS_BASE || '/',
   title: 'WeVis Design System',
   description:
     'WeVis design system documentation and cross-framework UI components',
