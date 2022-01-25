@@ -3,6 +3,7 @@ module.exports = {
   title: 'WeVis Design System',
   description:
     'WeVis design system documentation and cross-framework UI components',
+  head: [['link', { rel: 'stylesheet', href: '/typography.css' }]],
   themeConfig: {
     nav: [
       {
@@ -18,6 +19,10 @@ module.exports = {
       {
         title: 'Introduction',
         path: '/',
+      },
+      {
+        title: 'Typography',
+        path: '/typography',
       },
       {
         title: 'Components',

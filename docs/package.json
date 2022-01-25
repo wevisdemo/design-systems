@@ -7,10 +7,12 @@
     "vuepress": "^1.9.7"
   },
   "dependencies": {
-    "@wevisdemo/ui": "*"
+    "@wevisdemo/ui": "*",
+    "typography": "*"
   },
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "copyassets": "cp -rf ../packages/typography/src src/.vuepress/public",
+    "dev": "npm run copyassets && vuepress dev src",
+    "build": "npm run copyassets && vuepress build src"
   }
 }
