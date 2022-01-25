@@ -1,5 +1,5 @@
 .wv_footer {
-  @apply flex flex-row p-5;
+  @apply flex flex-row px-4 py-3 md:px-6 md:py-5;
 }
 
 .wv_footer--black {
@@ -14,8 +14,16 @@
   @apply flex-1 flex items-center;
 }
 
+.wv_footer__logo svg {
+  @apply h-4 md:h-6;
+}
+
 .wv_footer__follow {
-  @apply flex flex-row items-center space-x-2;
+  @apply flex flex-row items-center md:space-x-2;
+}
+
+.wv_footer__follow a {
+  @apply flex items-center;
 }
 
 .wv_footer__follow__label {

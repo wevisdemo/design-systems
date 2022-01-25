@@ -7,8 +7,6 @@ export default function WvFooter(props) {
     >
       <div class="wv_footer__logo">
         <svg
-          width="64"
-          height="29"
           viewBox="0 0 64 29"
           fill={props.black ? 'white' : 'black'}
           xmlns="http://www.w3.org/2000/svg"
