@@ -1,4 +1,4 @@
-name: Publish Package and Doc
+name: Publish NPM Package
 
 on:
   release:
@@ -23,8 +23,3 @@ jobs:
         run: npm publish ./ui
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-      - name: Deploy doc to Github Page
-        uses: JamesIves/github-pages-deploy-action@v4.2.2
-        with:
-          branch: gh-pages
-          folder: ./docs/src/.vuepress/dist

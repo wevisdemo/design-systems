@@ -1,0 +1,26 @@
+name: Update Doc on Github Page
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
+      - name: Install dependencies
+        run: yarn
+      - name: Build
+        run: yarn build
+        env:
+          VUEPRESS_BASE: /design-systems/
+      - name: Deploy doc to Github Page
+        uses: JamesIves/github-pages-deploy-action@v4.2.2
+        with:
+          branch: gh-pages
+          folder: ./docs/src/.vuepress/dist
