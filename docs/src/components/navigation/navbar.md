@@ -28,13 +28,13 @@ Elements in the right column
 **With title and slot**
 
 <WvNavbar title="SOME PROJECT">
-  <WvNavButton isActive>About</WvNavButton>
+  <WvNavButton active>About</WvNavButton>
   <WvNavButton>Report</WvNavButton>
 </WvNavbar>
 
 ```jsx
 <WvNavbar title="SOME PROJECT">
-  <WvNavButton isActive>About</WvNavButton>
+  <WvNavButton active>About</WvNavButton>
   <WvNavButton>Report</WvNavButton>
 </WvNavbar>
 ```

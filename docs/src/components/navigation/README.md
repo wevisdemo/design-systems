@@ -6,7 +6,7 @@ Navigation is a combination of
 - NavButton
 
 <WvNavbar title="SOME PROJECT">
-  <WvNavButton isActive>About</WvNavButton>
+  <WvNavButton active>About</WvNavButton>
   <WvNavButton>Report</WvNavButton>
 </WvNavbar>
 
@@ -15,7 +15,7 @@ import WvNavbar from '@wevisdemo/ui/components/navbar.{vue,jsx,svelte}';
 import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,jsx,svelte}';
 
 <WvNavbar title="SOME PROJECT">
-  <WvNavButton isActive>About</WvNavButton>
+  <WvNavButton active>About</WvNavButton>
   <WvNavButton>Report</WvNavButton>
 </WvNavbar>;
 ```
@@ -23,7 +23,7 @@ import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,jsx,svelte}';
 **With dark theme**
 
 <WvNavbar dark title="SOME PROJECT">
-  <WvNavButton dark isActive>About</WvNavButton>
+  <WvNavButton dark active>About</WvNavButton>
   <WvNavButton dark>Report</WvNavButton>
 </WvNavbar>
 
@@ -32,7 +32,7 @@ import WvNavbar from '@wevisdemo/ui/components/navbar.{vue,jsx,svelte}';
 import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,jsx,svelte}';
 
 <WvNavbar dark title="SOME PROJECT">
-  <WvNavButton dark isActive>
+  <WvNavButton dark active>
     About
   </WvNavButton>
   <WvNavButton dark>Report</WvNavButton>

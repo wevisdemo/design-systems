@@ -5,7 +5,7 @@ export default function WvNavButton(props) {
         props.dark !== undefined
           ? 'wv_nav-button--white'
           : 'wv_nav-button--black'
-      } ${props.isActive !== undefined ? 'wv_nav-button--active' : ''}`}
+      } ${props.active !== undefined ? 'wv_nav-button--active' : ''}`}
     >
       {props.children}
     </button>
