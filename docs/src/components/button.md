@@ -10,10 +10,10 @@ import WvButton from '@wevisdemo/ui/components/button.{vue,jsx,svelte}';
 
 ## Props
 
-| Name      | Type                               | Default  |
-| --------- | ---------------------------------- | -------- |
-| color     | `"blue"` \| `"black"` \| `"white"` | `"blue"` |
-| isCompact | boolean                            | `false`  |
+| Name  | Type                               | Default  |
+| ----- | ---------------------------------- | -------- |
+| color | `"blue"` \| `"black"` \| `"white"` | `"blue"` |
+| small | boolean                            | `false`  |
 
 ## Slot / Children
 
@@ -38,15 +38,15 @@ Button content
 **Compact**
 
 <div style="display:flex; background-color: lightgray; padding: 6px;">
-  <WvButton isCompact>Blue (default)</WvButton>
-  <WvButton isCompact color="black">Black</WvButton>
-  <WvButton isCompact color="white">White</WvButton>
+  <WvButton small>Blue (default)</WvButton>
+  <WvButton small color="black">Black</WvButton>
+  <WvButton small color="white">White</WvButton>
 </div>
 
 ```jsx
-<WvButton isCompact>Blue (default)</WvButton>
-<WvButton isCompact color="black">Black</WvButton>
-<WvButton isCompact color="white">White</WvButton>
+<WvButton small>Blue (default)</WvButton>
+<WvButton small color="black">Black</WvButton>
+<WvButton small color="white">White</WvButton>
 ```
 
 **With icon**
