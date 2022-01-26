@@ -30,11 +30,12 @@ module.exports = {
         path: '/components/',
         collapsable: false,
         children: [
+          { title: 'About Page', path: '/components/about/' },
           { title: 'Button', path: '/components/button' },
           { title: 'Footer', path: '/components/footer' },
           {
             title: 'Navigation Group',
-            path: '/components/navigation',
+            path: '/components/navigation/',
             children: [
               { title: 'Navbar', path: '/components/navigation/navbar' },
               { title: 'NavButton', path: '/components/navigation/nav-button' },
