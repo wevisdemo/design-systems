@@ -33,6 +33,7 @@ module.exports = {
           {
             title: 'About Page',
             path: '/components/about/',
+            collapsable: false,
             children: [
               { title: 'Container', path: '/components/about/container' },
               {
@@ -46,6 +47,7 @@ module.exports = {
           {
             title: 'Navigation Group',
             path: '/components/navigation/',
+            collapsable: false,
             children: [
               { title: 'Navbar', path: '/components/navigation/navbar' },
               { title: 'NavButton', path: '/components/navigation/nav-button' },
