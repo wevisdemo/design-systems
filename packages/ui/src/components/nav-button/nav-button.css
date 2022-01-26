@@ -1,0 +1,11 @@
+.wv_nav-button {
+  @apply bg-transparent border-none p-2 cursor-pointer hover:underline underline-offset-2 rounded;
+}
+
+.wv_nav-button--black {
+  @apply text-black;
+}
+
+.wv_nav-button--white {
+  @apply text-white;
+}

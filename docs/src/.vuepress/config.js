@@ -35,6 +35,7 @@ module.exports = {
             path: '/components/navigation',
             children: [
               { title: 'Navbar', path: '/components/navigation/navbar' },
+              { title: 'NavButton', path: '/components/navigation/nav-button' },
             ],
           },
           { title: 'Footer', path: '/components/footer' },
