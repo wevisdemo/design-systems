@@ -1,0 +1,19 @@
+.wv_button {
+  @apply flex flex-row space-x-2 justify-center items-center bg-transparent rounded-[2px] border-solid min-w-[190px] px-4 py-3 cursor-pointer;
+}
+
+.wv_button--blue {
+  @apply text-ultramarine border-ultramarine hover:text-white hover:bg-ultramarine;
+}
+
+.wv_button--black {
+  @apply text-black border-black hover:text-white hover:bg-black;
+}
+
+.wv_button--white {
+  @apply text-white border-white hover:text-black hover:bg-white;
+}
+
+.wv_button--small {
+  @apply min-w-0 py-1;
+}
