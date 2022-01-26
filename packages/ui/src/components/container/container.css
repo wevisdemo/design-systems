@@ -1,0 +1,7 @@
+.wv_container {
+  @apply max-w-2xl mx-auto space-y-12 px-2 py-16;
+}
+
+.wv_container h1 {
+  @apply text-center;
+}

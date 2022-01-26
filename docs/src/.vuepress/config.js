@@ -30,7 +30,17 @@ module.exports = {
         path: '/components/',
         collapsable: false,
         children: [
-          { title: 'About Page', path: '/components/about/' },
+          {
+            title: 'About Page',
+            path: '/components/about/',
+            children: [
+              { title: 'Container', path: '/components/about/container' },
+              {
+                title: 'Paragraph Group',
+                path: '/components/about/paragraph-group',
+              },
+            ],
+          },
           { title: 'Button', path: '/components/button' },
           { title: 'Footer', path: '/components/footer' },
           {

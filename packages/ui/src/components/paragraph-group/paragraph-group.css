@@ -1,0 +1,7 @@
+.wv_paragraph-group {
+  @apply space-y-6;
+}
+
+.wv_paragraph-group--small {
+  @apply space-y-2;
+}
