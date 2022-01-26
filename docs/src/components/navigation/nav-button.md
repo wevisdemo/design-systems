@@ -14,8 +14,8 @@ import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,jsx,svelte}';
 
 | Name          | Type    | Default |
 | ------------- | ------- | ------- |
-| isActive      | boolean | `false` |
-| withDarkTheme | boolean | `false` |
+| isActive      | boolean |         |
+| withDarkTheme | boolean |         |
 
 ## Slot / Children
 

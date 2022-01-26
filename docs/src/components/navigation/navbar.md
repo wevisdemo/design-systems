@@ -12,12 +12,12 @@ import WvNavbar from '@wevisdemo/ui/components/navbar.{vue,jsx,svelte}';
 
 ## Props
 
-| Name          | Type    | Default     |
-| ------------- | ------- | ----------- |
-| homeHref      | string  | `/`         |
-| logoAddonSrc  | string  | `undefined` |
-| title         | string  | `undefined` |
-| withDarkTheme | boolean | `false`     |
+| Name          | Type    | Default |
+| ------------- | ------- | ------- |
+| homeHref      | string  | `/`     |
+| logoAddonSrc  | string  |         |
+| title         | string  |         |
+| withDarkTheme | boolean |         |
 
 ## Slot / Children
 
