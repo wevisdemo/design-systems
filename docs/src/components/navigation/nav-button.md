@@ -27,7 +27,7 @@ Button content
 
 <WvNavButton isActive>About</WvNavButton>
 
-```html
+```jsx
 <WvNavButton isActive>About</WvNavButton>
 ```
 
@@ -38,7 +38,7 @@ Button content
   <WvNavButton withDarkTheme>Report</WvNavButton>
 </div>
 
-```html
+```jsx
 <WvNavButton isActive withDarkTheme>About</WvNavButton>
 <WvNavButton withDarkTheme>Report</WvNavButton>
 ```

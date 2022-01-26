@@ -32,7 +32,7 @@ Elements in the right column
   <WvNavButton>Report</WvNavButton>
 </WvNavbar>
 
-```html
+```jsx
 <WvNavbar title="SOME PROJECT">
   <WvNavButton isActive>About</WvNavButton>
   <WvNavButton>Report</WvNavButton>
@@ -43,7 +43,7 @@ Elements in the right column
 
 <WvNavbar withDarkTheme title="SOME PROJECT" />
 
-```html
+```jsx
 <WvNavbar withDarkTheme title="SOME PROJECT" />
 ```
 
@@ -51,8 +51,6 @@ Elements in the right column
 
 <WvNavbar logoAddonSrc="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/sparkles_2728.png" />
 
-```html
-<WvNavbar
-  logoAddonSrc="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/sparkles_2728.png"
-/>
+```jsx
+<WvNavbar logoAddonSrc="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/sparkles_2728.png" />
 ```

@@ -22,6 +22,6 @@ import WvFooter from '@wevisdemo/ui/components/footer.{vue,jsx,svelte}';
 
 <WvFooter black />
 
-```html
+```jsx
 <WvFooter black />
 ```

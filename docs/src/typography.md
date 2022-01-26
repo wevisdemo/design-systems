@@ -9,7 +9,7 @@ We provide CSS classes for
 
 <p v-for="i in 11" :class="`wv_font_kondora wv_h${i}`">Kondora Thai H{{i}}</p>
 
-```html
+```jsx
 <p class="wv_font_kondora wv_h1">Kondora Thai H1</p>
 <p class="wv_font_kondora wv_h2">Kondora Thai H2</p>
 ...
@@ -18,7 +18,7 @@ We provide CSS classes for
 
 <p v-for="i in 11" :class="`wv_font_anuphan wv_h${i}`">Anuphan H{{i}}</p>
 
-```html
+```jsx
 <p class="wv_font_anuphan wv_h1">Anuphan H1</p>
 <p class="wv_font_anuphan wv_h2">Anuphan H2</p>
 ...
@@ -29,7 +29,7 @@ We provide CSS classes for
 
 <p v-for="i in 7" :class="`wv_font_baijamjuri wv_b${i}`">Bai Jamjuri B{{i}}</p>
 
-```html
+```jsx
 <p class="wv_font_baijamjuri wv_b1">Bai Jamjuri B1</p>
 <p class="wv_font_baijamjuri wv_b2">Bai Jamjuri B2</p>
 ...
@@ -38,7 +38,7 @@ We provide CSS classes for
 
 <p v-for="i in 7" :class="`wv_font_anuphan wv_b${i}`">Anuphan B{{i}}</p>
 
-```html
+```jsx
 <p class="wv_font_anuphan wv_b1">Anuphan B1</p>
 <p class="wv_font_anuphan wv_b2">Anuphan B2</p>
 ...

@@ -29,7 +29,7 @@ Button content
   <WvButton color="white">White</WvButton>
 </div>
 
-```html
+```jsx
 <WvButton>Blue (default)</WvButton>
 <WvButton color="black">Black</WvButton>
 <WvButton color="white">White</WvButton>
@@ -43,7 +43,7 @@ Button content
   <WvButton isCompact color="white">White</WvButton>
 </div>
 
-```html
+```jsx
 <WvButton isCompact>Blue (default)</WvButton>
 <WvButton isCompact color="black">Black</WvButton>
 <WvButton isCompact color="white">White</WvButton>
