@@ -30,7 +30,13 @@ module.exports = {
         path: '/components/',
         collapsable: false,
         children: [
-          { title: 'Navbar', path: '/components/navbar' },
+          {
+            title: 'Navigation Group',
+            path: '/components/navigation',
+            children: [
+              { title: 'Navbar', path: '/components/navigation/navbar' },
+            ],
+          },
           { title: 'Footer', path: '/components/footer' },
         ],
       },

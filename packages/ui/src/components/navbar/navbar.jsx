@@ -26,7 +26,9 @@ export default function WvNavbar(props) {
         </a>
       </div>
 
-      <div class="wv_navbar__title">{props.title}</div>
+      <Show when={props.title}>
+        <div class="wv_navbar__title wv_font_kondora wv_h9">{props.title}</div>
+      </Show>
 
       <div class="wv_navbar__slot">{props.children}</div>
     </div>
