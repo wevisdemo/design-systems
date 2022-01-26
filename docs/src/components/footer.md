@@ -12,16 +12,16 @@ import WvFooter from '@wevisdemo/ui/components/footer.{vue,jsx,svelte}';
 
 ## Props
 
-| Name  | Type    | Default |
-| ----- | ------- | ------- |
-| black | boolean | `false` |
+| Name | Type    | Default |
+| ---- | ------- | ------- |
+| dark | boolean | `false` |
 
 ## Examples
 
-**Black theme**
+**Dark theme**
 
-<WvFooter black />
+<WvFooter dark />
 
 ```jsx
-<WvFooter black />
+<WvFooter dark />
 ```
