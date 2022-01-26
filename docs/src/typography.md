@@ -7,7 +7,7 @@ We provide CSS classes for
 
 ## Heading
 
-<p v-for="i in 11" :class="`wv_font_kondora wv_h${i}`" style="margin: 0;">Kondora Thai H{{i}}</p>
+<p v-for="i in 11" :class="`wv_font_kondora wv_h${i}`">Kondora Thai H{{i}}</p>
 
 ```html
 <p class="wv_font_kondora wv_h1">Kondora Thai H1</p>
@@ -16,7 +16,7 @@ We provide CSS classes for
 <p class="wv_font_kondora wv_h11">Kondora Thai H11</p>
 ```
 
-<p v-for="i in 11" :class="`wv_font_anuphan wv_h${i}`" style="margin: 0;">Anuphan H{{i}}</p>
+<p v-for="i in 11" :class="`wv_font_anuphan wv_h${i}`">Anuphan H{{i}}</p>
 
 ```html
 <p class="wv_font_anuphan wv_h1">Anuphan H1</p>
@@ -27,7 +27,7 @@ We provide CSS classes for
 
 ## Body
 
-<p v-for="i in 7" :class="`wv_font_baijamjuri wv_b${i}`" style="margin: 0;">Bai Jamjuri B{{i}}</p>
+<p v-for="i in 7" :class="`wv_font_baijamjuri wv_b${i}`">Bai Jamjuri B{{i}}</p>
 
 ```html
 <p class="wv_font_baijamjuri wv_b1">Bai Jamjuri B1</p>
@@ -36,7 +36,7 @@ We provide CSS classes for
 <p class="wv_font_baijamjuri wv_b7">Bai Jamjuri B7</p>
 ```
 
-<p v-for="i in 7" :class="`wv_font_anuphan wv_b${i}`" style="margin: 0;">Anuphan B{{i}}</p>
+<p v-for="i in 7" :class="`wv_font_anuphan wv_b${i}`">Anuphan B{{i}}</p>
 
 ```html
 <p class="wv_font_anuphan wv_b1">Anuphan B1</p>
