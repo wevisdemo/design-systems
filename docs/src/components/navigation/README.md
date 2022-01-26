@@ -22,19 +22,19 @@ import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,jsx,svelte}';
 
 **With dark theme**
 
-<WvNavbar withDarkTheme title="SOME PROJECT">
-  <WvNavButton withDarkTheme isActive>About</WvNavButton>
-  <WvNavButton withDarkTheme>Report</WvNavButton>
+<WvNavbar dark title="SOME PROJECT">
+  <WvNavButton dark isActive>About</WvNavButton>
+  <WvNavButton dark>Report</WvNavButton>
 </WvNavbar>
 
 ```jsx
 import WvNavbar from '@wevisdemo/ui/components/navbar.{vue,jsx,svelte}';
 import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,jsx,svelte}';
 
-<WvNavbar withDarkTheme title="SOME PROJECT">
-  <WvNavButton withDarkTheme isActive>
+<WvNavbar dark title="SOME PROJECT">
+  <WvNavButton dark isActive>
     About
   </WvNavButton>
-  <WvNavButton withDarkTheme>Report</WvNavButton>
+  <WvNavButton dark>Report</WvNavButton>
 </WvNavbar>;
 ```

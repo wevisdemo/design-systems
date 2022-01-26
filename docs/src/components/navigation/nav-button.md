@@ -12,10 +12,10 @@ import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,jsx,svelte}';
 
 ## Props
 
-| Name          | Type    | Default |
-| ------------- | ------- | ------- |
-| isActive      | boolean |         |
-| withDarkTheme | boolean |         |
+| Name     | Type    | Default |
+| -------- | ------- | ------- |
+| isActive | boolean | `false` |
+| dark     | boolean | `false` |
 
 ## Slot / Children
 
@@ -34,11 +34,11 @@ Button content
 **With dark theme**
 
 <div style="background-color: black;">
-  <WvNavButton isActive withDarkTheme>About</WvNavButton>
-  <WvNavButton withDarkTheme>Report</WvNavButton>
+  <WvNavButton dark isActive>About</WvNavButton>
+  <WvNavButton dark>Report</WvNavButton>
 </div>
 
 ```jsx
-<WvNavButton isActive withDarkTheme>About</WvNavButton>
-<WvNavButton withDarkTheme>Report</WvNavButton>
+<WvNavButton dark isActive>About</WvNavButton>
+<WvNavButton dark>Report</WvNavButton>
 ```
