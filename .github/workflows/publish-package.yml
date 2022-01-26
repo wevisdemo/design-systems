@@ -17,8 +17,6 @@ jobs:
         run: yarn
       - name: Build
         run: yarn build
-        env:
-          VUEPRESS_BASE: /design-systems/
       - name: Publish UI to NPM package
         run: npm publish ./ui
         env:
