@@ -9,3 +9,7 @@
 .wv_nav-button--white {
   @apply text-white;
 }
+
+.wv_nav-button--active {
+  @apply underline;
+}
