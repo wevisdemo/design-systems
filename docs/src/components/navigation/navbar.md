@@ -28,18 +28,18 @@ Elements in the right column
 **With title and slot**
 
 <WvNavbar title="SOME PROJECT">
-  <div>item1</div>
-  <div>item2</div>
+  <WvNavButton isActive>About</WvNavButton>
+  <WvNavButton>Report</WvNavButton>
 </WvNavbar>
 
 ```html
 <WvNavbar title="SOME PROJECT">
-  <div>item1</div>
-  <div>item2</div>
+  <WvNavButton isActive>About</WvNavButton>
+  <WvNavButton>Report</WvNavButton>
 </WvNavbar>
 ```
 
-**With title with dark theme**
+**With dark theme**
 
 <WvNavbar withDarkTheme title="SOME PROJECT" />
 
