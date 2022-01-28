@@ -21,8 +21,12 @@ module.exports = {
     ],
     sidebar: [
       {
-        title: 'Introduction',
-        path: '/',
+        title: 'Guide',
+        collapsable: false,
+        children: [
+          { title: 'Introduction', path: '/' },
+          { title: 'Getting Started', path: '/guide/getting-started' },
+        ],
       },
       {
         title: 'Typography',
@@ -48,8 +52,8 @@ module.exports = {
         title: 'Cookbook',
         collapsable: false,
         children: [
-          { title: 'Navigation Bar', path: '/cookbook/navigation-bar' },
           { title: 'About Page', path: '/cookbook/about-page' },
+          { title: 'Navigation Bar', path: '/cookbook/navigation-bar' },
         ],
       },
     ],
