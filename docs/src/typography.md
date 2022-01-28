@@ -1,9 +1,6 @@
 # Typography
 
-We provide CSS classes for
-
-- **Font family** `wv_font_[family]`
-- **Font size** `wv_h[size]` for header and `wv_b[size]` for body
+We provide CSS classes for font family, weight and size
 
 ## Font Family
 
