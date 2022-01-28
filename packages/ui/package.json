@@ -1,6 +1,6 @@
 {
   "name": "@wevisdemo/ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {
     "zx": "zx",
@@ -29,6 +29,7 @@
     "url": "https://github.com/wevisdemo/design-systems.git"
   },
   "files": [
-    "/components"
+    "/components",
+    "/styles"
   ]
 }
