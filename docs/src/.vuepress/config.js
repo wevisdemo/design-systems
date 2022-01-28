@@ -4,7 +4,7 @@ module.exports = {
   title: 'WeVis Design System',
   description:
     'WeVis design system documentation and cross-framework UI components',
-  head: [['link', { rel: 'stylesheet', href: '/typography.css' }]],
+  head: [['link', { rel: 'stylesheet', href: '/fonts/typography.css' }]],
   themeConfig: {
     nav: [
       {
