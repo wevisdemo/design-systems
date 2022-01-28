@@ -30,33 +30,26 @@ module.exports = {
       },
       {
         title: 'Components',
-        path: '/components/',
         collapsable: false,
         children: [
-          {
-            title: 'About Page',
-            path: '/components/about/',
-            collapsable: false,
-            children: [
-              { title: 'Container', path: '/components/about/container' },
-              {
-                title: 'Paragraph Group',
-                path: '/components/about/paragraph-group',
-              },
-            ],
-          },
           { title: 'Button', path: '/components/button' },
           { title: 'Button Group', path: '/components/button-group' },
+          { title: 'Container', path: '/components/container' },
           { title: 'Footer', path: '/components/footer' },
+          { title: 'Navbar', path: '/components/navbar' },
+          { title: 'Nav Button', path: '/components/nav-button' },
           {
-            title: 'Navigation Group',
-            path: '/components/navigation/',
-            collapsable: false,
-            children: [
-              { title: 'Navbar', path: '/components/navigation/navbar' },
-              { title: 'NavButton', path: '/components/navigation/nav-button' },
-            ],
+            title: 'Paragraph Group',
+            path: '/components/paragraph-group',
           },
+        ],
+      },
+      {
+        title: 'Cookbook',
+        collapsable: false,
+        children: [
+          { title: 'Navigation Bar', path: '/cookbook/navigation-bar' },
+          { title: 'About Page', path: '/cookbook/about-page' },
         ],
       },
     ],
