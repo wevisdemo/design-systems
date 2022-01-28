@@ -46,6 +46,7 @@ module.exports = {
             ],
           },
           { title: 'Button', path: '/components/button' },
+          { title: 'Button Group', path: '/components/button-group' },
           { title: 'Footer', path: '/components/footer' },
           {
             title: 'Navigation Group',
