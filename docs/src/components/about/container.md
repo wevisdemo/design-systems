@@ -1,5 +1,7 @@
 # Container
 
+Container with max-width and padding
+
 <WvContainer>Just a container</WvContainer>
 
 ```jsx

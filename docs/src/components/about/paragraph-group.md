@@ -1,27 +1,6 @@
-# Container
+# Paragraph Group
 
-<WvParagraphGroup>Just a container</WvParagraphGroup>
-
-```jsx
-import WvParagraphGroup from '@wevisdemo/ui/components/container.{vue,jsx,svelte}';
-
-<WvParagraphGroup>Just a container</WvParagraphGroup>;
-```
-
-## Props
-
-| Name    | Type    | Default |
-| ------- | ------- | ------- |
-| heading | string  |         |
-| small   | boolean | false   |
-
-## Slot / Children
-
-Items apeended after heading
-
-## Examples
-
-**With heading and slot**
+Paragraph group including heading and text, or other small children paragraph group
 
 <WvParagraphGroup heading="เป้าหมาย">
   <p>
@@ -43,6 +22,19 @@ Items apeended after heading
   </p>
 </WvParagraphGroup>
 ```
+
+## Props
+
+| Name    | Type    | Default |
+| ------- | ------- | ------- |
+| heading | string  |         |
+| small   | boolean | false   |
+
+## Slot / Children
+
+Items apeended after heading
+
+## Examples
 
 **Small size**
 
