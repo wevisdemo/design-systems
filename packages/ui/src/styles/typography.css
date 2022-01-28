@@ -11,6 +11,11 @@
   font-family: 'Bai Jamjuri', 'sans';
 }
 
+/* Font weight */
+.wv_font_bold {
+  @apply font-bold;
+}
+
 /* Heading size */
 .wv_h1 {
   @apply text-[60px] md:text-[100px] leading-[1.25] m-0;
