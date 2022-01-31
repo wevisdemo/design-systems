@@ -1,7 +1,9 @@
 import { useState } from '@builder.io/mitosis';
 
 export default function WvNavbar(props) {
-  const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false);
+  const state = useState({
+    isMobileMenuOpened: false,
+  });
 
   return (
     <div
@@ -40,7 +42,7 @@ export default function WvNavbar(props) {
 
       <button
         class="wv_navbar__hamburger-button"
-        onClick={() => setIsMobileMenuOpened(!isMobileMenuOpened)}
+        onClick={() => (state.isMobileMenuOpened = !state.isMobileMenuOpened)}
       >
         {isMobileMenuOpened ? (
           <svg
@@ -80,7 +82,7 @@ export default function WvNavbar(props) {
         )}
       </button>
 
-      <Show when={isMobileMenuOpened}>
+      <Show when={state.isMobileMenuOpened}>
         <div
           class={`wv_navbar__menu wv_navbar__menu--mobile ${
             props.dark !== undefined ? 'wv_navbar--black' : 'wv_navbar--white'
