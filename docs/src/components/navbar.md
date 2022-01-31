@@ -1,6 +1,6 @@
 # Navbar
 
-Navigation bar at the top of the page
+Main container for navigation bar group. Hamburger menu will be used to show slot items in mobile.
 
 <WvNavbar />
 
@@ -21,7 +21,7 @@ import WvNavbar from '@wevisdemo/ui/components/navbar.{vue,jsx,svelte}';
 
 ## Slot / Children
 
-Elements in the right column
+Elements in the right column on desktop / hamburger menu drop down on mobile
 
 ## Examples
 
@@ -41,10 +41,18 @@ Elements in the right column
 
 **With dark theme**
 
-<WvNavbar dark title="SOME PROJECT" />
+<WvNavbar dark title="SOME PROJECT">
+  <WvNavButton dark active>About</WvNavButton>
+  <WvNavButton dark>Report</WvNavButton>
+</WvNavbar>
 
 ```jsx
-<WvNavbar dark title="SOME PROJECT" />
+<WvNavbar dark title="SOME PROJECT">
+  <WvNavButton dark active>
+    About
+  </WvNavButton>
+  <WvNavButton dark>Report</WvNavButton>
+</WvNavbar>
 ```
 
 **With logo addon**

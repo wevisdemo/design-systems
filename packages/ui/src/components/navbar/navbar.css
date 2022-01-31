@@ -1,5 +1,5 @@
 .wv_navbar {
-  @apply flex flex-row px-3 py-2 md:px-4 md:py-3;
+  @apply relative flex flex-row px-3 py-2 md:px-4 md:py-3;
 }
 
 .wv_navbar--black {
@@ -26,6 +26,18 @@
   @apply hidden md:flex items-center;
 }
 
-.wv_navbar__slot {
-  @apply flex-1 flex flex-row items-center justify-end space-x-2;
+.wv_navbar__menu {
+  @apply flex-1 items-center;
+}
+
+.wv_navbar__menu--desktop {
+  @apply hidden md:flex flex-row justify-end space-x-2;
+}
+
+.wv_navbar__menu--mobile {
+  @apply flex md:hidden z-10 absolute top-full inset-x-0 flex-col justify-end space-y-4 p-4;
+}
+
+.wv_navbar__hamburger-button {
+  @apply md:hidden flex justify-center items-center border-none bg-transparent cursor-pointer;
 }

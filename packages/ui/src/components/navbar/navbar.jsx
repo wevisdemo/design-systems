@@ -1,4 +1,8 @@
+import { useState } from '@builder.io/mitosis';
+
 export default function WvNavbar(props) {
+  const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false);
+
   return (
     <div
       class={`wv_navbar ${
@@ -30,7 +34,61 @@ export default function WvNavbar(props) {
         <div class="wv_navbar__title wv_font_kondora wv_h9">{props.title}</div>
       </Show>
 
-      <div class="wv_navbar__slot">{props.children}</div>
+      <div class="wv_navbar__menu wv_navbar__menu--desktop">
+        {props.children}
+      </div>
+
+      <button
+        class="wv_navbar__hamburger-button"
+        onClick={() => setIsMobileMenuOpened(!isMobileMenuOpened)}
+      >
+        {isMobileMenuOpened ? (
+          <svg
+            width="13"
+            height="14"
+            viewBox="0 0 13 14"
+            fill={props.dark !== undefined ? 'white' : 'black'}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="13"
+              y="2.38806"
+              width="15"
+              height="2"
+              transform="rotate(135 13 2.38806)"
+            />
+            <rect
+              x="2.3934"
+              y="1.00525"
+              width="15"
+              height="2"
+              transform="rotate(45 2.3934 1.00525)"
+            />
+          </svg>
+        ) : (
+          <svg
+            width="15"
+            height="12"
+            viewBox="0 0 15 12"
+            fill={props.dark !== undefined ? 'white' : 'black'}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="15" height="2" />
+            <rect y="5" width="15" height="2" />
+            <rect y="10" width="15" height="2" />
+          </svg>
+        )}
+      </button>
+
+      <Show when={isMobileMenuOpened}>
+        <div
+          class={`wv_navbar__menu wv_navbar__menu--mobile ${
+            props.dark !== undefined ? 'wv_navbar--black' : 'wv_navbar--white'
+          }`}
+        >
+          {props.children}
+        </div>
+      </Show>
     </div>
   );
 }
