@@ -37,7 +37,7 @@ Button content
 <WvButton color="white">White</WvButton>
 ```
 
-**Compact**
+**Small**
 
 <div style="display:flex; background-color: lightgray; padding: 6px;">
   <WvButtonGroup>
