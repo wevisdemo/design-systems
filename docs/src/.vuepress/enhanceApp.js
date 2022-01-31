@@ -4,6 +4,7 @@ import WvContainer from '@wevisdemo/ui/components/container.vue';
 import WvFooter from '@wevisdemo/ui/components/footer.vue';
 import WvNavbar from '@wevisdemo/ui/components/navbar.vue';
 import WvNavButton from '@wevisdemo/ui/components/nav-button.vue';
+import WvNavDropdown from '@wevisdemo/ui/components/nav-dropdown.vue';
 import WvParagraphGroup from '@wevisdemo/ui/components/paragraph-group.vue';
 import WvSharer from '@wevisdemo/ui/components/sharer.vue';
 
@@ -19,4 +20,5 @@ export default ({ Vue }) => {
   Vue.component('WvNavButton', WvNavButton);
   Vue.component('WvParagraphGroup', WvParagraphGroup);
   Vue.component('WvSharer', WvSharer);
+  Vue.component('WvNavDropdown', WvNavDropdown);
 };

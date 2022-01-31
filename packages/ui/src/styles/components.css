@@ -4,5 +4,6 @@
 @import '../components/footer/footer.css';
 @import '../components/navbar/navbar.css';
 @import '../components/nav-button/nav-button.css';
+@import '../components/nav-dropdown/nav-dropdown.css';
 @import '../components/paragraph-group/paragraph-group.css';
 @import '../components/sharer/sharer.css';

@@ -1,0 +1,23 @@
+.wv_nav-dropdown {
+  @apply relative w-fit;
+}
+
+.wv_nav-dropdown--white svg {
+  @apply fill-black;
+}
+
+.wv_nav-dropdown--black svg {
+  @apply fill-white;
+}
+
+.wv_nav-dropdown--white button {
+  @apply bg-white text-black;
+}
+
+.wv_nav-dropdown--black button {
+  @apply bg-black text-white;
+}
+
+.wv_nav-dropdown-list {
+  @apply absolute z-20 rounded top-full mt-2 right-0 flex flex-col shadow bg-white border border-solid border-black border-opacity-10;
+}
