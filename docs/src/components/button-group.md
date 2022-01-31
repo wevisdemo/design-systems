@@ -1,4 +1,4 @@
-# Button Group
+# ButtonGroup
 
 Button container with spacing. Align hotizontally on desktop and vertically on mobile.
 

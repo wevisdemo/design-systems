@@ -1,4 +1,4 @@
-# Paragraph Group
+# ParagraphGroup
 
 Paragraph group including heading and text, or other small children paragraph group
 
