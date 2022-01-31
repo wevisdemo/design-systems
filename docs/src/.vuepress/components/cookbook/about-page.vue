@@ -78,6 +78,6 @@
       </WvButton>
     </WvButtonGroup>
 
-    <WvSharer url="PROJECT_MAIN_PAGE" />
+    <WvSharer center url="PROJECT_MAIN_PAGE" />
   </WvContainer>
 </template>

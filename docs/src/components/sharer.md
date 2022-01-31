@@ -26,5 +26,5 @@ import WvSharer from '@wevisdemo/ui/components/sharer.{vue,jsx,svelte}';
 </div>
 
 ```jsx
-<WvSharer light />
+<WvSharer light center />
 ```

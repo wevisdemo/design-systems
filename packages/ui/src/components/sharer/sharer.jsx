@@ -20,6 +20,7 @@ export default function WvSharer(props) {
       <a
         href={`http://www.facebook.com/sharer/sharer.php?u=${state.encodedURL}`}
         target="_blank"
+        rel="noreferrer noopener"
       >
         <svg
           width="30"
@@ -38,6 +39,7 @@ export default function WvSharer(props) {
       <a
         href={`https://twitter.com/intent/tweet?url=${state.encodedURL}`}
         target="_blank"
+        rel="noreferrer noopener"
       >
         <svg
           width="30"
@@ -52,6 +54,7 @@ export default function WvSharer(props) {
       <a
         href={`https://social-plugins.line.me/lineit/share?url=${state.encodedURL}`}
         target="_blank"
+        rel="noreferrer noopener"
       >
         <svg
           width="30"
