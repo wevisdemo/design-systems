@@ -1,0 +1,19 @@
+.wv_sharer {
+  @apply flex flex-row justify-center items-center space-x-2 p-2;
+}
+
+.wv_sharer--dark {
+  @apply text-black;
+}
+
+.wv_sharer--dark svg {
+  @apply fill-black;
+}
+
+.wv_sharer--light {
+  @apply text-white;
+}
+
+.wv_sharer--light svg {
+  @apply fill-white;
+}

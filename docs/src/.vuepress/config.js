@@ -46,6 +46,7 @@ module.exports = {
             title: 'Paragraph Group',
             path: '/components/paragraph-group',
           },
+          { title: 'Sharer', path: '/components/sharer' },
         ],
       },
       {
