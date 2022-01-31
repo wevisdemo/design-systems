@@ -5,36 +5,12 @@ Navigation is a combination of
 - Navbar
 - NavButton
 
-<WvNavbar title="SOME PROJECT">
-  <WvNavButton active>About</WvNavButton>
-  <WvNavButton>Report</WvNavButton>
-</WvNavbar>
+<cookbook-navigation-light />
 
-```jsx
-import WvNavbar from '@wevisdemo/ui/components/navbar.{vue,jsx,svelte}';
-import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,jsx,svelte}';
-
-<WvNavbar title="SOME PROJECT">
-  <WvNavButton active>About</WvNavButton>
-  <WvNavButton>Report</WvNavButton>
-</WvNavbar>;
-```
+<<< src/.vuepress/components/cookbook/navigation/light.vue
 
 **With dark theme**
 
-<WvNavbar dark title="SOME PROJECT">
-  <WvNavButton dark active>About</WvNavButton>
-  <WvNavButton dark>Report</WvNavButton>
-</WvNavbar>
+<cookbook-navigation-dark />
 
-```jsx
-import WvNavbar from '@wevisdemo/ui/components/navbar.{vue,jsx,svelte}';
-import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,jsx,svelte}';
-
-<WvNavbar dark title="SOME PROJECT">
-  <WvNavButton dark active>
-    About
-  </WvNavButton>
-  <WvNavButton dark>Report</WvNavButton>
-</WvNavbar>;
-```
+<<< src/.vuepress/components/cookbook/navigation/dark.vue

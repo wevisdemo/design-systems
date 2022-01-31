@@ -1,11 +1,11 @@
 .wv_nav-dropdown-item {
-  @apply border-none cursor-pointer p-2;
+  @apply border-none cursor-pointer px-3 py-2 flex justify-center md:justify-start whitespace-nowrap;
 }
 
 .wv_nav-dropdown-item--white {
-  @apply bg-white text-black hover:bg-black hover:bg-opacity-5;
+  @apply bg-black text-white hover:bg-opacity-75 md:bg-white md:text-black md:hover:bg-opacity-10 md:hover:bg-black;
 }
 
 .wv_nav-dropdown-item--black {
-  @apply bg-black text-white hover:bg-white hover:bg-opacity-20;
+  @apply bg-white text-black hover:bg-opacity-90 md:bg-black md:text-white md:hover:bg-opacity-25 md:hover:bg-white;
 }

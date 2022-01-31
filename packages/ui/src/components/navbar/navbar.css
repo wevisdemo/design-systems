@@ -45,7 +45,7 @@
 }
 
 .wv_navbar__menu--mobile {
-  @apply flex md:hidden z-10 absolute top-full inset-x-0 flex-col justify-end space-y-4 p-4;
+  @apply flex md:hidden z-10 absolute top-full inset-x-0 flex-col justify-end space-y-4 py-4;
 }
 
 .wv_navbar__hamburger-button {

@@ -1,5 +1,5 @@
 .wv_nav-dropdown {
-  @apply relative w-fit;
+  @apply relative flex flex-col w-full md:w-fit;
 }
 
 .wv_nav-dropdown--white svg {
@@ -10,14 +10,22 @@
   @apply fill-white;
 }
 
-.wv_nav-dropdown--white button {
+.wv_nav-dropdown--white .wv_nav-button {
   @apply bg-white text-black;
 }
 
-.wv_nav-dropdown--black button {
+.wv_nav-dropdown--black .wv_nav-button {
   @apply bg-black text-white;
 }
 
 .wv_nav-dropdown-list {
-  @apply absolute z-20 rounded top-full mt-2 right-0 flex flex-col shadow bg-white border border-solid border-black border-opacity-10;
+  @apply md:absolute md:z-20 md:top-full md:right-0 mt-2 md:rounded flex flex-col md:shadow md:border md:border-solid;
+}
+
+.wv_nav-dropdown--white .wv_nav-dropdown-list {
+  @apply bg-white border-black border-opacity-10;
+}
+
+.wv_nav-dropdown--black .wv_nav-dropdown-list {
+  @apply bg-black border-white border-opacity-20;
 }
