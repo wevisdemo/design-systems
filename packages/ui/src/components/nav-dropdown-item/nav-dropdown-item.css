@@ -1,0 +1,11 @@
+.wv_nav-dropdown-item {
+  @apply border-none cursor-pointer p-2;
+}
+
+.wv_nav-dropdown-item--white {
+  @apply bg-white text-black hover:bg-black hover:bg-opacity-5;
+}
+
+.wv_nav-dropdown-item--black {
+  @apply bg-black text-white hover:bg-white hover:bg-opacity-20;
+}

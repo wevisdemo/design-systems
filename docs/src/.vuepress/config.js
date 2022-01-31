@@ -43,6 +43,7 @@ module.exports = {
           { title: 'Navbar', path: '/components/navbar' },
           { title: 'Nav Button', path: '/components/nav-button' },
           { title: 'Nav Dropdown', path: '/components/nav-dropdown' },
+          { title: 'Nav Dropdown Item', path: '/components/nav-dropdown-item' },
           {
             title: 'Paragraph Group',
             path: '/components/paragraph-group',
