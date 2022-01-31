@@ -1,6 +1,6 @@
-# Nav Dropdown Item
+# NavDropdownItem
 
-A dropdown for navigation bar
+A dropdown for navigation bar. `WvNavDropdown` and `WvNavDropdownItem` must be used together.
 
 <WvNavDropdownItem>Topic 1</WvNavDropdownItem>
 

@@ -1,16 +1,21 @@
-# Nav Dropdown
+# NavDropdown
 
-A dropdown for navigation bar
+A dropdown for navigation bar. `WvNavDropdown` and `WvNavDropdownItem` must be used together.
 
 <WvNavDropdown label="Topic">
-  <div>ContentHere</div>
+  <WvNavDropdownItem>Topic 1</WvNavDropdownItem>
+  <WvNavDropdownItem>Topic 2</WvNavDropdownItem>
+  <WvNavDropdownItem>Topic 3</WvNavDropdownItem>
 </WvNavDropdown>
 
 ```jsx
-import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,jsx,svelte}';
+import WvNavDropdown from '@wevisdemo/ui/components/nav-dropdown.{vue,jsx,svelte}';
+import WvNavDropdownItem from '@wevisdemo/ui/components/nav-dropdown-item.{vue,jsx,svelte}';
 
 <WvNavDropdown label="Topic">
-  <div>ContentHere</div>
+  <WvNavDropdownItem>Topic 1</WvNavDropdownItem>
+  <WvNavDropdownItem>Topic 2</WvNavDropdownItem>
+  <WvNavDropdownItem>Topic 3</WvNavDropdownItem>
 </WvNavDropdown>;
 ```
 
@@ -23,18 +28,21 @@ import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,jsx,svelte}';
 
 ## Slot / Children
 
-Dropdown list content
+WvNavDropdownItem(s)
 
 ## Examples
 
 **Dark theme**
-
 <WvNavDropdown dark label="Topic">
-  <div>ContentHere</div>
+<WvNavDropdownItem dark>Topic 1</WvNavDropdownItem>
+<WvNavDropdownItem dark>Topic 2</WvNavDropdownItem>
+<WvNavDropdownItem dark>Topic 3</WvNavDropdownItem>
 </WvNavDropdown>
 
 ```jsx
 <WvNavDropdown dark label="Topic">
-  <div>ContentHere</div>
+  <WvNavDropdownItem dark>Topic 1</WvNavDropdownItem>
+  <WvNavDropdownItem dark>Topic 2</WvNavDropdownItem>
+  <WvNavDropdownItem dark>Topic 3</WvNavDropdownItem>
 </WvNavDropdown>
 ```
