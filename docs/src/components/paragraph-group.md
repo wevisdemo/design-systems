@@ -9,6 +9,8 @@ Paragraph group including heading and text, or other small children paragraph gr
 </WvParagraphGroup>
 
 ```jsx
+import WvParagraphGroup from '@wevisdemo/ui/components/paragraph-group.{vue,jsx,svelte}';
+
 <WvParagraphGroup heading="เป้าหมาย">
   <p>
     dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -20,7 +22,7 @@ Paragraph group including heading and text, or other small children paragraph gr
     and more recently with desktop publishing software like Aldus PageMaker
     including versions of Lorem Ipsum.
   </p>
-</WvParagraphGroup>
+</WvParagraphGroup>;
 ```
 
 ## Props

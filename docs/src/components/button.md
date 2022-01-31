@@ -24,9 +24,11 @@ Button content
 **With different color**
 
 <div style="display:flex; background-color: lightgray; padding: 6px;">
-  <WvButton>Blue (default)</WvButton>
-  <WvButton color="black">Black</WvButton>
-  <WvButton color="white">White</WvButton>
+  <WvButtonGroup>
+    <WvButton>Blue (default)</WvButton>
+    <WvButton color="black">Black</WvButton>
+    <WvButton color="white">White</WvButton>
+  </WvButtonGroup>
 </div>
 
 ```jsx
@@ -38,9 +40,11 @@ Button content
 **Compact**
 
 <div style="display:flex; background-color: lightgray; padding: 6px;">
-  <WvButton small>Blue (default)</WvButton>
-  <WvButton small color="black">Black</WvButton>
-  <WvButton small color="white">White</WvButton>
+  <WvButtonGroup>
+    <WvButton small>Blue (default)</WvButton>
+    <WvButton small color="black">Black</WvButton>
+    <WvButton small color="white">White</WvButton>
+  </WvButtonGroup>
 </div>
 
 ```jsx
