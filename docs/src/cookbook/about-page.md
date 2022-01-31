@@ -6,6 +6,7 @@ About page is a combination of
 - Paragraph Group
 - Button Group
 - Button
+- Sharer
 
 <cookbook-about-page />
 

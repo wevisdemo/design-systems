@@ -77,5 +77,7 @@
         <span>Feedback</span>
       </WvButton>
     </WvButtonGroup>
+
+    <WvSharer url="PROJECT_MAIN_PAGE" />
   </WvContainer>
 </template>
