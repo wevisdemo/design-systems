@@ -11,17 +11,18 @@ import WvSharer from '@wevisdemo/ui/components/sharer.{vue,jsx,svelte}';
 
 ## Props
 
-| Name  | Type    | Default                                                     |
-| ----- | ------- | ----------------------------------------------------------- |
-| url   | string  | current page URL (get from `window.location.href` on mount) |
-| light | boolean | `false`                                                     |
+| Name   | Type    | Default                                                     |
+| ------ | ------- | ----------------------------------------------------------- |
+| url    | string  | current page URL (get from `window.location.href` on mount) |
+| light  | boolean | `false`                                                     |
+| center | boolean | `false`                                                     |
 
 ## Examples
 
-**Light color**
+**Light color and center**
 
 <div style="background-color: black;">
-  <WvSharer light />
+  <WvSharer light center />
 </div>
 
 ```jsx
