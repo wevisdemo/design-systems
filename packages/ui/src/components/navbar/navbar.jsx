@@ -16,7 +16,7 @@ export default function WvNavbar(props) {
           <svg
             class="wv_navbar__logo__wevis"
             viewBox="0 0 110 37"
-            fill={props.dark !== undefined ? 'white' : 'black'}
+            fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path d="M79.0175 35.3009V31.1026L80.3913 30.7904C80.7035 30.7568 80.7707 30.6511 80.7707 30.3101V16.8795C80.7707 16.6057 80.7035 16.5 80.3913 16.3991L79.0175 16.0581V11.8839H89.4843V16.0869L88.1057 16.4328C87.7982 16.5336 87.7262 16.6393 87.7262 16.9131V30.3293C87.7262 30.6367 87.7982 30.7087 88.072 30.8096L89.4843 31.1891V35.3201L79.0175 35.3009Z" />
@@ -49,7 +49,7 @@ export default function WvNavbar(props) {
             width="13"
             height="14"
             viewBox="0 0 13 14"
-            fill={props.dark !== undefined ? 'white' : 'black'}
+            fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
           >
             <rect
@@ -72,7 +72,7 @@ export default function WvNavbar(props) {
             width="15"
             height="12"
             viewBox="0 0 15 12"
-            fill={props.dark !== undefined ? 'white' : 'black'}
+            fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
           >
             <rect width="15" height="2" />
@@ -83,11 +83,7 @@ export default function WvNavbar(props) {
       </button>
 
       <Show when={state.isMobileMenuOpened}>
-        <div
-          class={`wv_navbar__menu wv_navbar__menu--mobile ${
-            props.dark !== undefined ? 'wv_navbar--black' : 'wv_navbar--white'
-          }`}
-        >
+        <div class="wv_navbar__menu wv_navbar__menu--mobile">
           {props.children}
         </div>
       </Show>

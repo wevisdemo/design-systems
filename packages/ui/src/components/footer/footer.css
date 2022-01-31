@@ -6,8 +6,16 @@
   @apply bg-black text-white;
 }
 
+.wv_footer--black svg {
+  @apply fill-white;
+}
+
 .wv_footer--white {
   @apply bg-white text-black;
+}
+
+.wv_footer--white svg {
+  @apply fill-black;
 }
 
 .wv_footer__logo {

@@ -2,12 +2,22 @@
   @apply relative flex flex-row px-3 py-2 md:px-4 md:py-3;
 }
 
-.wv_navbar--black {
+.wv_navbar--black,
+.wv_navbar--black .wv_navbar__menu {
   @apply bg-black text-white;
 }
 
-.wv_navbar--white {
+.wv_navbar--black svg {
+  @apply fill-white;
+}
+
+.wv_navbar--white,
+.wv_navbar--white .wv_navbar__menu {
   @apply bg-white text-black;
+}
+
+.wv_navbar--white svg {
+  @apply fill-black;
 }
 
 .wv_navbar__logo {
