@@ -10,7 +10,7 @@
     "mitosis:watch": "chokidar \"src/components/**/*.jsx\" -c \"if [ '{event}' = 'change' ] || [ '{event}' = 'add' ]; then npm run zx scripts/compile-mitosis.mjs vue {path}; fi;\"",
     "mitosis:build": "npm run zx scripts/compile-mitosis.mjs vue,react,svelte \"src/components/**/*.jsx\"",
     "tailwind:watch": "postcss src/styles/**/*.css --dir styles --watch",
-    "tailwind:build": "postcss src/styles/**/*.css --dir styles --env production && postcss src/components/**/*.css --dir components --env production"
+    "tailwind:build": "postcss src/styles/**/*.css --dir styles --env production"
   },
   "devDependencies": {
     "@builder.io/mitosis-cli": "^0.0.10",
