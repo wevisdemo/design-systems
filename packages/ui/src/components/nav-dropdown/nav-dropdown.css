@@ -10,6 +10,10 @@
   @apply fill-white;
 }
 
+.wv_nav-dropdown .wv_nav-button {
+  @apply self-center;
+}
+
 .wv_nav-dropdown--white .wv_nav-button {
   @apply bg-white text-black;
 }

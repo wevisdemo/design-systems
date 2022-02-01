@@ -1,5 +1,5 @@
 .wv_nav-dropdown-item {
-  @apply border-none cursor-pointer px-3 py-2 flex justify-center md:justify-start whitespace-nowrap;
+  @apply w-full border-none cursor-pointer px-3 py-2 flex justify-center md:justify-start whitespace-nowrap;
 }
 
 .wv_nav-dropdown-item--white {
