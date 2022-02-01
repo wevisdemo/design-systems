@@ -25,15 +25,15 @@
 }
 
 .wv_navbar__logo__wevis {
-  @apply h-6 md:h-8;
+  @apply h-6 md:h-7;
 }
 
 .wv_navbar__logo__addon {
-  @apply h-full max-h-6 md:max-h-8;
+  @apply h-full max-h-6 md:max-h-7;
 }
 
 .wv_navbar__title {
-  @apply hidden md:flex items-center;
+  @apply hidden md:flex items-center -mb-2;
 }
 
 .wv_navbar__menu {
