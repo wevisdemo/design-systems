@@ -15,7 +15,10 @@ export default function WvNavDropdown(props) {
     >
       <button
         class="wv_font_anuphan wv_b7 wv_nav-button"
-        onClick={() => (state.isListOpened = !state.isListOpened)}
+        onClick={(event) => {
+          event.stopPropagation();
+          state.isListOpened = !state.isListOpened;
+        }}
       >
         <span>{props.label}</span>
         <svg
@@ -33,7 +36,12 @@ export default function WvNavDropdown(props) {
       </button>
 
       <Show when={state.isListOpened}>
-        <div class="wv_nav-dropdown-list">{props.children}</div>
+        <div
+          class="wv_nav-dropdown-list"
+          onClick={() => (isListOpened = false)}
+        >
+          {props.children}
+        </div>
       </Show>
     </div>
   );

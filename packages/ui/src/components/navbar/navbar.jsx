@@ -82,7 +82,10 @@ export default function WvNavbar(props) {
       </button>
 
       <Show when={state.isMobileMenuOpened}>
-        <div class="wv_navbar__menu wv_navbar__menu--mobile">
+        <div
+          class="wv_navbar__menu wv_navbar__menu--mobile"
+          onClick={() => (state.isMobileMenuOpened = false)}
+        >
           {props.children}
         </div>
       </Show>
