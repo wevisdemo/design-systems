@@ -41,7 +41,7 @@
 }
 
 .wv_navbar__menu {
-  @apply flex-1 items-center;
+  @apply flex-1 items-stretch;
 }
 
 .wv_navbar__menu--desktop {
@@ -49,9 +49,9 @@
 }
 
 .wv_navbar__menu--mobile {
-  @apply flex md:hidden z-10 absolute top-full inset-x-0 flex-col justify-end space-y-4 py-4;
+  @apply flex md:hidden z-10 absolute top-full inset-x-0 flex-col justify-end pb-2;
 }
 
 .wv_navbar__hamburger-button {
-  @apply md:hidden flex justify-center items-center border-none bg-transparent cursor-pointer;
+  @apply md:hidden flex justify-center items-center border-none bg-transparent cursor-pointer px-2;
 }

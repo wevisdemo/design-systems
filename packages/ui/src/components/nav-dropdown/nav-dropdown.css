@@ -23,7 +23,7 @@
 }
 
 .wv_nav-dropdown-list {
-  @apply md:absolute md:z-20 md:top-full md:right-0 mt-2 md:rounded flex flex-col md:shadow md:border md:border-solid;
+  @apply md:absolute md:z-20 md:top-full md:right-0 md:mt-4 md:rounded flex flex-col md:shadow md:border md:border-solid;
 }
 
 .wv_nav-dropdown--white .wv_nav-dropdown-list {
