@@ -14,7 +14,7 @@ export default function WvNavDropdown(props) {
       }`}
     >
       <button
-        class={`wv_font_anuphan wv_b7 wv_nav-button`}
+        class="wv_font_anuphan wv_b7 wv_nav-button"
         onClick={() => (state.isListOpened = !state.isListOpened)}
       >
         <span>{props.label}</span>
