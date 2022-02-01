@@ -12,9 +12,8 @@ export default function WvNavbar(props) {
       }`}
     >
       <div class="wv_navbar__logo">
-        <a href={props.homeHref || '/'}>
+        <a class="wv_navbar__logo__wevis" href={props.homeHref || '/'}>
           <svg
-            class="wv_navbar__logo__wevis"
             viewBox="0 0 110 37"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"

@@ -25,11 +25,15 @@
 }
 
 .wv_navbar__logo__wevis {
+  @apply flex flex-row space-x-1 items-baseline;
+}
+
+.wv_navbar__logo__wevis svg {
   @apply h-6 md:h-7;
 }
 
 .wv_navbar__logo__addon {
-  @apply h-full max-h-6 md:max-h-7;
+  @apply h-full max-h-4 md:max-h-5;
 }
 
 .wv_navbar__title {
