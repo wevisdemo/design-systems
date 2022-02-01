@@ -10,10 +10,11 @@ import WvButton from '@wevisdemo/ui/components/button.{vue,jsx,svelte}';
 
 ## Props
 
-| Name  | Type                               | Default  |
-| ----- | ---------------------------------- | -------- |
-| color | `"blue"` \| `"black"` \| `"white"` | `"blue"` |
-| small | boolean                            | `false`  |
+| Name    | Type                               | Default  |
+| ------- | ---------------------------------- | -------- |
+| color   | `"blue"` \| `"black"` \| `"white"` | `"blue"` |
+| small   | `boolean`                          | `false`  |
+| onClick | `() => void`                       |          |
 
 ## Slot / Children
 

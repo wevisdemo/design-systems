@@ -12,10 +12,11 @@ import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,jsx,svelte}';
 
 ## Props
 
-| Name   | Type    | Default |
-| ------ | ------- | ------- |
-| active | boolean | `false` |
-| dark   | boolean | `false` |
+| Name    | Type         | Default |
+| ------- | ------------ | ------- |
+| active  | `boolean`    | `false` |
+| dark    | `boolean`    | `false` |
+| onClick | `() => void` |         |
 
 ## Slot / Children
 

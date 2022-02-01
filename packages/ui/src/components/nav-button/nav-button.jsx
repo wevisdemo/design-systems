@@ -6,6 +6,7 @@ export default function WvNavButton(props) {
           ? 'wv_nav-button--white'
           : 'wv_nav-button--black'
       } ${props.active !== undefined ? 'wv_nav-button--active' : ''}`}
+      onClick={() => props.onClick && props.onClick()}
     >
       {props.children}
     </button>
