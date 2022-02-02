@@ -33,7 +33,3 @@
 .wv_footer__follow a {
   @apply flex items-center;
 }
-
-.wv_footer__follow__label {
-  @apply text-xs;
-}

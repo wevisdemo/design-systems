@@ -21,7 +21,7 @@ export default function WvFooter(props) {
         </svg>
       </a>
       <div class="wv_footer__follow">
-        <span class="wv_footer__follow__label">Follow Us</span>
+        <span class="wv_b6">Follow Us</span>
         <a
           target="_blank"
           rel="noreferrer noopener"
