@@ -41,13 +41,20 @@
 }
 
 .wv_navbar__menu {
-  @apply flex-1 items-stretch;
+  @apply md:flex-1 items-stretch;
 }
 
 .wv_navbar__menu--desktop {
-  @apply hidden md:flex flex-row justify-end space-x-2;
+  @apply flex flex-row justify-end space-x-2;
 }
 
+.wv_navbar__menu--hide-mobile {
+  @apply hidden md:flex;
+}
+
+.wv_navbar__menu--always-show {
+  @apply -my-3;
+}
 .wv_navbar__menu--mobile {
   @apply flex md:hidden z-10 absolute top-full inset-x-0 flex-col justify-end pb-2;
 }
