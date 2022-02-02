@@ -12,7 +12,9 @@ async function compile(input, target) {
   const filename = input.split('/').reverse()[0].split('.')[0];
   const output = `${OUTPUT_DIR}/${filename}.${TARGET_EXTENSION[target]}`;
 
-  await $`yarn mitosis compile -t=${target} --out=${output} ${input} --force`;
+  await $`yarn mitosis compile -t=${target} --out=${output} ${
+    target === 'react' ? '--state=useState' : ''
+  } ${input} --force`;
 }
 
 const targets = process.argv[process.argv.length - 2]?.split(',');
