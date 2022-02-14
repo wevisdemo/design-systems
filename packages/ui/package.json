@@ -5,10 +5,10 @@
   "scripts": {
     "zx": "zx",
     "mitosis": "mitosis",
-    "dev": "npm run zx scripts/compile-mitosis.mjs vue \"src/components/**/*.jsx\" && concurrently --kill-others \"npm run mitosis:watch\" \"npm run tailwind:watch\"",
+    "dev": "npm run zx scripts/compile-mitosis.mjs vue \"src/components/**/*.tsx\" && concurrently --kill-others \"npm run mitosis:watch\" \"npm run tailwind:watch\"",
     "build": "npm run mitosis:build && npm run tailwind:build",
-    "mitosis:watch": "chokidar \"src/components/**/*.jsx\" -c \"if [ '{event}' = 'change' ] || [ '{event}' = 'add' ]; then npm run zx scripts/compile-mitosis.mjs vue {path}; fi;\"",
-    "mitosis:build": "npm run zx scripts/compile-mitosis.mjs vue,react,svelte \"src/components/**/*.jsx\"",
+    "mitosis:watch": "chokidar \"src/components/**/*.tsx\" -c \"if [ '{event}' = 'change' ] || [ '{event}' = 'add' ]; then npm run zx scripts/compile-mitosis.mjs vue {path}; fi;\"",
+    "mitosis:build": "npm run zx scripts/compile-mitosis.mjs vue,react,svelte \"src/components/**/*.tsx\"",
     "tailwind:watch": "postcss src/styles/**/*.css --dir styles --watch",
     "tailwind:build": "postcss src/styles/**/*.css --dir styles --env production"
   },

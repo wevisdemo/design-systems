@@ -1,4 +1,13 @@
-export default function WvParagraphGroup(props) {
+import '@builder.io/mitosis/dist/src/jsx-types';
+import { Show } from '@builder.io/mitosis';
+
+interface WvParagraphGroupProps {
+  small?: boolean;
+  heading?: string;
+  children?: JSX.Element;
+}
+
+export default function WvParagraphGroup(props: WvParagraphGroupProps) {
   return (
     <div
       class={`wv_paragraph-group ${

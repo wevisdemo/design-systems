@@ -1,6 +1,16 @@
-import { useState } from '@builder.io/mitosis';
+import '@builder.io/mitosis/dist/src/jsx-types';
+import { useState, Show } from '@builder.io/mitosis';
 
-export default function WvNavbar(props) {
+interface WvNavbarProps {
+  dark?: boolean;
+  homeHref?: string;
+  logoAddonSrc?: string;
+  title?: string;
+  alwayShowSlot?: boolean;
+  children: JSX.Element;
+}
+
+export default function WvNavbar(props: WvNavbarProps) {
   const state = useState({
     isMobileMenuOpened: false,
   });
@@ -50,7 +60,7 @@ export default function WvNavbar(props) {
           class="wv_navbar__hamburger-button"
           onClick={() => (state.isMobileMenuOpened = !state.isMobileMenuOpened)}
         >
-          {isMobileMenuOpened ? (
+          {state.isMobileMenuOpened ? (
             <svg
               width="13"
               height="14"

@@ -1,6 +1,13 @@
+import '@builder.io/mitosis/dist/src/jsx-types';
 import { onMount, useState } from '@builder.io/mitosis';
 
-export default function WvSharer(props) {
+interface WvSharerProps {
+  url?: string;
+  light?: boolean;
+  center?: boolean;
+}
+
+export default function WvSharer(props: WvSharerProps) {
   const state = useState({
     encodedURL: '',
   });

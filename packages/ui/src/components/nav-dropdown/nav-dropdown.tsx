@@ -1,6 +1,13 @@
-import { useState } from '@builder.io/mitosis';
+import '@builder.io/mitosis/dist/src/jsx-types';
+import { Show, useState } from '@builder.io/mitosis';
 
-export default function WvNavDropdown(props) {
+interface WvNavDropdownProps {
+  dark?: boolean;
+  label?: string;
+  children?: JSX.Element;
+}
+
+export default function WvNavDropdown(props: WvNavDropdownProps) {
   const state = useState({
     isListOpened: false,
   });
@@ -37,7 +44,7 @@ export default function WvNavDropdown(props) {
       <Show when={state.isListOpened}>
         <div
           class="wv_nav-dropdown-list"
-          onClick={() => (isListOpened = false)}
+          onClick={() => (state.isListOpened = false)}
         >
           {props.children}
         </div>

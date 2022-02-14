@@ -1,4 +1,13 @@
-export default function WvButton(props) {
+import '@builder.io/mitosis/dist/src/jsx-types';
+
+interface WvButtonProps {
+  color?: 'blue' | 'black' | 'white';
+  small?: boolean;
+  onClick?: () => void;
+  children?: JSX.Element;
+}
+
+export default function WvButton(props: WvButtonProps) {
   return (
     <button
       class={`wv_button wv_font_anuphan wv_button--${props.color || 'blue'} ${

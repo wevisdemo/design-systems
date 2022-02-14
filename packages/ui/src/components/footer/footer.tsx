@@ -1,4 +1,10 @@
-export default function WvFooter(props) {
+import '@builder.io/mitosis/dist/src/jsx-types';
+
+interface WvFooterProps {
+  dark?: boolean;
+}
+
+export default function WvFooter(props: WvFooterProps) {
   return (
     <div
       class={`wv_footer ${
