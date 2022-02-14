@@ -23,6 +23,7 @@ export default function WvNavDropdown(props: WvNavDropdownProps) {
       <button
         class="wv_font_anuphan wv_b7 wv_nav-button"
         onClick={(event) =>
+          // @ts-ignore
           event.stopPropagation() || (state.isListOpened = !state.isListOpened)
         }
       >
@@ -32,6 +33,7 @@ export default function WvNavDropdown(props: WvNavDropdownProps) {
           height="6"
           viewBox="0 0 10 6"
           xmlns="http://www.w3.org/2000/svg"
+          // @ts-ignore
           style={`transform: rotate(${state.isListOpened ? 180 : 0}deg);`}
         >
           <path
