@@ -32,6 +32,8 @@ We provide CSS classes for font family, weight and size
 
 ## Font Size
 
+Heading and body size will be scale down on mobile
+
 ### Heading
 
 <p v-for="i in 11" :class="`wv_h${i}`">H{{i}}</p>
@@ -50,4 +52,16 @@ We provide CSS classes for font family, weight and size
 <p class="wv_b1">B1</p>
 ...
 <p class="wv_b7">B7</p>
+```
+
+### UI
+
+UI size will be the same on mobile and desktop
+
+<p v-for="i in 5" :class="`wv_u${i}`">U{{i}}</p>
+
+```jsx
+<p class="wv_u1">U1</p>
+...
+<p class="wv_u5">U5</p>
 ```

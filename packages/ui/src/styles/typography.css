@@ -89,3 +89,23 @@
 .wv_b7 {
   @apply text-[12px] leading-[1.5] m-0;
 }
+
+.wv_u1 {
+  @apply text-[20px] leading-[1.25] m-0;
+}
+
+.wv_u2 {
+  @apply text-[18px] leading-[1.25] m-0;
+}
+
+.wv_u3 {
+  @apply text-[16px] leading-[1.25] m-0;
+}
+
+.wv_u4 {
+  @apply text-[14px] leading-[1.25] m-0;
+}
+
+.wv_u5 {
+  @apply text-[12px] leading-[1.25] m-0;
+}
