@@ -21,7 +21,7 @@ export default function WvNavDropdown(props: WvNavDropdownProps) {
       }`}
     >
       <button
-        class="wv_font_anuphan wv_b7 wv_nav-button"
+        class="wv-font-anuphan wv-b7 wv_nav-button"
         onClick={(event) =>
           // @ts-ignore
           event.stopPropagation() || (state.isListOpened = !state.isListOpened)

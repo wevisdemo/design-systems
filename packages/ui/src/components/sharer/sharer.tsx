@@ -22,7 +22,7 @@ export default function WvSharer(props: WvSharerProps) {
         props.light !== undefined ? 'wv_sharer--light' : 'wv_sharer--dark'
       } ${props.center !== undefined ? 'wv_sharer--center' : ''}`}
     >
-      <span class="wv_b5">Share</span>
+      <span class="wv-b5">Share</span>
 
       <a
         href={`http://www.facebook.com/sharer/sharer.php?u=${state.encodedURL}`}

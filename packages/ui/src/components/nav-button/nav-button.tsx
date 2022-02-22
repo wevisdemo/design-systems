@@ -10,7 +10,7 @@ interface WvNavButtonProps {
 export default function WvNavButton(props: WvNavButtonProps) {
   return (
     <button
-      class={`wv_nav-button wv_font_anuphan wv_b7 ${
+      class={`wv_nav-button wv-font-anuphan wv-b7 ${
         props.dark !== undefined
           ? 'wv_nav-button--white'
           : 'wv_nav-button--black'
