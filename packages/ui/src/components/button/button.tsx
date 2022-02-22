@@ -11,7 +11,7 @@ export default function WvButton(props: WvButtonProps) {
   return (
     <button
       class={`wv_button wv-font-anuphan wv_button--${props.color || 'blue'} ${
-        props.small !== undefined ? 'wv-b5 wv_button--small' : 'wv-b4'
+        props.small ? 'wv-b5 wv_button--small' : 'wv-b4'
       }`}
       onClick={() => props.onClick && props.onClick()}
     >

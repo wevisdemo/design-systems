@@ -9,7 +9,7 @@ export default function WvNavDropdownItem(props: WvNavDropdownItemProps) {
   return (
     <button
       class={`wv_nav-dropdown-item wv-anuphan wv-b6 ${
-        props.dark !== undefined
+        props.dark
           ? 'wv_nav-dropdown-item--black'
           : 'wv_nav-dropdown-item--white'
       }`}

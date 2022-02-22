@@ -19,8 +19,8 @@ export default function WvSharer(props: WvSharerProps) {
   return (
     <div
       class={`wv_sharer ${
-        props.light !== undefined ? 'wv_sharer--light' : 'wv_sharer--dark'
-      } ${props.center !== undefined ? 'wv_sharer--center' : ''}`}
+        props.light ? 'wv_sharer--light' : 'wv_sharer--dark'
+      } ${props.center ? 'wv_sharer--center' : ''}`}
     >
       <span class="wv-b5">Share</span>
 

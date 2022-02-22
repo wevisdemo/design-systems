@@ -8,7 +8,7 @@ export default function WvFooter(props: WvFooterProps) {
   return (
     <div
       class={`wv_footer ${
-        props.dark !== undefined ? 'wv_footer--black' : 'wv_footer--white'
+        props.dark ? 'wv_footer--black' : 'wv_footer--white'
       }`}
     >
       <a
@@ -55,14 +55,14 @@ export default function WvFooter(props: WvFooterProps) {
             <rect x="6" y="7" width="17" height="16" rx="5" />
             <path
               d="M18.25 15C18.25 16.9049 16.6001 18.5 14.5 18.5C12.3999 18.5 10.75 16.9049 10.75 15C10.75 13.0951 12.3999 11.5 14.5 11.5C16.6001 11.5 18.25 13.0951 18.25 15Z"
-              stroke={props.dark !== undefined ? 'black' : 'white'}
+              stroke={props.dark ? 'black' : 'white'}
             />
             <ellipse
               cx="19.8125"
               cy="10"
               rx="1.0625"
               ry="1"
-              fill={props.dark !== undefined ? 'black' : 'white'}
+              fill={props.dark ? 'black' : 'white'}
             />
           </svg>
         </a>

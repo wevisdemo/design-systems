@@ -18,7 +18,7 @@ export default function WvNavbar(props: WvNavbarProps) {
   return (
     <div
       class={`wv_navbar ${
-        props.dark !== undefined ? 'wv_navbar--black' : 'wv_navbar--white'
+        props.dark ? 'wv_navbar--black' : 'wv_navbar--white'
       }`}
     >
       <div class="wv_navbar__logo">
@@ -43,7 +43,7 @@ export default function WvNavbar(props: WvNavbarProps) {
 
       <div
         class={`wv_navbar__menu wv_navbar__menu--desktop ${
-          props.alwayShowSlot !== undefined
+          props.alwayShowSlot
             ? 'wv_navbar__menu--always-show'
             : 'wv_navbar__menu--hide-mobile'
         }`}
@@ -51,7 +51,7 @@ export default function WvNavbar(props: WvNavbarProps) {
         {props.children}
       </div>
 
-      <Show when={props.alwayShowSlot === undefined}>
+      <Show when={!props.alwayShowSlot}>
         <button
           class="wv_navbar__hamburger-button"
           onClick={() => (state.isMobileMenuOpened = !state.isMobileMenuOpened)}

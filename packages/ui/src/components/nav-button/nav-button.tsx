@@ -11,10 +11,8 @@ export default function WvNavButton(props: WvNavButtonProps) {
   return (
     <button
       class={`wv_nav-button wv-font-anuphan wv-b7 ${
-        props.dark !== undefined
-          ? 'wv_nav-button--white'
-          : 'wv_nav-button--black'
-      } ${props.active !== undefined ? 'wv_nav-button--active' : ''}`}
+        props.dark ? 'wv_nav-button--white' : 'wv_nav-button--black'
+      } ${props.active ? 'wv_nav-button--active' : ''}`}
       onClick={() => props.onClick && props.onClick()}
     >
       {props.children}
