@@ -6,12 +6,12 @@ We provide CSS classes for font family, weight and size
 
 `wv_font_[family]`
 
-- <span class="wv_font_kondora">Kondora Thai</span> : Heading
+- <span class="wv_font_kondolar">Kondolar Thai</span> : Heading
 - <span class="wv_font_anuphan">Anuphan</span> : Heading or body
 - <span class="wv_font_baijamjuri">Bai Jamjuri</span> : Body
 
 ```html
-<span class="wv_font_kondora">Kondora Thai</span>
+<span class="wv_font_kondolar">Kondolar Thai</span>
 <span class="wv_font_anuphan">Anuphan</span>
 <span class="wv_font_baijamjuri">Baijamjuri</span>
 ```
@@ -20,12 +20,12 @@ We provide CSS classes for font family, weight and size
 
 `wv_font_bold` to make text stronger
 
-- <span class="wv_font_kondora wv_font_bold">Kondora Thai Black</span>
+- <span class="wv_font_kondolar wv_font_bold">Kondolar Thai Black</span>
 - <span class="wv_font_anuphan wv_font_bold">Anuphan Semi-Bold</span>
 - <span class="wv_font_baijamjuri wv_font_bold">Bai Jamjuri Bold</span>
 
 ```html
-<span class="wv_font_kondora wv_font_bold">Kondora Thai Black</span>
+<span class="wv_font_kondolar wv_font_bold">Kondolar Thai Black</span>
 <span class="wv_font_anuphan wv_font_bold">Anuphan Semi-Bold</span>
 <span class="wv_font_baijamjuri wv_font_bold">Bai Jamjuri Bold</span>
 ```

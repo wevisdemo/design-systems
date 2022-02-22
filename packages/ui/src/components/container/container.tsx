@@ -10,7 +10,7 @@ export default function WvContainer(props: WvContainerProps) {
   return (
     <div class="wv_container">
       <Show when={props.heading}>
-        <h1 class="wv_font_kondora wv_h4">{props.heading}</h1>
+        <h1 class="wv_font_kondolar wv_h4">{props.heading}</h1>
       </Show>
 
       {props.children}

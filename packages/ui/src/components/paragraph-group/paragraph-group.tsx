@@ -16,7 +16,7 @@ export default function WvParagraphGroup(props: WvParagraphGroupProps) {
     >
       <Show when={props.heading}>
         <strong
-          class={`wv_paragraph-group__heading wv_font_kondora wv_${
+          class={`wv_paragraph-group__heading wv_font_kondolar wv_${
             props.small !== undefined ? 'b4' : 'h5'
           }`}
         >
