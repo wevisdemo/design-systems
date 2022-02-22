@@ -1,111 +1,111 @@
 /* Font family */
-.wv_font_kondolar {
+.wv-font-kondolar {
   font-family: 'Kondolar Thai', 'serif';
 }
 
-.wv_font_anuphan {
+.wv-font-anuphan {
   font-family: 'Anuphan', 'sans';
 }
 
-.wv_font_baijamjuri {
+.wv-font-baijamjuri {
   font-family: 'Bai Jamjuri', 'sans';
 }
 
 /* Font weight */
-.wv_font_bold {
+.wv-font-bold {
   @apply font-bold;
 }
 
 /* Heading size */
-.wv_h1 {
+.wv-h1 {
   @apply text-[60px] md:text-[100px] leading-[1.25] m-0;
 }
 
-.wv_h2 {
+.wv-h2 {
   @apply text-[48px] md:text-[72px] leading-[1.25] m-0;
 }
 
-.wv_h3 {
+.wv-h3 {
   @apply text-[36px] md:text-[60px] leading-[1.25] m-0;
 }
 
-.wv_h4 {
+.wv-h4 {
   @apply text-[32px] md:text-[48px] leading-[1.25] m-0;
 }
 
-.wv_h5 {
+.wv-h5 {
   @apply text-[28px] md:text-[36px] leading-[1.25] m-0;
 }
 
-.wv_h6 {
+.wv-h6 {
   @apply text-[24px] md:text-[32px] leading-[1.25] m-0;
 }
 
-.wv_h7 {
+.wv-h7 {
   @apply text-[21px] md:text-[28px] leading-[1.25] m-0;
 }
 
-.wv_h8 {
+.wv-h8 {
   @apply text-[18px] md:text-[24px] leading-[1.25] m-0;
 }
 
-.wv_h9 {
+.wv-h9 {
   @apply text-[16px] md:text-[21px] leading-[1.25] m-0;
 }
 
-.wv_h10 {
+.wv-h10 {
   @apply text-[15px] md:text-[18px] leading-[1.25] m-0;
 }
 
-.wv_h11 {
+.wv-h11 {
   @apply text-[14px] md:text-[16px] leading-[1.25] m-0;
 }
 
 /* Body size */
-.wv_b1 {
+.wv-b1 {
   @apply text-[24px] md:text-[32px] leading-[1.5] m-0;
 }
 
-.wv_b2 {
+.wv-b2 {
   @apply text-[21px] md:text-[24px] leading-[1.5] m-0;
 }
 
-.wv_b3 {
+.wv-b3 {
   @apply text-[18px] md:text-[21px] leading-[1.5] m-0;
 }
 
-.wv_b4 {
+.wv-b4 {
   @apply text-[16px] md:text-[18px] leading-[1.5] m-0;
 }
 
-.wv_b5 {
+.wv-b5 {
   @apply text-[14px] md:text-[16px] leading-[1.5] m-0;
 }
 
-.wv_b6 {
+.wv-b6 {
   @apply text-[13px] md:text-[14px] leading-[1.5] m-0;
 }
 
-.wv_b7 {
+.wv-b7 {
   @apply text-[12px] leading-[1.5] m-0;
 }
 
-.wv_u1 {
+.wv-u1 {
   @apply text-[20px] leading-[1.25] m-0;
 }
 
-.wv_u2 {
+.wv-u2 {
   @apply text-[18px] leading-[1.25] m-0;
 }
 
-.wv_u3 {
+.wv-u3 {
   @apply text-[16px] leading-[1.25] m-0;
 }
 
-.wv_u4 {
+.wv-u4 {
   @apply text-[14px] leading-[1.25] m-0;
 }
 
-.wv_u5 {
+.wv-u5 {
   @apply text-[12px] leading-[1.25] m-0;
 }
