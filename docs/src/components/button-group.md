@@ -8,15 +8,17 @@ Button container with spacing. Align hotizontally on desktop and vertically on m
   <WvButton>C</WvButton>
 </WvButtonGroup>
 
-```jsx
+```js
 import WvButtonGroup from '@wevisdemo/ui/components/button-group.{vue,jsx,svelte}';
 import WvButton from '@wevisdemo/ui/components/button.{vue,jsx,svelte}';
+```
 
+```vue
 <WvButtonGroup>
   <WvButton>A</WvButton>
   <WvButton>B</WvButton>
   <WvButton>C</WvButton>
-</WvButtonGroup>;
+</WvButtonGroup>
 ```
 
 ## Slot / Children
@@ -33,14 +35,14 @@ Buttons
 
 **Center buttons**
 
-<WvButtonGroup center>
+<WvButtonGroup :center="true">
   <WvButton>A</WvButton>
   <WvButton>B</WvButton>
   <WvButton>C</WvButton>
 </WvButtonGroup>
 
-```jsx
-<WvButtonGroup center>
+```vue
+<WvButtonGroup :center="true">
   <WvButton>A</WvButton>
   <WvButton>B</WvButton>
   <WvButton>C</WvButton>

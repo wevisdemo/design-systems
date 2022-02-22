@@ -4,10 +4,12 @@ A dropdown for navigation bar. `WvNavDropdown` and `WvNavDropdownItem` must be u
 
 <WvNavDropdownItem>Topic 1</WvNavDropdownItem>
 
-```jsx
+```js
 import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,jsx,svelte}';
+```
 
-<WvNavDropdownItem>Topic 1</WvNavDropdownItem>;
+```vue
+<WvNavDropdownItem>Topic 1</WvNavDropdownItem>
 ```
 
 ## Props
@@ -25,9 +27,9 @@ Item content
 **Dark theme**
 
 <div style="background-color: black;">
-  <WvNavDropdownItem dark>Topic 1</WvNavDropdownItem>
+  <WvNavDropdownItem :dark="true">Topic 1</WvNavDropdownItem>
 </div>
 
-```jsx
-<WvNavDropdownItem dark>Topic 1</WvNavDropdownItem>
+```vue
+<WvNavDropdownItem :dark="true">Topic 1</WvNavDropdownItem>
 ```

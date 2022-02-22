@@ -3,10 +3,12 @@
 Social media share buttons
 <WvSharer url="https://wevis.info" />
 
-```jsx
+```js
 import WvSharer from '@wevisdemo/ui/components/sharer.{vue,jsx,svelte}';
+```
 
-<WvSharer url="https://wevis.info" />;
+```vue
+<WvSharer url="https://wevis.info" />
 ```
 
 ## Props
@@ -22,9 +24,9 @@ import WvSharer from '@wevisdemo/ui/components/sharer.{vue,jsx,svelte}';
 **Light color and center**
 
 <div style="background-color: black;">
-  <WvSharer light center />
+  <WvSharer :light="true" :center="true" />
 </div>
 
-```jsx
-<WvSharer light center />
+```vue
+<WvSharer :light="true" :center="true" />
 ```

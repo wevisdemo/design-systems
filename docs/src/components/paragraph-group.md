@@ -8,9 +8,11 @@ Paragraph group including heading and text, or other small children paragraph gr
   </p>
 </WvParagraphGroup>
 
-```jsx
+```js
 import WvParagraphGroup from '@wevisdemo/ui/components/paragraph-group.{vue,jsx,svelte}';
+```
 
+```vue
 <WvParagraphGroup heading="เป้าหมาย">
   <p>
     dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -22,7 +24,7 @@ import WvParagraphGroup from '@wevisdemo/ui/components/paragraph-group.{vue,jsx,
     and more recently with desktop publishing software like Aldus PageMaker
     including versions of Lorem Ipsum.
   </p>
-</WvParagraphGroup>;
+</WvParagraphGroup>
 ```
 
 ## Props
@@ -40,14 +42,14 @@ Items apeended after heading
 
 **Small size**
 
-<WvParagraphGroup small heading="เขียนโปรแกรม">
+<WvParagraphGroup :small="true" heading="เขียนโปรแกรม">
   <p>
     dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
   </p>
 </WvParagraphGroup>
 
-```jsx
-<WvParagraphGroup small heading="เขียนโปรแกรม">
+```vue
+<WvParagraphGroup :small="true" heading="เขียนโปรแกรม">
   <p>
     dummy text of the printing and typesetting industry. Lorem Ipsum has been
     the industry's standard dummy text ever since the 1500s, when an unknown

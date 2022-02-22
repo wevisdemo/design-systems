@@ -4,10 +4,12 @@ Container with max-width and padding
 
 <WvContainer>Just a container</WvContainer>
 
-```jsx
+```js
 import WvContainer from '@wevisdemo/ui/components/container.{vue,jsx,svelte}';
+```
 
-<WvContainer>Just a container</WvContainer>;
+```vue
+<WvContainer>Just a container</WvContainer>
 ```
 
 ## Props
@@ -30,7 +32,7 @@ Items apeended after heading
   </p>
 </WvContainer>
 
-```jsx
+```vue
 <WvContainer heading="เกี่ยวกับโครงการ">
   <p>
     dummy text of the printing and typesetting industry. Lorem Ipsum has been

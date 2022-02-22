@@ -2,10 +2,12 @@
 
 <WvButton>Feedback</WvButton>
 
-```jsx
+```js
 import WvButton from '@wevisdemo/ui/components/button.{vue,jsx,svelte}';
+```
 
-<WvButton>Feedback</WvButton>;
+```vue
+<WvButton>Feedback</WvButton>
 ```
 
 ## Props
@@ -42,16 +44,16 @@ Button content
 
 <div style="display:flex; background-color: lightgray; padding: 6px;">
   <WvButtonGroup>
-    <WvButton small>Blue (default)</WvButton>
-    <WvButton small color="black">Black</WvButton>
-    <WvButton small color="white">White</WvButton>
+    <WvButton :small="true">Blue (default)</WvButton>
+    <WvButton :small="true" color="black">Black</WvButton>
+    <WvButton :small="true" color="white">White</WvButton>
   </WvButtonGroup>
 </div>
 
-```jsx
-<WvButton small>Blue (default)</WvButton>
-<WvButton small color="black">Black</WvButton>
-<WvButton small color="white">White</WvButton>
+```vue
+<WvButton :small="true">Blue (default)</WvButton>
+<WvButton :small="true" color="black">Black</WvButton>
+<WvButton :small="true" color="white">White</WvButton>
 ```
 
 **With icon**

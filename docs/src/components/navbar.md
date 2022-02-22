@@ -4,10 +4,12 @@ Main container for navigation bar group. Hamburger menu will be used to show slo
 
 <WvNavbar />
 
-```jsx
+```js
 import WvNavbar from '@wevisdemo/ui/components/navbar.{vue,jsx,svelte}';
+```
 
-<WvNavbar />;
+```vue
+<WvNavbar />
 ```
 
 ## Props
@@ -29,30 +31,30 @@ Elements in the right column on desktop / hamburger menu drop down on mobile
 **With title and slot**
 
 <WvNavbar title="SOME PROJECT">
-  <WvNavButton active>About</WvNavButton>
+  <WvNavButton :active="true">About</WvNavButton>
   <WvNavButton>Report</WvNavButton>
 </WvNavbar>
 
-```jsx
+```vue
 <WvNavbar title="SOME PROJECT">
-  <WvNavButton active>About</WvNavButton>
+  <WvNavButton :active="true">About</WvNavButton>
   <WvNavButton>Report</WvNavButton>
 </WvNavbar>
 ```
 
 **With dark theme**
 
-<WvNavbar dark title="SOME PROJECT">
-  <WvNavButton dark active>About</WvNavButton>
-  <WvNavButton dark>Report</WvNavButton>
+<WvNavbar :dark="true" title="SOME PROJECT">
+  <WvNavButton :dark="true" :active="true">About</WvNavButton>
+  <WvNavButton :dark="true">Report</WvNavButton>
 </WvNavbar>
 
-```jsx
-<WvNavbar dark title="SOME PROJECT">
-  <WvNavButton dark active>
+```vue
+<WvNavbar :dark="true" title="SOME PROJECT">
+  <WvNavButton :dark="true" :active="true">
     About
   </WvNavButton>
-  <WvNavButton dark>Report</WvNavButton>
+  <WvNavButton :dark="true">Report</WvNavButton>
 </WvNavbar>
 ```
 
@@ -60,8 +62,10 @@ Elements in the right column on desktop / hamburger menu drop down on mobile
 
 <WvNavbar logoAddonSrc="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/sparkles_2728.png" />
 
-```jsx
-<WvNavbar logoAddonSrc="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/sparkles_2728.png" />
+```vue
+<WvNavbar
+  logoAddonSrc="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/sparkles_2728.png"
+/>
 ```
 
 **Alway show slot**
@@ -69,13 +73,13 @@ Elements in the right column on desktop / hamburger menu drop down on mobile
 Disable hamburger menu on mobile
 
 <WvNavbar alwayShowSlot>
-  <WvNavButton active>About</WvNavButton>
+  <WvNavButton :active="true">About</WvNavButton>
   <WvNavButton>Report</WvNavButton>
 </WvNavbar>
 
-```jsx
+```vue
 <WvNavbar alwayShowSlot>
-  <WvNavButton active>About</WvNavButton>
+  <WvNavButton :active="true">About</WvNavButton>
   <WvNavButton>Report</WvNavButton>
 </WvNavbar>
 ```

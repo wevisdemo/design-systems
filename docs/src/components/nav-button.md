@@ -4,10 +4,12 @@ A button for navigation bar
 
 <WvNavButton>About</WvNavButton>
 
-```jsx
+```js
 import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,jsx,svelte}';
+```
 
-<WvNavButton>About</WvNavButton>;
+```vue
+<WvNavButton>About</WvNavButton>
 ```
 
 ## Props
@@ -26,20 +28,20 @@ Button content
 
 **Active button**
 
-<WvNavButton active>About</WvNavButton>
+<WvNavButton :active="true">About</WvNavButton>
 
-```jsx
-<WvNavButton active>About</WvNavButton>
+```vue
+<WvNavButton :active="true">About</WvNavButton>
 ```
 
 **With dark theme**
 
 <div style="background-color: black;">
-  <WvNavButton dark active>About</WvNavButton>
-  <WvNavButton dark>Report</WvNavButton>
+  <WvNavButton :dark="true" :active="true">About</WvNavButton>
+  <WvNavButton :dark="true">Report</WvNavButton>
 </div>
 
-```jsx
-<WvNavButton dark active>About</WvNavButton>
-<WvNavButton dark>Report</WvNavButton>
+```vue
+<WvNavButton :dark="true" :active="true">About</WvNavButton>
+<WvNavButton :dark="true">Report</WvNavButton>
 ```

@@ -8,15 +8,17 @@ A dropdown for navigation bar. `WvNavDropdown` and `WvNavDropdownItem` must be u
   <WvNavDropdownItem>Topic 3</WvNavDropdownItem>
 </WvNavDropdown>
 
-```jsx
+```js
 import WvNavDropdown from '@wevisdemo/ui/components/nav-dropdown.{vue,jsx,svelte}';
 import WvNavDropdownItem from '@wevisdemo/ui/components/nav-dropdown-item.{vue,jsx,svelte}';
+```
 
+```vue
 <WvNavDropdown label="Topic">
   <WvNavDropdownItem>Topic 1</WvNavDropdownItem>
   <WvNavDropdownItem>Topic 2</WvNavDropdownItem>
   <WvNavDropdownItem>Topic 3</WvNavDropdownItem>
-</WvNavDropdown>;
+</WvNavDropdown>
 ```
 
 ## Props
@@ -33,16 +35,16 @@ WvNavDropdownItem(s)
 ## Examples
 
 **Dark theme**
-<WvNavDropdown dark label="Topic">
-<WvNavDropdownItem dark>Topic 1</WvNavDropdownItem>
-<WvNavDropdownItem dark>Topic 2</WvNavDropdownItem>
-<WvNavDropdownItem dark>Topic 3</WvNavDropdownItem>
+<WvNavDropdown :dark="true" label="Topic">
+<WvNavDropdownItem :dark="true">Topic 1</WvNavDropdownItem>
+<WvNavDropdownItem :dark="true">Topic 2</WvNavDropdownItem>
+<WvNavDropdownItem :dark="true">Topic 3</WvNavDropdownItem>
 </WvNavDropdown>
 
-```jsx
-<WvNavDropdown dark label="Topic">
-  <WvNavDropdownItem dark>Topic 1</WvNavDropdownItem>
-  <WvNavDropdownItem dark>Topic 2</WvNavDropdownItem>
-  <WvNavDropdownItem dark>Topic 3</WvNavDropdownItem>
+```vue
+<WvNavDropdown :dark="true" label="Topic">
+  <WvNavDropdownItem :dark="true">Topic 1</WvNavDropdownItem>
+  <WvNavDropdownItem :dark="true">Topic 2</WvNavDropdownItem>
+  <WvNavDropdownItem :dark="true">Topic 3</WvNavDropdownItem>
 </WvNavDropdown>
 ```
