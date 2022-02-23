@@ -18,16 +18,32 @@ We provide CSS classes for font family, weight and size
 
 ## Font Weight
 
-`wv-font-bold` to make text stronger
+`wv-font-[weight]`
 
-- <span class="wv-font-kondolar wv-font-bold">Kondolar Thai Black</span>
-- <span class="wv-font-anuphan wv-font-bold">Anuphan Semi-Bold</span>
+### Semibold
+
+- <span class="wv-font-anuphan wv-font-semibold">Anuphan Semi-Bold</span>
+
+```html
+<span class="wv-font-anuphan wv-font-semibold">Anuphan Semi-Bold</span>
+```
+
+### Bold
+
+- <span class="wv-font-kondolar wv-font-bold">Kondolar Thai Bold</span>
 - <span class="wv-font-baijamjuri wv-font-bold">Bai Jamjuri Bold</span>
 
 ```html
-<span class="wv-font-kondolar wv-font-bold">Kondolar Thai Black</span>
-<span class="wv-font-anuphan wv-font-bold">Anuphan Semi-Bold</span>
+<span class="wv-font-kondolar wv-font-bold">Kondolar Thai Bold</span>
 <span class="wv-font-baijamjuri wv-font-bold">Bai Jamjuri Bold</span>
+```
+
+### Bold
+
+- <span class="wv-font-kondolar wv-font-black">Kondolar Thai Black</span>
+
+```html
+<span class="wv-font-kondolar wv-font-black">Kondolar Thai Black</span>
 ```
 
 ## Font Size

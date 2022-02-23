@@ -15,6 +15,12 @@
 .wv-font-bold {
   @apply font-bold;
 }
+.wv-font-semibold {
+  @apply font-semibold;
+}
+.wv-font-black {
+  @apply font-black;
+}
 
 /* Heading size */
 .wv-h1 {
