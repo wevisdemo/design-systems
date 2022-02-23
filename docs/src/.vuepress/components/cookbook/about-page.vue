@@ -15,7 +15,7 @@
     </WvParagraphGroup>
 
     <WvParagraphGroup heading="อาสาสมัครร่วมพัฒนา">
-      <WvParagraphGroup small heading="เขียนโปรแกรม">
+      <WvParagraphGroup :small="true" heading="เขียนโปรแกรม">
         <p>
           dummy text of the printing and typesetting industry. Lorem Ipsum has
           been the industry's standard dummy text ever since the 1500s, when an
@@ -24,7 +24,7 @@
       </WvParagraphGroup>
     </WvParagraphGroup>
 
-    <WvButtonGroup center>
+    <WvButtonGroup :center="true">
       <WvButton
         ><svg
           width="21"
@@ -78,6 +78,6 @@
       </WvButton>
     </WvButtonGroup>
 
-    <WvSharer center url="PROJECT_MAIN_PAGE" />
+    <WvSharer :center="true" url="PROJECT_MAIN_PAGE" />
   </WvContainer>
 </template>
