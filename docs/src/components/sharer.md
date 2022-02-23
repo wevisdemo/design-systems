@@ -13,14 +13,15 @@ import WvSharer from '@wevisdemo/ui/components/sharer.{vue,jsx,svelte}';
 
 ## Props
 
-| Name      | Type    | Default                                                     |
-| --------- | ------- | ----------------------------------------------------------- |
-| url       | string  | current page URL (get from `window.location.href` on mount) |
-| label     | string  | 'Share'                                                     |
-| hideLabel | boolean | `false`                                                     |
-| light     | boolean | `false`                                                     |
-| outline   | boolean | `false`                                                     |
-| center    | boolean | `false`                                                     |
+| Name          | Type    | Default                                                     |
+| ------------- | ------- | ----------------------------------------------------------- |
+| url           | string  | current page URL (get from `window.location.href` on mount) |
+| label         | string  | 'Share'                                                     |
+| hideLabel     | boolean | `false`                                                     |
+| light         | boolean | `false`                                                     |
+| outline       | boolean | `false`                                                     |
+| center        | boolean | `false`                                                     |
+| allowCopyLink | boolean | `false`                                                     |
 
 ## Examples
 
@@ -65,4 +66,12 @@ import WvSharer from '@wevisdemo/ui/components/sharer.{vue,jsx,svelte}';
 
 ```vue
 <WvSharer :center="true" />
+```
+
+**Allow copy link to clipboard**
+
+<WvSharer :allowCopyLink="true" :outline="true" />
+
+```vue
+<WvSharer :allowCopyLink="true" :outline="true" />
 ```

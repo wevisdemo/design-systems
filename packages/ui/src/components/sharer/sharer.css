@@ -6,6 +6,18 @@
   @apply w-[30px] h-[30px];
 }
 
+.wv_sharer svg .outline {
+  @apply fill-none stroke-1;
+}
+
+.wv_sharer__share-link {
+  @apply cursor-pointer;
+}
+
+.wv_sharer__share-link path {
+  @apply fill-none stroke-2;
+}
+
 .wv_sharer--center {
   @apply justify-center;
 }
@@ -19,7 +31,11 @@
 }
 
 .wv_sharer--dark .outline {
-  @apply fill-none stroke-black;
+  @apply stroke-black;
+}
+
+.wv_sharer--dark .wv_sharer__share-link {
+  @apply stroke-black;
 }
 
 .wv_sharer--light {
@@ -31,5 +47,9 @@
 }
 
 .wv_sharer--light .outline {
-  @apply fill-none stroke-white;
+  @apply stroke-white;
+}
+
+.wv_sharer--light .wv_sharer__share-link {
+  @apply stroke-white;
 }

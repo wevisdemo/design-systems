@@ -8,11 +8,13 @@ interface WvSharerProps {
   light?: boolean;
   center?: boolean;
   outline?: boolean;
+  allowCopyLink?: boolean;
 }
 
 export default function WvSharer(props: WvSharerProps) {
   const state = useState({
     encodedURL: '',
+    copyToClipboard: (url: string) => window.navigator.clipboard.writeText(url),
   });
 
   onMount(() => {
@@ -27,6 +29,25 @@ export default function WvSharer(props: WvSharerProps) {
     >
       <Show when={!props.hideLabel}>
         <span class="wv-b5">{props.label || 'Share'}</span>
+      </Show>
+
+      <Show when={props.allowCopyLink}>
+        <div
+          class="wv_sharer__share-link"
+          onClick={() => state.copyToClipboard(state.encodedURL)}
+        >
+          <svg viewBox="0 0 28 28">
+            <path
+              class="outline"
+              d="M27.5 14C27.5 21.4564 21.4564 27.5 14 27.5C6.54358 27.5 0.5 21.4564 0.5 14C0.5 6.54358 6.54358 0.5 14 0.5C21.4564 0.5 27.5 6.54358 27.5 14Z"
+            />
+            <path d="M9.9751 16.5375C11.1832 16.5375 12.1626 15.5581 12.1626 14.35C12.1626 13.1419 11.1832 12.1625 9.9751 12.1625C8.76697 12.1625 7.7876 13.1419 7.7876 14.35C7.7876 15.5581 8.76697 16.5375 9.9751 16.5375Z" />
+            <path d="M17.6313 21.4594C18.8395 21.4594 19.8188 20.48 19.8188 19.2719C19.8188 18.0638 18.8395 17.0844 17.6313 17.0844C16.4232 17.0844 15.4438 18.0638 15.4438 19.2719C15.4438 20.48 16.4232 21.4594 17.6313 21.4594Z" />
+            <path d="M17.6313 11.6156C18.8395 11.6156 19.8188 10.6362 19.8188 9.42812C19.8188 8.22 18.8395 7.24062 17.6313 7.24062C16.4232 7.24062 15.4438 8.22 15.4438 9.42812C15.4438 10.6362 16.4232 11.6156 17.6313 11.6156Z" />
+            <path d="M15.7915 10.6109L11.8149 13.1673" />
+            <path d="M11.8149 15.5327L15.7915 18.0891" />
+          </svg>
+        </div>
       </Show>
 
       <a
