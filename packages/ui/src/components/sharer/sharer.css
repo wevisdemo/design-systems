@@ -2,6 +2,10 @@
   @apply flex flex-row items-center space-x-3;
 }
 
+.wv_sharer svg {
+  @apply w-[30px] h-[30px];
+}
+
 .wv_sharer--center {
   @apply justify-center;
 }
@@ -14,10 +18,18 @@
   @apply fill-black;
 }
 
+.wv_sharer--dark .outline {
+  @apply fill-none stroke-black;
+}
+
 .wv_sharer--light {
   @apply text-white;
 }
 
 .wv_sharer--light svg {
   @apply fill-white;
+}
+
+.wv_sharer--light .outline {
+  @apply fill-none stroke-white;
 }
