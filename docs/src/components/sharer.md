@@ -13,14 +13,26 @@ import WvSharer from '@wevisdemo/ui/components/sharer.{vue,jsx,svelte}';
 
 ## Props
 
-| Name    | Type    | Default                                                     |
-| ------- | ------- | ----------------------------------------------------------- |
-| url     | string  | current page URL (get from `window.location.href` on mount) |
-| light   | boolean | `false`                                                     |
-| outline | boolean | `false`                                                     |
-| center  | boolean | `false`                                                     |
+| Name      | Type    | Default                                                     |
+| --------- | ------- | ----------------------------------------------------------- |
+| url       | string  | current page URL (get from `window.location.href` on mount) |
+| label     | string  | 'Share'                                                     |
+| hideLabel | boolean | `false`                                                     |
+| light     | boolean | `false`                                                     |
+| outline   | boolean | `false`                                                     |
+| center    | boolean | `false`                                                     |
 
 ## Examples
+
+**Custom or hide label**
+
+<WvSharer label="Custom Label" />
+<WvSharer :hideLabel="true" />
+
+```vue
+<WvSharer label="Custom Label" />
+<WvSharer :hideLabel="true" />
+```
 
 **Light**
 

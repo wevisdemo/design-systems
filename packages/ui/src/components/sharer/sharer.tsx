@@ -3,6 +3,8 @@ import { onMount, useState, Show } from '@builder.io/mitosis';
 
 interface WvSharerProps {
   url?: string;
+  label?: string;
+  hideLabel?: boolean;
   light?: boolean;
   center?: boolean;
   outline?: boolean;
@@ -23,7 +25,9 @@ export default function WvSharer(props: WvSharerProps) {
         props.light ? 'wv_sharer--light' : 'wv_sharer--dark'
       } ${props.center ? 'wv_sharer--center' : ''}`}
     >
-      <span class="wv-b5">Share</span>
+      <Show when={!props.hideLabel}>
+        <span class="wv-b5">{props.label || 'Share'}</span>
+      </Show>
 
       <a
         href={`http://www.facebook.com/sharer/sharer.php?u=${state.encodedURL}`}
