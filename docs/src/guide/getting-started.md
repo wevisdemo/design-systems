@@ -14,24 +14,25 @@ or with **Yarn**
 yarn add @wevisdemo/ui
 ```
 
-## 2. Setup fonts
+## 2. Load fonts
 
-- Download fonts from [Typography package](https://github.com/wevisdemo/design-systems/tree/main/packages/typography/src)
-- Put downloaded files in `static/fonts` or `public/fonts` folder, depends in the framework. Make sure `/fonts/typography.css` is static served.
-- Include `typography.css` in html head
+Fonts and coresponded css is hosted on WeVis server. Just include the `typography.css` in the html head.
 
 ```html
-<link rel="stylesheet" href="/fonts/typography.css" />
+<link
+  rel="stylesheet"
+  href="https://design-systems.wevis.info/typography.css"
+/>
 ```
 
 ## 3. Import the stylesheets
 
 Make sure to import the following files:
 
-- Typography Stylesheets `@wevisdemo/ui/styles/typography.css`
-- Component Stylesheet `@wevisdemo/ui/styles/components.css`
+- Typography utility classes stylesheet `@wevisdemo/ui/styles/typography.css`
+- Components stylesheet `@wevisdemo/ui/styles/components.css`
 
-with **NuxtJS**, added these 2 files in the `css` array of `nuxt.config.js`
+with **NuxtJS**, add these 2 files in the `css` array of `nuxt.config.js`
 
 ```js
 //nuxt.config.js

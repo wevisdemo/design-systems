@@ -11,8 +11,7 @@
     "typography": "*"
   },
   "scripts": {
-    "copyassets": "cp -rf ../packages/typography/src src/.vuepress/public/fonts",
-    "dev": "npm run copyassets && vuepress dev src",
-    "build": "npm run copyassets && vuepress build src"
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
   }
 }

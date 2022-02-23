@@ -6,7 +6,13 @@ module.exports = {
     'WeVis design system documentation and cross-framework UI components',
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
-    ['link', { rel: 'stylesheet', href: '/fonts/typography.css' }],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://design-systems.wevis.info/typography.css',
+      },
+    ],
   ],
   themeConfig: {
     nav: [
