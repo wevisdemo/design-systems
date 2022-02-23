@@ -15,13 +15,13 @@ export default function WvParagraphGroup(props: WvParagraphGroupProps) {
       }`}
     >
       <Show when={props.heading}>
-        <strong
-          class={`wv_paragraph-group__heading wv-font-kondolar wv-${
+        <div
+          class={`wv_paragraph-group__heading wv-font-kondolar wv-font-black wv-${
             props.small ? 'b4' : 'h5'
           }`}
         >
           {props.heading}
-        </strong>
+        </div>
       </Show>
 
       {props.children}
