@@ -1,12 +1,12 @@
 <template>
-  <WvNavbar dark title="SOME PROJECT">
-    <WvNavDropdown dark label="Topic">
-      <WvNavDropdownItem dark>Topic 1</WvNavDropdownItem>
-      <WvNavDropdownItem dark>Topic 2</WvNavDropdownItem>
-      <WvNavDropdownItem dark>Topic Something</WvNavDropdownItem>
+  <WvNavbar :dark="true" title="SOME PROJECT">
+    <WvNavDropdown :dark="true" label="Topic">
+      <WvNavDropdownItem :dark="true">Topic 1</WvNavDropdownItem>
+      <WvNavDropdownItem :dark="true">Topic 2</WvNavDropdownItem>
+      <WvNavDropdownItem :dark="true">Topic Something</WvNavDropdownItem>
     </WvNavDropdown>
 
-    <WvNavButton dark active>About</WvNavButton>
-    <WvNavButton dark>Report</WvNavButton>
+    <WvNavButton :dark="true" active>About</WvNavButton>
+    <WvNavButton :dark="true">Report</WvNavButton>
   </WvNavbar>
 </template>
