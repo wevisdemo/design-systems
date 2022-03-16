@@ -14,7 +14,9 @@ interface WvSharerProps {
 export default function WvSharer(props: WvSharerProps) {
   const state = useState({
     encodedURL: '',
-    copyToClipboard: (url: string) => window.navigator.clipboard.writeText(url),
+    copyToClipboard(url) {
+      window.navigator.clipboard.writeText(url);
+    },
   });
 
   onMount(() => {
