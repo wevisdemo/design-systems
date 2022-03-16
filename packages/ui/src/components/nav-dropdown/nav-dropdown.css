@@ -2,15 +2,19 @@
   @apply relative flex flex-col w-full md:w-fit;
 }
 
-.wv_nav-dropdown--white svg {
+.wv_nav-dropdown--white .wv_nav-button-chevron {
   @apply fill-black;
 }
 
-.wv_nav-dropdown--black svg {
+.wv_nav-dropdown--black .wv_nav-button-chevron {
   @apply fill-white;
 }
 
-.wv_nav-dropdown .wv_nav-button {
+.wv_nav-button-chevron--opened {
+  transform: rotate(180deg);
+}
+
+.wv_nav-button {
   @apply self-center;
 }
 
