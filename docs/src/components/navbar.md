@@ -5,7 +5,7 @@ Main container for navigation bar group. Hamburger menu will be used to show slo
 <WvNavbar />
 
 ```js
-import WvNavbar from '@wevisdemo/ui/components/navbar.{vue,jsx,svelte}';
+import WvNavbar from '@wevisdemo/ui/components/navbar.{vue,js,svelte}';
 ```
 
 ```vue

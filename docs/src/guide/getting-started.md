@@ -47,10 +47,10 @@ export default {
 
 ## 4. Use the components
 
-Components are available for **Vue**, **React**, and **Svelte** which coresponded file (`.vue`, `.jsx` and `.svelte`) can be import with `Wv` name prefix. For example:
+Components are available for **Vue**, **React**, and **Svelte** which coresponded file (`.vue`, `.js` and `.svelte`) can be import with `Wv` name prefix. For example:
 
 ```jsx
-import WvButton from '@wevisdemo/ui/components/button.{vue,jsx,svelte}';
+import WvButton from '@wevisdemo/ui/components/button.{vue,js,svelte}';
 
 <WvButton>Hello</WvButton>;
 ```

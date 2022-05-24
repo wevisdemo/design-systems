@@ -9,8 +9,8 @@ A dropdown for navigation bar. `WvNavDropdown` and `WvNavDropdownItem` must be u
 </WvNavDropdown>
 
 ```js
-import WvNavDropdown from '@wevisdemo/ui/components/nav-dropdown.{vue,jsx,svelte}';
-import WvNavDropdownItem from '@wevisdemo/ui/components/nav-dropdown-item.{vue,jsx,svelte}';
+import WvNavDropdown from '@wevisdemo/ui/components/nav-dropdown.{vue,js,svelte}';
+import WvNavDropdownItem from '@wevisdemo/ui/components/nav-dropdown-item.{vue,js,svelte}';
 ```
 
 ```vue

@@ -5,7 +5,7 @@ A button for navigation bar
 <WvNavButton>About</WvNavButton>
 
 ```js
-import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,jsx,svelte}';
+import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,js,svelte}';
 ```
 
 ```vue

@@ -3,7 +3,7 @@
 <WvButton>Feedback</WvButton>
 
 ```js
-import WvButton from '@wevisdemo/ui/components/button.{vue,jsx,svelte}';
+import WvButton from '@wevisdemo/ui/components/button.{vue,js,svelte}';
 ```
 
 ```vue

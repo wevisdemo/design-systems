@@ -5,7 +5,7 @@ Footer at the bottom of the page
 <WvFooter />
 
 ```js
-import WvFooter from '@wevisdemo/ui/components/footer.{vue,jsx,svelte}';
+import WvFooter from '@wevisdemo/ui/components/footer.{vue,js,svelte}';
 ```
 
 ```vue

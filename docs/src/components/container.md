@@ -5,7 +5,7 @@ Container with max-width and padding
 <WvContainer>Just a container</WvContainer>
 
 ```js
-import WvContainer from '@wevisdemo/ui/components/container.{vue,jsx,svelte}';
+import WvContainer from '@wevisdemo/ui/components/container.{vue,js,svelte}';
 ```
 
 ```vue

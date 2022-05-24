@@ -4,7 +4,7 @@ Social media share buttons
 <WvSharer url="https://wevis.info" />
 
 ```js
-import WvSharer from '@wevisdemo/ui/components/sharer.{vue,jsx,svelte}';
+import WvSharer from '@wevisdemo/ui/components/sharer.{vue,js,svelte}';
 ```
 
 ```vue

@@ -9,7 +9,7 @@ Paragraph group including heading and text, or other small children paragraph gr
 </WvParagraphGroup>
 
 ```js
-import WvParagraphGroup from '@wevisdemo/ui/components/paragraph-group.{vue,jsx,svelte}';
+import WvParagraphGroup from '@wevisdemo/ui/components/paragraph-group.{vue,js,svelte}';
 ```
 
 ```vue

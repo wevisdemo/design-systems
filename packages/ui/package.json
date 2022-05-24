@@ -1,16 +1,17 @@
 {
   "name": "@wevisdemo/ui",
-  "version": "3.1.1",
+  "version": "4.0.0",
   "license": "MIT",
   "scripts": {
     "zx": "zx",
     "mitosis": "mitosis",
-    "dev": "npm run zx scripts/compile-mitosis.mjs vue \"src/components/**/*.tsx\" && concurrently --kill-others \"npm run mitosis:watch\" \"npm run tailwind:watch\"",
-    "build": "npm run mitosis:build && npm run tailwind:build",
-    "mitosis:watch": "chokidar \"src/components/**/*.tsx\" -c \"if [ '{event}' = 'change' ] || [ '{event}' = 'add' ]; then npm run zx scripts/compile-mitosis.mjs vue {path}; fi;\"",
-    "mitosis:build": "npm run zx scripts/compile-mitosis.mjs vue,react,svelte \"src/components/**/*.tsx\"",
+    "dev": "zx scripts/compile-mitosis.mjs vue \"src/components/**/*.tsx\" && concurrently --kill-others \"npm run mitosis:watch\" \"npm run tailwind:watch\"",
+    "build": "npm run mitosis:build && npm run tailwind:build && npm run esbuild:jsx && rm -rf components/*.jsx",
+    "mitosis:watch": "chokidar \"src/components/**/*.tsx\" -c \"if [ '{event}' = 'change' ] || [ '{event}' = 'add' ]; then zx scripts/compile-mitosis.mjs vue {path}; fi;\"",
+    "mitosis:build": "zx scripts/compile-mitosis.mjs vue,react,svelte \"src/components/**/*.tsx\"",
     "tailwind:watch": "postcss src/styles/**/*.css --dir styles --watch",
-    "tailwind:build": "postcss src/styles/**/*.css --dir styles --env production"
+    "tailwind:build": "postcss src/styles/**/*.css --dir styles --env production",
+    "esbuild:jsx": "node scripts/esbuild-jsx.mjs"
   },
   "devDependencies": {
     "@builder.io/mitosis-cli": "^0.0.12",
@@ -18,6 +19,8 @@
     "chokidar-cli": "^3.0.0",
     "concurrently": "^7.0.0",
     "cssnano": "^5.0.16",
+    "esbuild": "^0.14.39",
+    "esbuild-plugin-glob": "^1.1.2",
     "postcss": "^8.4.5",
     "postcss-cli": "^9.1.0",
     "postcss-import": "^14.0.2",

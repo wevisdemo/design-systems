@@ -5,7 +5,7 @@ A dropdown for navigation bar. `WvNavDropdown` and `WvNavDropdownItem` must be u
 <WvNavDropdownItem>Topic 1</WvNavDropdownItem>
 
 ```js
-import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,jsx,svelte}';
+import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,js,svelte}';
 ```
 
 ```vue

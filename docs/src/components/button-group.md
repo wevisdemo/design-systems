@@ -9,8 +9,8 @@ Button container with spacing. Align hotizontally on desktop and vertically on m
 </WvButtonGroup>
 
 ```js
-import WvButtonGroup from '@wevisdemo/ui/components/button-group.{vue,jsx,svelte}';
-import WvButton from '@wevisdemo/ui/components/button.{vue,jsx,svelte}';
+import WvButtonGroup from '@wevisdemo/ui/components/button-group.{vue,js,svelte}';
+import WvButton from '@wevisdemo/ui/components/button.{vue,js,svelte}';
 ```
 
 ```vue
