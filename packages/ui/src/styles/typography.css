@@ -89,11 +89,11 @@
 }
 
 .wv-b6 {
-  @apply text-[13px] md:text-[14px] leading-[1.5] m-0;
+  @apply text-[12px] md:text-[14px] leading-[1.5] m-0;
 }
 
 .wv-b7 {
-  @apply text-[12px] leading-[1.5] m-0;
+  @apply text-[10px] md:text-[12px] leading-[1.5] m-0;
 }
 
 .wv-u1 {
