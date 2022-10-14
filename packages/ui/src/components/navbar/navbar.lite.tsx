@@ -1,5 +1,5 @@
-import '@builder.io/mitosis/dist/src/jsx-types';
-import { useState, Show } from '@builder.io/mitosis';
+import { JSX } from '@builder.io/mitosis/jsx-runtime';
+import { useStore, Show } from '@builder.io/mitosis';
 
 interface WvNavbarProps {
   dark?: boolean;
@@ -11,7 +11,7 @@ interface WvNavbarProps {
 }
 
 export default function WvNavbar(props: WvNavbarProps) {
-  const state = useState({
+  const state = useStore({
     isMobileMenuOpened: false,
   });
 

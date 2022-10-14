@@ -1,5 +1,5 @@
-import '@builder.io/mitosis/dist/src/jsx-types';
-import { onMount, useState, Show } from '@builder.io/mitosis';
+import { JSX } from '@builder.io/mitosis/jsx-runtime';
+import { onMount, useStore, Show } from '@builder.io/mitosis';
 
 interface WvSharerProps {
   url?: string;
@@ -12,10 +12,10 @@ interface WvSharerProps {
 }
 
 export default function WvSharer(props: WvSharerProps) {
-  const state = useState({
+  const state = useStore({
     encodedURL: '',
-    copyToClipboard(url) {
-      window.navigator.clipboard.writeText(url);
+    copyToClipboard() {
+      window.navigator.clipboard.writeText(state.encodedURL);
     },
   });
 
@@ -34,10 +34,7 @@ export default function WvSharer(props: WvSharerProps) {
       </Show>
 
       <Show when={props.allowCopyLink}>
-        <div
-          class="wv_sharer__share-link"
-          onClick={() => state.copyToClipboard(state.encodedURL)}
-        >
+        <div class="wv_sharer__share-link" onClick={state.copyToClipboard}>
           <svg viewBox="0 0 28 28">
             <path
               class="outline"

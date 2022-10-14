@@ -1,4 +1,4 @@
-import '@builder.io/mitosis/dist/src/jsx-types';
+import { JSX } from '@builder.io/mitosis/jsx-runtime';
 
 interface WvNavDropdownItemProps {
   dark?: boolean;

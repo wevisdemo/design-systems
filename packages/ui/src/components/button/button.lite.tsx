@@ -1,10 +1,10 @@
-import '@builder.io/mitosis/dist/src/jsx-types';
+import { JSX } from "@builder.io/mitosis/jsx-runtime";
 
 interface WvButtonProps {
   color?: 'blue' | 'black' | 'white';
   small?: boolean;
   onClick?: () => void;
-  children?: JSX.Element;
+  children?: JSX.Element
 }
 
 export default function WvButton(props: WvButtonProps) {

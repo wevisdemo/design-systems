@@ -1,5 +1,5 @@
-import '@builder.io/mitosis/dist/src/jsx-types';
-import { Show, useState } from '@builder.io/mitosis';
+import { JSX } from '@builder.io/mitosis/jsx-runtime';
+import { Show, useStore } from '@builder.io/mitosis';
 
 interface WvNavDropdownProps {
   dark?: boolean;
@@ -8,8 +8,12 @@ interface WvNavDropdownProps {
 }
 
 export default function WvNavDropdown(props: WvNavDropdownProps) {
-  const state = useState({
+  const state = useStore({
     isListOpened: false,
+    toggleList(event: MouseEvent) {
+      event.stopPropagation();
+      state.isListOpened = !state.isListOpened;
+    },
   });
 
   return (
@@ -20,9 +24,7 @@ export default function WvNavDropdown(props: WvNavDropdownProps) {
     >
       <button
         class="wv-font-anuphan wv-b7 wv_nav-button"
-        onClick={(event) =>
-          event.stopPropagation() || (state.isListOpened = !state.isListOpened)
-        }
+        onClick={state.toggleList}
       >
         <span>{props.label}</span>
         <svg
