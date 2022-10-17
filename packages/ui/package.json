@@ -7,7 +7,7 @@
     "dev": "zx scripts/compile-mitosis.mjs vue \"src/components/**/*.tsx\" && concurrently --kill-others \"npm run mitosis:watch\" \"npm run tailwind:watch\"",
     "build": "npm run mitosis:build && npm run tailwind:build",
     "mitosis:watch": "chokidar \"src/components/**/*.tsx\" -c \"if [ '{event}' = 'change' ] || [ '{event}' = 'add' ]; then zx scripts/compile-mitosis.mjs vue {path}; fi;\"",
-    "mitosis:build": "mitosis build",
+    "mitosis:build": "sh scripts/build-mitosis.sh",
     "tailwind:watch": "postcss src/styles/**/*.css --dir styles --watch",
     "tailwind:build": "postcss src/styles/**/*.css --dir styles --env production"
   },
