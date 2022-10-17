@@ -22,6 +22,11 @@
   src: url(Anuphan-SemiBold.otf) format('opentype');
 }
 @font-face {
+  font-family: 'Anuphan';
+  font-weight: 700;
+  src: url(Anuphan-Bold.otf) format('opentype');
+}
+@font-face {
   font-family: 'Bai Jamjuri';
   src: url(BaiJamjuree-Regular.ttf) format('truetype');
 }

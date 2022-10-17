@@ -31,14 +31,16 @@ We provide CSS classes for font family, weight and size
 ### Bold
 
 - <span class="wv-font-kondolar wv-font-bold">Kondolar Thai Bold</span>
+- <span class="wv-font-anuphan wv-font-bold">Anuphan Bold</span>
 - <span class="wv-font-baijamjuri wv-font-bold">Bai Jamjuri Bold</span>
 
 ```html
 <span class="wv-font-kondolar wv-font-bold">Kondolar Thai Bold</span>
+<span class="wv-font-anuphan wv-font-bold">Anuphan Bold</span>
 <span class="wv-font-baijamjuri wv-font-bold">Bai Jamjuri Bold</span>
 ```
 
-### Bold
+### Black
 
 - <span class="wv-font-kondolar wv-font-black">Kondolar Thai Black</span>
 
