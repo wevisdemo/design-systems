@@ -1,9 +1,13 @@
-yarn run mitosis build
+yarn mitosis build
 
-cp components/react/**/*.tsx components/react
-cp components/svelte/**/*.svelte components/svelte
-cp components/vue2/**/*.vue components/vue2
+cd components
 
-rm -r components/react/src
-rm -r components/svelte/src
-rm -r components/vue2/src
+find . -wholename "*.tsx" -exec mv '{}' . \;
+find . -wholename "*.svelte" -exec mv '{}' . \;
+find . -wholename "*.vue" -exec mv '{}' . \;
+
+rm -r react
+rm -r svelte
+rm -r vue2
+
+cd ..
