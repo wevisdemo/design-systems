@@ -2,4 +2,3 @@ node_modules
 build
 /components
 /styles
-*.lite.tsx

@@ -1,4 +1,6 @@
-yarn mitosis build
+rm -rf components
+
+npx mitosis build --config=mitosis.config.cjs
 
 cd components
 
