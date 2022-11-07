@@ -12,9 +12,11 @@
     "tailwind:build": "postcss src/styles/**/*.css --dir styles --env production"
   },
   "devDependencies": {
-    "@builder.io/eslint-plugin-mitosis": "^0.0.10",
-    "@builder.io/mitosis": "^0.0.72",
-    "@builder.io/mitosis-cli": "^0.0.31",
+    "@builder.io/eslint-plugin-mitosis": "^0.0.11",
+    "@builder.io/mitosis": "^0.0.76",
+    "@builder.io/mitosis-cli": "^0.0.34",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
     "autoprefixer": "^10.4.2",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^7.0.0",
@@ -24,6 +26,7 @@
     "postcss-cli": "^9.1.0",
     "postcss-import": "^14.0.2",
     "tailwindcss": "^3.0.15",
+    "typescript": "^4.8.4",
     "zx": "^4.3.0"
   },
   "repository": {

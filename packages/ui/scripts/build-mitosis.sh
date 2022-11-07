@@ -12,4 +12,8 @@ rm -r react
 rm -r svelte
 rm -r vue2
 
+npx tsc -p tsconfig.react.json
+
+rm *.tsx
+
 cd ..
