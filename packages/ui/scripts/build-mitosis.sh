@@ -1,19 +1,14 @@
-rm -rf components
+rm -rf react svelte vue2
 
 npx mitosis build --config=mitosis.config.cjs
 
-cd components
+find react -wholename "*.tsx" -exec mv '{}' react \;
+find svelte -wholename "*.svelte" -exec mv '{}' svelte \;
+find vue2 -wholename "*.vue" -exec mv '{}' vue2 \;
 
-find . -wholename "*.tsx" -exec mv '{}' . \;
-find . -wholename "*.svelte" -exec mv '{}' . \;
-find . -wholename "*.vue" -exec mv '{}' . \;
-
-rm -r react
-rm -r svelte
-rm -r vue2
+rm -r react/src
+rm -r svelte/src
+rm -r vue2/src
 
 npx tsc -p tsconfig.react.json
-
-rm *.tsx
-
-cd ..
+rm react/*.tsx

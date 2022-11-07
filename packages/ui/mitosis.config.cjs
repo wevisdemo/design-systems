@@ -1,7 +1,7 @@
 module.exports = {
   files: 'src/components/**',
   targets: ['vue2', 'svelte', 'react'],
-  dest: 'components',
+  dest: '.',
   getTargetPath: function (prop) {
     return prop.target;
   },
