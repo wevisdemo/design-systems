@@ -18,6 +18,6 @@ jobs:
       - name: Build
         run: yarn build
       - name: Publish UI to NPM package
-        run: npm publish ./packages/ui
+        run: npm publish ui
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}

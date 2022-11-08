@@ -27,7 +27,7 @@
   "workspaces": {
     "packages": [
       "docs",
-      "packages/*"
+      "ui"
     ]
   }
 }

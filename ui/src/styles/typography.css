@@ -1,3 +1,50 @@
+/* Import font face */
+@font-face {
+  font-family: 'Kondolar Thai';
+  src: url(https://design-systems.wevis.info/KondolarThai-Regular.otf)
+    format('opentype');
+}
+@font-face {
+  font-family: 'Kondolar Thai';
+  font-weight: 700;
+  src: url(https://design-systems.wevis.info/KondolarThai-Bold.otf)
+    format('opentype');
+}
+@font-face {
+  font-family: 'Kondolar Thai';
+  font-weight: 900;
+  src: url(https://design-systems.wevis.info/KondolarThai-Black.otf)
+    format('opentype');
+}
+@font-face {
+  font-family: 'Anuphan';
+  src: url(https://design-systems.wevis.info/Anuphan-Regular.otf)
+    format('opentype');
+}
+@font-face {
+  font-family: 'Anuphan';
+  font-weight: 600;
+  src: url(https://design-systems.wevis.info/Anuphan-SemiBold.otf)
+    format('opentype');
+}
+@font-face {
+  font-family: 'Anuphan';
+  font-weight: 700;
+  src: url(https://design-systems.wevis.info/Anuphan-Bold.otf)
+    format('opentype');
+}
+@font-face {
+  font-family: 'Bai Jamjuri';
+  src: url(https://design-systems.wevis.info/BaiJamjuree-Regular.ttf)
+    format('truetype');
+}
+@font-face {
+  font-family: 'Bai Jamjuri';
+  font-weight: 700;
+  src: url(https://design-systems.wevis.info/BaiJamjuree-Bold.ttf)
+    format('truetype');
+}
+
 /* Font family */
 .wv-font-kondolar {
   font-family: 'Kondolar Thai', 'serif';
