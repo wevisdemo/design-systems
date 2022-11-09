@@ -1,6 +1,6 @@
 {
   "name": "@wevisdemo/ui",
-  "version": "4.1.1",
+  "version": "5.0.0",
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -34,7 +34,9 @@
     "url": "https://github.com/wevisdemo/design-systems.git"
   },
   "files": [
-    "/components",
+    "/react",
+    "/svelte",
+    "/vue2",
     "/styles"
   ]
 }
