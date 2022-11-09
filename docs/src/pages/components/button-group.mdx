@@ -3,8 +3,8 @@ title: Button Group
 layout: ../../layouts/MainLayout.astro
 ---
 
-import WvButton from '@wevisdemo/ui/react/button.jsx';
-import WvButtonGroup from '@wevisdemo/ui/react/button-group.jsx';
+import WvButton from '@wevisdemo/ui/react/button';
+import WvButtonGroup from '@wevisdemo/ui/react/button-group';
 
 Button container with spacing. Align hotizontally on desktop and vertically on mobile.
 
@@ -15,11 +15,9 @@ Button container with spacing. Align hotizontally on desktop and vertically on m
 </WvButtonGroup>
 
 ```jsx
-import WvButtonGroup from '@wevisdemo/ui/components/button-group.{jsx,js,svelte}';
-import WvButton from '@wevisdemo/ui/components/button.{jsx,js,svelte}';
-```
+import WvButtonGroup from '@wevisdemo/ui/{react,vue2,svelte}/button-group';
+import WvButton from '@wevisdemo/ui/{react,vue2,svelte}/button';
 
-```jsx
 <WvButtonGroup>
   <WvButton>A</WvButton>
   <WvButton>B</WvButton>

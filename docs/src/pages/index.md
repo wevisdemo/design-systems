@@ -4,6 +4,4 @@ description: Docs intro
 layout: ../layouts/MainLayout.astro
 ---
 
-**WARNING!: The project is under the early development stage.**
-
-This project aim to help any developer kick start a new WeVis project with ease using design systems which is a concensus between developers and designers.
+This project aim to help any developer kick start a new WeVis project with ease. The design systems are co-develop with the designers, making consistancy between the library and Figma design.

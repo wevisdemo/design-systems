@@ -16,44 +16,34 @@ or with **Yarn**
 ```shell
 yarn add @wevisdemo/ui
 ```
+## 2. Import the stylesheet
 
-## 2. Load fonts
+Import `@wevisdemo/ui/styles/index.css` as a global according to your framework.
 
-Fonts and coresponded css is hosted on WeVis server. Just include the `typography.css` in the html head.
+For example, with **NuxtJS**
 
-```html
-<link
-  rel="stylesheet"
-  href="https://design-systems.wevis.info/typography.css"
-/>
-```
-
-## 3. Import the stylesheets
-
-Make sure to import the following files:
-
-- Typography utility classes stylesheet `@wevisdemo/ui/styles/typography.css`
-- Components stylesheet `@wevisdemo/ui/styles/components.css`
-
-with **NuxtJS**, add these 2 files in the `css` array of `nuxt.config.js`
-
-```jsx
+```js
 //nuxt.config.js
 export default {
   ...otherConfig,
   css: [
-    '@wevisdemo/ui/styles/typography.css',
-    '@wevisdemo/ui/styles/components.css',
+    '@wevisdemo/ui/styles/index.css',
   ],
 };
 ```
 
+Most framwork can be imported to main JavaScript or template file directly
+
+```js
+import '@wevisdemo/ui/styles/index.css';
+```
+
 ## 4. Use the components
 
-Components are available for **Vue**, **React**, and **Svelte** which coresponded file (`.vue`, `.js` and `.svelte`) can be import with `Wv` name prefix. For example:
+Components are available for **Vue2**, **React**, and **Svelte** which separated in package sub-directoy. Recommends to import with `Wv` name prefix to avoid duplicated component name. For example:
 
 ```jsx
-import WvButton from '@wevisdemo/ui/components/button.{vue,js,svelte}';
+import WvButton from '@wevisdemo/ui/{react,vue2,svelte}/button';
 
 <WvButton>Hello</WvButton>;
 ```
