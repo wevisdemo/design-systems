@@ -1,0 +1,50 @@
+---
+title: Nav Button
+layout: ../../layouts/MainLayout.astro
+---
+
+import WvNavButton from '@wevisdemo/ui/react/nav-button.jsx';
+
+A button for navigation bar
+
+<WvNavButton>About</WvNavButton>
+
+```jsx
+import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,js,svelte}';
+```
+
+```jsx
+<WvNavButton>About</WvNavButton>
+```
+
+## Props
+
+| Name    | Type         | Default |
+| ------- | ------------ | ------- |
+| active  | `boolean`    | `false` |
+| dark    | `boolean`    | `false` |
+| onClick | `() => void` |         |
+
+## Slot / Children
+
+Button content
+
+## Examples
+
+**Active button**
+
+<WvNavButton active>About</WvNavButton>
+
+```jsx
+<WvNavButton active>About</WvNavButton>
+```
+
+**With dark theme**
+
+<WvNavButton dark active>About</WvNavButton>
+<WvNavButton dark>Report</WvNavButton>
+
+```jsx
+<WvNavButton dark active>About</WvNavButton>
+<WvNavButton dark>Report</WvNavButton>
+```

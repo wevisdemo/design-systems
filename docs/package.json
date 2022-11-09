@@ -1,17 +1,26 @@
 {
-  "name": "docs",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "vuepress": "^1.9.7"
+  "name": "@example/docs",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "check": "astro check && tsc",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@wevisdemo/ui": "*",
-    "typography": "*"
-  },
-  "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "@astrojs/mdx": "^0.11.5",
+    "@astrojs/preact": "^1.2.0",
+    "@astrojs/react": "^1.2.1",
+    "@types/node": "^18.0.0",
+    "@types/react": "^17.0.45",
+    "@types/react-dom": "^18.0.0",
+    "astro": "^1.6.0",
+    "preact": "^10.7.3",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   }
 }

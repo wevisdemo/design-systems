@@ -1,0 +1,38 @@
+---
+title: Nav Dropdown Item
+layout: ../../layouts/MainLayout.astro
+---
+
+import WvNavDropdownItem from '@wevisdemo/ui/react/nav-dropdown-item.jsx';
+
+A dropdown for navigation bar. `WvNavDropdown` and `WvNavDropdownItem` must be used together.
+
+<WvNavDropdownItem>Topic 1</WvNavDropdownItem>
+
+```jsx
+import WvNavButton from '@wevisdemo/ui/components/nav-button.{vue,js,svelte}';
+```
+
+```jsx
+<WvNavDropdownItem>Topic 1</WvNavDropdownItem>
+```
+
+## Props
+
+| Name | Type    | Default |
+| ---- | ------- | ------- |
+| dark | boolean | `false` |
+
+## Slot / Children
+
+Item content
+
+## Examples
+
+**Dark theme**
+
+  <WvNavDropdownItem dark>Topic 1</WvNavDropdownItem>
+
+```jsx
+<WvNavDropdownItem dark>Topic 1</WvNavDropdownItem>
+```

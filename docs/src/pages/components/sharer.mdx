@@ -1,0 +1,77 @@
+---
+title: Sharer
+layout: ../../layouts/MainLayout.astro
+---
+
+import WvSharer from '@wevisdemo/ui/react/sharer.jsx';
+
+Social media share buttons
+
+<WvSharer url="https://wevis.info" />
+
+```jsx
+import WvSharer from '@wevisdemo/ui/components/sharer.{vue,js,svelte}';
+```
+
+```jsx
+<WvSharer url="https://wevis.info" />
+```
+
+## Props
+
+| Name          | Type    | Default                                                     |
+| ------------- | ------- | ----------------------------------------------------------- |
+| url           | string  | current page URL (get from `window.location.href` on mount) |
+| label         | string  | 'Share'                                                     |
+| hideLabel     | boolean | `false`                                                     |
+| light         | boolean | `false`                                                     |
+| outline       | boolean | `false`                                                     |
+| center        | boolean | `false`                                                     |
+| allowCopyLink | boolean | `false`                                                     |
+
+## Examples
+
+**Custom or hide label**
+
+<WvSharer label="Custom Label" />
+<WvSharer hideLabel />
+
+```jsx
+<WvSharer label="Custom Label" />
+<WvSharer hideLabel />
+```
+
+**Light**
+
+<WvSharer light/>
+
+```jsx
+  <WvSharer light/>
+```
+
+**Outline**
+
+<WvSharer outline />
+
+<WvSharer light outline />
+
+```jsx
+<WvSharer outline />
+<WvSharer light outline />
+```
+
+**Center**
+
+<WvSharer center />
+
+```jsx
+<WvSharer center />
+```
+
+**Allow copy link to clipboard**
+
+<WvSharer allowCopyLink outline />
+
+```jsx
+<WvSharer allowCopyLink outline />
+```
