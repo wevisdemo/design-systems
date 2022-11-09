@@ -24,7 +24,7 @@ export default function WvNavDropdown(props: WvNavDropdownProps) {
     >
       <button
         class="wv-font-anuphan wv-b7 wv_nav-button"
-        onClick={state.toggleList}
+        onClick={(event) => state.toggleList(event)}
       >
         <span>{props.label}</span>
         <svg
