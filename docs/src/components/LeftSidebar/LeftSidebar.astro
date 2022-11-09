@@ -1,6 +1,5 @@
 ---
 import { SIDEBAR } from '../../config';
-
 type Props = {
   currentPage: string;
 };
@@ -19,12 +18,10 @@ const currentPageMatch = currentPage.endsWith('/')
           <div class="nav-group">
             <h4>{header}</h4>
             <ul>
-              {children.map((child) => {
-                const url = Astro.site?.pathname + child.link;
-                return (
+              {children.map((child) => (
                   <li class="nav-link">
                     <a
-                      href={url}
+                      href={`${process.env.PUBLIC_ASTRO_BASE || ''}/${child.link}`}
                       aria-current={
                         currentPageMatch === child.link ? 'page' : false
                       }
@@ -32,8 +29,7 @@ const currentPageMatch = currentPage.endsWith('/')
                       {child.text}
                     </a>
                   </li>
-                );
-              })}
+                ))}
             </ul>
           </div>
         </li>

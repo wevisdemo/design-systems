@@ -5,5 +5,6 @@ import mdx from '@astrojs/mdx';
 
 export default defineConfig({
   integrations: [preact(), react(), mdx()],
-  site: `http://astro.build`,
+  site: `https://wevisdemo.github.io`,
+  base: process.env.PUBLIC_ASTRO_BASE || '/',
 });

@@ -21,8 +21,10 @@ import '../styles/index.css';
 />
 
 <!-- Scrollable a11y code helper -->
-<script src="/make-scrollable-code-focusable.js" is:inline>
-
+<script>
+	Array.from(document.getElementsByTagName('pre')).forEach((element) => {
+		element.setAttribute('tabindex', '0');
+	});
 </script>
 
 <!-- This is intentionally inlined to avoid FOUC -->

@@ -18,9 +18,9 @@ jobs:
       - name: Build
         run: yarn build
         env:
-          VUEPRESS_BASE: /design-systems/
+          PUBLIC_ASTRO_BASE: /design-systems
       - name: Deploy doc to Github Page
         uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
           branch: gh-pages
-          folder: ./docs/src/.vuepress/dist
+          folder: docs/dist

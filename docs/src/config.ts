@@ -52,7 +52,3 @@ export const SIDEBAR: Sidebar = {
   Typography: getSidebarItemFromDir('typography'),
   Components: getSidebarItemFromDir('components'),
 };
-
-// function getSidebarItemFromDir() {
-
-// }
