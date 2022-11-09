@@ -51,4 +51,5 @@ export const SIDEBAR: Sidebar = {
   ],
   Typography: getSidebarItemFromDir('typography'),
   Components: getSidebarItemFromDir('components'),
+  Cookbook: getSidebarItemFromDir('cookbook'),
 };
