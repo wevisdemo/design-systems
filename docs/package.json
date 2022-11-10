@@ -1,5 +1,5 @@
 {
-  "name": "@example/docs",
+  "name": "docs",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -21,6 +21,7 @@
     "astro": "^1.6.0",
     "preact": "^10.7.3",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "@wevisdemo/ui": "*"
   }
 }

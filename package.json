@@ -7,19 +7,6 @@
     "dev": "turbo run dev",
     "build": "turbo run build"
   },
-  "turbo": {
-    "baseBranch": "origin/main",
-    "pipeline": {
-      "dev": {
-        "cache": false
-      },
-      "build": {
-        "dependsOn": [
-          "^build"
-        ]
-      }
-    }
-  },
   "devDependencies": {
     "turbo": "^1.0.28"
   },
