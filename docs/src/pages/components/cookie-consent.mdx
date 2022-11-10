@@ -1,0 +1,10 @@
+---
+title: Cookie Consent
+layout: ../../layouts/MainLayout.astro
+---
+
+import WvCookieConsent from '@wevisdemo/ui/react/cookie-consent';
+
+Cookie consent banner and popup with action callback after user consent
+
+<WvCookieConsent client:load cookieOptions={['Analytics', 'Preference', 'Advertising']} />
