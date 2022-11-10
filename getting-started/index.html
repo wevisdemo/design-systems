@@ -37,23 +37,23 @@
   gtag('config', 'G-TEL60V1WM9');
 </script> -->
 
-    <!-- Page Metadata --><link rel="canonical" href="https://wevisdemo.github.io/design-systems/">
+    <!-- Page Metadata --><link rel="canonical" href="https://wevisdemo.github.io/design-systems/getting-started/">
 
 <!-- OpenGraph Tags -->
-<meta property="og:title" content="Introduction - WeVis Design Systems">
+<meta property="og:title" content="Getting started - WeVis Design Systems">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://wevisdemo.github.io/design-systems/">
+<meta property="og:url" content="https://wevisdemo.github.io/design-systems/getting-started/">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner-minimal.png?raw=true">
 <meta property="og:image:alt" content="WeVis design system documentation and cross-framework UI components">
-<meta name="description" property="og:description" content="Docs intro">
+<meta name="description" property="og:description" content="WeVis design system documentation and cross-framework UI components">
 <meta property="og:site_name" content="WeVis Design Systems">
 
 <!-- Twitter Tags -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="wevisdemo">
-<meta name="twitter:title" content="Introduction - WeVis Design Systems">
-<meta name="twitter:description" content="Docs intro">
+<meta name="twitter:title" content="Getting started - WeVis Design Systems">
+<meta name="twitter:description" content="WeVis design system documentation and cross-framework UI components">
 <meta name="twitter:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner-minimal.png?raw=true">
 <meta name="twitter:image:alt" content="WeVis design system documentation and cross-framework UI components">
 
@@ -65,7 +65,7 @@
 -->
 
     <title>
-      Introduction 🚀 WeVis Design Systems
+      Getting started 🚀 WeVis Design Systems
     </title>
     
     
@@ -212,12 +212,32 @@
       <div id="grid-main" class="astro-AJ7ZOWQ2">
         <article id="article" class="content astro-XKWXOMG2">
   <section class="main-section astro-XKWXOMG2">
-    <h1 class="content-title astro-XKWXOMG2" id="overview">Introduction</h1>
+    <h1 class="content-title astro-XKWXOMG2" id="overview">Getting started</h1>
     <nav class="block sm:hidden astro-XKWXOMG2">
-      <script>(self.Astro=self.Astro||{}).media=(s,a)=>{const t=async()=>{await(await s())()};if(a.value){const e=matchMedia(a.value);e.matches?t():e.addEventListener("change",t,{once:!0})}},window.dispatchEvent(new Event("astro:media"));</script><astro-island uid="1HRXvW" component-url="/design-systems/TableOfContents.eeee1ec0.js" component-export="default" renderer-url="/design-systems/client.736a23ab.js" props="{&quot;headings&quot;:[1,&quot;[]&quot;],&quot;class&quot;:[0,&quot;astro-XKWXOMG2&quot;]}" ssr="" client="media" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(max-width: 50em)&quot;}"></astro-island>
+      <script>(self.Astro=self.Astro||{}).media=(s,a)=>{const t=async()=>{await(await s())()};if(a.value){const e=matchMedia(a.value);e.matches?t():e.addEventListener("change",t,{once:!0})}},window.dispatchEvent(new Event("astro:media"));</script><astro-island uid="1dsenL" component-url="/design-systems/TableOfContents.eeee1ec0.js" component-export="default" renderer-url="/design-systems/client.736a23ab.js" props="{&quot;headings&quot;:[1,&quot;[[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;1-install-the-package\&quot;],\&quot;text\&quot;:[0,\&quot;1. Install the package\&quot;]}],[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;2-import-the-stylesheet\&quot;],\&quot;text\&quot;:[0,\&quot;2. Import the stylesheet\&quot;]}],[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;4-use-the-components\&quot;],\&quot;text\&quot;:[0,\&quot;4. Use the components\&quot;]}]]&quot;],&quot;class&quot;:[0,&quot;astro-XKWXOMG2&quot;]}" ssr="" client="media" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(max-width: 50em)&quot;}" await-children=""><h2 class="heading">On this page</h2><ul><li class="heading-link depth-2"><a href="#1-install-the-package">1. Install the package</a></li><li class="heading-link depth-2"><a href="#2-import-the-stylesheet">2. Import the stylesheet</a></li><li class="heading-link depth-2"><a href="#4-use-the-components">4. Use the components</a></li></ul></astro-island>
     </nav>
-    <p>This project aim to help any developer kick start a new WeVis project with ease. The design systems are co-develop with the designers, making consistancy between the library and Figma design.</p>
-<p><a href="https://github.com/wevisdemo/design-systems">View source code on GitHub</a></p>
+    <h2 id="1-install-the-package">1. Install the package</h2>
+<p>with <strong>NPM</strong></p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">npm i @wevisdemo/ui</span></span></code></pre>
+<p>or with <strong>Yarn</strong></p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #C9D1D9">yarn add @wevisdemo/ui</span></span></code></pre>
+<h2 id="2-import-the-stylesheet">2. Import the stylesheet</h2>
+<p>Import <code>@wevisdemo/ui/styles/index.css</code> as a global according to your framework.</p>
+<p>For example, with <strong>NuxtJS</strong></p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #8B949E">//nuxt.config.js</span></span>
+<span class="line"><span style="color: #FF7B72">export</span><span style="color: #FFA657"> </span><span style="color: #FF7B72">default</span><span style="color: #FFA657"> {</span></span>
+<span class="line"><span style="color: #FFA657">  </span><span style="color: #FF7B72">...</span><span style="color: #C9D1D9">otherConfig</span><span style="color: #FFA657">,</span></span>
+<span class="line"><span style="color: #FFA657">  </span><span style="color: #C9D1D9">css: [</span></span>
+<span class="line"><span style="color: #C9D1D9">    </span><span style="color: #A5D6FF">'@wevisdemo/ui/styles/index.css'</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">  ]</span><span style="color: #FFA657">,</span></span>
+<span class="line"><span style="color: #FFA657">}</span><span style="color: #C9D1D9">;</span></span></code></pre>
+<p>Most framwork can be imported to main JavaScript or template file directly</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #FF7B72">import</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'@wevisdemo/ui/styles/index.css'</span><span style="color: #C9D1D9">;</span></span></code></pre>
+<h2 id="4-use-the-components">4. Use the components</h2>
+<p>Components are available for <strong>Vue2</strong>, <strong>React</strong>, and <strong>Svelte</strong> which separated in package sub-directoy. Recommends to import with <code>Wv</code> name prefix to avoid duplicated component name. For example:</p>
+<pre is:raw="" class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #FF7B72">import</span><span style="color: #C9D1D9"> WvButton </span><span style="color: #FF7B72">from</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">'@wevisdemo/ui/{react,vue2,svelte}/button'</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">&#x3C;</span><span style="color: #7EE787">WvButton</span><span style="color: #C9D1D9">>Hello&#x3C;/</span><span style="color: #7EE787">WvButton</span><span style="color: #C9D1D9">>;</span></span></code></pre>
   </section>
 </article>
 
@@ -226,7 +246,7 @@
       <aside id="grid-right" class="grid-sidebar astro-AJ7ZOWQ2" title="Table of Contents">
         <nav class="sidebar-nav astro-MPPYMKLE" aria-labelledby="grid-right">
   <div class="sidebar-nav-inner astro-MPPYMKLE">
-    <astro-island uid="Z1PlURP" component-url="/design-systems/TableOfContents.eeee1ec0.js" component-export="default" renderer-url="/design-systems/client.736a23ab.js" props="{&quot;headings&quot;:[1,&quot;[]&quot;],&quot;class&quot;:[0,&quot;astro-MPPYMKLE&quot;]}" ssr="" client="media" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(min-width: 50em)&quot;}"></astro-island>
+    <astro-island uid="Z2kLF11" component-url="/design-systems/TableOfContents.eeee1ec0.js" component-export="default" renderer-url="/design-systems/client.736a23ab.js" props="{&quot;headings&quot;:[1,&quot;[[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;1-install-the-package\&quot;],\&quot;text\&quot;:[0,\&quot;1. Install the package\&quot;]}],[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;2-import-the-stylesheet\&quot;],\&quot;text\&quot;:[0,\&quot;2. Import the stylesheet\&quot;]}],[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;4-use-the-components\&quot;],\&quot;text\&quot;:[0,\&quot;4. Use the components\&quot;]}]]&quot;],&quot;class&quot;:[0,&quot;astro-MPPYMKLE&quot;]}" ssr="" client="media" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(min-width: 50em)&quot;}" await-children=""><h2 class="heading">On this page</h2><ul><li class="heading-link depth-2"><a href="#1-install-the-package">1. Install the package</a></li><li class="heading-link depth-2"><a href="#2-import-the-stylesheet">2. Import the stylesheet</a></li><li class="heading-link depth-2"><a href="#4-use-the-components">4. Use the components</a></li></ul></astro-island>
   </div>
 </nav>
 

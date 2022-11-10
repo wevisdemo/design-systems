@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-us" class="initial astro-AJ7ZOWQ2">
+  <head>
+    <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="generator" content="Astro v1.6.5">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+<link rel="sitemap" href="/sitemap.xml">
+
+<!-- Preload Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- Scrollable a11y code helper -->
+
+
+<!-- This is intentionally inlined to avoid FOUC -->
+<script>
+	const root = document.documentElement;
+	const theme = localStorage.getItem('theme');
+	if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+		root.classList.add('theme-dark');
+	} else {
+		root.classList.remove('theme-dark');
+	}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEL60V1WM9" is:inline></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TEL60V1WM9');
+</script> -->
+
+    <!-- Page Metadata --><link rel="canonical" href="https://wevisdemo.github.io/design-systems/components/navbar/">
+
+<!-- OpenGraph Tags -->
+<meta property="og:title" content="Navbar - WeVis Design Systems">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wevisdemo.github.io/design-systems/components/navbar/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner-minimal.png?raw=true">
+<meta property="og:image:alt" content="WeVis design system documentation and cross-framework UI components">
+<meta name="description" property="og:description" content="WeVis design system documentation and cross-framework UI components">
+<meta property="og:site_name" content="WeVis Design Systems">
+
+<!-- Twitter Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="wevisdemo">
+<meta name="twitter:title" content="Navbar - WeVis Design Systems">
+<meta name="twitter:description" content="WeVis design system documentation and cross-framework UI components">
+<meta name="twitter:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner-minimal.png?raw=true">
+<meta name="twitter:image:alt" content="WeVis design system documentation and cross-framework UI components">
+
+<!--
+  TODO: Add json+ld data, maybe https://schema.org/APIReference makes sense?
+  Docs: https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data
+  https://www.npmjs.com/package/schema-dts seems like a great resource for implementing this.
+  Even better, there's a React component that integrates with `schema-dts`: https://github.com/google/react-schemaorg
+-->
+
+    <title>
+      Navbar 🚀 WeVis Design Systems
+    </title>
+    
+    
+  <link rel="stylesheet" href="/design-systems/assets/getting-started.69b89f0e.css" /><script type="module">Array.from(document.getElementsByTagName("pre")).forEach(e=>{e.setAttribute("tabindex","0")});
+</script></head>
+
+  <body class="astro-AJ7ZOWQ2">
+    <header class="astro-PVJIMF3C">
+  <a href="#article" class="sr-only focus:not-sr-only skiplink astro-2M2N6DPX"><span class="astro-2M2N6DPX">Skip to Content</span></a>
+
+
+  <nav class="nav-wrapper astro-PVJIMF3C" title="Top Navigation">
+    <div class="menu-toggle astro-PVJIMF3C">
+      <style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Z6EAcE" component-url="/design-systems/SidebarToggle.570cff73.js" component-export="default" renderer-url="/design-systems/client.736a23ab.js" props="{&quot;class&quot;:[0,&quot;astro-PVJIMF3C&quot;]}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;SidebarToggle&quot;,&quot;value&quot;:true}" await-children=""><button type="button" aria-pressed="false" id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg><span class="sr-only">Toggle sidebar</span></button></astro-island>
+    </div>
+    <div class="logo flex astro-PVJIMF3C">
+      <a href="/" class="astro-PVJIMF3C">
+        <h1 class="astro-PVJIMF3C">WeVis Design Systems</h1>
+      </a>
+    </div>
+    <div style="flex-grow: 1;" class="astro-PVJIMF3C"></div>
+    <div class="astro-PVJIMF3C">
+      <script>(self.Astro=self.Astro||{}).visible=(s,c,n)=>{const r=async()=>{await(await s())()};let i=new IntersectionObserver(e=>{for(const t of e)if(!!t.isIntersecting){i.disconnect(),r();break}});for(let e=0;e<n.children.length;e++){const t=n.children[e];i.observe(t)}},window.dispatchEvent(new Event("astro:visible"));</script><astro-island uid="uxNmz" component-url="/design-systems/ThemeToggleButton.78a878d6.js" component-export="default" renderer-url="/design-systems/client.736a23ab.js" props="{&quot;class&quot;:[0,&quot;astro-PVJIMF3C&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle"><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme" /></label></div></astro-island>
+    </div>
+  </nav>
+</header>
+
+
+
+
+    <main class="layout astro-AJ7ZOWQ2">
+      <aside id="grid-left" class="grid-sidebar astro-AJ7ZOWQ2" title="Site Navigation">
+        <nav aria-labelledby="grid-left" class="astro-DFOLPFH3">
+  <ul class="nav-groups astro-DFOLPFH3">
+    <li class="astro-DFOLPFH3">
+          <div class="nav-group astro-DFOLPFH3">
+            <h4 class="astro-DFOLPFH3">Guide</h4>
+            <ul class="astro-DFOLPFH3">
+              <li class="nav-link astro-DFOLPFH3">
+                    <a href="/design-systems/" class="astro-DFOLPFH3">
+                      Introduction
+                    </a>
+                  </li><li class="nav-link astro-DFOLPFH3">
+                    <a href="/design-systems/getting-started" class="astro-DFOLPFH3">
+                      Geting Started
+                    </a>
+                  </li>
+            </ul>
+          </div>
+        </li><li class="astro-DFOLPFH3">
+          <div class="nav-group astro-DFOLPFH3">
+            <h4 class="astro-DFOLPFH3">Typography</h4>
+            <ul class="astro-DFOLPFH3">
+              <li class="nav-link astro-DFOLPFH3">
+                    <a href="/design-systems/typography/utility-classes" class="astro-DFOLPFH3">
+                      Utility Classes
+                    </a>
+                  </li>
+            </ul>
+          </div>
+        </li><li class="astro-DFOLPFH3">
+          <div class="nav-group astro-DFOLPFH3">
+            <h4 class="astro-DFOLPFH3">Components</h4>
+            <ul class="astro-DFOLPFH3">
+              <li class="nav-link astro-DFOLPFH3">
+                    <a href="/design-systems/components/button-group" class="astro-DFOLPFH3">
+                      Button Group
+                    </a>
+                  </li><li class="nav-link astro-DFOLPFH3">
+                    <a href="/design-systems/components/button" class="astro-DFOLPFH3">
+                      Button
+                    </a>
+                  </li><li class="nav-link astro-DFOLPFH3">
+                    <a href="/design-systems/components/container" class="astro-DFOLPFH3">
+                      Container
+                    </a>
+                  </li><li class="nav-link astro-DFOLPFH3">
+                    <a href="/design-systems/components/cookie-consent" class="astro-DFOLPFH3">
+                      Cookie Consent
+                    </a>
+                  </li><li class="nav-link astro-DFOLPFH3">
+                    <a href="/design-systems/components/footer" class="astro-DFOLPFH3">
+                      Footer
+                    </a>
+                  </li><li class="nav-link astro-DFOLPFH3">
+                    <a href="/design-systems/components/nav-button" class="astro-DFOLPFH3">
+                      Nav Button
+                    </a>
+                  </li><li class="nav-link astro-DFOLPFH3">
+                    <a href="/design-systems/components/nav-dropdown-item" class="astro-DFOLPFH3">
+                      Nav Dropdown Item
+                    </a>
+                  </li><li class="nav-link astro-DFOLPFH3">
+                    <a href="/design-systems/components/nav-dropdown" class="astro-DFOLPFH3">
+                      Nav Dropdown
+                    </a>
+                  </li><li class="nav-link astro-DFOLPFH3">
+                    <a href="/design-systems/components/navbar" class="astro-DFOLPFH3">
+                      Navbar
+                    </a>
+                  </li><li class="nav-link astro-DFOLPFH3">
+                    <a href="/design-systems/components/paragraph-group" class="astro-DFOLPFH3">
+                      Paragraph Group
+                    </a>
+                  </li><li class="nav-link astro-DFOLPFH3">
+                    <a href="/design-systems/components/sharer" class="astro-DFOLPFH3">
+                      Sharer
+                    </a>
+                  </li>
+            </ul>
+          </div>
+        </li><li class="astro-DFOLPFH3">
+          <div class="nav-group astro-DFOLPFH3">
+            <h4 class="astro-DFOLPFH3">Cookbook</h4>
+            <ul class="astro-DFOLPFH3">
+              <li class="nav-link astro-DFOLPFH3">
+                    <a href="/design-systems/cookbook/about-page" class="astro-DFOLPFH3">
+                      About Page
+                    </a>
+                  </li><li class="nav-link astro-DFOLPFH3">
+                    <a href="/design-systems/cookbook/navigation-bar" class="astro-DFOLPFH3">
+                      Navigation Bar
+                    </a>
+                  </li>
+            </ul>
+          </div>
+        </li>
+  </ul>
+</nav>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    var target = document.querySelector('[aria-current="page"]');
+    if (target && target.offsetTop > window.innerHeight - 100) {
+      document.querySelector('.nav-groups').scrollTop = target.offsetTop;
+    }
+  });
+</script>
+
+
+
+
+      </aside>
+      <div id="grid-main" class="astro-AJ7ZOWQ2">
+        <article id="article" class="content astro-XKWXOMG2">
+  <section class="main-section astro-XKWXOMG2">
+    <h1 class="content-title astro-XKWXOMG2" id="overview">Navbar</h1>
+    <nav class="block sm:hidden astro-XKWXOMG2">
+      <script>(self.Astro=self.Astro||{}).media=(s,a)=>{const t=async()=>{await(await s())()};if(a.value){const e=matchMedia(a.value);e.matches?t():e.addEventListener("change",t,{once:!0})}},window.dispatchEvent(new Event("astro:media"));</script><astro-island uid="Zpretx" component-url="/design-systems/TableOfContents.eeee1ec0.js" component-export="default" renderer-url="/design-systems/client.736a23ab.js" props="{&quot;headings&quot;:[1,&quot;[[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;props\&quot;],\&quot;text\&quot;:[0,\&quot;Props\&quot;]}],[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;slot--children\&quot;],\&quot;text\&quot;:[0,\&quot;Slot / Children\&quot;]}],[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;examples\&quot;],\&quot;text\&quot;:[0,\&quot;Examples\&quot;]}]]&quot;],&quot;class&quot;:[0,&quot;astro-XKWXOMG2&quot;]}" ssr="" client="media" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(max-width: 50em)&quot;}" await-children=""><h2 class="heading">On this page</h2><ul><li class="heading-link depth-2"><a href="#props">Props</a></li><li class="heading-link depth-2"><a href="#slot--children">Slot / Children</a></li><li class="heading-link depth-2"><a href="#examples">Examples</a></li></ul></astro-island>
+    </nav>
+    <p>Main container for navigation bar group. Hamburger menu will be used to show slot items in mobile.</p>
+<div class="wv_navbar wv_navbar--white"><div class="wv_navbar__logo"><a class="wv_navbar__logo__wevis" href="/"><svg viewBox="0 0 110 37"><path d="M79.0175 35.3009V31.1026L80.3913 30.7904C80.7035 30.7568 80.7707 30.6511 80.7707 30.3101V16.8795C80.7707 16.6057 80.7035 16.5 80.3913 16.3991L79.0175 16.0581V11.8839H89.4843V16.0869L88.1057 16.4328C87.7982 16.5336 87.7262 16.6393 87.7262 16.9131V30.3293C87.7262 30.6367 87.7982 30.7087 88.072 30.8096L89.4843 31.1891V35.3201L79.0175 35.3009Z"></path><path d="M59.962 35.3009L54.1257 16.8267C54.1054 16.7467 54.0615 16.6748 53.9999 16.62C53.9382 16.5652 53.8616 16.5301 53.7799 16.5192L51.9594 16.2118V11.9511H63.7375V16.2118L62.3637 16.6249C62.2309 16.6424 62.1089 16.7076 62.0205 16.8083C61.9321 16.9091 61.8834 17.0385 61.8834 17.1725C61.9069 17.5573 61.9762 17.9378 62.0899 18.3061L64.5973 28.1965H64.7655L67.2633 18.3205C67.3733 17.9513 67.4425 17.5712 67.4698 17.1869C67.4618 17.0499 67.406 16.92 67.3121 16.82C67.2182 16.7199 67.0921 16.656 66.9559 16.6393L65.6157 16.2262V11.9655H77.0864V16.1926L75.1987 16.5673C75.1134 16.5845 75.035 16.6265 74.9735 16.688C74.912 16.7495 74.87 16.8278 74.8528 16.9131L69.1895 35.3153L59.962 35.3009Z"></path><path d="M91.8236 33.6148C91.8464 31.4846 91.9971 29.3576 92.2751 27.2454H97.9096L98.462 29.9306C99.1838 30.173 99.9391 30.301 100.7 30.31C102.007 30.31 102.867 29.724 102.867 28.7921C102.867 27.6249 101.387 27.1782 99.6293 26.6594C96.1179 25.593 91.9197 24.2144 91.9197 18.772C91.9197 13.3297 95.4983 11.5428 100.907 11.5428C104.351 11.5428 106.59 12.4362 108.996 13.5747C109.031 15.5893 108.905 17.6035 108.621 19.5982H102.982L102.708 17.2253C102.162 16.9957 101.576 16.878 100.984 16.8795C99.7109 16.8795 98.8847 17.1869 98.8847 18.186C98.8847 19.3581 100.47 20.0498 102.19 20.631C105.552 21.731 109.837 23.2489 109.837 28.2445C109.837 33.2402 106.666 35.6803 100.676 35.6803C97.6083 35.6612 94.5834 34.9555 91.8236 33.6148Z"></path><path d="M13.7716 11.9511V16.2022L15.4576 16.6826C16.159 16.8699 16.1493 17.2302 15.7843 18.3205L12.5179 28.2205H12.2825L9.7607 18.3205C9.47729 17.2638 9.4821 16.8219 10.0873 16.6826L11.879 16.2022V11.9511H0V16.2022L1.9214 16.5769C2.10873 16.6249 2.15197 16.7162 2.2 16.9035L7.96419 35.3009H16.2502L19.1323 25.5258L22.0144 35.2865H30.3245L36.0886 16.8891C36.1107 16.8087 36.1533 16.7354 36.2122 16.6765C36.2712 16.6175 36.3445 16.5749 36.4249 16.5529L38.2838 16.1878V11.9367H26.4144V16.1878L28.2061 16.6681C28.8162 16.8074 28.8162 17.2494 28.5328 18.3061L26.0109 28.2061H25.7803L22.4948 18.3205C22.1345 17.2302 22.1201 16.8795 22.8214 16.6826L24.5074 16.2022V11.9511H13.7716Z"></path><path d="M43.7167 24.7524H46.8245V23.8686C46.8245 22.9079 46.2769 22.3987 45.2874 22.3987C44.2979 22.3987 43.7167 22.9127 43.7167 23.8686V24.7524ZM37.0927 28.7825V24.2768C37.0927 20.1458 40.3014 17.4127 45.1529 17.4127C50.0044 17.4127 53.2084 20.1458 53.2084 24.2768V28.1196H43.7167V29.0419C43.7167 30.0314 44.8791 30.6799 46.1184 30.6799C47.3577 30.6799 48.5778 30.1323 48.7796 29.2821H53.1844V32.6445C51.4119 34.7293 48.7123 35.6515 45.9119 35.6515C40.6472 35.6467 37.0927 32.9135 37.0927 28.7825Z"></path><path d="M84.4022 9.79911C86.4449 9.79911 88.1009 8.14315 88.1009 6.10042C88.1009 4.05769 86.4449 2.40173 84.4022 2.40173C82.3594 2.40173 80.7035 4.05769 80.7035 6.10042C80.7035 8.14315 82.3594 9.79911 84.4022 9.79911Z"></path></svg></a></div><div class="wv_navbar__menu wv_navbar__menu--desktop wv_navbar__menu--hide-mobile"></div><button class="wv_navbar__hamburger-button"><svg width="15" height="12" viewBox="0 0 15 12"><rect width="15" height="2"></rect><rect y="5" width="15" height="2"></rect><rect y="10" width="15" height="2"></rect></svg></button></div>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#FF7B72">import</span><span style="color:#C9D1D9"> WvNavbar </span><span style="color:#FF7B72">from</span><span style="color:#C9D1D9"> </span><span style="color:#A5D6FF">&#39;@wevisdemo/ui/{react,vue2,svelte}/navbar&#39;</span><span style="color:#C9D1D9">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvNavbar</span><span style="color:#C9D1D9"> /&gt;</span></span></code></pre>
+<h2 id="props">Props</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Name</th><th>Type</th><th>Default</th></tr></thead><tbody><tr><td>homeHref</td><td>string</td><td><code>/</code></td></tr><tr><td>logoAddonSrc</td><td>string</td><td></td></tr><tr><td>title</td><td>string</td><td></td></tr><tr><td>dark</td><td>boolean</td><td><code>false</code></td></tr><tr><td>alwayShowSlot</td><td>boolean</td><td><code>false</code></td></tr></tbody></table>
+<h2 id="slot--children">Slot / Children</h2>
+<p>Elements in the right column on desktop / hamburger menu drop down on mobile</p>
+<h2 id="examples">Examples</h2>
+<p><strong>With title and slot</strong></p>
+<div class="wv_navbar wv_navbar--white"><div class="wv_navbar__logo"><a class="wv_navbar__logo__wevis" href="/"><svg viewBox="0 0 110 37"><path d="M79.0175 35.3009V31.1026L80.3913 30.7904C80.7035 30.7568 80.7707 30.6511 80.7707 30.3101V16.8795C80.7707 16.6057 80.7035 16.5 80.3913 16.3991L79.0175 16.0581V11.8839H89.4843V16.0869L88.1057 16.4328C87.7982 16.5336 87.7262 16.6393 87.7262 16.9131V30.3293C87.7262 30.6367 87.7982 30.7087 88.072 30.8096L89.4843 31.1891V35.3201L79.0175 35.3009Z"></path><path d="M59.962 35.3009L54.1257 16.8267C54.1054 16.7467 54.0615 16.6748 53.9999 16.62C53.9382 16.5652 53.8616 16.5301 53.7799 16.5192L51.9594 16.2118V11.9511H63.7375V16.2118L62.3637 16.6249C62.2309 16.6424 62.1089 16.7076 62.0205 16.8083C61.9321 16.9091 61.8834 17.0385 61.8834 17.1725C61.9069 17.5573 61.9762 17.9378 62.0899 18.3061L64.5973 28.1965H64.7655L67.2633 18.3205C67.3733 17.9513 67.4425 17.5712 67.4698 17.1869C67.4618 17.0499 67.406 16.92 67.3121 16.82C67.2182 16.7199 67.0921 16.656 66.9559 16.6393L65.6157 16.2262V11.9655H77.0864V16.1926L75.1987 16.5673C75.1134 16.5845 75.035 16.6265 74.9735 16.688C74.912 16.7495 74.87 16.8278 74.8528 16.9131L69.1895 35.3153L59.962 35.3009Z"></path><path d="M91.8236 33.6148C91.8464 31.4846 91.9971 29.3576 92.2751 27.2454H97.9096L98.462 29.9306C99.1838 30.173 99.9391 30.301 100.7 30.31C102.007 30.31 102.867 29.724 102.867 28.7921C102.867 27.6249 101.387 27.1782 99.6293 26.6594C96.1179 25.593 91.9197 24.2144 91.9197 18.772C91.9197 13.3297 95.4983 11.5428 100.907 11.5428C104.351 11.5428 106.59 12.4362 108.996 13.5747C109.031 15.5893 108.905 17.6035 108.621 19.5982H102.982L102.708 17.2253C102.162 16.9957 101.576 16.878 100.984 16.8795C99.7109 16.8795 98.8847 17.1869 98.8847 18.186C98.8847 19.3581 100.47 20.0498 102.19 20.631C105.552 21.731 109.837 23.2489 109.837 28.2445C109.837 33.2402 106.666 35.6803 100.676 35.6803C97.6083 35.6612 94.5834 34.9555 91.8236 33.6148Z"></path><path d="M13.7716 11.9511V16.2022L15.4576 16.6826C16.159 16.8699 16.1493 17.2302 15.7843 18.3205L12.5179 28.2205H12.2825L9.7607 18.3205C9.47729 17.2638 9.4821 16.8219 10.0873 16.6826L11.879 16.2022V11.9511H0V16.2022L1.9214 16.5769C2.10873 16.6249 2.15197 16.7162 2.2 16.9035L7.96419 35.3009H16.2502L19.1323 25.5258L22.0144 35.2865H30.3245L36.0886 16.8891C36.1107 16.8087 36.1533 16.7354 36.2122 16.6765C36.2712 16.6175 36.3445 16.5749 36.4249 16.5529L38.2838 16.1878V11.9367H26.4144V16.1878L28.2061 16.6681C28.8162 16.8074 28.8162 17.2494 28.5328 18.3061L26.0109 28.2061H25.7803L22.4948 18.3205C22.1345 17.2302 22.1201 16.8795 22.8214 16.6826L24.5074 16.2022V11.9511H13.7716Z"></path><path d="M43.7167 24.7524H46.8245V23.8686C46.8245 22.9079 46.2769 22.3987 45.2874 22.3987C44.2979 22.3987 43.7167 22.9127 43.7167 23.8686V24.7524ZM37.0927 28.7825V24.2768C37.0927 20.1458 40.3014 17.4127 45.1529 17.4127C50.0044 17.4127 53.2084 20.1458 53.2084 24.2768V28.1196H43.7167V29.0419C43.7167 30.0314 44.8791 30.6799 46.1184 30.6799C47.3577 30.6799 48.5778 30.1323 48.7796 29.2821H53.1844V32.6445C51.4119 34.7293 48.7123 35.6515 45.9119 35.6515C40.6472 35.6467 37.0927 32.9135 37.0927 28.7825Z"></path><path d="M84.4022 9.79911C86.4449 9.79911 88.1009 8.14315 88.1009 6.10042C88.1009 4.05769 86.4449 2.40173 84.4022 2.40173C82.3594 2.40173 80.7035 4.05769 80.7035 6.10042C80.7035 8.14315 82.3594 9.79911 84.4022 9.79911Z"></path></svg></a></div><div class="wv_navbar__title wv-font-kondolar wv-h9">SOME PROJECT</div><div class="wv_navbar__menu wv_navbar__menu--desktop wv_navbar__menu--hide-mobile"><button class="wv_nav-button wv-font-anuphan wv-b7 wv_nav-button--black wv_nav-button--active">About</button>
+<button class="wv_nav-button wv-font-anuphan wv-b7 wv_nav-button--black ">Report</button></div><button class="wv_navbar__hamburger-button"><svg width="15" height="12" viewBox="0 0 15 12"><rect width="15" height="2"></rect><rect y="5" width="15" height="2"></rect><rect y="10" width="15" height="2"></rect></svg></button></div>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvNavbar</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">title</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;SOME PROJECT&quot;</span><span style="color:#C9D1D9">&gt;</span></span>
+<span class="line"><span style="color:#C9D1D9">  &lt;</span><span style="color:#7EE787">WvNavButton</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">active</span><span style="color:#C9D1D9">&gt;About&lt;/</span><span style="color:#7EE787">WvNavButton</span><span style="color:#C9D1D9">&gt;</span></span>
+<span class="line"><span style="color:#C9D1D9">  &lt;</span><span style="color:#7EE787">WvNavButton</span><span style="color:#C9D1D9">&gt;Report&lt;/</span><span style="color:#7EE787">WvNavButton</span><span style="color:#C9D1D9">&gt;</span></span>
+<span class="line"><span style="color:#C9D1D9">&lt;/</span><span style="color:#7EE787">WvNavbar</span><span style="color:#C9D1D9">&gt;</span></span></code></pre>
+<p><strong>With dark theme</strong></p>
+<div class="wv_navbar wv_navbar--black"><div class="wv_navbar__logo"><a class="wv_navbar__logo__wevis" href="/"><svg viewBox="0 0 110 37"><path d="M79.0175 35.3009V31.1026L80.3913 30.7904C80.7035 30.7568 80.7707 30.6511 80.7707 30.3101V16.8795C80.7707 16.6057 80.7035 16.5 80.3913 16.3991L79.0175 16.0581V11.8839H89.4843V16.0869L88.1057 16.4328C87.7982 16.5336 87.7262 16.6393 87.7262 16.9131V30.3293C87.7262 30.6367 87.7982 30.7087 88.072 30.8096L89.4843 31.1891V35.3201L79.0175 35.3009Z"></path><path d="M59.962 35.3009L54.1257 16.8267C54.1054 16.7467 54.0615 16.6748 53.9999 16.62C53.9382 16.5652 53.8616 16.5301 53.7799 16.5192L51.9594 16.2118V11.9511H63.7375V16.2118L62.3637 16.6249C62.2309 16.6424 62.1089 16.7076 62.0205 16.8083C61.9321 16.9091 61.8834 17.0385 61.8834 17.1725C61.9069 17.5573 61.9762 17.9378 62.0899 18.3061L64.5973 28.1965H64.7655L67.2633 18.3205C67.3733 17.9513 67.4425 17.5712 67.4698 17.1869C67.4618 17.0499 67.406 16.92 67.3121 16.82C67.2182 16.7199 67.0921 16.656 66.9559 16.6393L65.6157 16.2262V11.9655H77.0864V16.1926L75.1987 16.5673C75.1134 16.5845 75.035 16.6265 74.9735 16.688C74.912 16.7495 74.87 16.8278 74.8528 16.9131L69.1895 35.3153L59.962 35.3009Z"></path><path d="M91.8236 33.6148C91.8464 31.4846 91.9971 29.3576 92.2751 27.2454H97.9096L98.462 29.9306C99.1838 30.173 99.9391 30.301 100.7 30.31C102.007 30.31 102.867 29.724 102.867 28.7921C102.867 27.6249 101.387 27.1782 99.6293 26.6594C96.1179 25.593 91.9197 24.2144 91.9197 18.772C91.9197 13.3297 95.4983 11.5428 100.907 11.5428C104.351 11.5428 106.59 12.4362 108.996 13.5747C109.031 15.5893 108.905 17.6035 108.621 19.5982H102.982L102.708 17.2253C102.162 16.9957 101.576 16.878 100.984 16.8795C99.7109 16.8795 98.8847 17.1869 98.8847 18.186C98.8847 19.3581 100.47 20.0498 102.19 20.631C105.552 21.731 109.837 23.2489 109.837 28.2445C109.837 33.2402 106.666 35.6803 100.676 35.6803C97.6083 35.6612 94.5834 34.9555 91.8236 33.6148Z"></path><path d="M13.7716 11.9511V16.2022L15.4576 16.6826C16.159 16.8699 16.1493 17.2302 15.7843 18.3205L12.5179 28.2205H12.2825L9.7607 18.3205C9.47729 17.2638 9.4821 16.8219 10.0873 16.6826L11.879 16.2022V11.9511H0V16.2022L1.9214 16.5769C2.10873 16.6249 2.15197 16.7162 2.2 16.9035L7.96419 35.3009H16.2502L19.1323 25.5258L22.0144 35.2865H30.3245L36.0886 16.8891C36.1107 16.8087 36.1533 16.7354 36.2122 16.6765C36.2712 16.6175 36.3445 16.5749 36.4249 16.5529L38.2838 16.1878V11.9367H26.4144V16.1878L28.2061 16.6681C28.8162 16.8074 28.8162 17.2494 28.5328 18.3061L26.0109 28.2061H25.7803L22.4948 18.3205C22.1345 17.2302 22.1201 16.8795 22.8214 16.6826L24.5074 16.2022V11.9511H13.7716Z"></path><path d="M43.7167 24.7524H46.8245V23.8686C46.8245 22.9079 46.2769 22.3987 45.2874 22.3987C44.2979 22.3987 43.7167 22.9127 43.7167 23.8686V24.7524ZM37.0927 28.7825V24.2768C37.0927 20.1458 40.3014 17.4127 45.1529 17.4127C50.0044 17.4127 53.2084 20.1458 53.2084 24.2768V28.1196H43.7167V29.0419C43.7167 30.0314 44.8791 30.6799 46.1184 30.6799C47.3577 30.6799 48.5778 30.1323 48.7796 29.2821H53.1844V32.6445C51.4119 34.7293 48.7123 35.6515 45.9119 35.6515C40.6472 35.6467 37.0927 32.9135 37.0927 28.7825Z"></path><path d="M84.4022 9.79911C86.4449 9.79911 88.1009 8.14315 88.1009 6.10042C88.1009 4.05769 86.4449 2.40173 84.4022 2.40173C82.3594 2.40173 80.7035 4.05769 80.7035 6.10042C80.7035 8.14315 82.3594 9.79911 84.4022 9.79911Z"></path></svg></a></div><div class="wv_navbar__title wv-font-kondolar wv-h9">SOME PROJECT</div><div class="wv_navbar__menu wv_navbar__menu--desktop wv_navbar__menu--hide-mobile"><button class="wv_nav-button wv-font-anuphan wv-b7 wv_nav-button--white wv_nav-button--active">About</button>
+<button class="wv_nav-button wv-font-anuphan wv-b7 wv_nav-button--white ">Report</button></div><button class="wv_navbar__hamburger-button"><svg width="15" height="12" viewBox="0 0 15 12"><rect width="15" height="2"></rect><rect y="5" width="15" height="2"></rect><rect y="10" width="15" height="2"></rect></svg></button></div>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvNavbar</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">dark</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">title</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;SOME PROJECT&quot;</span><span style="color:#C9D1D9">&gt;</span></span>
+<span class="line"><span style="color:#C9D1D9">  &lt;</span><span style="color:#7EE787">WvNavButton</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">dark</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">active</span><span style="color:#C9D1D9">&gt;</span></span>
+<span class="line"><span style="color:#C9D1D9">    About</span></span>
+<span class="line"><span style="color:#C9D1D9">  &lt;/</span><span style="color:#7EE787">WvNavButton</span><span style="color:#C9D1D9">&gt;</span></span>
+<span class="line"><span style="color:#C9D1D9">  &lt;</span><span style="color:#7EE787">WvNavButton</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">dark</span><span style="color:#C9D1D9">&gt;Report&lt;/</span><span style="color:#7EE787">WvNavButton</span><span style="color:#C9D1D9">&gt;</span></span>
+<span class="line"><span style="color:#C9D1D9">&lt;/</span><span style="color:#7EE787">WvNavbar</span><span style="color:#C9D1D9">&gt;</span></span></code></pre>
+<p><strong>With logo addon</strong></p>
+<div class="wv_navbar wv_navbar--white"><div class="wv_navbar__logo"><a class="wv_navbar__logo__wevis" href="/"><svg viewBox="0 0 110 37"><path d="M79.0175 35.3009V31.1026L80.3913 30.7904C80.7035 30.7568 80.7707 30.6511 80.7707 30.3101V16.8795C80.7707 16.6057 80.7035 16.5 80.3913 16.3991L79.0175 16.0581V11.8839H89.4843V16.0869L88.1057 16.4328C87.7982 16.5336 87.7262 16.6393 87.7262 16.9131V30.3293C87.7262 30.6367 87.7982 30.7087 88.072 30.8096L89.4843 31.1891V35.3201L79.0175 35.3009Z"></path><path d="M59.962 35.3009L54.1257 16.8267C54.1054 16.7467 54.0615 16.6748 53.9999 16.62C53.9382 16.5652 53.8616 16.5301 53.7799 16.5192L51.9594 16.2118V11.9511H63.7375V16.2118L62.3637 16.6249C62.2309 16.6424 62.1089 16.7076 62.0205 16.8083C61.9321 16.9091 61.8834 17.0385 61.8834 17.1725C61.9069 17.5573 61.9762 17.9378 62.0899 18.3061L64.5973 28.1965H64.7655L67.2633 18.3205C67.3733 17.9513 67.4425 17.5712 67.4698 17.1869C67.4618 17.0499 67.406 16.92 67.3121 16.82C67.2182 16.7199 67.0921 16.656 66.9559 16.6393L65.6157 16.2262V11.9655H77.0864V16.1926L75.1987 16.5673C75.1134 16.5845 75.035 16.6265 74.9735 16.688C74.912 16.7495 74.87 16.8278 74.8528 16.9131L69.1895 35.3153L59.962 35.3009Z"></path><path d="M91.8236 33.6148C91.8464 31.4846 91.9971 29.3576 92.2751 27.2454H97.9096L98.462 29.9306C99.1838 30.173 99.9391 30.301 100.7 30.31C102.007 30.31 102.867 29.724 102.867 28.7921C102.867 27.6249 101.387 27.1782 99.6293 26.6594C96.1179 25.593 91.9197 24.2144 91.9197 18.772C91.9197 13.3297 95.4983 11.5428 100.907 11.5428C104.351 11.5428 106.59 12.4362 108.996 13.5747C109.031 15.5893 108.905 17.6035 108.621 19.5982H102.982L102.708 17.2253C102.162 16.9957 101.576 16.878 100.984 16.8795C99.7109 16.8795 98.8847 17.1869 98.8847 18.186C98.8847 19.3581 100.47 20.0498 102.19 20.631C105.552 21.731 109.837 23.2489 109.837 28.2445C109.837 33.2402 106.666 35.6803 100.676 35.6803C97.6083 35.6612 94.5834 34.9555 91.8236 33.6148Z"></path><path d="M13.7716 11.9511V16.2022L15.4576 16.6826C16.159 16.8699 16.1493 17.2302 15.7843 18.3205L12.5179 28.2205H12.2825L9.7607 18.3205C9.47729 17.2638 9.4821 16.8219 10.0873 16.6826L11.879 16.2022V11.9511H0V16.2022L1.9214 16.5769C2.10873 16.6249 2.15197 16.7162 2.2 16.9035L7.96419 35.3009H16.2502L19.1323 25.5258L22.0144 35.2865H30.3245L36.0886 16.8891C36.1107 16.8087 36.1533 16.7354 36.2122 16.6765C36.2712 16.6175 36.3445 16.5749 36.4249 16.5529L38.2838 16.1878V11.9367H26.4144V16.1878L28.2061 16.6681C28.8162 16.8074 28.8162 17.2494 28.5328 18.3061L26.0109 28.2061H25.7803L22.4948 18.3205C22.1345 17.2302 22.1201 16.8795 22.8214 16.6826L24.5074 16.2022V11.9511H13.7716Z"></path><path d="M43.7167 24.7524H46.8245V23.8686C46.8245 22.9079 46.2769 22.3987 45.2874 22.3987C44.2979 22.3987 43.7167 22.9127 43.7167 23.8686V24.7524ZM37.0927 28.7825V24.2768C37.0927 20.1458 40.3014 17.4127 45.1529 17.4127C50.0044 17.4127 53.2084 20.1458 53.2084 24.2768V28.1196H43.7167V29.0419C43.7167 30.0314 44.8791 30.6799 46.1184 30.6799C47.3577 30.6799 48.5778 30.1323 48.7796 29.2821H53.1844V32.6445C51.4119 34.7293 48.7123 35.6515 45.9119 35.6515C40.6472 35.6467 37.0927 32.9135 37.0927 28.7825Z"></path><path d="M84.4022 9.79911C86.4449 9.79911 88.1009 8.14315 88.1009 6.10042C88.1009 4.05769 86.4449 2.40173 84.4022 2.40173C82.3594 2.40173 80.7035 4.05769 80.7035 6.10042C80.7035 8.14315 82.3594 9.79911 84.4022 9.79911Z"></path></svg><img class="wv_navbar__logo__addon" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/sparkles_2728.png"/></a></div><div class="wv_navbar__menu wv_navbar__menu--desktop wv_navbar__menu--hide-mobile"></div><button class="wv_navbar__hamburger-button"><svg width="15" height="12" viewBox="0 0 15 12"><rect width="15" height="2"></rect><rect y="5" width="15" height="2"></rect><rect y="10" width="15" height="2"></rect></svg></button></div>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvNavbar</span></span>
+<span class="line"><span style="color:#C9D1D9">  </span><span style="color:#79C0FF">logoAddonSrc</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/sparkles_2728.png&quot;</span></span>
+<span class="line"><span style="color:#C9D1D9">/&gt;</span></span></code></pre>
+<p><strong>Alway show slot</strong></p>
+<p>Disable hamburger menu on mobile</p>
+<div class="wv_navbar wv_navbar--white"><div class="wv_navbar__logo"><a class="wv_navbar__logo__wevis" href="/"><svg viewBox="0 0 110 37"><path d="M79.0175 35.3009V31.1026L80.3913 30.7904C80.7035 30.7568 80.7707 30.6511 80.7707 30.3101V16.8795C80.7707 16.6057 80.7035 16.5 80.3913 16.3991L79.0175 16.0581V11.8839H89.4843V16.0869L88.1057 16.4328C87.7982 16.5336 87.7262 16.6393 87.7262 16.9131V30.3293C87.7262 30.6367 87.7982 30.7087 88.072 30.8096L89.4843 31.1891V35.3201L79.0175 35.3009Z"></path><path d="M59.962 35.3009L54.1257 16.8267C54.1054 16.7467 54.0615 16.6748 53.9999 16.62C53.9382 16.5652 53.8616 16.5301 53.7799 16.5192L51.9594 16.2118V11.9511H63.7375V16.2118L62.3637 16.6249C62.2309 16.6424 62.1089 16.7076 62.0205 16.8083C61.9321 16.9091 61.8834 17.0385 61.8834 17.1725C61.9069 17.5573 61.9762 17.9378 62.0899 18.3061L64.5973 28.1965H64.7655L67.2633 18.3205C67.3733 17.9513 67.4425 17.5712 67.4698 17.1869C67.4618 17.0499 67.406 16.92 67.3121 16.82C67.2182 16.7199 67.0921 16.656 66.9559 16.6393L65.6157 16.2262V11.9655H77.0864V16.1926L75.1987 16.5673C75.1134 16.5845 75.035 16.6265 74.9735 16.688C74.912 16.7495 74.87 16.8278 74.8528 16.9131L69.1895 35.3153L59.962 35.3009Z"></path><path d="M91.8236 33.6148C91.8464 31.4846 91.9971 29.3576 92.2751 27.2454H97.9096L98.462 29.9306C99.1838 30.173 99.9391 30.301 100.7 30.31C102.007 30.31 102.867 29.724 102.867 28.7921C102.867 27.6249 101.387 27.1782 99.6293 26.6594C96.1179 25.593 91.9197 24.2144 91.9197 18.772C91.9197 13.3297 95.4983 11.5428 100.907 11.5428C104.351 11.5428 106.59 12.4362 108.996 13.5747C109.031 15.5893 108.905 17.6035 108.621 19.5982H102.982L102.708 17.2253C102.162 16.9957 101.576 16.878 100.984 16.8795C99.7109 16.8795 98.8847 17.1869 98.8847 18.186C98.8847 19.3581 100.47 20.0498 102.19 20.631C105.552 21.731 109.837 23.2489 109.837 28.2445C109.837 33.2402 106.666 35.6803 100.676 35.6803C97.6083 35.6612 94.5834 34.9555 91.8236 33.6148Z"></path><path d="M13.7716 11.9511V16.2022L15.4576 16.6826C16.159 16.8699 16.1493 17.2302 15.7843 18.3205L12.5179 28.2205H12.2825L9.7607 18.3205C9.47729 17.2638 9.4821 16.8219 10.0873 16.6826L11.879 16.2022V11.9511H0V16.2022L1.9214 16.5769C2.10873 16.6249 2.15197 16.7162 2.2 16.9035L7.96419 35.3009H16.2502L19.1323 25.5258L22.0144 35.2865H30.3245L36.0886 16.8891C36.1107 16.8087 36.1533 16.7354 36.2122 16.6765C36.2712 16.6175 36.3445 16.5749 36.4249 16.5529L38.2838 16.1878V11.9367H26.4144V16.1878L28.2061 16.6681C28.8162 16.8074 28.8162 17.2494 28.5328 18.3061L26.0109 28.2061H25.7803L22.4948 18.3205C22.1345 17.2302 22.1201 16.8795 22.8214 16.6826L24.5074 16.2022V11.9511H13.7716Z"></path><path d="M43.7167 24.7524H46.8245V23.8686C46.8245 22.9079 46.2769 22.3987 45.2874 22.3987C44.2979 22.3987 43.7167 22.9127 43.7167 23.8686V24.7524ZM37.0927 28.7825V24.2768C37.0927 20.1458 40.3014 17.4127 45.1529 17.4127C50.0044 17.4127 53.2084 20.1458 53.2084 24.2768V28.1196H43.7167V29.0419C43.7167 30.0314 44.8791 30.6799 46.1184 30.6799C47.3577 30.6799 48.5778 30.1323 48.7796 29.2821H53.1844V32.6445C51.4119 34.7293 48.7123 35.6515 45.9119 35.6515C40.6472 35.6467 37.0927 32.9135 37.0927 28.7825Z"></path><path d="M84.4022 9.79911C86.4449 9.79911 88.1009 8.14315 88.1009 6.10042C88.1009 4.05769 86.4449 2.40173 84.4022 2.40173C82.3594 2.40173 80.7035 4.05769 80.7035 6.10042C80.7035 8.14315 82.3594 9.79911 84.4022 9.79911Z"></path></svg></a></div><div class="wv_navbar__menu wv_navbar__menu--desktop wv_navbar__menu--always-show"><button class="wv_nav-button wv-font-anuphan wv-b7 wv_nav-button--black wv_nav-button--active">About</button>
+<button class="wv_nav-button wv-font-anuphan wv-b7 wv_nav-button--black ">Report</button></div></div>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvNavbar</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">alwayShowSlot</span><span style="color:#C9D1D9">&gt;</span></span>
+<span class="line"><span style="color:#C9D1D9">  &lt;</span><span style="color:#7EE787">WvNavButton</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">active</span><span style="color:#C9D1D9">&gt;About&lt;/</span><span style="color:#7EE787">WvNavButton</span><span style="color:#C9D1D9">&gt;</span></span>
+<span class="line"><span style="color:#C9D1D9">  &lt;</span><span style="color:#7EE787">WvNavButton</span><span style="color:#C9D1D9">&gt;Report&lt;/</span><span style="color:#7EE787">WvNavButton</span><span style="color:#C9D1D9">&gt;</span></span>
+<span class="line"><span style="color:#C9D1D9">&lt;/</span><span style="color:#7EE787">WvNavbar</span><span style="color:#C9D1D9">&gt;</span></span></code></pre>
+  </section>
+</article>
+
+
+      </div>
+      <aside id="grid-right" class="grid-sidebar astro-AJ7ZOWQ2" title="Table of Contents">
+        <nav class="sidebar-nav astro-MPPYMKLE" aria-labelledby="grid-right">
+  <div class="sidebar-nav-inner astro-MPPYMKLE">
+    <astro-island uid="16uYUB" component-url="/design-systems/TableOfContents.eeee1ec0.js" component-export="default" renderer-url="/design-systems/client.736a23ab.js" props="{&quot;headings&quot;:[1,&quot;[[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;props\&quot;],\&quot;text\&quot;:[0,\&quot;Props\&quot;]}],[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;slot--children\&quot;],\&quot;text\&quot;:[0,\&quot;Slot / Children\&quot;]}],[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;examples\&quot;],\&quot;text\&quot;:[0,\&quot;Examples\&quot;]}]]&quot;],&quot;class&quot;:[0,&quot;astro-MPPYMKLE&quot;]}" ssr="" client="media" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(min-width: 50em)&quot;}" await-children=""><h2 class="heading">On this page</h2><ul><li class="heading-link depth-2"><a href="#props">Props</a></li><li class="heading-link depth-2"><a href="#slot--children">Slot / Children</a></li><li class="heading-link depth-2"><a href="#examples">Examples</a></li></ul></astro-island>
+  </div>
+</nav>
+
+
+      </aside>
+    </main>
+  </body></html>
