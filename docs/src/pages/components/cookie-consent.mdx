@@ -5,6 +5,71 @@ layout: ../../layouts/MainLayout.astro
 
 import WvCookieConsent from '@wevisdemo/ui/react/cookie-consent';
 
-Cookie consent banner and popup with action callback after user consent
+Cookie consent banner and popup with action callback after user consent.
 
-<WvCookieConsent client:load cookieOptions={['Analytics', 'Preference', 'Advertising']} />
+<WvCookieConsent
+  client:load
+  policyUrl="https://punchup.world"
+  cookieOptions={['Analytics', 'Preference', 'Advertising']}
+/>
+
+```jsx
+import WvCookieConsent from '@wevisdemo/ui/{react,vue2,svelte}/cookie-consent';
+
+const cookieOptions = ['Analytics', 'Preference', 'Advertising'];
+
+function onCookieAccept(option) {
+  if (option['Analytics']) {
+    // Initialize or enable analytics
+  }
+}
+
+<WvCookieConsent
+  policyUrl="https://punchup.world"
+  cookieOptions={cookieOptions}
+  onAccept={onCookieAccept}
+/>;
+```
+
+## Props
+
+| Name          | Type                                        | Default |
+| ------------- | ------------------------------------------- | ------- |
+| policyUrl     | `string`                                    |         |
+| cookieOptions | `string[]`                                  |         |
+| onAccept      | `(option: Record<string, boolean>) => void` |         |
+
+The `cookieOptions` can be an array of any string representing cookie type, which showing in cookie setting option pop-up. Please consult PM which cookie type needed to be included in each project.
+
+The `option` parameter for `onAccept` function will be an object including keys for each `cookieOptions` and coresponsed `boolean` represent user option. For example, if the `cookieOptions` are
+
+```jsx
+const cookieOptions = ['Analytics', 'Preference', 'Advertising'];
+```
+
+the `option` will have the following type
+
+```tsx
+type Option {
+  Analytics: boolean
+  Preference: boolean
+  Advertising: boolean
+}
+```
+
+## Behavior
+
+When mounted, the component will look for cookie setting in `localStorage`
+
+- If found
+  - The setting is loaded from `localStorage`
+  - `onAccept` will be called with the setting for `option` parameter
+  - No pop up will be shown
+- If not
+  - The banner is showed
+
+When user accept all cookieor save selected options from checkboxes
+
+- The setting is saved to `localStorage`
+- `onAccept` will be called with the setting for `option` parameter
+- Pop up/ Banner then will be closed
