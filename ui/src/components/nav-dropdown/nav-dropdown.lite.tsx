@@ -4,7 +4,7 @@ import { Show, useStore } from '@builder.io/mitosis';
 interface WvNavDropdownProps {
   dark?: boolean;
   label?: string;
-  children?: JSX.Element;
+  children?: JSX.Element | JSX.Element[] | string | number;
 }
 
 export default function WvNavDropdown(props: WvNavDropdownProps) {

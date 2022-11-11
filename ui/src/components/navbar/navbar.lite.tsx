@@ -7,7 +7,7 @@ interface WvNavbarProps {
   logoAddonSrc?: string;
   title?: string;
   alwayShowSlot?: boolean;
-  children: JSX.Element;
+  children?: JSX.Element | JSX.Element[] | string | number;
 }
 
 export default function WvNavbar(props: WvNavbarProps) {

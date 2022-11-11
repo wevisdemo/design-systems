@@ -1,4 +1,3 @@
-import { JSX } from '@builder.io/mitosis/jsx-runtime';
 import { onMount, useStore, Show } from '@builder.io/mitosis';
 
 interface WvSharerProps {

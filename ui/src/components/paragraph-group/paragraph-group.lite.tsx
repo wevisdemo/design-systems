@@ -4,7 +4,7 @@ import { Show } from '@builder.io/mitosis';
 interface WvParagraphGroupProps {
   small?: boolean;
   heading?: string;
-  children?: JSX.Element;
+  children?: JSX.Element | JSX.Element[] | string | number;
 }
 
 export default function WvParagraphGroup(props: WvParagraphGroupProps) {

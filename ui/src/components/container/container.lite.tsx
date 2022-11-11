@@ -1,9 +1,9 @@
-import { JSX } from "@builder.io/mitosis/jsx-runtime";
+import { JSX } from '@builder.io/mitosis/jsx-runtime';
 import { Show } from '@builder.io/mitosis';
 
 interface WvContainerProps {
   heading?: string;
-  children?: JSX.Element;
+  children?: JSX.Element | JSX.Element[] | string | number;
 }
 
 export default function WvContainer(props: WvContainerProps) {

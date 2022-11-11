@@ -4,7 +4,7 @@ interface WvNavButtonProps {
   dark?: boolean;
   active: boolean;
   onClick?: () => void;
-  children?: JSX.Element;
+  children?: JSX.Element | JSX.Element[] | string | number;
 }
 
 export default function WvNavButton(props: WvNavButtonProps) {
