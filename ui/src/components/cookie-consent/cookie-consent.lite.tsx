@@ -1,12 +1,14 @@
-import { For, Show, useStore } from '@builder.io/mitosis';
+import { For, onMount, Show, useStore } from '@builder.io/mitosis';
 
-type CookieSelection = Record<string, boolean>;
+type CookieSetting = Record<string, boolean>;
 
 interface WvCookieBannerProps {
   policyUrl: string;
   cookieOptions?: string[];
-  onAccept?: (selectedCookies: CookieSelection) => void;
+  onAccept?: (selectedCookies: CookieSetting) => void;
 }
+
+const LOCALSTORAGE_COOKIE_KEY = 'cookieSetting';
 
 const langs = ['ไทย', 'EN'];
 
@@ -40,10 +42,10 @@ const translation: Record<string, Record<string, string>> = {
 export default function WvCookieBanner(props: WvCookieBannerProps) {
   const state = useStore({
     activeLang: 'ไทย',
-    isShow: true,
+    isShow: false,
     isSettingOpen: false,
-    selectedCookies: {} as CookieSelection,
-    createCookieSelection(value: boolean) {
+    selectedCookies: {} as CookieSetting,
+    createCookieSetting(value: boolean) {
       return props.cookieOptions
         ? props.cookieOptions.reduce(
             (obj, option) => ({ ...obj, [option]: value }),
@@ -52,17 +54,26 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
         : {};
     },
     openSetting() {
-      state.selectedCookies = state.createCookieSelection(false);
+      state.selectedCookies = state.createCookieSetting(false);
       state.isSettingOpen = true;
     },
-    saveSetting() {
-      props.onAccept?.(state.selectedCookies);
+    save(options: CookieSetting) {
+      localStorage.setItem(LOCALSTORAGE_COOKIE_KEY, JSON.stringify(options));
+      props.onAccept?.(options);
       state.isShow = false;
     },
-    acceptAll() {
-      props.onAccept?.(state.createCookieSelection(true));
-      state.isShow = false;
-    },
+  });
+
+  onMount(() => {
+    const localStorageCookieSetting = localStorage.getItem(
+      LOCALSTORAGE_COOKIE_KEY
+    );
+
+    if (localStorageCookieSetting) {
+      props.onAccept?.(JSON.parse(localStorageCookieSetting) as CookieSetting);
+    } else {
+      state.isShow = true;
+    }
   });
 
   return (
@@ -175,13 +186,16 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
             >
               <button
                 class="wv-font-anuphan"
-                onClick={() => state.saveSetting()}
+                onClick={() => state.save(state.selectedCookies)}
               >
                 {translation.save[state.activeLang]}
               </button>
             </Show>
 
-            <button class="wv-font-anuphan" onClick={() => state.acceptAll()}>
+            <button
+              class="wv-font-anuphan"
+              onClick={() => state.save(state.createCookieSetting(true))}
+            >
               {translation.acceptAll[state.activeLang]}
             </button>
           </div>
