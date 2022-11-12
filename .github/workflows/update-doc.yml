@@ -3,6 +3,13 @@ name: Update Doc on Github Page
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'README.md'
+      - '.github/workflows'
+
+concurrency:
+  group: doc
+  cancel-in-progress: true
 
 jobs:
   publish:
