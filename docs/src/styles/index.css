@@ -19,6 +19,25 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+  border-radius: 20px;
+  border: 3px solid white;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: lightgray white;
+}
+
 body {
   display: flex;
   flex-direction: column;
