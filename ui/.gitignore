@@ -4,3 +4,5 @@ build
 /svelte
 /vue2
 /styles
+.mitosis
+.svelte-kit

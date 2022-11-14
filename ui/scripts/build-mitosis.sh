@@ -2,14 +2,8 @@
 npx mitosis build --config=mitosis.config.cjs
 
 # Flatten build dir
-find react/src -wholename "*.tsx" -exec mv '{}' react \;
-find svelte/src -wholename "*.svelte" -exec mv '{}' svelte \;
-find vue2/src -wholename "*.vue" -exec mv '{}' vue2 \;
+find .mitosis/react/src -wholename "*.tsx" -exec mv '{}' .mitosis/react \;
+find .mitosis/svelte/src -wholename "*.svelte" -exec mv '{}' .mitosis/svelte \;
+find .mitosis/vue2/src -wholename "*.vue" -exec mv '{}' .mitosis/vue2 \;
 
-rm -r react/src
-rm -r svelte/src
-rm -r vue2/src
-
-# Compile React TS package
-npx tsc -p tsconfig.react.json
-rm react/*.tsx
+rm -r .mitosis/*/src

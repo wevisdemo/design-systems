@@ -8,6 +8,6 @@
     "moduleResolution": "node",
     "declaration": true
   },
-  "include": ["react"],
+  "include": [".mitosis/react"],
   "exclude": []
 }
