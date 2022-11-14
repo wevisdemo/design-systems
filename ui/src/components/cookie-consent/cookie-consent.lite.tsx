@@ -10,6 +10,7 @@ type CookieSetting = Record<string, boolean>;
 
 interface WvCookieBannerProps {
   policyUrl: string;
+  hasStrictlyNecessaryCookies?: boolean;
   cookieOptions?: string[];
   onAccept?: (selectedCookies: CookieSetting) => void;
 }
@@ -47,6 +48,7 @@ const translation: Record<string, Record<string, string>> = {
 
 export default function WvCookieBanner(props: WvCookieBannerProps) {
   useDefaultProps<Partial<WvCookieBannerProps>>({
+    hasStrictlyNecessaryCookies: false,
     cookieOptions: [],
     onAccept: () => {},
   });
@@ -140,12 +142,19 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
           <Show when={state.isSettingOpen}>
             <div class="wv_cookie-consent__options wv-font-bold">
               <h2 class="wv-b3">{translation.setting[state.activeLang]}</h2>
-              <div>
-                <input type="checkbox" id="cookie-necessary" checked disabled />
-                <label htmlFor="cookie-necessary">
-                  Strictly Necessary Cookies
-                </label>
-              </div>
+              <Show when={props.hasStrictlyNecessaryCookies}>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="cookie-necessary"
+                    checked
+                    disabled
+                  />
+                  <label htmlFor="cookie-necessary">
+                    Strictly Necessary Cookies
+                  </label>
+                </div>
+              </Show>
               <For each={props.cookieOptions}>
                 {(option) => (
                   <div key={option}>

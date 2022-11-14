@@ -10,6 +10,7 @@ Cookie consent banner and popup with action callback after user consent.
 <WvCookieConsent
   client:load
   policyUrl="https://punchup.world"
+  hasStrictlyNecessaryCookies
   cookieOptions={['Analytics', 'Preference', 'Advertising']}
 />
 
@@ -26,6 +27,7 @@ function onCookieAccept(option) {
 
 <WvCookieConsent
   policyUrl="https://punchup.world"
+  hasStrictlyNecessaryCookies
   cookieOptions={cookieOptions}
   onAccept={onCookieAccept}
 />;
@@ -33,11 +35,14 @@ function onCookieAccept(option) {
 
 ## Props
 
-| Name          | Type                                        | Default    |
-| ------------- | ------------------------------------------- | ---------- |
-| policyUrl     | `string`                                    |            |
-| cookieOptions | `string[]`                                  | `[]`       |
-| onAccept      | `(option: Record<string, boolean>) => void` | `() => {}` |
+| Name                        | Type                                        | Default    |
+| --------------------------- | ------------------------------------------- | ---------- |
+| policyUrl                   | `string`                                    |            |
+| hasStrictlyNecessaryCookies | `boolean`                                   | `false`    |
+| cookieOptions               | `string[]`                                  | `[]`       |
+| onAccept                    | `(option: Record<string, boolean>) => void` | `() => {}` |
+
+Set `hasStrictlyNecessaryCookies` to `true` to show _Strictly Necessary Cookies_ checkbox in cookie option. The checkbox is disabled because it's mandatory.
 
 The `cookieOptions` can be an array of any string representing cookie type, which showing in cookie setting option pop-up. Please consult PM which cookie type needed to be included in each project.
 
