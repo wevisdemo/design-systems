@@ -1,0 +1,17 @@
+// vue-tsc -p tsconfig.vue2.json --emitDeclarationOnly
+// Blcoked by Mitosis issue https://github.com/BuilderIO/mitosis/issues/847
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "outDir": "vue2",
+    "declaration": true,
+    "types": ["vite/client"],
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  },
+  "include": [".mitosis/vue2"]
+}
