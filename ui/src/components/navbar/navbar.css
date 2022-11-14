@@ -52,9 +52,22 @@
   @apply hidden md:flex;
 }
 
-.wv_navbar__menu--always-show {
-  @apply -my-3;
+.wv_navbar__menu--always-show .wv_nav-button {
+  @apply py-0;
 }
+
+.wv_navbar__menu--always-show .wv_nav-dropdown-list {
+  @apply absolute z-20 mt-3 md:mt-4 rounded shadow border border-solid;
+}
+
+.wv_navbar__menu--always-show .wv_nav-dropdown-item--white {
+  @apply bg-white text-black hover:bg-opacity-10 hover:bg-black;
+}
+
+.wv_navbar__menu--always-show .wv_nav-dropdown-item--black {
+  @apply bg-black text-white hover:bg-opacity-25 hover:bg-white;
+}
+
 .wv_navbar__menu--mobile {
   @apply flex md:hidden z-10 absolute top-full inset-x-0 flex-col justify-end pb-2;
 }
