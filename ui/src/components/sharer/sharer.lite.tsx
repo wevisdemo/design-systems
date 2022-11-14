@@ -1,4 +1,4 @@
-import { onMount, useStore, Show } from '@builder.io/mitosis';
+import { onMount, useStore, Show, useDefaultProps } from '@builder.io/mitosis';
 
 interface WvSharerProps {
   url?: string;
@@ -11,6 +11,16 @@ interface WvSharerProps {
 }
 
 export default function WvSharer(props: WvSharerProps) {
+  useDefaultProps<WvSharerProps>({
+    url: undefined,
+    label: 'Share',
+    hideLabel: false,
+    light: false,
+    center: false,
+    outline: false,
+    allowCopyLink: false,
+  });
+
   const state = useStore({
     encodedURL: '',
     copyToClipboard() {
@@ -29,7 +39,7 @@ export default function WvSharer(props: WvSharerProps) {
       } ${props.center ? 'wv_sharer--center' : ''}`}
     >
       <Show when={!props.hideLabel}>
-        <span class="wv-b5">{props.label || 'Share'}</span>
+        <span class="wv-b5">{props.label}</span>
       </Show>
 
       <Show when={props.allowCopyLink}>

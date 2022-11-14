@@ -1,5 +1,5 @@
 import { JSX } from '@builder.io/mitosis/jsx-runtime';
-import { Show } from '@builder.io/mitosis';
+import { Show, useDefaultProps } from '@builder.io/mitosis';
 
 interface WvParagraphGroupProps {
   small?: boolean;
@@ -8,6 +8,11 @@ interface WvParagraphGroupProps {
 }
 
 export default function WvParagraphGroup(props: WvParagraphGroupProps) {
+  useDefaultProps<WvParagraphGroupProps>({
+    small: false,
+    heading: undefined,
+  });
+
   return (
     <div
       class={`wv_paragraph-group ${

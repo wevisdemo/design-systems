@@ -22,14 +22,14 @@ import WvNavDropdownItem from '@wevisdemo/ui/{react,vue2,svelte}/nav-dropdown-it
   <WvNavDropdownItem>Topic 1</WvNavDropdownItem>
   <WvNavDropdownItem>Topic 2</WvNavDropdownItem>
   <WvNavDropdownItem>Topic 3</WvNavDropdownItem>
-</WvNavDropdown>
+</WvNavDropdown>;
 ```
 
 ## Props
 
 | Name  | Type    | Default |
 | ----- | ------- | ------- |
-| label | string  |         |
+| label | string  | `''`    |
 | dark  | boolean | `false` |
 
 ## Slot / Children
@@ -39,6 +39,7 @@ WvNavDropdownItem(s)
 ## Examples
 
 **Dark theme**
+
 <WvNavDropdown client:load dark label="Topic">
   <WvNavDropdownItem dark>Topic 1</WvNavDropdownItem>
   <WvNavDropdownItem dark>Topic 2</WvNavDropdownItem>

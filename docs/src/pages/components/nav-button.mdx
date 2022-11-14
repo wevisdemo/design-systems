@@ -12,16 +12,16 @@ A button for navigation bar
 ```jsx
 import WvNavButton from '@wevisdemo/ui/{react,vue2,svelte}/nav-button';
 
-<WvNavButton>About</WvNavButton>
+<WvNavButton>About</WvNavButton>;
 ```
 
 ## Props
 
-| Name    | Type         | Default |
-| ------- | ------------ | ------- |
-| active  | `boolean`    | `false` |
-| dark    | `boolean`    | `false` |
-| onClick | `() => void` |         |
+| Name    | Type         | Default     |
+| ------- | ------------ | ----------- |
+| active  | `boolean`    | `false`     |
+| dark    | `boolean`    | `false`     |
+| onClick | `() => void` | `undefined` |
 
 ## Slot / Children
 
@@ -39,7 +39,9 @@ Button content
 
 **With dark theme**
 
-<WvNavButton dark active>About</WvNavButton>
+<WvNavButton dark active>
+  About
+</WvNavButton>
 <WvNavButton dark>Report</WvNavButton>
 
 ```jsx

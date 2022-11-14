@@ -1,5 +1,5 @@
 import { JSX } from '@builder.io/mitosis/jsx-runtime';
-import { Show } from '@builder.io/mitosis';
+import { Show, useDefaultProps } from '@builder.io/mitosis';
 
 interface WvContainerProps {
   heading?: string;
@@ -7,6 +7,10 @@ interface WvContainerProps {
 }
 
 export default function WvContainer(props: WvContainerProps) {
+  useDefaultProps<WvContainerProps>({
+    heading: undefined,
+  });
+
   return (
     <div class="wv_container">
       <Show when={props.heading}>

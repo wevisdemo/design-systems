@@ -33,11 +33,11 @@ function onCookieAccept(option) {
 
 ## Props
 
-| Name          | Type                                        | Default |
-| ------------- | ------------------------------------------- | ------- |
-| policyUrl     | `string`                                    |         |
-| cookieOptions | `string[]`                                  |         |
-| onAccept      | `(option: Record<string, boolean>) => void` |         |
+| Name          | Type                                        | Default    |
+| ------------- | ------------------------------------------- | ---------- |
+| policyUrl     | `string`                                    |            |
+| cookieOptions | `string[]`                                  | `[]`       |
+| onAccept      | `(option: Record<string, boolean>) => void` | `() => {}` |
 
 The `cookieOptions` can be an array of any string representing cookie type, which showing in cookie setting option pop-up. Please consult PM which cookie type needed to be included in each project.
 

@@ -1,3 +1,4 @@
+import { useDefaultProps } from '@builder.io/mitosis';
 import { JSX } from '@builder.io/mitosis/jsx-runtime';
 
 interface WvNavButtonProps {
@@ -8,6 +9,12 @@ interface WvNavButtonProps {
 }
 
 export default function WvNavButton(props: WvNavButtonProps) {
+  useDefaultProps<WvNavButtonProps>({
+    dark: false,
+    active: false,
+    onClick: undefined,
+  });
+
   return (
     <button
       class={`wv_nav-button wv-font-anuphan wv-b7 ${

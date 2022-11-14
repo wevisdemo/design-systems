@@ -12,7 +12,7 @@ Social media share buttons
 ```jsx
 import WvSharer from '@wevisdemo/ui/{react,vue2,svelte}/sharer';
 
-<WvSharer url="https://wevis.info" />
+<WvSharer url="https://wevis.info" />;
 ```
 
 ## Props
@@ -20,7 +20,7 @@ import WvSharer from '@wevisdemo/ui/{react,vue2,svelte}/sharer';
 | Name          | Type    | Default                                                     |
 | ------------- | ------- | ----------------------------------------------------------- |
 | url           | string  | current page URL (get from `window.location.href` on mount) |
-| label         | string  | 'Share'                                                     |
+| label         | string  | `'Share'`                                                   |
 | hideLabel     | boolean | `false`                                                     |
 | light         | boolean | `false`                                                     |
 | outline       | boolean | `false`                                                     |
@@ -41,10 +41,10 @@ import WvSharer from '@wevisdemo/ui/{react,vue2,svelte}/sharer';
 
 **Light**
 
-<WvSharer client:load light/>
+<WvSharer client:load light />
 
 ```jsx
-  <WvSharer light/>
+<WvSharer light />
 ```
 
 **Outline**

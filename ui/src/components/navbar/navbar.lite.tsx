@@ -1,5 +1,5 @@
 import { JSX } from '@builder.io/mitosis/jsx-runtime';
-import { useStore, Show } from '@builder.io/mitosis';
+import { useStore, Show, useDefaultProps } from '@builder.io/mitosis';
 
 interface WvNavbarProps {
   dark?: boolean;
@@ -11,6 +11,14 @@ interface WvNavbarProps {
 }
 
 export default function WvNavbar(props: WvNavbarProps) {
+  useDefaultProps<WvNavbarProps>({
+    dark: false,
+    homeHref: '/',
+    logoAddonSrc: undefined,
+    title: undefined,
+    alwayShowSlot: false,
+  });
+
   const state = useStore({
     isMobileMenuOpened: false,
   });
@@ -22,7 +30,7 @@ export default function WvNavbar(props: WvNavbarProps) {
       }`}
     >
       <div class="wv_navbar__logo">
-        <a class="wv_navbar__logo__wevis" href={props.homeHref || '/'}>
+        <a class="wv_navbar__logo__wevis" href={props.homeHref}>
           <svg viewBox="0 0 110 37">
             <path d="M79.0175 35.3009V31.1026L80.3913 30.7904C80.7035 30.7568 80.7707 30.6511 80.7707 30.3101V16.8795C80.7707 16.6057 80.7035 16.5 80.3913 16.3991L79.0175 16.0581V11.8839H89.4843V16.0869L88.1057 16.4328C87.7982 16.5336 87.7262 16.6393 87.7262 16.9131V30.3293C87.7262 30.6367 87.7982 30.7087 88.072 30.8096L89.4843 31.1891V35.3201L79.0175 35.3009Z" />
             <path d="M59.962 35.3009L54.1257 16.8267C54.1054 16.7467 54.0615 16.6748 53.9999 16.62C53.9382 16.5652 53.8616 16.5301 53.7799 16.5192L51.9594 16.2118V11.9511H63.7375V16.2118L62.3637 16.6249C62.2309 16.6424 62.1089 16.7076 62.0205 16.8083C61.9321 16.9091 61.8834 17.0385 61.8834 17.1725C61.9069 17.5573 61.9762 17.9378 62.0899 18.3061L64.5973 28.1965H64.7655L67.2633 18.3205C67.3733 17.9513 67.4425 17.5712 67.4698 17.1869C67.4618 17.0499 67.406 16.92 67.3121 16.82C67.2182 16.7199 67.0921 16.656 66.9559 16.6393L65.6157 16.2262V11.9655H77.0864V16.1926L75.1987 16.5673C75.1134 16.5845 75.035 16.6265 74.9735 16.688C74.912 16.7495 74.87 16.8278 74.8528 16.9131L69.1895 35.3153L59.962 35.3009Z" />

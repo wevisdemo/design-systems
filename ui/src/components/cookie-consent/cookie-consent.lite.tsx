@@ -1,4 +1,10 @@
-import { For, onMount, Show, useStore } from '@builder.io/mitosis';
+import {
+  For,
+  onMount,
+  Show,
+  useDefaultProps,
+  useStore,
+} from '@builder.io/mitosis';
 
 type CookieSetting = Record<string, boolean>;
 
@@ -40,6 +46,11 @@ const translation: Record<string, Record<string, string>> = {
 };
 
 export default function WvCookieBanner(props: WvCookieBannerProps) {
+  useDefaultProps<Partial<WvCookieBannerProps>>({
+    cookieOptions: [],
+    onAccept: () => {},
+  });
+
   const state = useStore({
     activeLang: 'ไทย',
     isShow: false,
@@ -135,29 +146,27 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
                   Strictly Necessary Cookies
                 </label>
               </div>
-              <Show when={props.cookieOptions}>
-                <For each={props.cookieOptions}>
-                  {(option) => (
-                    <div key={option}>
-                      <input
-                        type="checkbox"
-                        id={`cookie-${option.toLowerCase()}`}
-                        checked={state.selectedCookies[option]}
-                        onChange={(event) =>
-                          (state.selectedCookies = {
-                            ...state.selectedCookies,
-                            [option]: event.target.checked,
-                          })
-                        }
-                      />
-                      <label htmlFor={`cookie-${option.toLowerCase()}`}>
-                        {option}
-                        {` `}Cookies
-                      </label>
-                    </div>
-                  )}
-                </For>
-              </Show>
+              <For each={props.cookieOptions}>
+                {(option) => (
+                  <div key={option}>
+                    <input
+                      type="checkbox"
+                      id={`cookie-${option.toLowerCase()}`}
+                      checked={state.selectedCookies[option]}
+                      onChange={(event) =>
+                        (state.selectedCookies = {
+                          ...state.selectedCookies,
+                          [option]: event.target.checked,
+                        })
+                      }
+                    />
+                    <label htmlFor={`cookie-${option.toLowerCase()}`}>
+                      {option}
+                      {` `}Cookies
+                    </label>
+                  </div>
+                )}
+              </For>
             </div>
           </Show>
 

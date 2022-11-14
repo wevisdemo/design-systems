@@ -1,3 +1,4 @@
+import { useDefaultProps } from '@builder.io/mitosis';
 import { JSX } from '@builder.io/mitosis/jsx-runtime';
 
 interface WvButtonGroupProps {
@@ -6,6 +7,10 @@ interface WvButtonGroupProps {
 }
 
 export default function WvButtonGroup(props: WvButtonGroupProps) {
+  useDefaultProps<WvButtonGroupProps>({
+    center: false,
+  });
+
   return (
     <div
       class={`wv_button-group ${props.center ? 'wv_button-group--center' : ''}`}

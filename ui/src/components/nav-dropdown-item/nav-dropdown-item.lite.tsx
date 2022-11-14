@@ -1,3 +1,4 @@
+import { useDefaultProps } from '@builder.io/mitosis';
 import { JSX } from '@builder.io/mitosis/jsx-runtime';
 
 interface WvNavDropdownItemProps {
@@ -6,6 +7,10 @@ interface WvNavDropdownItemProps {
 }
 
 export default function WvNavDropdownItem(props: WvNavDropdownItemProps) {
+  useDefaultProps<WvNavDropdownItemProps>({
+    dark: false,
+  });
+
   return (
     <button
       class={`wv_nav-dropdown-item wv-anuphan wv-b6 ${

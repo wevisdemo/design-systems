@@ -1,5 +1,5 @@
 import { JSX } from '@builder.io/mitosis/jsx-runtime';
-import { Show, useStore } from '@builder.io/mitosis';
+import { Show, useDefaultProps, useStore } from '@builder.io/mitosis';
 
 interface WvNavDropdownProps {
   dark?: boolean;
@@ -8,6 +8,11 @@ interface WvNavDropdownProps {
 }
 
 export default function WvNavDropdown(props: WvNavDropdownProps) {
+  useDefaultProps<WvNavDropdownProps>({
+    dark: false,
+    label: '',
+  });
+
   const state = useStore({
     isListOpened: false,
     toggleList(event: MouseEvent) {

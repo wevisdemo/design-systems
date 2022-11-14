@@ -1,8 +1,12 @@
+import { useDefaultProps } from '@builder.io/mitosis';
+
 interface WvFooterProps {
   dark?: boolean;
 }
 
 export default function WvFooter(props: WvFooterProps) {
+  useDefaultProps<WvFooterProps>({ dark: false });
+
   return (
     <div
       class={`wv_footer ${
