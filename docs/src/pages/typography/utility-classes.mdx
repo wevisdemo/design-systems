@@ -57,32 +57,32 @@ Heading and body size will be scale down on mobile
 
 ### Heading
 
-<p v-for="i in 11" :class="`wv-h${i}`">H{{i}}</p>
+{new Array(11).fill().map((n,i) => <p class={`wv-h${i+1}`}>h{i+1}</p>)}
 
 ```jsx
-<p class="wv-h1">H1</p>
+<p class="wv-h1">h1</p>
 ...
-<p class="wv-h11">H11</p>
+<p class="wv-h11">h11</p>
 ```
 
 ### Body
 
-<p v-for="i in 7" :class="`wv-b${i}`">B{{i}}</p>
+{new Array(7).fill().map((n,i) => <p class={`wv-b${i+1}`}>b{i+1}</p>)}
 
 ```jsx
-<p class="wv-b1">B1</p>
+<p class="wv-b1">b1</p>
 ...
-<p class="wv-b7">B7</p>
+<p class="wv-b7">b7</p>
 ```
 
 ### UI
 
 UI size will be the same on mobile and desktop
 
-<p v-for="i in 5" :class="`wv-u${i}`">U{{i}}</p>
+{new Array(5).fill().map((n,i) => <p class={`wv-u${i+1}`}>u{i+1}</p>)}
 
 ```jsx
-<p class="wv-u1">U1</p>
+<p class="wv-u1">u1</p>
 ...
-<p class="wv-u5">U5</p>
+<p class="wv-u5">u5</p>
 ```
