@@ -11,10 +11,12 @@ type CookieSetting = Record<string, boolean>;
 interface WvCookieBannerProps {
   policyUrl: string;
   cookieOptions?: string[];
+  daysToExpire?: number;
   onAccept?: (selectedCookies: CookieSetting) => void;
 }
 
 const LOCALSTORAGE_COOKIE_KEY = 'cookieSetting';
+const LOCALSTORAGE_COOKIE_EXPIRE_AT_KEY = 'cookieSettingExpireAt';
 
 const langs = ['ไทย', 'EN'];
 
@@ -49,6 +51,7 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
   useDefaultProps<Partial<WvCookieBannerProps>>({
     cookieOptions: [],
     onAccept: () => {},
+    daysToExpire: 30,
   });
 
   const state = useStore({
@@ -69,7 +72,13 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
       state.isSettingOpen = true;
     },
     save(options: CookieSetting) {
+      const expiredAtMs =
+        new Date().getTime() +
+        (props.daysToExpire as number) * 24 * 60 * 60 * 1000;
+
       localStorage.setItem(LOCALSTORAGE_COOKIE_KEY, JSON.stringify(options));
+      localStorage.setItem(LOCALSTORAGE_COOKIE_EXPIRE_AT_KEY, `${expiredAtMs}`);
+
       props.onAccept?.(options);
       state.isShow = false;
     },
@@ -80,9 +89,20 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
       LOCALSTORAGE_COOKIE_KEY
     );
 
-    if (localStorageCookieSetting) {
+    const localStorageCookieExpireAt = localStorage.getItem(
+      LOCALSTORAGE_COOKIE_EXPIRE_AT_KEY
+    );
+
+    if (
+      localStorageCookieSetting &&
+      localStorageCookieExpireAt &&
+      new Date().getTime() < new Date(+localStorageCookieExpireAt).getTime()
+    ) {
       props.onAccept?.(JSON.parse(localStorageCookieSetting) as CookieSetting);
     } else {
+      localStorage.removeItem(LOCALSTORAGE_COOKIE_KEY);
+      localStorage.removeItem(LOCALSTORAGE_COOKIE_EXPIRE_AT_KEY);
+
       state.isShow = true;
     }
   });
