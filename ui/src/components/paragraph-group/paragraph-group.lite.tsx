@@ -10,7 +10,7 @@ interface WvParagraphGroupProps {
 export default function WvParagraphGroup(props: WvParagraphGroupProps) {
   useDefaultProps<WvParagraphGroupProps>({
     small: false,
-    heading: undefined,
+    heading: '',
   });
 
   return (

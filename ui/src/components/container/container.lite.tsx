@@ -8,7 +8,7 @@ interface WvContainerProps {
 
 export default function WvContainer(props: WvContainerProps) {
   useDefaultProps<WvContainerProps>({
-    heading: undefined,
+    heading: '',
   });
 
   return (

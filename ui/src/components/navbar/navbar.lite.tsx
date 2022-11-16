@@ -14,8 +14,8 @@ export default function WvNavbar(props: WvNavbarProps) {
   useDefaultProps<WvNavbarProps>({
     dark: false,
     homeHref: '/',
-    logoAddonSrc: undefined,
-    title: undefined,
+    logoAddonSrc: '',
+    title: '',
     alwayShowSlot: false,
   });
 

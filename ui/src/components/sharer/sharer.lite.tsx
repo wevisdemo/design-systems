@@ -12,7 +12,7 @@ interface WvSharerProps {
 
 export default function WvSharer(props: WvSharerProps) {
   useDefaultProps<WvSharerProps>({
-    url: undefined,
+    url: '',
     label: 'Share',
     hideLabel: false,
     light: false,

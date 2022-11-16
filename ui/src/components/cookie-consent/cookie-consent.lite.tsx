@@ -50,7 +50,7 @@ const translation: Record<string, Record<string, string>> = {
 export default function WvCookieBanner(props: WvCookieBannerProps) {
   useDefaultProps<Partial<WvCookieBannerProps>>({
     cookieOptions: [],
-    onAccept: () => {},
+    onAccept: undefined,
     daysToExpire: 30,
   });
 
