@@ -10,16 +10,16 @@ Cookie consent banner and popup with action callback after user consent.
 <WvCookieConsent
   client:load
   policyUrl="https://punchup.world"
-  cookieOptions={['Analytics', 'Preference', 'Advertising']}
+  cookieOptions={['Functionality', 'Performance', 'Advertising']}
 />
 
 ```jsx
 import WvCookieConsent from '@wevisdemo/ui/{react,vue2,svelte}/cookie-consent';
 
-const cookieOptions = ['Analytics', 'Preference', 'Advertising'];
+const cookieOptions = ['Functionality', 'Performance', 'Advertising'];
 
 function onCookieAccept(option) {
-  if (option['Analytics']) {
+  if (option['Performance']) {
     // Initialize or enable analytics
   }
 }
@@ -45,18 +45,20 @@ The `cookieOptions` can be an array of any string representing cookie type, whic
 The `option` parameter for `onAccept` function will be an object including keys for each `cookieOptions` and coresponsed `boolean` represent user option. For example, if the `cookieOptions` are
 
 ```jsx
-const cookieOptions = ['Analytics', 'Preference', 'Advertising'];
+const cookieOptions = ['Functionality', 'Performance', 'Advertising'];
 ```
 
 the `option` will have the following type
 
 ```tsx
 type Option {
-  Analytics: boolean
-  Preference: boolean
+  Functionality: boolean
+  Performance: boolean
   Advertising: boolean
 }
 ```
+
+Please consult with PM or Tech Lead about cookie's type in your project.
 
 ## Behavior
 
