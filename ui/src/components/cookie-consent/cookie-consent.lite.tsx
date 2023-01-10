@@ -140,13 +140,13 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
           </button>
         </Show>
 
-        <div class="wv_cookie-consent__container wv-font-baijamjuri">
+        <div class="wv_cookie-consent__container wv-baijamjuri">
           <div class="wv_cookie-consent__lang wv-b7">
             <For each={langs}>
               {(lang) => (
                 <button
                   key={lang}
-                  class={`wv-font-baijamjuri ${
+                  class={`wv-baijamjuri ${
                     state.activeLang === lang ? '' : 'inactive'
                   }`}
                   onClick={() => (state.activeLang = lang)}
@@ -158,7 +158,7 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
           </div>
 
           <Show when={state.isSettingOpen}>
-            <div class="wv_cookie-consent__options wv-font-bold">
+            <div class="wv_cookie-consent__options wv-bold">
               <h2 class="wv-b3">{translation.setting[state.activeLang]}</h2>
               <div>
                 <input type="checkbox" id="cookie-necessary" checked disabled />
@@ -205,16 +205,13 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
             <Show
               when={state.isSettingOpen}
               else={
-                <button
-                  class="wv-font-ibmplex"
-                  onClick={() => state.openSetting()}
-                >
+                <button class="wv-ibmplex" onClick={() => state.openSetting()}>
                   {translation.setting[state.activeLang]}
                 </button>
               }
             >
               <button
-                class="wv-font-ibmplex"
+                class="wv-ibmplex"
                 onClick={() => state.save(state.selectedCookies)}
               >
                 {translation.save[state.activeLang]}
@@ -222,7 +219,7 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
             </Show>
 
             <button
-              class="wv-font-ibmplex"
+              class="wv-ibmplex"
               onClick={() => state.save(state.createCookieSetting(true))}
             >
               {translation.acceptAll[state.activeLang]}

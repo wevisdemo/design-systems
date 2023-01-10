@@ -46,7 +46,7 @@ export default function WvNavbar(props: WvNavbarProps) {
       </div>
 
       <Show when={props.title}>
-        <div class="wv_navbar__title wv-font-kondolar wv-h9">{props.title}</div>
+        <div class="wv_navbar__title wv-kondolar wv-h9">{props.title}</div>
       </Show>
 
       <div
