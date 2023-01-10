@@ -1,63 +1,74 @@
 /* Import font face */
 @font-face {
   font-family: 'Kondolar Thai';
+  font-display: swap;
   src: url(https://design-systems.wevis.info/KondolarThai-Regular.otf)
     format('opentype');
 }
 @font-face {
   font-family: 'Kondolar Thai';
   font-weight: 700;
+  font-display: swap;
   src: url(https://design-systems.wevis.info/KondolarThai-Bold.otf)
     format('opentype');
 }
 @font-face {
   font-family: 'Kondolar Thai';
   font-weight: 900;
+  font-display: swap;
   src: url(https://design-systems.wevis.info/KondolarThai-Black.otf)
     format('opentype');
 }
 @font-face {
   font-family: 'IBM Plex Sans Thai';
+  font-display: swap;
   src: url(https://design-systems.wevis.info/IBMPlexSansThai-Regular.otf)
     format('opentype');
 }
 @font-face {
   font-family: 'IBM Plex Sans Thai';
   font-weight: 600;
+  font-display: swap;
   src: url(https://design-systems.wevis.info/IBMPlexSansThai-SemiBold.otf)
     format('opentype');
 }
 @font-face {
   font-family: 'IBM Plex Sans Thai';
   font-weight: 700;
+  font-display: swap;
   src: url(https://design-systems.wevis.info/IBMPlexSansThai-Bold.otf)
     format('opentype');
 }
 @font-face {
   font-family: 'Anuphan';
+  font-display: swap;
   src: url(https://design-systems.wevis.info/Anuphan-Regular.otf)
     format('opentype');
 }
 @font-face {
   font-family: 'Anuphan';
   font-weight: 600;
+  font-display: swap;
   src: url(https://design-systems.wevis.info/Anuphan-SemiBold.otf)
     format('opentype');
 }
 @font-face {
   font-family: 'Anuphan';
   font-weight: 700;
+  font-display: swap;
   src: url(https://design-systems.wevis.info/Anuphan-Bold.otf)
     format('opentype');
 }
 @font-face {
   font-family: 'Bai Jamjuri';
+  font-display: swap;
   src: url(https://design-systems.wevis.info/BaiJamjuree-Regular.ttf)
     format('truetype');
 }
 @font-face {
   font-family: 'Bai Jamjuri';
   font-weight: 700;
+  font-display: swap;
   src: url(https://design-systems.wevis.info/BaiJamjuree-Bold.ttf)
     format('truetype');
 }
