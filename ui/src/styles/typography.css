@@ -17,6 +17,23 @@
     format('opentype');
 }
 @font-face {
+  font-family: 'IBM Plex Sans Thai';
+  src: url(https://design-systems.wevis.info/IBMPlexSansThai-Regular.otf)
+    format('opentype');
+}
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-weight: 600;
+  src: url(https://design-systems.wevis.info/IBMPlexSansThai-SemiBold.otf)
+    format('opentype');
+}
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-weight: 700;
+  src: url(https://design-systems.wevis.info/IBMPlexSansThai-Bold.otf)
+    format('opentype');
+}
+@font-face {
   font-family: 'Anuphan';
   src: url(https://design-systems.wevis.info/Anuphan-Regular.otf)
     format('opentype');
@@ -48,6 +65,10 @@
 /* Font family */
 .wv-font-kondolar {
   font-family: 'Kondolar Thai', 'serif';
+}
+
+.wv-font-ibmplex {
+  font-family: 'IBM Plex Sans Thai', 'sans';
 }
 
 .wv-font-anuphan {

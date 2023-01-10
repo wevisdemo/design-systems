@@ -206,7 +206,7 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
               when={state.isSettingOpen}
               else={
                 <button
-                  class="wv-font-anuphan"
+                  class="wv-font-ibmplex"
                   onClick={() => state.openSetting()}
                 >
                   {translation.setting[state.activeLang]}
@@ -214,7 +214,7 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
               }
             >
               <button
-                class="wv-font-anuphan"
+                class="wv-font-ibmplex"
                 onClick={() => state.save(state.selectedCookies)}
               >
                 {translation.save[state.activeLang]}
@@ -222,7 +222,7 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
             </Show>
 
             <button
-              class="wv-font-anuphan"
+              class="wv-font-ibmplex"
               onClick={() => state.save(state.createCookieSetting(true))}
             >
               {translation.acceptAll[state.activeLang]}
