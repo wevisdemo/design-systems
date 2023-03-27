@@ -6,6 +6,7 @@
   @apply w-[30px] h-[30px];
 }
 
+.wv_sharer__share-link svg.copy-outline .outline,
 .wv_sharer svg .outline {
   @apply fill-none stroke-1;
 }
@@ -14,7 +15,7 @@
   @apply cursor-pointer;
 }
 
-.wv_sharer__share-link path {
+.wv_sharer__share-link svg.copy-outline path {
   @apply fill-none stroke-2;
 }
 
