@@ -33,7 +33,7 @@
 }
 
 .wv_navbar__logo__addon {
-  @apply h-full max-h-6 md:max-h-7;
+  @apply h-full max-h-6 md:max-h-7 w-auto object-contain object-left;
 }
 
 .wv_navbar__title {
