@@ -43,7 +43,12 @@ export default function WvSharer(props: WvSharerProps) {
       </Show>
 
       <Show when={props.allowCopyLink}>
-        <div class="wv_sharer__share-link" onClick={state.copyToClipboard}>
+        <button
+          type="button"
+          class="wv_sharer__share-link"
+          onClick={state.copyToClipboard}
+          aria-label="Copy link"
+        >
           <Show when={props.outline}>
             <svg viewBox="0 0 28 28" class="copy-outline">
               <path
@@ -68,13 +73,14 @@ export default function WvSharer(props: WvSharerProps) {
               />
             </svg>
           </Show>
-        </div>
+        </button>
       </Show>
 
       <a
         href={`http://www.facebook.com/sharer/sharer.php?u=${state.encodedURL}`}
         target="_blank"
         rel="noreferrer noopener"
+        aria-label="Facebook"
       >
         <Show when={props.outline}>
           <svg viewBox="0 0 28 28">
@@ -96,6 +102,7 @@ export default function WvSharer(props: WvSharerProps) {
         href={`https://twitter.com/intent/tweet?url=${state.encodedURL}`}
         target="_blank"
         rel="noreferrer noopener"
+        aria-label="Twitter"
       >
         <Show when={props.outline}>
           <svg viewBox="0 0 28 28">
@@ -117,6 +124,7 @@ export default function WvSharer(props: WvSharerProps) {
         href={`https://social-plugins.line.me/lineit/share?url=${state.encodedURL}`}
         target="_blank"
         rel="noreferrer noopener"
+        aria-label="Line"
       >
         <Show when={props.outline}>
           <svg viewBox="0 0 28 28">

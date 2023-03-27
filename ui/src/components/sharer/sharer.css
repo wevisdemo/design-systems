@@ -2,6 +2,10 @@
   @apply flex flex-row items-center space-x-3;
 }
 
+.wv_sharer a {
+  @apply flex;
+}
+
 .wv_sharer svg {
   @apply w-[30px] h-[30px];
 }
@@ -12,7 +16,7 @@
 }
 
 .wv_sharer__share-link {
-  @apply cursor-pointer;
+  @apply cursor-pointer bg-transparent border-none p-0 flex;
 }
 
 .wv_sharer__share-link svg.copy-outline path {
