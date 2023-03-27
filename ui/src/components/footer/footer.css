@@ -19,7 +19,7 @@
 }
 
 .wv_footer__logo {
-  @apply flex-1 flex items-center;
+  @apply flex items-center mr-auto;
 }
 
 .wv_footer__logo svg {
