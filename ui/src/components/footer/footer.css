@@ -1,5 +1,5 @@
 .wv_footer {
-  @apply flex flex-row px-4 py-3 md:px-6 md:py-5;
+  @apply flex flex-row px-4 py-3 md:px-6 md:py-5 md:space-x-5 space-x-3;
 }
 
 .wv_footer--black {
@@ -26,8 +26,36 @@
   @apply h-4 md:h-6;
 }
 
+.wv_footer__terms {
+  @apply flex justify-center items-center;
+}
+
+.wv_footer--black .wv_footer__terms a {
+  @apply text-white;
+}
+
+.wv_footer--white .wv_footer__terms a {
+  @apply text-black;
+}
+
+.wv_footer__divider {
+  @apply w-[1px] opacity-30;
+}
+
+.wv_footer--black .wv_footer__divider {
+  @apply bg-white;
+}
+
+.wv_footer--white .wv_footer__divider {
+  @apply bg-black;
+}
+
 .wv_footer__follow {
   @apply flex flex-row items-center md:space-x-2;
+}
+
+.wv_footer__follow span {
+  @apply hidden md:inline-block;
 }
 
 .wv_footer__follow a {
