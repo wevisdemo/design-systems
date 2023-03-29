@@ -1,5 +1,5 @@
 .wv_button {
-  @apply flex flex-row space-x-2 justify-center items-center bg-transparent rounded-[2px] border-solid min-w-[190px] px-4 py-3 cursor-pointer;
+  @apply flex flex-row space-x-2 justify-center items-center bg-transparent rounded-[2px] border-[2px] border-solid min-w-[190px] px-4 py-3 cursor-pointer;
 }
 
 .wv_button--blue {
