@@ -47,6 +47,10 @@
   @apply flex flex-row items-center py-4 border-0 border-b border-white border-opacity-20 border-solid space-x-3;
 }
 
+.wv_cookie-consent__options > h2 {
+  @apply m-0;
+}
+
 .wv_cookie-consent__body {
   @apply text-center md:text-left;
 }

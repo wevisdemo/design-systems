@@ -114,94 +114,94 @@
 
 /* Heading size */
 .wv-h1 {
-  @apply text-[60px] md:text-[100px] leading-[1.25] m-0;
+  @apply text-[60px] md:text-[100px] leading-[1.25];
 }
 
 .wv-h2 {
-  @apply text-[48px] md:text-[72px] leading-[1.25] m-0;
+  @apply text-[48px] md:text-[72px] leading-[1.25];
 }
 
 .wv-h3 {
-  @apply text-[36px] md:text-[60px] leading-[1.25] m-0;
+  @apply text-[36px] md:text-[60px] leading-[1.25];
 }
 
 .wv-h4 {
-  @apply text-[32px] md:text-[48px] leading-[1.25] m-0;
+  @apply text-[32px] md:text-[48px] leading-[1.25];
 }
 
 .wv-h5 {
-  @apply text-[28px] md:text-[36px] leading-[1.25] m-0;
+  @apply text-[28px] md:text-[36px] leading-[1.25];
 }
 
 .wv-h6 {
-  @apply text-[24px] md:text-[32px] leading-[1.25] m-0;
+  @apply text-[24px] md:text-[32px] leading-[1.25];
 }
 
 .wv-h7 {
-  @apply text-[21px] md:text-[28px] leading-[1.25] m-0;
+  @apply text-[21px] md:text-[28px] leading-[1.25];
 }
 
 .wv-h8 {
-  @apply text-[18px] md:text-[24px] leading-[1.25] m-0;
+  @apply text-[18px] md:text-[24px] leading-[1.25];
 }
 
 .wv-h9 {
-  @apply text-[16px] md:text-[21px] leading-[1.25] m-0;
+  @apply text-[16px] md:text-[21px] leading-[1.25];
 }
 
 .wv-h10 {
-  @apply text-[15px] md:text-[18px] leading-[1.25] m-0;
+  @apply text-[15px] md:text-[18px] leading-[1.25];
 }
 
 .wv-h11 {
-  @apply text-[14px] md:text-[16px] leading-[1.25] m-0;
+  @apply text-[14px] md:text-[16px] leading-[1.25];
 }
 
 /* Body size */
 .wv-b1 {
-  @apply text-[24px] md:text-[32px] leading-[1.5] m-0;
+  @apply text-[24px] md:text-[32px] leading-[1.5];
 }
 
 .wv-b2 {
-  @apply text-[21px] md:text-[24px] leading-[1.5] m-0;
+  @apply text-[21px] md:text-[24px] leading-[1.5];
 }
 
 .wv-b3 {
-  @apply text-[18px] md:text-[21px] leading-[1.5] m-0;
+  @apply text-[18px] md:text-[21px] leading-[1.5];
 }
 
 .wv-b4 {
-  @apply text-[16px] md:text-[18px] leading-[1.5] m-0;
+  @apply text-[16px] md:text-[18px] leading-[1.5];
 }
 
 .wv-b5 {
-  @apply text-[14px] md:text-[16px] leading-[1.5] m-0;
+  @apply text-[14px] md:text-[16px] leading-[1.5];
 }
 
 .wv-b6 {
-  @apply text-[12px] md:text-[14px] leading-[1.5] m-0;
+  @apply text-[12px] md:text-[14px] leading-[1.5];
 }
 
 .wv-b7 {
-  @apply text-[10px] md:text-[12px] leading-[1.5] m-0;
+  @apply text-[10px] md:text-[12px] leading-[1.5];
 }
 
 .wv-u1 {
-  @apply text-[20px] leading-[1.25] m-0;
+  @apply text-[20px] leading-[1.25];
 }
 
 .wv-u2 {
-  @apply text-[18px] leading-[1.25] m-0;
+  @apply text-[18px] leading-[1.25];
 }
 
 .wv-u3 {
-  @apply text-[16px] leading-[1.25] m-0;
+  @apply text-[16px] leading-[1.25];
 }
 
 .wv-u4 {
-  @apply text-[14px] leading-[1.25] m-0;
+  @apply text-[14px] leading-[1.25];
 }
 
 .wv-u5 {
-  @apply text-[12px] leading-[1.25] m-0;
+  @apply text-[12px] leading-[1.25];
 }

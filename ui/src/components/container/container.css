@@ -3,5 +3,5 @@
 }
 
 .wv_container h1 {
-  @apply text-center;
+  @apply text-center m-0;
 }
