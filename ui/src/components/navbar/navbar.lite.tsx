@@ -16,7 +16,7 @@ interface WvNavbarProps {
 export default function WvNavbar(props: WvNavbarProps) {
   useDefaultProps<WvNavbarProps>({
     dark: false,
-    homeHref: '/',
+    homeHref: 'https://wevis.info/',
     logoAddonSrc: '',
     logoAddonWidth: 0,
     logoAddonHeight: 24,
