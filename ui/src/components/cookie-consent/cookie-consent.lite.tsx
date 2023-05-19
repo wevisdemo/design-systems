@@ -125,6 +125,7 @@ export default function WvCookieBanner<T extends CookieType>(
       >
         <Show when={state.isSettingOpen}>
           <button
+            type="button"
             class="wv_cookie-consent__close"
             onClick={() => (state.isSettingOpen = false)}
           >
@@ -155,6 +156,7 @@ export default function WvCookieBanner<T extends CookieType>(
               {(lang) => (
                 <button
                   key={lang}
+                  type="button"
                   class={`wv-baijamjuri ${
                     state.activeLang === lang ? '' : 'inactive'
                   }`}
@@ -208,12 +210,17 @@ export default function WvCookieBanner<T extends CookieType>(
             <Show
               when={state.isSettingOpen}
               else={
-                <button class="wv-ibmplex" onClick={() => state.openSetting()}>
+                <button
+                  type="button"
+                  class="wv-ibmplex"
+                  onClick={() => state.openSetting()}
+                >
                   {translation.setting[state.activeLang]}
                 </button>
               }
             >
               <button
+                type="button"
                 class="wv-ibmplex"
                 onClick={() => state.save(state.selectedCookies)}
               >
@@ -222,6 +229,7 @@ export default function WvCookieBanner<T extends CookieType>(
             </Show>
 
             <button
+              type="button"
               class="wv-ibmplex"
               onClick={() => state.save(state.createCookieSetting(true))}
             >

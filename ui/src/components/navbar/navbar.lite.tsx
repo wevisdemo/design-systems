@@ -79,6 +79,7 @@ export default function WvNavbar(props: WvNavbarProps) {
 
       <Show when={!props.alwayShowSlot}>
         <button
+          type="button"
           class="wv_navbar__hamburger-button"
           onClick={() => (state.isMobileMenuOpened = !state.isMobileMenuOpened)}
           aria-label="Open Menu"

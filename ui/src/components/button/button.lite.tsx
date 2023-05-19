@@ -17,6 +17,7 @@ export default function WvButton(props: WvButtonProps) {
 
   return (
     <button
+      type="button"
       class={`wv_button wv-ibmplex wv_button--${props.color} ${
         props.small ? 'wv-b5 wv_button--small' : 'wv-b4'
       }`}

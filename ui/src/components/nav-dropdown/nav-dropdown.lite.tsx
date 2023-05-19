@@ -28,6 +28,7 @@ export default function WvNavDropdown(props: WvNavDropdownProps) {
       }`}
     >
       <button
+        type="button"
         class="wv-ibmplex wv-b7 wv_nav-button"
         onClick={(event) => state.toggleList(event)}
       >
