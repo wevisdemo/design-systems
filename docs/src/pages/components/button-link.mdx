@@ -1,0 +1,167 @@
+---
+title: Button Link
+layout: ../../layouts/MainLayout.astro
+---
+
+import WvButtonLink from '@wevisdemo/ui/.mitosis/react/button-link';
+import WvButtonGroup from '@wevisdemo/ui/.mitosis/react/button-group';
+
+<WvButtonLink href="https://wevis.info/">WeVis</WvButtonLink>
+
+```jsx
+import WvButtonLink from '@wevisdemo/ui/{react,vue2,svelte}/button-link';
+
+<WvButtonLink href="https://wevis.info/">WeVis</WvButtonLink>;
+```
+
+## Props
+
+| Name   | Type                               | Default                        |
+| ------ | ---------------------------------- | ------------------------------ |
+| href   | `string`                           |                                |
+| color  | `"blue"` \| `"black"` \| `"white"` | `"blue"`                       |
+| small  | `boolean`                          | `false`                        |
+| target | `string` \| `undefined`            | `_blank`                       |
+| rel    | `string` \| `undefined`            | `nofollow noopener noreferrer` |
+
+## Slot / Children
+
+Button content
+
+## Examples
+
+**With different color**
+
+<WvButtonGroup>
+  <WvButtonLink href="https://wevis.info/">Blue (default)</WvButtonLink>
+  <WvButtonLink href="https://wevis.info/" color="black">Black</WvButtonLink>
+  <WvButtonLink href="https://wevis.info/" color="white">White</WvButtonLink>
+</WvButtonGroup>
+
+```jsx
+<WvButtonLink href="https://wevis.info/">Blue (default)</WvButtonLink>
+<WvButtonLink href="https://wevis.info/" color="black">Black</WvButtonLink>
+<WvButtonLink href="https://wevis.info/" color="white">White</WvButtonLink>
+```
+
+**Small**
+
+{' '}
+
+<WvButtonGroup>
+  <WvButtonLink href="https://wevis.info/" small>Blue (default)</WvButtonLink>
+  <WvButtonLink href="https://wevis.info/" small color="black">Black</WvButtonLink>
+  <WvButtonLink href="https://wevis.info/" small color="white">White</WvButtonLink>
+</WvButtonGroup>
+
+```jsx
+<WvButtonLink href="https://wevis.info/" small>Blue (default)</WvButtonLink>
+<WvButtonLink href="https://wevis.info/" small color="black">Black</WvButtonLink>
+<WvButtonLink href="https://wevis.info/" small color="white">White</WvButtonLink>
+```
+
+**Internal link**
+
+Normally, the button link has a default props for `target` and `rel` suitable
+for making an external link. You can set them both to `undefined` to make an
+internal link.
+
+<WvButtonLink href="https://wevis.info/" target="" rel="">WeVis</WvButtonLink>
+
+```jsx
+<WvButtonLink href="https://wevis.info/" target={undefined} rel={undefined}>
+  WeVis
+</WvButtonLink>
+```
+
+**With icon**
+
+<WvButtonLink href="https://wevis.info/">
+  <svg
+    width="21"
+    height="21"
+    viewBox="0 0 21 21"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clip-path="url(#clip0_314_173)">
+      <path
+        d="M7.03582 2.86356H1.17529V19.4081H19.8247V2.86356C19.8247 2.86356 15.306 2.86356 13.9642 2.86356"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-miterlimit="10"
+      />
+      <path
+        d="M16.0317 8.65536L10.7284 13.9587L5.42513 8.65536"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-miterlimit="10"
+      />
+      <line
+        x1="10.667"
+        y1="0.5"
+        x2="10.667"
+        y2="13"
+        stroke="currentColor"
+        stroke-width="2"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_314_173">
+        <rect
+          width="20.8333"
+          height="20"
+          fill="white"
+          transform="translate(0.0834961 0.5)"
+        />
+      </clipPath>
+    </defs>
+  </svg>
+  <span>Feedback</span>
+</WvButtonLink>
+
+```jsx
+<WvButtonLink href="https://wevis.info/">
+  <svg
+    width="21"
+    height="21"
+    viewBox="0 0 21 21"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clip-path="url(#clip0_314_173)">
+      <path
+        d="M7.03582 2.86356H1.17529V19.4081H19.8247V2.86356C19.8247 2.86356 15.306 2.86356 13.9642 2.86356"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-miterlimit="10"
+      />
+      <path
+        d="M16.0317 8.65536L10.7284 13.9587L5.42513 8.65536"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-miterlimit="10"
+      />
+      <line
+        x1="10.667"
+        y1="0.5"
+        x2="10.667"
+        y2="13"
+        stroke="currentColor"
+        stroke-width="2"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_314_173">
+        <rect
+          width="20.8333"
+          height="20"
+          fill="white"
+          transform="translate(0.0834961 0.5)"
+        />
+      </clipPath>
+    </defs>
+  </svg>
+  <span>Feedback</span>
+</WvButtonLink>
+```
