@@ -6,13 +6,18 @@ import {
   useStore,
 } from '@builder.io/mitosis';
 
-type CookieSetting = Record<string, boolean>;
+type CookieType =
+  | 'Functionality'
+  | 'Performance'
+  | 'Advertising'
+  | (string & Record<never, never>);
+type CookieSetting<T extends CookieType> = Record<T, boolean>;
 
-interface WvCookieBannerProps {
+interface WvCookieBannerProps<T extends CookieType> {
   policyUrl: string;
-  cookieOptions?: string[];
+  cookieOptions?: T[];
   daysToExpire?: number;
-  onAccept?: (selectedCookies: CookieSetting) => void;
+  onAccept?: (selectedCookies: CookieSetting<T>) => void;
 }
 
 const LOCALSTORAGE_COOKIE_KEY = 'cookieSetting';
@@ -47,8 +52,10 @@ const translation: Record<string, Record<string, string>> = {
   },
 };
 
-export default function WvCookieBanner(props: WvCookieBannerProps) {
-  useDefaultProps<Partial<WvCookieBannerProps>>({
+export default function WvCookieBanner<T extends CookieType>(
+  props: WvCookieBannerProps<T>
+) {
+  useDefaultProps<Partial<WvCookieBannerProps<T>>>({
     cookieOptions: [],
     onAccept: undefined,
     daysToExpire: 30,
@@ -58,20 +65,20 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
     activeLang: 'ไทย',
     isShow: false,
     isSettingOpen: false,
-    selectedCookies: {} as CookieSetting,
-    createCookieSetting(value: boolean) {
+    selectedCookies: {} as CookieSetting<T>,
+    createCookieSetting(value: boolean): CookieSetting<T> {
       return props.cookieOptions
         ? props.cookieOptions.reduce(
             (obj, option) => ({ ...obj, [option]: value }),
-            {}
+            {} as CookieSetting<T>
           )
-        : {};
+        : ({} as CookieSetting<T>);
     },
     openSetting() {
       state.selectedCookies = state.createCookieSetting(false);
       state.isSettingOpen = true;
     },
-    save(options: CookieSetting) {
+    save(options: CookieSetting<T>) {
       const expiredAtMs =
         new Date().getTime() +
         (props.daysToExpire as number) * 24 * 60 * 60 * 1000;
@@ -98,7 +105,9 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
       localStorageCookieExpireAt &&
       new Date().getTime() < new Date(+localStorageCookieExpireAt).getTime()
     ) {
-      props.onAccept?.(JSON.parse(localStorageCookieSetting) as CookieSetting);
+      props.onAccept?.(
+        JSON.parse(localStorageCookieSetting) as CookieSetting<T>
+      );
     } else {
       localStorage.removeItem(LOCALSTORAGE_COOKIE_KEY);
       localStorage.removeItem(LOCALSTORAGE_COOKIE_EXPIRE_AT_KEY);
