@@ -15,7 +15,7 @@ export default function WvNavDropdown(props: WvNavDropdownProps) {
 
   const state = useStore({
     isListOpened: false,
-    toggleList(event: MouseEvent) {
+    toggleList(event: { stopPropagation: MouseEvent['stopPropagation'] }) {
       event.stopPropagation();
       state.isListOpened = !state.isListOpened;
     },

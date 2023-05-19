@@ -11,7 +11,7 @@ type CookieType =
   | 'Performance'
   | 'Advertising'
   | (string & Record<never, never>);
-type CookieSetting = Record<CookieType, boolean>;
+type CookieSetting = Partial<Record<CookieType, boolean>>;
 
 interface WvCookieBannerProps {
   policyUrl: string;
