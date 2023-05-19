@@ -16,9 +16,9 @@
     "build:stylesheet": "postcss src/styles/**/*.css --dir styles --env production"
   },
   "devDependencies": {
-    "@builder.io/eslint-plugin-mitosis": "^0.0.11",
-    "@builder.io/mitosis": "^0.0.76",
-    "@builder.io/mitosis-cli": "^0.0.34",
+    "@builder.io/eslint-plugin-mitosis": "^0.0.14",
+    "@builder.io/mitosis": "^0.0.103",
+    "@builder.io/mitosis-cli": "^0.0.61",
     "@sveltejs/adapter-auto": "^1.0.0-next.91",
     "@sveltejs/kit": "^1.0.0-next.589",
     "@sveltejs/package": "next",
