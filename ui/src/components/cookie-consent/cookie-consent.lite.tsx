@@ -11,13 +11,13 @@ type CookieType =
   | 'Performance'
   | 'Advertising'
   | (string & Record<never, never>);
-type CookieSetting<T extends CookieType> = Record<T, boolean>;
+type CookieSetting = Record<CookieType, boolean>;
 
-interface WvCookieBannerProps<T extends CookieType> {
+interface WvCookieBannerProps {
   policyUrl: string;
-  cookieOptions?: T[];
+  cookieOptions?: CookieType[];
   daysToExpire?: number;
-  onAccept?: (selectedCookies: CookieSetting<T>) => void;
+  onAccept?: (selectedCookies: CookieSetting) => void;
 }
 
 const LOCALSTORAGE_COOKIE_KEY = 'cookieSetting';
@@ -52,10 +52,8 @@ const translation: Record<string, Record<string, string>> = {
   },
 };
 
-export default function WvCookieBanner<T extends CookieType>(
-  props: WvCookieBannerProps<T>
-) {
-  useDefaultProps<Partial<WvCookieBannerProps<T>>>({
+export default function WvCookieBanner(props: WvCookieBannerProps) {
+  useDefaultProps<Partial<WvCookieBannerProps>>({
     cookieOptions: [],
     onAccept: undefined,
     daysToExpire: 30,
@@ -65,20 +63,20 @@ export default function WvCookieBanner<T extends CookieType>(
     activeLang: 'ไทย',
     isShow: false,
     isSettingOpen: false,
-    selectedCookies: {} as CookieSetting<T>,
-    createCookieSetting(value: boolean): CookieSetting<T> {
+    selectedCookies: {} as CookieSetting,
+    createCookieSetting(value: boolean): CookieSetting {
       return props.cookieOptions
         ? props.cookieOptions.reduce(
             (obj, option) => ({ ...obj, [option]: value }),
-            {} as CookieSetting<T>
+            {} as CookieSetting
           )
-        : ({} as CookieSetting<T>);
+        : ({} as CookieSetting);
     },
     openSetting() {
       state.selectedCookies = state.createCookieSetting(false);
       state.isSettingOpen = true;
     },
-    save(options: CookieSetting<T>) {
+    save(options: CookieSetting) {
       const expiredAtMs =
         new Date().getTime() +
         (props.daysToExpire as number) * 24 * 60 * 60 * 1000;
@@ -105,9 +103,7 @@ export default function WvCookieBanner<T extends CookieType>(
       localStorageCookieExpireAt &&
       new Date().getTime() < new Date(+localStorageCookieExpireAt).getTime()
     ) {
-      props.onAccept?.(
-        JSON.parse(localStorageCookieSetting) as CookieSetting<T>
-      );
+      props.onAccept?.(JSON.parse(localStorageCookieSetting) as CookieSetting);
     } else {
       localStorage.removeItem(LOCALSTORAGE_COOKIE_KEY);
       localStorage.removeItem(LOCALSTORAGE_COOKIE_EXPIRE_AT_KEY);
