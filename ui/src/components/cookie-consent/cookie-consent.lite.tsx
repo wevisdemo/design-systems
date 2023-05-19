@@ -160,18 +160,15 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
           <Show when={state.isSettingOpen}>
             <div class="wv_cookie-consent__options wv-bold">
               <h2 class="wv-b3">{translation.setting[state.activeLang]}</h2>
-              <div>
-                <input type="checkbox" id="cookie-necessary" checked disabled />
-                <label htmlFor="cookie-necessary">
-                  Strictly Necessary Cookies
-                </label>
-              </div>
+              <label>
+                <input type="checkbox" checked disabled />
+                <span>Strictly Necessary Cookies</span>
+              </label>
               <For each={props.cookieOptions}>
                 {(option) => (
-                  <div key={option}>
+                  <label key={option}>
                     <input
                       type="checkbox"
-                      id={`cookie-${option.toLowerCase()}`}
                       checked={state.selectedCookies[option]}
                       onChange={(event) =>
                         (state.selectedCookies = {
@@ -180,11 +177,8 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
                         })
                       }
                     />
-                    <label htmlFor={`cookie-${option.toLowerCase()}`}>
-                      {option}
-                      {` `}Cookies
-                    </label>
-                  </div>
+                    <span>{option} Cookies</span>
+                  </label>
                 )}
               </For>
             </div>
