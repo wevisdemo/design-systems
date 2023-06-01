@@ -1,0 +1,61 @@
+---
+title: Nav Button Link
+layout: ../../layouts/MainLayout.astro
+---
+
+import '@wevisdemo/ui/styles/nav-button-link.css';
+import WvNavButtonLink from '@wevisdemo/ui/.mitosis/react/nav-button-link';
+
+A link (`<a>`) for navigation bar
+
+<div class="not-prose">
+<WvNavButtonLink href="https://github.com/wevisdemo/design-systems">GitHub</WvNavButtonLink>
+</div>
+
+```jsx
+import '@wevisdemo/ui/styles/nav-button-link.css';
+import WvNavButtonLink from '@wevisdemo/ui/{react,vue2,svelte}/nav-button-link';
+
+<WvNavButtonLink href="https://github.com/wevisdemo/design-systems">GitHub</WvNavButtonLink>;
+```
+
+## Props
+
+| Name    | Type         | Default                          |
+| ------- | ------------ | -------------------------------- |
+| href    | `string`     |                                  |
+| target  | `string`     | `"_blank"`                       |
+| rel     | `string`     | `"nofollow noopener noreferrer"` |
+| dark    | `boolean`    | `false`                          |
+
+## Slot / Children
+
+Button content
+
+## Examples
+
+**With dark theme**
+
+<div class="not-prose bg-black py-4">
+<WvNavButtonLink href="https://github.com/wevisdemo/design-systems" dark>GitHub</WvNavButtonLink>
+</div>
+
+```jsx
+<WvNavButtonLink href="https://github.com/wevisdemo/design-systems" dark>GitHub</WvNavButtonLink>
+```
+
+**Internal link**
+
+Normally, the button link has a default props for `target` and `rel` suitable
+for making an external link. You can set them both to `undefined` to make an
+internal link.
+
+<div class="not-prose">
+<WvNavButtonLink href="https://wevis.info/" target="" rel="">WeVis</WvNavButtonLink>
+</div>
+
+```jsx
+<WvNavButtonLink href="https://wevis.info/" target={undefined} rel={undefined}>
+  WeVis
+</WvNavButtonLink>
+```
