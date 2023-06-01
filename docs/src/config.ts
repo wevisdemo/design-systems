@@ -26,7 +26,9 @@ export type Frontmatter = {
   lang?: string;
 };
 
-export type Sidebar = Record<string, { text: string; link: string }[]>;
+export type SidebarPage = { text: string; link: string };
+export type SidebarGroup = { header: string; pages: SidebarPage[] };
+export type Sidebar = (SidebarPage | SidebarGroup)[];
 
 const convertSnakeCaseToSentence = (str: string) =>
   str
@@ -44,12 +46,14 @@ const getSidebarItemFromDir = (dir: string) =>
     };
   });
 
-export const SIDEBAR: Sidebar = {
-  Guide: [
-    { text: 'Introduction', link: '' },
-    { text: 'Geting Started', link: 'getting-started' },
-  ],
-  Typography: getSidebarItemFromDir('typography'),
-  Components: getSidebarItemFromDir('components'),
-  Cookbook: getSidebarItemFromDir('cookbook'),
-};
+export const SIDEBAR: Sidebar = [
+  {
+    header: 'Basics',
+    pages: [
+      { text: 'Getting Started', link: '' },
+      { text: 'Typography', link: 'typography' },
+    ],
+  },
+  { header: 'Components', pages: getSidebarItemFromDir('components') },
+  { header: 'Cookbook', pages: getSidebarItemFromDir('cookbook') },
+];

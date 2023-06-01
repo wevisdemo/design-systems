@@ -1,7 +1,12 @@
 ---
-title: Getting started
+title: Getting Started
+description: Introduction and Getting Started
 layout: ../layouts/MainLayout.astro
 ---
+
+This project aim to help any developer kick start a new WeVis project with ease. The design systems are co-develop with the designers, making consistancy between the library and Figma design.
+
+[View source code on GitHub](https://github.com/wevisdemo/design-systems)
 
 ## 1. Install the package
 
@@ -48,16 +53,16 @@ import WvButton from '@wevisdemo/ui/{react,vue2,svelte}/button';
 
 ## NOTES
 
-#### Vue 2
+### Vue 2
 
-According to [Mitosis bug with Vue props type](https://github.com/BuilderIO/mitosis/issues/847), no declaration files in the package until the bug is solve. Use `@ts-ignore` over import statement in Typescript project.
+According to [Mitosis bug with Vue props type](https://github.com/BuilderIO/mitosis/issues/847), no declaration files in the package until the bug is solve. Use `/* @ts-ignore */` over import statement in Typescript project.
 
 ```ts
 /* @ts-ignore */
 import WvNavbar from '@wevisdemo/ui/vue2/navbar';
 ```
 
-#### Nuxt 2
+### Nuxt 2
 
 Nuxt 2 don't support ESModule out of the box. Need to add the library into `build.transpile` in `nuxt.config.js`
 
@@ -68,7 +73,7 @@ build: {
 }
 ```
 
-#### Svelte
+### Svelte
 
 Mitosis has [issue generating optional props for Svelte](https://github.com/BuilderIO/mitosis/issues/913) Optional string props now use `''` as a default for a workaround. But `function` props are still have problem. Please provide empty function `() => {}` until futher updates.
 
