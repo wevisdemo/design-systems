@@ -24,9 +24,11 @@ yarn add @wevisdemo/ui
 
 ## 2. Import the stylesheet
 
-Import `@wevisdemo/ui/styles/index.css` as a global according to your framework.
+In the latest release, you can import individual component style from `@wevisdemo/ui/styles/<component-name>.css` as shown in step 3.
 
-For example, with **NuxtJS**
+You can also import all component style by importing `@wevisdemo/ui/styles/index.css` as a global according to your framework.
+
+For example, with **Nuxt.js**:
 
 ```js
 // nuxt.config.js
@@ -35,7 +37,7 @@ For example, with **NuxtJS**
 }
 ```
 
-Most framework can be imported to main JavaScript or template file directly
+Most framework can be imported to main JavaScript or template file directly:
 
 ```js
 import '@wevisdemo/ui/styles/index.css';
@@ -43,15 +45,16 @@ import '@wevisdemo/ui/styles/index.css';
 
 ## 3. Use the components
 
-Components are available for **Vue2**, **React**, and **Svelte** which separated in package sub-directoy. Recommends to import with `Wv` name prefix to avoid duplicated component name. For example:
+Components are available for **Vue 2**, **React**, and **Svelte** which separated in package sub-directoy. Recommends to import with `Wv` name prefix to avoid duplicated component name. For example:
 
 ```jsx
+import '@wevisdemo/ui/styles/button.css';
 import WvButton from '@wevisdemo/ui/{react,vue2,svelte}/button';
 
 <WvButton>Hello</WvButton>;
 ```
 
-## NOTES
+## Notes
 
 ### Vue 2
 

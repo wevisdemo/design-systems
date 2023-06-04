@@ -8,7 +8,9 @@ import WvNavButton from '@wevisdemo/ui/.mitosis/react/nav-button';
 
 A button for navigation bar
 
+<div class="not-prose component-preview">
 <WvNavButton>About</WvNavButton>
+</div>
 
 ```jsx
 import '@wevisdemo/ui/styles/nav-button.css';
@@ -19,11 +21,11 @@ import WvNavButton from '@wevisdemo/ui/{react,vue2,svelte}/nav-button';
 
 ## Props
 
-| Name    | Type         | Default     |
-| ------- | ------------ | ----------- |
-| active  | `boolean`    | `false`     |
-| dark    | `boolean`    | `false`     |
-| onClick | `() => void` | `undefined` |
+| Name    | Type                    | Default     |
+| ------- | ----------------------- | ----------- |
+| active  | boolean                 | `false`     |
+| dark    | boolean                 | `false`     |
+| onClick | () => void \| undefined | `undefined` |
 
 ## Slot / Children
 
@@ -33,7 +35,9 @@ Button content
 
 **Active button**
 
+<div class="not-prose component-preview">
 <WvNavButton active>About</WvNavButton>
+</div>
 
 ```jsx
 <WvNavButton active>About</WvNavButton>
@@ -41,10 +45,10 @@ Button content
 
 **With dark theme**
 
-<WvNavButton dark active>
-  About
-</WvNavButton>
+<div class="not-prose component-preview preview-dark">
+<WvNavButton dark active>About</WvNavButton>
 <WvNavButton dark>Report</WvNavButton>
+</div>
 
 ```jsx
 <WvNavButton dark active>About</WvNavButton>

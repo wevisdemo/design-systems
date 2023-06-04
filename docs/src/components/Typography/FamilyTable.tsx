@@ -95,7 +95,7 @@ export default () => {
         <div className="font-bold -mb-1.5 mt-2">Preview</div>
         <code className="wv-b6">{currentStyle}</code>
       </div>
-      <p className={`border border-neutral-500 rounded border-dashed p-4 wv-b3 ${currentStyle}`}>
+      <p className={`border border-neutral-500 rounded-md border-dashed p-4 wv-b3 ${currentStyle}`}>
         Sphinx of black quartz, judge my vow!<br />
         Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br />
         นายสังฆภัณฑ์ เฮงพิทักษ์ฝั่ง ผู้เฒ่าซึ่งมีอาชีพเป็นฅนขายฃวด ถูกตำรวจปฏิบัติการจับฟ้องศาล ฐานลักนาฬิกาคุณหญิงฉัตรชฎา ฌานสมาธิ

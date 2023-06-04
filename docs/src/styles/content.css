@@ -7,9 +7,17 @@
   @apply prose-ul:m-0 prose-ul:my-2 prose-ul:pl-[2ch] marker:prose-ul:text-black;
   @apply prose-li:p-0 prose-li:my-1;
   @apply before:prose-code:content-[''] after:prose-code:content-[''] prose-code:bg-[#0d1117] prose-code:text-white prose-code:font-normal prose-code:px-1 prose-code:py-0.5 prose-code:rounded;
-  @apply prose-a:text-ultramarine;
+  @apply prose-a:text-ultramarine prose-a:no-underline hover:prose-a:underline;
 }
 
 .main-content pre > code {
   @apply p-0 bg-transparent text-inherit rounded-none;
+}
+
+.component-preview {
+  @apply border border-neutral-500 rounded-md border-dashed p-2 my-2;
+}
+
+.component-preview.preview-dark {
+  @apply bg-black border-white;
 }

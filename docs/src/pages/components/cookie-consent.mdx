@@ -35,18 +35,18 @@ function onCookieAccept(option) {
 
 ## Props
 
-| Name          | Type                                        | Default    |
-| ------------- | ------------------------------------------- | ---------- |
-| policyUrl     | `string`                                    |            |
-| cookieOptions | `string[]`                                  | `[]`       |
-| daysToExpire  | `number`                                    | 30         |
-| onAccept      | `(option: Record<string, boolean>) => void` | `() => {}` |
+| Name          | Type                                       | Default    |
+| ------------- | ------------------------------------------ | ---------- |
+| policyUrl     | string                                     |            |
+| cookieOptions | string[]                                   | `[]`       |
+| daysToExpire  | number                                     | `30`       |
+| onAccept      | (option: Record\<string, boolean>) => void | `() => {}` |
 
 The `cookieOptions` can be an array of any string representing cookie type, which showing in cookie setting option pop-up. Please consult PM which cookie type needed to be included in each project.
 
 The `option` parameter for `onAccept` function will be an object including keys for each `cookieOptions` and coresponsed `boolean` represent user option. For example, if the `cookieOptions` are
 
-```jsx
+```js
 const cookieOptions = ['Functionality', 'Performance', 'Advertising'];
 ```
 

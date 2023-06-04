@@ -17,6 +17,7 @@ import '@wevisdemo/ui/styles/navbar.css';
 import '@wevisdemo/ui/styles/nav-dropdown.css';
 import '@wevisdemo/ui/styles/nav-dropdown-item.css';
 import '@wevisdemo/ui/styles/nav-button.css';
+
 import WvNavbar from '@wevisdemo/ui/react/navbar';
 import WvNavDropdown from '@wevisdemo/ui/react/nav-dropdown';
 import WvNavDropdownItem from '@wevisdemo/ui/react/nav-dropdown-item';
@@ -25,6 +26,7 @@ import WvNavButton from '@wevisdemo/ui/react/nav-button';
 
 ## Light
 
+<div class="not-prose component-preview">
 <WvNavbar client:load title="SOME PROJECT">
   <WvNavDropdown client:load label="Topic">
     <WvNavDropdownItem>Topic 1</WvNavDropdownItem>
@@ -34,6 +36,7 @@ import WvNavButton from '@wevisdemo/ui/react/nav-button';
   <WvNavButton active>About</WvNavButton>
   <WvNavButton>Report</WvNavButton>
 </WvNavbar>
+</div>
 
 ```jsx
 <WvNavbar title="SOME PROJECT">
@@ -49,6 +52,7 @@ import WvNavButton from '@wevisdemo/ui/react/nav-button';
 
 ## Dark
 
+<div class="not-prose component-preview preview-dark">
 <WvNavbar client:load dark title="SOME PROJECT">
   <WvNavDropdown client:load dark label="Topic">
     <WvNavDropdownItem dark>Topic 1</WvNavDropdownItem>
@@ -58,6 +62,7 @@ import WvNavButton from '@wevisdemo/ui/react/nav-button';
   <WvNavButton dark active>About</WvNavButton>
   <WvNavButton dark>Report</WvNavButton>
 </WvNavbar>
+</div>
 
 ```jsx
 <WvNavbar dark title="SOME PROJECT">

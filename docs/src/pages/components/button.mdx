@@ -8,7 +8,9 @@ import '@wevisdemo/ui/styles/button-group.css';
 import WvButton from '@wevisdemo/ui/.mitosis/react/button';
 import WvButtonGroup from '@wevisdemo/ui/.mitosis/react/button-group';
 
+<div class="not-prose component-preview">
 <WvButton>Feedback</WvButton>
+</div>
 
 ```jsx
 import '@wevisdemo/ui/styles/button.css';
@@ -21,9 +23,9 @@ import WvButton from '@wevisdemo/ui/{react,vue2,svelte}/button';
 
 | Name    | Type                               | Default     |
 | ------- | ---------------------------------- | ----------- |
-| color   | `"blue"` \| `"black"` \| `"white"` | `"blue"`    |
-| small   | `boolean`                          | `false`     |
-| onClick | `() => void`                       | `undefined` |
+| color   | `'blue'` \| `'black'` \| `'white'` | `'blue'`    |
+| small   | boolean                            | `false`     |
+| onClick | () => void \| undefined            | `undefined` |
 
 ## Slot / Children
 
@@ -33,11 +35,17 @@ Button content
 
 **With different color**
 
+<div class="flex gap-2">
+<div class="not-prose component-preview">
 <WvButtonGroup>
   <WvButton>Blue (default)</WvButton>
   <WvButton color="black">Black</WvButton>
-  <WvButton color="white">White</WvButton>
 </WvButtonGroup>
+</div>
+<div class="not-prose component-preview preview-dark">
+<WvButton color="white">White</WvButton>
+</div>
+</div>
 
 ```jsx
 <WvButton>Blue (default)</WvButton>
@@ -47,13 +55,17 @@ Button content
 
 **Small**
 
-{' '}
-
-<WvButtonGroup>
-  <WvButton small>Blue (default)</WvButton>
-  <WvButton small color="black">Black</WvButton>
+<div class="flex gap-2">
+  <div class="not-prose component-preview">
+  <WvButtonGroup>
+    <WvButton small>Blue (default)</WvButton>
+    <WvButton small color="black">Black</WvButton>
+  </WvButtonGroup>
+  </div>
+  <div class="not-prose component-preview preview-dark">
   <WvButton small color="white">White</WvButton>
-</WvButtonGroup>
+  </div>
+</div>
 
 ```jsx
 <WvButton small>Blue (default)</WvButton>
@@ -63,6 +75,7 @@ Button content
 
 **With icon**
 
+<div class="not-prose component-preview">
 <WvButton>
   <svg
     width="21"
@@ -106,6 +119,7 @@ Button content
   </svg>
   <span>Feedback</span>
 </WvButton>
+</div>
 
 ```jsx
 <WvButton>

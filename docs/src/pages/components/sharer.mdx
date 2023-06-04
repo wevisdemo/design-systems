@@ -8,7 +8,9 @@ import WvSharer from '@wevisdemo/ui/.mitosis/react/sharer';
 
 Social media share buttons
 
+<div class="not-prose component-preview">
 <WvSharer client:load url="https://wevis.info" />
+</div>
 
 ```jsx
 import '@wevisdemo/ui/styles/sharer.css';
@@ -19,22 +21,24 @@ import WvSharer from '@wevisdemo/ui/{react,vue2,svelte}/sharer';
 
 ## Props
 
-| Name          | Type    | Default                                                     |
-| ------------- | ------- | ----------------------------------------------------------- |
-| url           | string  | current page URL (get from `window.location.href` on mount) |
-| label         | string  | `'Share'`                                                   |
-| hideLabel     | boolean | `false`                                                     |
-| light         | boolean | `false`                                                     |
-| outline       | boolean | `false`                                                     |
-| center        | boolean | `false`                                                     |
-| allowCopyLink | boolean | `false`                                                     |
+| Name          | Type    | Default                           |
+| ------------- | ------- | --------------------------------- |
+| url           | string  | `window.location.href` (on mount) |
+| label         | string  | `'Share'`                         |
+| hideLabel     | boolean | `false`                           |
+| light         | boolean | `false`                           |
+| outline       | boolean | `false`                           |
+| center        | boolean | `false`                           |
+| allowCopyLink | boolean | `false`                           |
 
 ## Examples
 
 **Custom or hide label**
 
+<div class="not-prose component-preview">
 <WvSharer client:load label="Custom Label" />
 <WvSharer client:load hideLabel />
+</div>
 
 ```jsx
 <WvSharer label="Custom Label" />
@@ -43,7 +47,9 @@ import WvSharer from '@wevisdemo/ui/{react,vue2,svelte}/sharer';
 
 **Light**
 
+<div class="not-prose component-preview preview-dark">
 <WvSharer client:load light />
+</div>
 
 ```jsx
 <WvSharer light />
@@ -51,9 +57,14 @@ import WvSharer from '@wevisdemo/ui/{react,vue2,svelte}/sharer';
 
 **Outline**
 
-<WvSharer client:load outline />
-
-<WvSharer client:load light outline />
+<div class="flex gap-2">
+  <div class="not-prose component-preview">
+  <WvSharer client:load outline />
+  </div>
+  <div class="not-prose component-preview preview-dark">
+  <WvSharer client:load light outline />
+  </div>
+</div>
 
 ```jsx
 <WvSharer outline />
@@ -62,7 +73,9 @@ import WvSharer from '@wevisdemo/ui/{react,vue2,svelte}/sharer';
 
 **Center**
 
+<div class="not-prose component-preview">
 <WvSharer client:load center />
+</div>
 
 ```jsx
 <WvSharer center />
@@ -70,8 +83,20 @@ import WvSharer from '@wevisdemo/ui/{react,vue2,svelte}/sharer';
 
 **Allow copy link to clipboard**
 
-<WvSharer client:load allowCopyLink outline />
+<div class="flex gap-2">
+  <div class="not-prose component-preview">
+  <WvSharer client:load allowCopyLink />
+  <WvSharer client:load allowCopyLink outline />
+  </div>
+  <div class="not-prose component-preview preview-dark">
+  <WvSharer client:load allowCopyLink light />
+  <WvSharer client:load allowCopyLink outline light />
+  </div>
+</div>
 
 ```jsx
+<WvSharer allowCopyLink />
 <WvSharer allowCopyLink outline />
+<WvSharer allowCopyLink light />
+<WvSharer allowCopyLink light outline />
 ```

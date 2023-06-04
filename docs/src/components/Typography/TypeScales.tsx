@@ -104,7 +104,7 @@ export default () => {
             }
             <div className="wv-b5">{DESC[currentScale[0]]}</div>
           </div>
-          <div className={`flex items-center w-[138px] p-1 justify-center uppercase border border-neutral-500 rounded border-dashed h-full !leading-none wv-${currentScale} ${currentScale.includes('h') ? 'wv-kondolar' : ''}`}>
+          <div className={`flex items-center w-[138px] p-1 justify-center uppercase border border-neutral-500 rounded-md border-dashed h-full !leading-none wv-${currentScale} ${currentScale.includes('h') ? 'wv-kondolar' : ''}`}>
             {currentScale}
           </div>
         </div>

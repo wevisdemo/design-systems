@@ -8,7 +8,7 @@ import WvNavButtonLink from '@wevisdemo/ui/.mitosis/react/nav-button-link';
 
 A link (`<a>`) for navigation bar
 
-<div class="not-prose">
+<div class="not-prose component-preview">
 <WvNavButtonLink href="https://github.com/wevisdemo/design-systems">GitHub</WvNavButtonLink>
 </div>
 
@@ -21,12 +21,12 @@ import WvNavButtonLink from '@wevisdemo/ui/{react,vue2,svelte}/nav-button-link';
 
 ## Props
 
-| Name    | Type         | Default                          |
-| ------- | ------------ | -------------------------------- |
-| href    | `string`     |                                  |
-| target  | `string`     | `"_blank"`                       |
-| rel     | `string`     | `"nofollow noopener noreferrer"` |
-| dark    | `boolean`    | `false`                          |
+| Name    | Type    | Default                          |
+| ------- | ------- | -------------------------------- |
+| href    | string  |                                  |
+| target  | string  | `'_blank'`                       |
+| rel     | string  | `'nofollow noopener noreferrer'` |
+| dark    | boolean | `false`                          |
 
 ## Slot / Children
 
@@ -36,7 +36,7 @@ Button content
 
 **With dark theme**
 
-<div class="not-prose bg-black py-4">
+<div class="not-prose component-preview preview-dark">
 <WvNavButtonLink href="https://github.com/wevisdemo/design-systems" dark>GitHub</WvNavButtonLink>
 </div>
 
@@ -50,7 +50,7 @@ Normally, the button link has a default props for `target` and `rel` suitable
 for making an external link. You can set them both to `undefined` to make an
 internal link.
 
-<div class="not-prose">
+<div class="not-prose component-preview">
 <WvNavButtonLink href="https://wevis.info/" target="" rel="">WeVis</WvNavButtonLink>
 </div>
 

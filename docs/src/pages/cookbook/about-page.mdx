@@ -14,10 +14,34 @@ import WvButtonGroup from '@wevisdemo/ui/.mitosis/react/button-group';
 import WvButton from '@wevisdemo/ui/.mitosis/react/button';
 import WvSharer from '@wevisdemo/ui/.mitosis/react/sharer';
 
+Standard about page using across multiple WeVis projects.
+
+**Please note** that you should add your project URL to the sharer.
+
+<div class="not-prose component-preview">
 <WvContainer heading="เกี่ยวกับโครงการ">
   <WvParagraphGroup heading="เป้าหมาย">
     <p>
-      dummy text of the printing and typesetting industry. Lorem Ipsum has been
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+      the industry's standard dummy text ever since the 1500s, when an unknown
+      printer took a galley of type and scrambled it to make a type specimen
+      book. It has survived not only five centuries, but also the leap into
+      electronic typesetting, remaining essentially unchanged. It was
+      popularised in the 1960s with the release of Letraset sheets containing
+      Lorem Ipsum passages, and more recently with desktop publishing software
+      like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+  </WvParagraphGroup>
+  <WvParagraphGroup heading="ที่มาของข้อมูล">
+    <ol class="list-decimal pl-[2ch]">
+      <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+      <li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</li>
+      <li>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</li>
+    </ol>
+  </WvParagraphGroup>
+  <WvParagraphGroup heading="นโยบายการนำข้อมูลไปใช้ต่อ">
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
       the industry's standard dummy text ever since the 1500s, when an unknown
       printer took a galley of type and scrambled it to make a type specimen
       book. It has survived not only five centuries, but also the leap into
@@ -29,12 +53,39 @@ import WvSharer from '@wevisdemo/ui/.mitosis/react/sharer';
   </WvParagraphGroup>
   <WvParagraphGroup heading="อาสาสมัครร่วมพัฒนา">
     <WvParagraphGroup small heading="เขียนโปรแกรม">
+      <p>Lorem Ipsum</p>
+    </WvParagraphGroup>
+    <WvParagraphGroup small heading="ออกแบบ">
+      <p>Lorem Ipsum</p>
+    </WvParagraphGroup>
+    <WvParagraphGroup small heading="สืบค้นและรวบรวมข้อมูล">
+      <p>Lorem Ipsum, Dolor S. Amet</p>
+    </WvParagraphGroup>
+    <WvParagraphGroup small heading="บรรณาธิการ">
+      <p>Lorem Ipsum</p>
+    </WvParagraphGroup>
+    <WvParagraphGroup small heading="ประสานงานและจัดการอื่น ๆ">
       <p>
-        dummy text of the printing and typesetting industry. Lorem Ipsum has
-        been the industry's standard dummy text ever since the 1500s, when an
-        unknown printer took a galley
+        <a
+          class="text-ultramarine hover:underline"
+          href="https://punchup.world/"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+          Punch Up
+        </a>
       </p>
     </WvParagraphGroup>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+      the industry's standard dummy text ever since the 1500s, when an unknown
+      printer took a galley of type and scrambled it to make a type specimen
+      book. It has survived not only five centuries, but also the leap into
+      electronic typesetting, remaining essentially unchanged. It was
+      popularised in the 1960s with the release of Letraset sheets containing
+      Lorem Ipsum passages, and more recently with desktop publishing software
+      like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
   </WvParagraphGroup>
   <WvButtonGroup center>
     <WvButton>
@@ -89,8 +140,9 @@ import WvSharer from '@wevisdemo/ui/.mitosis/react/sharer';
       <span>Feedback</span>
     </WvButton>
   </WvButtonGroup>
-  <WvSharer center url="PROJECT_MAIN_PAGE" />
+  <WvSharer center />
 </WvContainer>
+</div>
 
 ```jsx
 import '@wevisdemo/ui/styles/container.css';
@@ -107,7 +159,26 @@ import WvSharer from '@wevisdemo/ui/react/sharer';
 <WvContainer heading="เกี่ยวกับโครงการ">
   <WvParagraphGroup heading="เป้าหมาย">
     <p>
-      dummy text of the printing and typesetting industry. Lorem Ipsum has been
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+      the industry's standard dummy text ever since the 1500s, when an unknown
+      printer took a galley of type and scrambled it to make a type specimen
+      book. It has survived not only five centuries, but also the leap into
+      electronic typesetting, remaining essentially unchanged. It was
+      popularised in the 1960s with the release of Letraset sheets containing
+      Lorem Ipsum passages, and more recently with desktop publishing software
+      like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+  </WvParagraphGroup>
+  <WvParagraphGroup heading="ที่มาของข้อมูล">
+    <ol class="list-decimal pl-[2ch]">
+      <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+      <li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</li>
+      <li>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</li>
+    </ol>
+  </WvParagraphGroup>
+  <WvParagraphGroup heading="นโยบายการนำข้อมูลไปใช้ต่อ">
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
       the industry's standard dummy text ever since the 1500s, when an unknown
       printer took a galley of type and scrambled it to make a type specimen
       book. It has survived not only five centuries, but also the leap into
@@ -119,12 +190,39 @@ import WvSharer from '@wevisdemo/ui/react/sharer';
   </WvParagraphGroup>
   <WvParagraphGroup heading="อาสาสมัครร่วมพัฒนา">
     <WvParagraphGroup small heading="เขียนโปรแกรม">
+      <p>Lorem Ipsum</p>
+    </WvParagraphGroup>
+    <WvParagraphGroup small heading="ออกแบบ">
+      <p>Lorem Ipsum</p>
+    </WvParagraphGroup>
+    <WvParagraphGroup small heading="สืบค้นและรวบรวมข้อมูล">
+      <p>Lorem Ipsum, Dolor S. Amet</p>
+    </WvParagraphGroup>
+    <WvParagraphGroup small heading="บรรณาธิการ">
+      <p>Lorem Ipsum</p>
+    </WvParagraphGroup>
+    <WvParagraphGroup small heading="ประสานงานและจัดการอื่น ๆ">
       <p>
-        dummy text of the printing and typesetting industry. Lorem Ipsum has
-        been the industry's standard dummy text ever since the 1500s, when an
-        unknown printer took a galley
+        <a
+          class="text-[#3904e9] hover:underline"
+          href="https://punchup.world/"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+          Punch Up
+        </a>
       </p>
     </WvParagraphGroup>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+      the industry's standard dummy text ever since the 1500s, when an unknown
+      printer took a galley of type and scrambled it to make a type specimen
+      book. It has survived not only five centuries, but also the leap into
+      electronic typesetting, remaining essentially unchanged. It was
+      popularised in the 1960s with the release of Letraset sheets containing
+      Lorem Ipsum passages, and more recently with desktop publishing software
+      like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
   </WvParagraphGroup>
   <WvButtonGroup center>
     <WvButton>
@@ -179,6 +277,6 @@ import WvSharer from '@wevisdemo/ui/react/sharer';
       <span>Feedback</span>
     </WvButton>
   </WvButtonGroup>
-  <WvSharer center url="PROJECT_MAIN_PAGE" />
+  <WvSharer center />
 </WvContainer>;
 ```
