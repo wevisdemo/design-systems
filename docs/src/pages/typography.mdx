@@ -2,89 +2,17 @@
 title: Typography
 layout: ../layouts/MainLayout.astro
 ---
+import FamilyTable from '../components/Typography/FamilyTable.tsx';
+import TypeScales from '../components/Typography/TypeScales.tsx';
 
 We provide CSS classes for font family, weight and size
 
-## Font Family
+## Family/Weight
 
-`wv-[family]`
+<FamilyTable client:idle />
 
-- <span class="wv-kondolar">Kondolar Thai</span> : Heading
-- <span class="wv-ibmplex">IBM Plex Sans Thai</span> : Heading or body
-- <span class="wv-anuphan">[DEPRECATED] Anuphan</span> : Heading or body
-- <span class="wv-baijamjuri">Bai Jamjuri</span> : Body
+## Typescales
 
-```html
-<span class="wv-kondolar">Kondolar Thai</span>
-<span class="wv-ibmplex">IBM Plex Sans Thai</span>
-<span class="wv-anuphan">[DEPRECATED] Anuphan</span>
-<span class="wv-baijamjuri">Baijamjuri</span>
-```
+Heading and body size will scale down on mobile. However, UI size will be the same on both mobile and desktop.
 
-## Font Weight
-
-`wv-[weight]`
-
-### Semibold
-
-- <span class="wv-ibmplex wv-semibold">IBM Plex Sans Thai Semi-Bold</span>
-
-```html
-<span class="wv-ibmplex wv-semibold">IBM Plex Sans Thai Semi-Bold</span>
-```
-
-### Bold
-
-- <span class="wv-kondolar wv-bold">Kondolar Thai Bold</span>
-- <span class="wv-ibmplex wv-bold">IBM Plex Sans Thai Bold</span>
-- <span class="wv-baijamjuri wv-bold">Bai Jamjuri Bold</span>
-
-```html
-<span class="wv-kondolar wv-bold">Kondolar Thai Bold</span>
-<span class="wv-ibmplex wv-bold">IBM Plex Sans Thai Bold</span>
-<span class="wv-baijamjuri wv-bold">Bai Jamjuri Bold</span>
-```
-
-### Black
-
-- <span class="wv-kondolar wv-black">Kondolar Thai Black</span>
-
-```html
-<span class="wv-kondolar wv-black">Kondolar Thai Black</span>
-```
-
-## Font Size
-
-Heading and body size will be scale down on mobile
-
-### Heading
-
-{new Array(11).fill().map((n,i) => <p class={`wv-h${i+1}`}>h{i+1}</p>)}
-
-```jsx
-<p class="wv-h1">h1</p>
-...
-<p class="wv-h11">h11</p>
-```
-
-### Body
-
-{new Array(7).fill().map((n,i) => <p class={`wv-b${i+1}`}>b{i+1}</p>)}
-
-```jsx
-<p class="wv-b1">b1</p>
-...
-<p class="wv-b7">b7</p>
-```
-
-### UI
-
-UI size will be the same on mobile and desktop
-
-{new Array(5).fill().map((n,i) => <p class={`wv-u${i+1}`}>u{i+1}</p>)}
-
-```jsx
-<p class="wv-u1">u1</p>
-...
-<p class="wv-u5">u5</p>
-```
+<TypeScales client:idle />
