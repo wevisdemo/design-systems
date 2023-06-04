@@ -64,7 +64,14 @@ export default function WvNavbar(props: WvNavbarProps) {
       </div>
 
       <Show when={props.title}>
-        <div class="wv_navbar__title wv-kondolar wv-h9">{props.title}</div>
+        <Show
+          when={props.title && props.title.toLocaleUpperCase() === props.title}
+          else={
+            <div class="wv_navbar__title wv-kondolar wv-h9">{props.title}</div>
+          }
+        >
+          <div class="wv_navbar__title wv-kondolar wv-h9 wv_navbar__title--uppercase">{props.title?.toLocaleLowerCase()}</div>
+        </Show>
       </Show>
 
       <div

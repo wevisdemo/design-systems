@@ -40,6 +40,10 @@
   @apply hidden md:flex items-center -mb-2;
 }
 
+.wv_navbar__title--uppercase {
+  @apply uppercase;
+}
+
 .wv_navbar__menu {
   @apply md:flex-1 items-stretch;
 }
