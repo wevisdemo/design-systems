@@ -21,8 +21,8 @@ export default function WvNavButtonLink(props: WvNavButtonLinkProps) {
       href={props.href}
       target={props.target || undefined}
       rel={props.rel || undefined}
-      class={`wv_nav-button-link wv-ibmplex wv-b7 ${
-        props.dark ? 'wv_nav-button-link--white' : 'wv_nav-button-link--black'
+      class={`wv_nav-button wv-ibmplex wv-b7 ${
+        props.dark ? 'wv_nav-button--white' : 'wv_nav-button--black'
       }`}
     >
       {props.children}

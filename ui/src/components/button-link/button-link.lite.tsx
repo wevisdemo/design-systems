@@ -23,8 +23,8 @@ export default function WvButtonLink(props: WvButtonLinkProps) {
       href={props.href}
       target={props.target || undefined}
       rel={props.rel || undefined}
-      class={`wv_button-link wv-ibmplex wv_button-link--${props.color} ${
-        props.small ? 'wv-b5 wv_button-link--small' : 'wv-b4'
+      class={`wv_button wv-ibmplex wv_button--${props.color} ${
+        props.small ? 'wv-b5 wv_button--small' : 'wv-b4'
       }`}
     >
       {props.children}

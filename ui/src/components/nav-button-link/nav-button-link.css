@@ -1,11 +1,5 @@
-.wv_nav-button-link {
-  @apply flex flex-row space-x-1 justify-center items-center bg-transparent border-none px-2 py-3 md:py-1 md:w-auto w-full h-full cursor-pointer hover:underline underline-offset-2 rounded;
-}
+@import '../nav-button/nav-button.css';
 
-.wv_nav-button-link--black {
-  @apply text-black;
-}
-
-.wv_nav-button-link--white {
-  @apply text-white;
+a.wv_nav-button {
+  @apply inline-flex;
 }
