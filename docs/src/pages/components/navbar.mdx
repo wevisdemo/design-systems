@@ -11,7 +11,7 @@ import WvNavButton from '@wevisdemo/ui/.mitosis/react/nav-button';
 Main container for navigation bar group. Hamburger menu will be used to show slot items in mobile.
 
 <div class="not-prose component-preview">
-<WvNavbar />
+<WvNavbar client:idle />
 </div>
 
 ```jsx
@@ -45,7 +45,7 @@ Elements in the right column on desktop / hamburger menu drop down on mobile
 **With title and slot**
 
 <div class="not-prose component-preview">
-<WvNavbar title="SOME PROJECT">
+<WvNavbar client:idle title="SOME PROJECT">
   <WvNavButton active>About</WvNavButton>
   <WvNavButton>Report</WvNavButton>
 </WvNavbar>
@@ -61,7 +61,7 @@ Elements in the right column on desktop / hamburger menu drop down on mobile
 **With dark theme**
 
 <div class="not-prose component-preview-dark">
-<WvNavbar dark title="SOME PROJECT">
+<WvNavbar client:idle dark title="SOME PROJECT">
   <WvNavButton dark active>About</WvNavButton>
   <WvNavButton dark>Report</WvNavButton>
 </WvNavbar>
@@ -79,7 +79,7 @@ Elements in the right column on desktop / hamburger menu drop down on mobile
 **With animated logo**
 
 <div class="not-prose component-preview">
-<WvNavbar animated />
+<WvNavbar client:idle animated />
 </div>
 
 ```jsx
@@ -89,21 +89,21 @@ Elements in the right column on desktop / hamburger menu drop down on mobile
 **With logo addon**
 
 <div class="not-prose component-preview">
-<WvNavbar logoAddonSrc="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Sparkles/3D/sparkles_3d.png" />
+<WvNavbar client:idle logoAddonSrc="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Sparkles/3D/sparkles_3d.png" />
 </div>
 
 ```jsx
-<WvNavbar logoAddonSrc="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Sparkles/3D/sparkles_3d.png" />
+<WvNavbar client:idle logoAddonSrc="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Sparkles/3D/sparkles_3d.png" />
 ```
 
 **With plus before logo addon**
 
 <div class="not-prose component-preview">
-<WvNavbar logoAddonPlus logoAddonSrc="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Sparkles/3D/sparkles_3d.png" />
+<WvNavbar client:idle logoAddonPlus logoAddonSrc="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Sparkles/3D/sparkles_3d.png" />
 </div>
 
 ```jsx
-<WvNavbar logoAddonPlus logoAddonSrc="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Sparkles/3D/sparkles_3d.png" />
+<WvNavbar client:idle logoAddonPlus logoAddonSrc="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Sparkles/3D/sparkles_3d.png" />
 ```
 
 **Alway show slot**
@@ -111,7 +111,7 @@ Elements in the right column on desktop / hamburger menu drop down on mobile
 Disable hamburger menu on mobile
 
 <div class="not-prose component-preview">
-<WvNavbar alwayShowSlot>
+<WvNavbar client:idle alwayShowSlot>
   <WvNavButton active>About</WvNavButton>
   <WvNavButton>Report</WvNavButton>
 </WvNavbar>
