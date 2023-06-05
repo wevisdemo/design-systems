@@ -30,17 +30,17 @@ function onCookieAccept(option) {
   policyUrl="https://punchup.world"
   cookieOptions={cookieOptions}
   onAccept={onCookieAccept}
-/>;
+/>
 ```
 
 ## Props
 
-| Name          | Type                                       | Default    |
-| ------------- | ------------------------------------------ | ---------- |
-| policyUrl     | string                                     |            |
-| cookieOptions | string[]                                   | `[]`       |
-| daysToExpire  | number                                     | `30`       |
-| onAccept      | (option: Record\<string, boolean>) => void | `() => {}` |
+| Name          | Type                                       | Default     |
+| ------------- | ------------------------------------------ | ----------- |
+| policyUrl     | string                                     |             |
+| cookieOptions | string[]                                   | `[]`        |
+| daysToExpire  | number                                     | `30`        |
+| onAccept      | (option: Record\<string, boolean>) => void | `undefined` |
 
 The `cookieOptions` can be an array of any string representing cookie type, which showing in cookie setting option pop-up. Please consult PM which cookie type needed to be included in each project.
 
