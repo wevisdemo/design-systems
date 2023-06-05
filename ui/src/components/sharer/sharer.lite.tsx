@@ -38,7 +38,7 @@ export default function WvSharer(props: WvSharerProps) {
         props.light ? 'wv_sharer--light' : 'wv_sharer--dark'
       } ${props.center ? 'wv_sharer--center' : ''}`}
     >
-      <Show when={!props.hideLabel}>
+      <Show when={!props.hideLabel && props.label}>
         <span class="wv-b5">{props.label}</span>
       </Show>
 
@@ -80,7 +80,7 @@ export default function WvSharer(props: WvSharerProps) {
         href={`http://www.facebook.com/sharer/sharer.php?u=${state.encodedURL}`}
         target="_blank"
         rel="noreferrer noopener"
-        aria-label="Facebook"
+        aria-label="Share on Facebook"
       >
         <Show when={props.outline}>
           <svg viewBox="0 0 28 28">
@@ -102,7 +102,7 @@ export default function WvSharer(props: WvSharerProps) {
         href={`https://twitter.com/intent/tweet?url=${state.encodedURL}`}
         target="_blank"
         rel="noreferrer noopener"
-        aria-label="Twitter"
+        aria-label="Share on Twitter"
       >
         <Show when={props.outline}>
           <svg viewBox="0 0 28 28">
@@ -124,7 +124,7 @@ export default function WvSharer(props: WvSharerProps) {
         href={`https://social-plugins.line.me/lineit/share?url=${state.encodedURL}`}
         target="_blank"
         rel="noreferrer noopener"
-        aria-label="Line"
+        aria-label="Share to Line messenger"
       >
         <Show when={props.outline}>
           <svg viewBox="0 0 28 28">
