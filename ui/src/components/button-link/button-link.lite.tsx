@@ -11,8 +11,7 @@ interface WvButtonLinkProps {
 }
 
 export default function WvButtonLink(props: WvButtonLinkProps) {
-  useDefaultProps<WvButtonLinkProps>({
-    href: '',
+  useDefaultProps<Omit<WvButtonLinkProps,'href'>>({
     color: 'blue',
     small: false,
     target: '_blank',

@@ -10,8 +10,7 @@ interface WvNavButtonLinkProps {
 }
 
 export default function WvNavButtonLink(props: WvNavButtonLinkProps) {
-  useDefaultProps<WvNavButtonLinkProps>({
-    href: '',
+  useDefaultProps<Omit<WvNavButtonLinkProps,'href'>>({
     target: '_blank',
     rel: 'nofollow noopener noreferrer',
     dark: false,
