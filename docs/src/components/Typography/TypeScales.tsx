@@ -73,19 +73,19 @@ export default () => {
     <>
       <div className="font-bold -mb-1.5 mt-2">Header</div>
       <div className="flex items-baseline wv-kondolar relative">
-        {new Array(11).fill``.map((_,i) => <StyleButton s={`h${i+1}`} onHover={setCurrentScale} />)}
+        {new Array(11).fill``.map((_,i) => <StyleButton key={i} s={`h${i+1}`} onHover={setCurrentScale} />)}
       </div>
       <div className="flex items-end">
         <div className="flex-1">
           <div className="font-bold -mb-1.5 mt-2">Body</div>
           <div className="flex items-baseline relative">
-            {new Array(7).fill``.map((_,i) => <StyleButton s={`b${i+1}`} onHover={setCurrentScale} />)}
+            {new Array(7).fill``.map((_,i) => <StyleButton key={i} s={`b${i+1}`} onHover={setCurrentScale} />)}
           </div>
           <div className="font-bold -mb-1.5 mt-2">UI</div>
           <div className="flex items-baseline relative">
-            {new Array(5).fill``.map((_,i) => <StyleButton s={`u${i+1}`} onHover={setCurrentScale} />)}
+            {new Array(5).fill``.map((_,i) => <StyleButton key={i} s={`u${i+1}`} onHover={setCurrentScale} />)}
           </div>
-          <div className="wv-b6">You can click at the style to copy.</div>
+          <div className="wv-b6 mt-2">You can click at the style to copy.</div>
         </div>
         <div className="flex h-[127px] items-center gap-4 mt-4">
           <div className="flex flex-col items-end">

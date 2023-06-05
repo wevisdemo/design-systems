@@ -59,7 +59,7 @@ import WvSharer from '@wevisdemo/ui/{react,vue2,svelte}/sharer';
 
 **Outline**
 
-<div class="flex gap-2">
+<div class="flex gap-2 -my-2">
   <div class="not-prose component-preview">
   <WvSharer client:idle outline />
   </div>
@@ -85,13 +85,15 @@ import WvSharer from '@wevisdemo/ui/{react,vue2,svelte}/sharer';
 
 **Allow copy link to clipboard**
 
-<div class="flex gap-2">
+<div class="flex gap-2 -my-2">
   <div class="not-prose component-preview">
   <WvSharer client:idle allowCopyLink />
+  <div class="h-2" />
   <WvSharer client:idle allowCopyLink outline />
   </div>
   <div class="not-prose component-preview-dark">
   <WvSharer client:idle allowCopyLink light />
+  <div class="h-2" />
   <WvSharer client:idle allowCopyLink outline light />
   </div>
 </div>
