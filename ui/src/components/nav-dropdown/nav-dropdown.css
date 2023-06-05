@@ -1,3 +1,5 @@
+@import '../nav-button/nav-button.css';
+
 .wv_nav-dropdown {
   @apply relative flex flex-col w-full md:w-fit;
 }
