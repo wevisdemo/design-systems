@@ -18,6 +18,6 @@
   @apply border border-neutral-500 rounded-md border-dashed p-2 my-2;
 }
 
-.component-preview.preview-dark {
-  @apply bg-black border-white;
+.component-preview-dark {
+  @apply bg-black border border-white rounded-md border-dashed p-2 my-2;
 }
