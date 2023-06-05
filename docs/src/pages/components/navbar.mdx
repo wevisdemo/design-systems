@@ -23,13 +23,18 @@ import WvNavbar from '@wevisdemo/ui/{react,vue2,svelte}/navbar';
 
 ## Props
 
-| Name          | Type    | Default |
-| ------------- | ------- | ------- |
-| homeHref      | string  | `'/'`   |
-| logoAddonSrc  | string  | `''`    |
-| title         | string  | `''`    |
-| dark          | boolean | `false` |
-| alwayShowSlot | boolean | `false` |
+| Name            | Type             | Default |
+| --------------- | ---------------- | ------- |
+| homeHref        | string           | `'/'`   |
+| title           | string           | `''`    |
+| dark            | boolean          | `false` |
+| animated        | boolean          | `false` |
+| alwayShowSlot   | boolean          | `false` |
+| logoAddonSrc    | string           | `''`    |
+| logoAddonAlt    | string           | `''`    |
+| logoAddonWidth  | string \| number | `0`     |
+| logoAddonHeight | string \| number | `24`    |
+| logoAddonPlus   | boolean          | `false` |
 
 ## Slot / Children
 
@@ -71,6 +76,16 @@ Elements in the right column on desktop / hamburger menu drop down on mobile
 </WvNavbar>
 ```
 
+**With animated logo**
+
+<div class="not-prose component-preview">
+<WvNavbar animated />
+</div>
+
+```jsx
+<WvNavbar animated />
+```
+
 **With logo addon**
 
 <div class="not-prose component-preview">
@@ -79,6 +94,16 @@ Elements in the right column on desktop / hamburger menu drop down on mobile
 
 ```jsx
 <WvNavbar logoAddonSrc="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Sparkles/3D/sparkles_3d.png" />
+```
+
+**With plus before logo addon**
+
+<div class="not-prose component-preview">
+<WvNavbar logoAddonPlus logoAddonSrc="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Sparkles/3D/sparkles_3d.png" />
+</div>
+
+```jsx
+<WvNavbar logoAddonPlus logoAddonSrc="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Sparkles/3D/sparkles_3d.png" />
 ```
 
 **Alway show slot**

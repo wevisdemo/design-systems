@@ -1,3 +1,12 @@
+@keyframes showTittle {
+  0%,11.11% {
+    opacity: 1;
+  }
+  11.12%,to {
+    opacity: 0;
+  }
+}
+
 .wv_navbar {
   @apply relative flex flex-row px-3 py-2 md:px-4 md:py-3;
 }
@@ -24,12 +33,57 @@
   @apply flex-1 flex justify-start;
 }
 
-.wv_navbar__logo__wevis {
+.wv_navbar__logo__link {
   @apply flex flex-row space-x-1 items-baseline;
 }
 
-.wv_navbar__logo__wevis svg {
+.wv_navbar__logo__wevis,
+.wv_navbar__logo__plus {
   @apply h-6 md:h-7;
+}
+
+.wv_navbar__logo__wevis--animated {
+  --duration-per-one: .25s;
+}
+
+.wv_navbar__logo__wevis--animated > :not(:first-child):not(:nth-child(2)) {
+  opacity: 0;
+}
+
+.wv_navbar__logo__wevis--animated > :nth-child(2) {
+  animation: showTittle calc(var(--duration-per-one) * 9) linear 0s infinite;
+}
+
+.wv_navbar__logo__wevis--animated > :nth-child(3) {
+  animation: showTittle calc(var(--duration-per-one) * 9) linear calc(var(--duration-per-one) * 1) infinite;
+}
+
+.wv_navbar__logo__wevis--animated > :nth-child(4) {
+  animation: showTittle calc(var(--duration-per-one) * 9) linear calc(var(--duration-per-one) * 2) infinite;
+}
+
+.wv_navbar__logo__wevis--animated > :nth-child(5) {
+  animation: showTittle calc(var(--duration-per-one) * 9) linear calc(var(--duration-per-one) * 3) infinite;
+}
+
+.wv_navbar__logo__wevis--animated > :nth-child(6) {
+  animation: showTittle calc(var(--duration-per-one) * 9) linear calc(var(--duration-per-one) * 4) infinite;
+}
+
+.wv_navbar__logo__wevis--animated > :nth-child(7) {
+  animation: showTittle calc(var(--duration-per-one) * 9) linear calc(var(--duration-per-one) * 5) infinite;
+}
+
+.wv_navbar__logo__wevis--animated > :nth-child(8) {
+  animation: showTittle calc(var(--duration-per-one) * 9) linear calc(var(--duration-per-one) * 6) infinite;
+}
+
+.wv_navbar__logo__wevis--animated > :nth-child(9) {
+  animation: showTittle calc(var(--duration-per-one) * 9) linear calc(var(--duration-per-one) * 7) infinite;
+}
+
+.wv_navbar__logo__wevis--animated > :nth-child(10) {
+  animation: showTittle calc(var(--duration-per-one) * 9) linear calc(var(--duration-per-one) * 8) infinite;
 }
 
 .wv_navbar__logo__addon {
