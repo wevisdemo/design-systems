@@ -2,7 +2,7 @@ html {
   @apply overflow-x-hidden scroll-smooth;
 }
 
-.left-sidebar-li-a {
+.sidebar-li-a {
   @apply mb-1 inline-block w-full px-3 py-1.5;
   @apply hover:bg-neutral-200 hover:rounded-md;
   @apply aria-[current=page]:bg-black aria-[current=page]:text-white aria-[current=page]:rounded-md;

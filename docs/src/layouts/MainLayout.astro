@@ -4,7 +4,7 @@ import '../styles/content.css';
 import '@wevisdemo/ui/styles/typography.css';
 
 import HeadSEO from '../components/HeadSEO.astro';
-import LeftSidebar from '../components/LeftSidebar/LeftSidebar.astro';
+import LeftSidebar from '../components/LeftSidebar';
 
 import * as CONFIG from '../config';
 import type { MarkdownHeading } from 'astro';
@@ -51,18 +51,16 @@ const currentPage = Astro.url.pathname;
 
   <body>
     <a href="#content" class="sr-only focus:not-sr-only">Skip to Content</a>
-    <WvNavbar client:idle title="DESIGN SYSTEM" dark animated>
+    <WvNavbar title="DESIGN SYSTEM" dark animated alwayShowSlot>
       <WvNavButtonLink href="https://github.com/wevisdemo/design-systems" dark>
         GitHub
       </WvNavButtonLink>
     </WvNavbar>
 
     <main
-      class="grid-cols-content mx-auto grid w-full gap-8 p-4 md:max-w-[1280px] my-8"
+      class="grid-cols-1 lg:grid-cols-content mx-auto grid w-full gap-8 p-4 md:max-w-[1280px] my-8"
     >
-      <aside id="grid-left" title="Site Navigation">
-        <LeftSidebar currentPage={currentPage} />
-      </aside>
+      <LeftSidebar client:idle currentPage={currentPage} sidebar={CONFIG.SIDEBAR}/>
       <div
         id="content"
         class="main-content !max-w-none overflow-hidden"
@@ -72,7 +70,7 @@ const currentPage = Astro.url.pathname;
       </div>
       {
         headings.filter(({ depth }) => depth > 1 && depth < 4).length > 0 &&
-        <aside id="grid-right" title="Table of Contents">
+        <aside id="grid-right" class="hidden lg:block" title="Table of Contents">
           <nav class="sticky top-4 max-h-[calc(100vh_-_2rem)] overflow-y-auto" aria-labelledby="grid-right">
             <h2 class="wv-kondolar wv-h9 wv-bold mb-1">On this page</h2>
             <ul>
@@ -81,7 +79,7 @@ const currentPage = Astro.url.pathname;
                   .filter(({ depth }) => depth > 1 && depth < 4)
                   .map((heading) => (
                     <li>
-                      <a class="left-sidebar-li-a" href={`#${heading.slug}`}>
+                      <a class="sidebar-li-a" href={`#${heading.slug}`}>
                         {heading.text}
                       </a>
                     </li>
