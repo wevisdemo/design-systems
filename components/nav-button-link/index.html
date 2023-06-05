@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width">
     <meta name="generator" content="Astro v2.5.5">
     <title>
-      Button Link — WeVis Design Systems
+      Nav Button Link — WeVis Design Systems
     </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/svg+xml" href="/design-systems/favicon.svg">
-    <!-- Page Metadata --><link rel="canonical" href="https://wevisdemo.github.io/design-systems/components/button-link/">
+    <!-- Page Metadata --><link rel="canonical" href="https://wevisdemo.github.io/design-systems/components/nav-button-link/">
 
 <!-- OpenGraph Tags -->
-<meta property="og:title" content="Button Link - WeVis Design Systems">
+<meta property="og:title" content="Nav Button Link - WeVis Design Systems">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://wevisdemo.github.io/design-systems/components/button-link/">
+<meta property="og:url" content="https://wevisdemo.github.io/design-systems/components/nav-button-link/">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner-minimal.png?raw=true">
 <meta property="og:image:alt" content="WeVis design system documentation and cross-framework UI components">
@@ -25,7 +25,7 @@
 <!-- Twitter Tags -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="wevisdemo">
-<meta name="twitter:title" content="Button Link - WeVis Design Systems">
+<meta name="twitter:title" content="Nav Button Link - WeVis Design Systems">
 <meta name="twitter:description" content="WeVis design system documentation and cross-framework UI components">
 <meta name="twitter:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner-minimal.png?raw=true">
 <meta name="twitter:image:alt" content="WeVis design system documentation and cross-framework UI components">
@@ -36,9 +36,7 @@
   https://www.npmjs.com/package/schema-dts seems like a great resource for implementing this.
   Even better, there's a React component that integrates with `schema-dts`: https://github.com/google/react-schemaorg
 -->
-  <link rel="stylesheet" href="/design-systems/_astro/button-group.1327599d.css" />
-<link rel="stylesheet" href="/design-systems/_astro/button-link.fc46fd58.css" />
-<link rel="stylesheet" href="/design-systems/_astro/button-group.565d2719.css" /><script type="module">Array.from(document.getElementsByTagName("pre")).forEach(e=>{e.setAttribute("tabindex","0")});
+  <link rel="stylesheet" href="/design-systems/_astro/button-group.1327599d.css" /><script type="module">Array.from(document.getElementsByTagName("pre")).forEach(e=>{e.setAttribute("tabindex","0")});
 </script></head>
 
   <body>
@@ -141,11 +139,12 @@
 </nav>
       </aside>
       <div id="content" class="main-content max-w-none overflow-hidden">
-        <h1>Button Link</h1>
-        <div class="not-prose component-preview"><a href="https://wevis.info/" target="_blank" rel="nofollow noopener noreferrer" class="wv_button wv-ibmplex wv_button--blue wv-b4">WeVis</a></div>
-<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#FF7B72">import</span><span style="color:#C9D1D9"> </span><span style="color:#A5D6FF">&#39;@wevisdemo/ui/styles/button-link.css&#39;</span><span style="color:#C9D1D9">;</span></span>
-<span class="line"><span style="color:#FF7B72">import</span><span style="color:#C9D1D9"> WvButtonLink </span><span style="color:#FF7B72">from</span><span style="color:#C9D1D9"> </span><span style="color:#A5D6FF">&#39;@wevisdemo/ui/{react,vue2,svelte}/button-link&#39;</span><span style="color:#C9D1D9">;</span></span></code></pre>
-<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvButtonLink</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">href</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;https://wevis.info/&quot;</span><span style="color:#C9D1D9">&gt;WeVis&lt;/</span><span style="color:#7EE787">WvButtonLink</span><span style="color:#C9D1D9">&gt;</span></span></code></pre>
+        <h1>Nav Button Link</h1>
+        <p>A link (<code>&lt;a&gt;</code>) for navigation bar</p>
+<div class="not-prose component-preview"><a href="https://github.com/wevisdemo/design-systems" target="_blank" rel="nofollow noopener noreferrer" class="wv_nav-button wv-ibmplex wv-b7 wv_nav-button--black">GitHub</a></div>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#FF7B72">import</span><span style="color:#C9D1D9"> </span><span style="color:#A5D6FF">&#39;@wevisdemo/ui/styles/nav-button-link.css&#39;</span><span style="color:#C9D1D9">;</span></span>
+<span class="line"><span style="color:#FF7B72">import</span><span style="color:#C9D1D9"> WvNavButtonLink </span><span style="color:#FF7B72">from</span><span style="color:#C9D1D9"> </span><span style="color:#A5D6FF">&#39;@wevisdemo/ui/{react,vue2,svelte}/nav-button-link&#39;</span><span style="color:#C9D1D9">;</span></span></code></pre>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvNavButtonLink</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">href</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;https://github.com/wevisdemo/design-systems&quot;</span><span style="color:#C9D1D9">&gt;GitHub&lt;/</span><span style="color:#7EE787">WvNavButtonLink</span><span style="color:#C9D1D9">&gt;</span></span></code></pre>
 <h2 id="props">Props</h2>
 
 
@@ -177,78 +176,21 @@
 
 
 
-
-
-
-
-
-<table><thead><tr><th>Name</th><th>Type</th><th>Default</th></tr></thead><tbody><tr><td>href</td><td>string</td><td></td></tr><tr><td>color</td><td><code>&#39;blue&#39;</code> | <code>&#39;black&#39;</code> | <code>&#39;white&#39;</code></td><td><code>&#39;blue&#39;</code></td></tr><tr><td>small</td><td>boolean</td><td><code>false</code></td></tr><tr><td>target</td><td>string | undefined</td><td><code>&#39;_blank&#39;</code></td></tr><tr><td>rel</td><td>string | undefined</td><td><code>&#39;nofollow noopener noreferrer&#39;</code></td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Type</th><th>Default</th></tr></thead><tbody><tr><td>href</td><td>string</td><td></td></tr><tr><td>target</td><td>string</td><td><code>&#39;_blank&#39;</code></td></tr><tr><td>rel</td><td>string</td><td><code>&#39;nofollow noopener noreferrer&#39;</code></td></tr><tr><td>dark</td><td>boolean</td><td><code>false</code></td></tr></tbody></table>
 <h2 id="slot--children">Slot / Children</h2>
 <p>Button content</p>
 <h2 id="examples">Examples</h2>
-<p><strong>With different color</strong></p>
-<div class="flex gap-2"><div class="not-prose component-preview"><div class="wv_button-group "><a href="https://wevis.info/" target="_blank" rel="nofollow noopener noreferrer" class="wv_button wv-ibmplex wv_button--blue wv-b4">Blue (default)</a><a href="https://wevis.info/" target="_blank" rel="nofollow noopener noreferrer" class="wv_button wv-ibmplex wv_button--black wv-b4">Black</a></div></div><div class="not-prose component-preview-dark"><a href="https://wevis.info/" target="_blank" rel="nofollow noopener noreferrer" class="wv_button wv-ibmplex wv_button--white wv-b4">White</a></div></div>
-<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvButtonLink</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">href</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;https://wevis.info/&quot;</span><span style="color:#C9D1D9">&gt;Blue (default)&lt;/</span><span style="color:#7EE787">WvButtonLink</span><span style="color:#C9D1D9">&gt;</span></span>
-<span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvButtonLink</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">href</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;https://wevis.info/&quot;</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">color</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;black&quot;</span><span style="color:#C9D1D9">&gt;Black&lt;/</span><span style="color:#7EE787">WvButtonLink</span><span style="color:#C9D1D9">&gt;</span></span>
-<span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvButtonLink</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">href</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;https://wevis.info/&quot;</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">color</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;white&quot;</span><span style="color:#C9D1D9">&gt;White&lt;/</span><span style="color:#7EE787">WvButtonLink</span><span style="color:#C9D1D9">&gt;</span></span></code></pre>
-<p><strong>Small</strong></p>
-<div class="flex gap-2"><div class="not-prose component-preview"><div class="wv_button-group "><a href="https://wevis.info/" target="_blank" rel="nofollow noopener noreferrer" class="wv_button wv-ibmplex wv_button--blue wv-b5 wv_button--small">Blue (default)</a><a href="https://wevis.info/" target="_blank" rel="nofollow noopener noreferrer" class="wv_button wv-ibmplex wv_button--black wv-b5 wv_button--small">Black</a></div></div><div class="not-prose component-preview-dark"><a href="https://wevis.info/" target="_blank" rel="nofollow noopener noreferrer" class="wv_button wv-ibmplex wv_button--white wv-b5 wv_button--small">White</a></div></div>
-<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvButtonLink</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">href</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;https://wevis.info/&quot;</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">small</span><span style="color:#C9D1D9">&gt;Blue (default)&lt;/</span><span style="color:#7EE787">WvButtonLink</span><span style="color:#C9D1D9">&gt;</span></span>
-<span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvButtonLink</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">href</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;https://wevis.info/&quot;</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">small</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">color</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;black&quot;</span><span style="color:#C9D1D9">&gt;Black&lt;/</span><span style="color:#7EE787">WvButtonLink</span><span style="color:#C9D1D9">&gt;</span></span>
-<span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvButtonLink</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">href</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;https://wevis.info/&quot;</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">small</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">color</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;white&quot;</span><span style="color:#C9D1D9">&gt;White&lt;/</span><span style="color:#7EE787">WvButtonLink</span><span style="color:#C9D1D9">&gt;</span></span></code></pre>
+<p><strong>With dark theme</strong></p>
+<div class="not-prose component-preview-dark"><a href="https://github.com/wevisdemo/design-systems" target="_blank" rel="nofollow noopener noreferrer" class="wv_nav-button wv-ibmplex wv-b7 wv_nav-button--white">GitHub</a></div>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvNavButtonLink</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">href</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;https://github.com/wevisdemo/design-systems&quot;</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">dark</span><span style="color:#C9D1D9">&gt;GitHub&lt;/</span><span style="color:#7EE787">WvNavButtonLink</span><span style="color:#C9D1D9">&gt;</span></span></code></pre>
 <p><strong>Internal link</strong></p>
 <p>Normally, the button link has a default props for <code>target</code> and <code>rel</code> suitable
 for making an external link. You can set them both to <code>undefined</code> to make an
 internal link.</p>
-<div class="not-prose component-preview"><a href="https://wevis.info/" class="wv_button wv-ibmplex wv_button--blue wv-b4">WeVis</a></div>
-<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvButtonLink</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">href</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;https://wevis.info/&quot;</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">target</span><span style="color:#FF7B72">={</span><span style="color:#79C0FF">undefined</span><span style="color:#FF7B72">}</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">rel</span><span style="color:#FF7B72">={</span><span style="color:#79C0FF">undefined</span><span style="color:#FF7B72">}</span><span style="color:#C9D1D9">&gt;</span></span>
+<div class="not-prose component-preview"><a href="https://wevis.info/" class="wv_nav-button wv-ibmplex wv-b7 wv_nav-button--black">WeVis</a></div>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvNavButtonLink</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">href</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;https://wevis.info/&quot;</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">target</span><span style="color:#FF7B72">={</span><span style="color:#79C0FF">undefined</span><span style="color:#FF7B72">}</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">rel</span><span style="color:#FF7B72">={</span><span style="color:#79C0FF">undefined</span><span style="color:#FF7B72">}</span><span style="color:#C9D1D9">&gt;</span></span>
 <span class="line"><span style="color:#C9D1D9">  WeVis</span></span>
-<span class="line"><span style="color:#C9D1D9">&lt;/</span><span style="color:#7EE787">WvButtonLink</span><span style="color:#C9D1D9">&gt;</span></span></code></pre>
-<p><strong>With icon</strong></p>
-<div class="not-prose component-preview"><a href="https://wevis.info/" target="_blank" rel="nofollow noopener noreferrer" class="wv_button wv-ibmplex wv_button--blue wv-b4"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_314_173)"><path d="M7.03582 2.86356H1.17529V19.4081H19.8247V2.86356C19.8247 2.86356 15.306 2.86356 13.9642 2.86356" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"></path><path d="M16.0317 8.65536L10.7284 13.9587L5.42513 8.65536" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"></path><line x1="10.667" y1="0.5" x2="10.667" y2="13" stroke="currentColor" stroke-width="2"></line></g><defs><clipPath id="clip0_314_173"><rect width="20.8333" height="20" fill="white" transform="translate(0.0834961 0.5)"></rect></clipPath></defs></svg><span>Feedback</span></a></div>
-<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvButtonLink</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">href</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;https://wevis.info/&quot;</span><span style="color:#C9D1D9">&gt;</span></span>
-<span class="line"><span style="color:#C9D1D9">  &lt;</span><span style="color:#7EE787">svg</span></span>
-<span class="line"><span style="color:#C9D1D9">    </span><span style="color:#79C0FF">width</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;21&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">    </span><span style="color:#79C0FF">height</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;21&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">    </span><span style="color:#79C0FF">viewBox</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;0 0 21 21&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">    </span><span style="color:#79C0FF">fill</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;none&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">    </span><span style="color:#79C0FF">xmlns</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;http://www.w3.org/2000/svg&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">  &gt;</span></span>
-<span class="line"><span style="color:#C9D1D9">    &lt;</span><span style="color:#7EE787">g</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">clip-path</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;url(#clip0_314_173)&quot;</span><span style="color:#C9D1D9">&gt;</span></span>
-<span class="line"><span style="color:#C9D1D9">      &lt;</span><span style="color:#7EE787">path</span></span>
-<span class="line"><span style="color:#C9D1D9">        </span><span style="color:#79C0FF">d</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;M7.03582 2.86356H1.17529V19.4081H19.8247V2.86356C19.8247 2.86356 15.306 2.86356 13.9642 2.86356&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">        </span><span style="color:#79C0FF">stroke</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;currentColor&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">        </span><span style="color:#79C0FF">stroke-width</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;2&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">        </span><span style="color:#79C0FF">stroke-miterlimit</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;10&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">      /&gt;</span></span>
-<span class="line"><span style="color:#C9D1D9">      &lt;</span><span style="color:#7EE787">path</span></span>
-<span class="line"><span style="color:#C9D1D9">        </span><span style="color:#79C0FF">d</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;M16.0317 8.65536L10.7284 13.9587L5.42513 8.65536&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">        </span><span style="color:#79C0FF">stroke</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;currentColor&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">        </span><span style="color:#79C0FF">stroke-width</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;2&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">        </span><span style="color:#79C0FF">stroke-miterlimit</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;10&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">      /&gt;</span></span>
-<span class="line"><span style="color:#C9D1D9">      &lt;</span><span style="color:#7EE787">line</span></span>
-<span class="line"><span style="color:#C9D1D9">        </span><span style="color:#79C0FF">x1</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;10.667&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">        </span><span style="color:#79C0FF">y1</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;0.5&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">        </span><span style="color:#79C0FF">x2</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;10.667&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">        </span><span style="color:#79C0FF">y2</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;13&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">        </span><span style="color:#79C0FF">stroke</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;currentColor&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">        </span><span style="color:#79C0FF">stroke-width</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;2&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">      /&gt;</span></span>
-<span class="line"><span style="color:#C9D1D9">    &lt;/</span><span style="color:#7EE787">g</span><span style="color:#C9D1D9">&gt;</span></span>
-<span class="line"><span style="color:#C9D1D9">    &lt;</span><span style="color:#7EE787">defs</span><span style="color:#C9D1D9">&gt;</span></span>
-<span class="line"><span style="color:#C9D1D9">      &lt;</span><span style="color:#7EE787">clipPath</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">id</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;clip0_314_173&quot;</span><span style="color:#C9D1D9">&gt;</span></span>
-<span class="line"><span style="color:#C9D1D9">        &lt;</span><span style="color:#7EE787">rect</span></span>
-<span class="line"><span style="color:#C9D1D9">          </span><span style="color:#79C0FF">width</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;20.8333&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">          </span><span style="color:#79C0FF">height</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;20&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">          </span><span style="color:#79C0FF">fill</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;white&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">          </span><span style="color:#79C0FF">transform</span><span style="color:#FF7B72">=</span><span style="color:#A5D6FF">&quot;translate(0.0834961 0.5)&quot;</span></span>
-<span class="line"><span style="color:#C9D1D9">        /&gt;</span></span>
-<span class="line"><span style="color:#C9D1D9">      &lt;/</span><span style="color:#7EE787">clipPath</span><span style="color:#C9D1D9">&gt;</span></span>
-<span class="line"><span style="color:#C9D1D9">    &lt;/</span><span style="color:#7EE787">defs</span><span style="color:#C9D1D9">&gt;</span></span>
-<span class="line"><span style="color:#C9D1D9">  &lt;/</span><span style="color:#7EE787">svg</span><span style="color:#C9D1D9">&gt;</span></span>
-<span class="line"><span style="color:#C9D1D9">  &lt;</span><span style="color:#7EE787">span</span><span style="color:#C9D1D9">&gt;Feedback&lt;/</span><span style="color:#7EE787">span</span><span style="color:#C9D1D9">&gt;</span></span>
-<span class="line"><span style="color:#C9D1D9">&lt;/</span><span style="color:#7EE787">WvButtonLink</span><span style="color:#C9D1D9">&gt;</span></span></code></pre>
+<span class="line"><span style="color:#C9D1D9">&lt;/</span><span style="color:#7EE787">WvNavButtonLink</span><span style="color:#C9D1D9">&gt;</span></span></code></pre>
       </div>
       <aside id="grid-right" title="Table of Contents">
           <nav class="sticky top-4 max-h-[calc(100vh_-_2rem)] overflow-y-auto" aria-labelledby="grid-right">

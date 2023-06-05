@@ -1,40 +1,15 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-us" class="initial astro-HS6WADZ3">
+<html dir="ltr" lang="en-US">
   <head>
-    <!-- Global Metadata --><meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<meta name="generator" content="Astro v1.9.2">
-
-<link rel="icon" type="image/svg+xml" href="/design-systems/favicon.svg">
-
-<!-- Preload Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet">
-
-<!-- Scrollable a11y code helper -->
-
-
-<!-- This is intentionally inlined to avoid FOUC -->
-<script>
-	const root = document.documentElement;
-	const theme = localStorage.getItem('theme');
-	if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-		root.classList.add('theme-dark');
-	} else {
-		root.classList.remove('theme-dark');
-	}
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEL60V1WM9" is:inline></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-TEL60V1WM9');
-</script> -->
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="generator" content="Astro v2.5.5">
+    <title>
+      Nav Dropdown Item — WeVis Design Systems
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/svg+xml" href="/design-systems/favicon.svg">
     <!-- Page Metadata --><link rel="canonical" href="https://wevisdemo.github.io/design-systems/components/nav-dropdown-item/">
 
 <!-- OpenGraph Tags -->
@@ -61,170 +36,116 @@
   https://www.npmjs.com/package/schema-dts seems like a great resource for implementing this.
   Even better, there's a React component that integrates with `schema-dts`: https://github.com/google/react-schemaorg
 -->
-
-    <title>
-      Nav Dropdown Item 🚀 WeVis Design Systems
-    </title>
-    
-    
-  <link rel="stylesheet" href="/design-systems/assets/getting-started.5f4b2adc.css" />
-<link rel="stylesheet" href="/design-systems/assets/nav-dropdown-item.6ac32d24.css" /><script type="module">Array.from(document.getElementsByTagName("pre")).forEach(e=>{e.setAttribute("tabindex","0")});
+  <link rel="stylesheet" href="/design-systems/_astro/button-group.1327599d.css" />
+<link rel="stylesheet" href="/design-systems/_astro/nav-dropdown-item.2a05a187.css" /><script type="module">Array.from(document.getElementsByTagName("pre")).forEach(e=>{e.setAttribute("tabindex","0")});
 </script></head>
 
-  <body class="astro-HS6WADZ3">
-    <header class="astro-MFIWFGSN">
-  <a href="#article" class="sr-only focus:not-sr-only skiplink astro-VNY3ELHX"><span class="astro-VNY3ELHX">Skip to Content</span></a>
-
-
-  <nav class="nav-wrapper astro-MFIWFGSN" title="Top Navigation">
-    <div class="menu-toggle astro-MFIWFGSN">
-      <style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Z1Qknte" component-url="/design-systems/SidebarToggle.9868704f.js" component-export="default" renderer-url="/design-systems/client.8732bdf6.js" props="{&quot;class&quot;:[0,&quot;astro-MFIWFGSN&quot;]}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;SidebarToggle&quot;,&quot;value&quot;:true}" await-children=""><button type="button" aria-pressed="false" id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg><span class="sr-only">Toggle sidebar</span></button></astro-island>
-    </div>
-    <div class="logo flex astro-MFIWFGSN">
-      <a href="/design-systems/" class="astro-MFIWFGSN">
-        <h1 class="astro-MFIWFGSN">WeVis Design Systems</h1>
+  <body>
+    <a href="#content" class="sr-only focus:not-sr-only">Skip to Content</a>
+    <style>astro-island,astro-slot{display:contents}</style><script>(()=>{var i=t=>{let e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)};(self.Astro||(self.Astro={})).idle=i;window.dispatchEvent(new Event("astro:idle"));})();;(()=>{var l;{let c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;let[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;let s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(let r of n){let i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of s){let i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}let a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){let s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{let n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(let d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}})();</script><astro-island uid="1eY7Ky" component-url="/design-systems/_astro/navbar.3f87a74d.js" component-export="default" renderer-url="/design-systems/_astro/client.b7f74c51.js" props="{&quot;title&quot;:[0,&quot;DESIGN SYSTEM&quot;],&quot;dark&quot;:[0,true],&quot;animated&quot;:[0,true]}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;WvNavbar&quot;,&quot;value&quot;:true}" await-children=""><div class="wv_navbar wv_navbar--black"><div class="wv_navbar__logo"><a class="wv_navbar__logo__link" aria-label="Go to WeVis.info" href="https://wevis.info/"><svg viewBox="0 0 229 75" class="wv_navbar__logo__wevis wv_navbar__logo__wevis--animated"><path d="M164.5 73.49v-8.74l2.86-.65c.65-.07.79-.29.79-1V35.14c0-.57-.14-.79-.79-1l-2.86-.71v-8.69h21.79v8.75l-2.87.72c-.64.21-.79.43-.79 1v27.93c0 .64.15.79.72 1l2.94.79v8.6l-21.79-.04zM124.83 73.49l-12.15-38.46a.86.86 0 00-.72-.64l-3.79-.64v-8.87h24.52v8.87l-2.86.86a1.15 1.15 0 00-1 1.14c.049.801.193 1.593.43 2.36l5.22 20.59h.35l5.2-20.56c.229-.769.373-1.56.43-2.36a1.224 1.224 0 00-1.07-1.14l-2.79-.86v-8.87h23.88v8.8l-3.93.78a.919.919 0 00-.72.72l-11.79 38.31-19.21-.03zM191.16 69.98c.047-4.435.361-8.863.94-13.26h11.73l1.15 5.59c1.503.505 3.075.771 4.66.79 2.72 0 4.51-1.22 4.51-3.16 0-2.43-3.08-3.36-6.74-4.44-7.31-2.22-16.05-5.09-16.05-16.42 0-11.33 7.45-15.05 18.71-15.05 7.17 0 11.83 1.86 16.84 4.23a79.338 79.338 0 01-.78 12.54h-11.74l-.57-4.94a9.2 9.2 0 00-3.59-.72c-2.65 0-4.37.64-4.37 2.72 0 2.44 3.3 3.88 6.88 5.09 7 2.29 15.92 5.45 15.92 15.85 0 10.4-6.6 15.48-19.07 15.48a42.79 42.79 0 01-18.43-4.3zM28.67 24.88v8.85l3.51 1c1.46.39 1.44 1.14.68 3.41l-6.8 20.61h-.49l-5.25-20.61c-.59-2.2-.58-3.12.68-3.41l3.73-1v-8.85H0v8.85l4 .78c.39.1.48.29.58.68l12 38.3h17.25l6-20.35 6 20.32h17.3l12-38.3a1 1 0 01.7-.7l3.87-.76v-8.85H54.99v8.85l3.73 1c1.27.29 1.27 1.21.68 3.41l-5.25 20.61h-.48l-6.84-20.58c-.75-2.27-.78-3 .68-3.41l3.51-1v-8.85H28.67zM91.01 51.53h6.47v-1.84c0-2-1.14-3.06-3.2-3.06-2.06 0-3.27 1.07-3.27 3.06v1.84zm-13.79 8.39v-9.38c0-8.6 6.68-14.29 16.78-14.29 10.1 0 16.77 5.69 16.77 14.29v8H91.01v1.92c0 2.06 2.42 3.41 5 3.41s5.12-1.14 5.54-2.91h9.17v7c-3.69 4.34-9.31 6.26-15.14 6.26-10.96-.01-18.36-5.7-18.36-14.3z"></path><path d="M175.71 20.4a7.7 7.7 0 100-15.4 7.7 7.7 0 100 15.4z"></path><g><path d="M174.61 6.239a7.957 7.957 0 00-7.318 4.948 7.957 7.957 0 001.757 8.658A7.96 7.96 0 00182.62 14.2h-8.01v-7.96z"></path><path d="M176.924 4v7.96h7.885A7.96 7.96 0 00176.924 4z"></path></g><path fill-rule="evenodd" d="M175.66 20.92a7.96 7.96 0 100-15.92 7.96 7.96 0 000 15.92zm2.488-7.418a3 3 0 100-6 3 3 0 000 6zm-2 2a2 2 0 11-4 0 2 2 0 014 0z" clip-rule="evenodd"></path><g><path d="M175.66 18.92a7.96 7.96 0 100-15.92 7.96 7.96 0 000 15.92z"></path><path d="M170.66 22.652l7.587-6.17-7.587-1.591v7.76z"></path></g><g><path d="M185.106 4.775l-21.005 13.74 1.171 1.79 21.005-13.74-1.171-1.79z"></path><path d="M163.137 8.959l-.437 2.094 24.57 5.128.437-2.094-24.57-5.128z"></path><path d="M169.201 1.443l-1.79 1.172 13.744 21.002 1.79-1.171-13.744-21.003z"></path><path d="M176.706 0l-5.112 24.574 2.095.435L178.8.436 176.706 0z"></path></g><path d="M186.864 12.1c-10.497 0-10.497 0-10.497-10.1h-1.17c0 10.1 0 10.1-10.497 10.1v1.144c10.497 0 10.497 0 10.497 10.1h1.17c0-10.1 0-10.1 10.497-10.1V12.1z"></path><path d="M178.469 12.667h-6.333V19h6.333v-6.333zM172.158 6.333h-6.333v6.334h6.333V6.333zM178.358 0h-6.333v6.333h6.333V0zM184.669 6.333h-6.333v6.334h6.333V6.333z"></path><path d="M172.028 11.17H167.7v9.203h4.328V11.17zM177.451 7.81h-4.328v12.563h4.328V7.811zM182.849 5h-4.328v15.373h4.328V5z"></path><g><path d="M172.636 8.418l-1.576 1.576 7.692 7.693 1.577-1.577-7.693-7.692z"></path><path d="M178.775 8.373l-7.693 7.693 1.577 1.576 7.692-7.692-1.576-1.577z"></path><path d="M182.7 20.022h-14V6h14v14.022zm-12.885-1.114h11.77V7.115h-11.77v11.793z"></path></g></svg></a></div><div class="wv_navbar__title wv-kondolar wv-h9 wv_navbar__title--uppercase">design system</div><div class="wv_navbar__menu wv_navbar__menu--desktop wv_navbar__menu--hide-mobile"><astro-slot>
+      <a href="https://github.com/wevisdemo/design-systems" target="_blank" rel="nofollow noopener noreferrer" class="wv_nav-button wv-ibmplex wv-b7 wv_nav-button--white">
+        GitHub
       </a>
-    </div>
-    <div style="flex-grow: 1;" class="astro-MFIWFGSN"></div>
-    <div class="astro-MFIWFGSN">
-      <script>(self.Astro=self.Astro||{}).visible=(s,c,n)=>{const r=async()=>{await(await s())()};let i=new IntersectionObserver(e=>{for(const t of e)if(!!t.isIntersecting){i.disconnect(),r();break}});for(let e=0;e<n.children.length;e++){const t=n.children[e];i.observe(t)}},window.dispatchEvent(new Event("astro:visible"));</script><astro-island uid="Z1f6XT0" component-url="/design-systems/ThemeToggleButton.8955ffce.js" component-export="default" renderer-url="/design-systems/client.8732bdf6.js" props="{&quot;class&quot;:[0,&quot;astro-MFIWFGSN&quot;]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle"><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme" /></label><label class><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme" /></label></div></astro-island>
-    </div>
-  </nav>
-</header>
+    </astro-slot></div><button type="button" class="wv_navbar__hamburger-button" aria-label="Open Menu"><svg width="15" height="12" viewBox="0 0 15 12"><rect width="15" height="2"></rect><rect y="5" width="15" height="2"></rect><rect y="10" width="15" height="2"></rect></svg></button></div></astro-island>
 
-
-
-
-    <main class="layout astro-HS6WADZ3">
-      <aside id="grid-left" class="grid-sidebar astro-HS6WADZ3" title="Site Navigation">
-        <nav aria-labelledby="grid-left" class="astro-5XN4HFUJ">
-  <ul class="nav-groups astro-5XN4HFUJ">
-    <li class="astro-5XN4HFUJ">
-          <div class="nav-group astro-5XN4HFUJ">
-            <h4 class="astro-5XN4HFUJ">Guide</h4>
-            <ul class="astro-5XN4HFUJ">
-              <li class="nav-link astro-5XN4HFUJ">
-                  <a href="/design-systems/" class="astro-5XN4HFUJ">
-                    Introduction
+    <main class="grid-cols-content mx-auto grid w-full gap-8 p-4 md:max-w-[1280px] my-8">
+      <aside id="grid-left" title="Site Navigation">
+        <nav class="sticky top-4 max-h-[calc(100vh_-_2rem)] overflow-y-auto" aria-labelledby="grid-left">
+  <ul>
+    <li class="mt-2 first:mt-0">
+            <h4 class="wv-kondolar wv-h9 wv-bold mb-1">Basics</h4>
+            <ul>
+              <li>
+                  <a class="left-sidebar-li-a" href="/design-systems/">
+                    Getting Started
                   </a>
-                </li><li class="nav-link astro-5XN4HFUJ">
-                  <a href="/design-systems/getting-started" class="astro-5XN4HFUJ">
-                    Geting Started
+                </li><li>
+                  <a class="left-sidebar-li-a" href="/design-systems/typography">
+                    Typography
                   </a>
                 </li>
             </ul>
-          </div>
-        </li><li class="astro-5XN4HFUJ">
-          <div class="nav-group astro-5XN4HFUJ">
-            <h4 class="astro-5XN4HFUJ">Typography</h4>
-            <ul class="astro-5XN4HFUJ">
-              <li class="nav-link astro-5XN4HFUJ">
-                  <a href="/design-systems/typography/utility-classes" class="astro-5XN4HFUJ">
-                    Utility Classes
-                  </a>
-                </li>
-            </ul>
-          </div>
-        </li><li class="astro-5XN4HFUJ">
-          <div class="nav-group astro-5XN4HFUJ">
-            <h4 class="astro-5XN4HFUJ">Components</h4>
-            <ul class="astro-5XN4HFUJ">
-              <li class="nav-link astro-5XN4HFUJ">
-                  <a href="/design-systems/components/button-group" class="astro-5XN4HFUJ">
+          </li><li class="mt-2 first:mt-0">
+            <h4 class="wv-kondolar wv-h9 wv-bold mb-1">Components</h4>
+            <ul>
+              <li>
+                  <a class="left-sidebar-li-a" href="/design-systems/components/button-group">
                     Button Group
                   </a>
-                </li><li class="nav-link astro-5XN4HFUJ">
-                  <a href="/design-systems/components/button-link" class="astro-5XN4HFUJ">
+                </li><li>
+                  <a class="left-sidebar-li-a" href="/design-systems/components/button-link">
                     Button Link
                   </a>
-                </li><li class="nav-link astro-5XN4HFUJ">
-                  <a href="/design-systems/components/button" class="astro-5XN4HFUJ">
+                </li><li>
+                  <a class="left-sidebar-li-a" href="/design-systems/components/button">
                     Button
                   </a>
-                </li><li class="nav-link astro-5XN4HFUJ">
-                  <a href="/design-systems/components/container" class="astro-5XN4HFUJ">
+                </li><li>
+                  <a class="left-sidebar-li-a" href="/design-systems/components/container">
                     Container
                   </a>
-                </li><li class="nav-link astro-5XN4HFUJ">
-                  <a href="/design-systems/components/cookie-consent" class="astro-5XN4HFUJ">
+                </li><li>
+                  <a class="left-sidebar-li-a" href="/design-systems/components/cookie-consent">
                     Cookie Consent
                   </a>
-                </li><li class="nav-link astro-5XN4HFUJ">
-                  <a href="/design-systems/components/footer" class="astro-5XN4HFUJ">
+                </li><li>
+                  <a class="left-sidebar-li-a" href="/design-systems/components/footer">
                     Footer
                   </a>
-                </li><li class="nav-link astro-5XN4HFUJ">
-                  <a href="/design-systems/components/nav-button" class="astro-5XN4HFUJ">
+                </li><li>
+                  <a class="left-sidebar-li-a" href="/design-systems/components/nav-button-link">
+                    Nav Button Link
+                  </a>
+                </li><li>
+                  <a class="left-sidebar-li-a" href="/design-systems/components/nav-button">
                     Nav Button
                   </a>
-                </li><li class="nav-link astro-5XN4HFUJ">
-                  <a href="/design-systems/components/nav-dropdown-item" class="astro-5XN4HFUJ">
+                </li><li>
+                  <a class="left-sidebar-li-a" href="/design-systems/components/nav-dropdown-item">
                     Nav Dropdown Item
                   </a>
-                </li><li class="nav-link astro-5XN4HFUJ">
-                  <a href="/design-systems/components/nav-dropdown" class="astro-5XN4HFUJ">
+                </li><li>
+                  <a class="left-sidebar-li-a" href="/design-systems/components/nav-dropdown">
                     Nav Dropdown
                   </a>
-                </li><li class="nav-link astro-5XN4HFUJ">
-                  <a href="/design-systems/components/navbar" class="astro-5XN4HFUJ">
+                </li><li>
+                  <a class="left-sidebar-li-a" href="/design-systems/components/navbar">
                     Navbar
                   </a>
-                </li><li class="nav-link astro-5XN4HFUJ">
-                  <a href="/design-systems/components/paragraph-group" class="astro-5XN4HFUJ">
+                </li><li>
+                  <a class="left-sidebar-li-a" href="/design-systems/components/paragraph-group">
                     Paragraph Group
                   </a>
-                </li><li class="nav-link astro-5XN4HFUJ">
-                  <a href="/design-systems/components/sharer" class="astro-5XN4HFUJ">
+                </li><li>
+                  <a class="left-sidebar-li-a" href="/design-systems/components/sharer">
                     Sharer
                   </a>
                 </li>
             </ul>
-          </div>
-        </li><li class="astro-5XN4HFUJ">
-          <div class="nav-group astro-5XN4HFUJ">
-            <h4 class="astro-5XN4HFUJ">Cookbook</h4>
-            <ul class="astro-5XN4HFUJ">
-              <li class="nav-link astro-5XN4HFUJ">
-                  <a href="/design-systems/cookbook/about-page" class="astro-5XN4HFUJ">
+          </li><li class="mt-2 first:mt-0">
+            <h4 class="wv-kondolar wv-h9 wv-bold mb-1">Cookbook</h4>
+            <ul>
+              <li>
+                  <a class="left-sidebar-li-a" href="/design-systems/cookbook/about-page">
                     About Page
                   </a>
-                </li><li class="nav-link astro-5XN4HFUJ">
-                  <a href="/design-systems/cookbook/navigation-bar" class="astro-5XN4HFUJ">
+                </li><li>
+                  <a class="left-sidebar-li-a" href="/design-systems/cookbook/navigation-bar">
                     Navigation Bar
                   </a>
                 </li>
             </ul>
-          </div>
-        </li>
+          </li>
   </ul>
 </nav>
-
-<script>
-  window.addEventListener('DOMContentLoaded', () => {
-    var target = document.querySelector('[aria-current="page"]');
-    if (target && target.offsetTop > window.innerHeight - 100) {
-      document.querySelector('.nav-groups').scrollTop = target.offsetTop;
-    }
-  });
-</script>
-
-
-
-
       </aside>
-      <div id="grid-main" class="astro-HS6WADZ3">
-        <article id="article" class="content astro-UE7MWUXV">
-  <section class="main-section astro-UE7MWUXV">
-    <h1 class="content-title astro-UE7MWUXV" id="overview">Nav Dropdown Item</h1>
-    <nav class="block sm:hidden astro-UE7MWUXV">
-      <script>(self.Astro=self.Astro||{}).media=(s,a)=>{const t=async()=>{await(await s())()};if(a.value){const e=matchMedia(a.value);e.matches?t():e.addEventListener("change",t,{once:!0})}},window.dispatchEvent(new Event("astro:media"));</script><astro-island uid="NVlgo" component-url="/design-systems/TableOfContents.28c44406.js" component-export="default" renderer-url="/design-systems/client.8732bdf6.js" props="{&quot;headings&quot;:[1,&quot;[[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;props\&quot;],\&quot;text\&quot;:[0,\&quot;Props\&quot;]}],[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;slot--children\&quot;],\&quot;text\&quot;:[0,\&quot;Slot / Children\&quot;]}],[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;examples\&quot;],\&quot;text\&quot;:[0,\&quot;Examples\&quot;]}]]&quot;],&quot;class&quot;:[0,&quot;astro-UE7MWUXV&quot;]}" ssr="" client="media" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(max-width: 50em)&quot;}" await-children=""><h2 class="heading">On this page</h2><ul><li class="heading-link depth-2"><a href="#props">Props</a></li><li class="heading-link depth-2"><a href="#slot--children">Slot / Children</a></li><li class="heading-link depth-2"><a href="#examples">Examples</a></li></ul></astro-island>
-    </nav>
-    <p>A dropdown for navigation bar. <code>WvNavDropdown</code> and <code>WvNavDropdownItem</code> must be used together.</p>
-<button type="button" class="wv_nav-dropdown-item wv-anuphan wv-b6 wv_nav-dropdown-item--white">Topic 1</button>
+      <div id="content" class="main-content max-w-none overflow-hidden">
+        <h1>Nav Dropdown Item</h1>
+        <p>A dropdown for navigation bar. <code>WvNavDropdown</code> and <code>WvNavDropdownItem</code> must be used together.</p>
+<div class="not-prose component-preview"><button type="button" class="wv_nav-dropdown-item wv-anuphan wv-b6 wv_nav-dropdown-item--white">Topic 1</button></div>
 <pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#FF7B72">import</span><span style="color:#C9D1D9"> </span><span style="color:#A5D6FF">&#39;@wevisdemo/ui/styles/nav-dropdown-item.css&#39;</span><span style="color:#C9D1D9">;</span></span>
-<span class="line"><span style="color:#FF7B72">import</span><span style="color:#C9D1D9"> WvNavButton </span><span style="color:#FF7B72">from</span><span style="color:#C9D1D9"> </span><span style="color:#A5D6FF">&#39;@wevisdemo/ui/{react,vue2,svelte}/nav-button&#39;</span><span style="color:#C9D1D9">;</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvNavDropdownItem</span><span style="color:#C9D1D9">&gt;Topic 1&lt;/</span><span style="color:#7EE787">WvNavDropdownItem</span><span style="color:#C9D1D9">&gt;;</span></span></code></pre>
+<span class="line"><span style="color:#FF7B72">import</span><span style="color:#C9D1D9"> WvNavButton </span><span style="color:#FF7B72">from</span><span style="color:#C9D1D9"> </span><span style="color:#A5D6FF">&#39;@wevisdemo/ui/{react,vue2,svelte}/nav-button&#39;</span><span style="color:#C9D1D9">;</span></span></code></pre>
+<pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvNavDropdownItem</span><span style="color:#C9D1D9">&gt;Topic 1&lt;/</span><span style="color:#7EE787">WvNavDropdownItem</span><span style="color:#C9D1D9">&gt;</span></span></code></pre>
 <h2 id="props">Props</h2>
 
 
@@ -246,21 +167,33 @@
 <p>Item content</p>
 <h2 id="examples">Examples</h2>
 <p><strong>Dark theme</strong></p>
-<button type="button" class="wv_nav-dropdown-item wv-anuphan wv-b6 wv_nav-dropdown-item--black">Topic 1</button>
+<div class="not-prose component-preview-dark"><button type="button" class="wv_nav-dropdown-item wv-anuphan wv-b6 wv_nav-dropdown-item--black">Topic 1</button></div>
 <pre class="astro-code" style="background-color:#0d1117;overflow-x:auto"><code><span class="line"><span style="color:#C9D1D9">&lt;</span><span style="color:#7EE787">WvNavDropdownItem</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">dark</span><span style="color:#C9D1D9">&gt;Topic 1&lt;/</span><span style="color:#7EE787">WvNavDropdownItem</span><span style="color:#C9D1D9">&gt;</span></span></code></pre>
-  </section>
-</article>
-
-
       </div>
-      <aside id="grid-right" class="grid-sidebar astro-HS6WADZ3" title="Table of Contents">
-        <nav class="sidebar-nav astro-WFC5CDZB" aria-labelledby="grid-right">
-  <div class="sidebar-nav-inner astro-WFC5CDZB">
-    <astro-island uid="1eG0yQ" component-url="/design-systems/TableOfContents.28c44406.js" component-export="default" renderer-url="/design-systems/client.8732bdf6.js" props="{&quot;headings&quot;:[1,&quot;[[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;props\&quot;],\&quot;text\&quot;:[0,\&quot;Props\&quot;]}],[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;slot--children\&quot;],\&quot;text\&quot;:[0,\&quot;Slot / Children\&quot;]}],[0,{\&quot;depth\&quot;:[0,2],\&quot;slug\&quot;:[0,\&quot;examples\&quot;],\&quot;text\&quot;:[0,\&quot;Examples\&quot;]}]]&quot;],&quot;class&quot;:[0,&quot;astro-WFC5CDZB&quot;]}" ssr="" client="media" opts="{&quot;name&quot;:&quot;TableOfContents&quot;,&quot;value&quot;:&quot;(min-width: 50em)&quot;}" await-children=""><h2 class="heading">On this page</h2><ul><li class="heading-link depth-2"><a href="#props">Props</a></li><li class="heading-link depth-2"><a href="#slot--children">Slot / Children</a></li><li class="heading-link depth-2"><a href="#examples">Examples</a></li></ul></astro-island>
-  </div>
-</nav>
-
-
-      </aside>
+      <aside id="grid-right" title="Table of Contents">
+          <nav class="sticky top-4 max-h-[calc(100vh_-_2rem)] overflow-y-auto" aria-labelledby="grid-right">
+            <h2 class="wv-kondolar wv-h9 wv-bold mb-1">On this page</h2>
+            <ul>
+              <li>
+                      <a class="left-sidebar-li-a" href="#props">
+                        Props
+                      </a>
+                    </li><li>
+                      <a class="left-sidebar-li-a" href="#slot--children">
+                        Slot / Children
+                      </a>
+                    </li><li>
+                      <a class="left-sidebar-li-a" href="#examples">
+                        Examples
+                      </a>
+                    </li>
+            </ul>
+          </nav>
+        </aside>
     </main>
+
+    <div class="wv_footer wv_footer--black"><a class="wv_footer__logo" target="_blank" rel="noreferrer noopener" href="https://wevis.info" aria-label="Go to WeVis.info"><svg viewBox="0 0 64 29"><path d="M49.3977 0.400024V5.56151L51.6001 6.12438C52.3466 6.29606 52.3495 6.82797 52.0019 8.10849L48.9019 20.1341H48.617L45.4828 10.7765L41.9668 21.9128L44.0211 28.7545H54.2385L61.3019 6.41144C61.3304 6.31474 61.3829 6.22656 61.4545 6.15484C61.5261 6.08312 61.6146 6.0301 61.7121 6.00055L63.9916 5.56151V0.400024H49.3977Z"></path><path d="M16.9331 0.400024V5.56151L19.0045 6.12438C19.8593 6.35234 19.8593 6.78857 19.4063 8.10849L15.386 20.1341H15.1011L11.9982 8.1113C11.6506 6.83078 11.6535 6.29887 12.4 6.1272L14.6024 5.56433V0.402837H0V5.56433L2.35349 6.01744C2.58428 6.07373 2.63841 6.1863 2.69825 6.41426L9.75871 28.7545H19.979L23.5377 16.9033L27.0993 28.7545H37.3167L44.3943 6.41144C44.4228 6.31474 44.4753 6.22656 44.5469 6.15484C44.6185 6.08312 44.7071 6.0301 44.8046 6.00055L47.084 5.56151V0.400024H32.473V5.56151L34.6755 6.12438C35.422 6.29606 35.4277 6.82797 35.08 8.10849L31.9772 20.1341H31.6923L27.672 8.1113C27.2275 6.79138 27.2133 6.35516 28.0737 6.1272L30.148 5.56433V0.402837L16.9331 0.400024Z"></path></svg></a><div class="wv_footer__terms"><a class="wv-b7" target="_blank" rel="noreferrer noopener" href="https://wevis.info/terms-of-use/">Terms of Use</a></div><div class="wv_footer__divider"></div><div class="wv_footer__follow"><span class="wv-b6">Follow Us</span><a target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/wevisdemo" aria-label="Facebook"><svg width="30" height="30" viewBox="0 0 30 30"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.175 9.15002C17.65 9.15002 17.2 9.15002 16.675 9.15002C16 9.15002 15.625 9.52502 15.55 10.125C15.55 10.65 15.55 11.175 15.55 11.7C15.55 11.925 15.625 11.85 15.775 11.85C16.525 11.85 17.275 11.85 18.025 11.85C18.25 11.85 18.325 11.925 18.325 12.15C18.25 13.05 18.175 13.875 18.1 14.775C18.1 15 18.025 15 17.8 15C17.2 15 16.6 15 16 15C15.55 15 15.625 14.925 15.625 15.375C15.625 18.15 15.625 20.85 15.625 23.625C15.625 23.925 15.55 24 15.25 24C14.2 24 13.225 24 12.175 24C11.875 24 11.875 23.925 11.875 23.625C11.875 22.275 11.875 20.85 11.875 19.5C11.875 18.075 11.875 16.725 11.875 15.3C11.875 15.075 11.8 15 11.575 15C11.125 15 10.675 15 10.225 15C10.075 15 10 14.925 10 14.775C10 13.875 10 13.05 10 12.15C10 12 10.075 11.925 10.225 11.925C10.675 11.925 11.125 11.925 11.575 11.925C11.8 11.925 11.875 11.85 11.875 11.625C11.875 10.95 11.875 10.275 11.875 9.60002C11.875 8.77502 12.1 8.02502 12.625 7.35002C13.225 6.52502 14.125 6.15002 15.1 6.07502C16.15 6.00002 17.2 6.07502 18.175 6.07502C18.325 6.07502 18.325 6.15002 18.325 6.30002C18.325 7.20002 18.325 8.10002 18.325 8.92502C18.4 9.07502 18.325 9.15002 18.175 9.15002Z"></path></svg></a><a target="_blank" rel="noreferrer noopener" href="https://twitter.com/wevisdemo" aria-label="Twitter"><svg width="30" height="30" viewBox="0 0 30 30"><path d="M22.2 11.325C22.2 11.475 22.2 11.625 22.2 11.775C22.2 16.65 18.45 22.35 11.625 22.35C9.52499 22.35 7.57499 21.75 5.92499 20.7C6.22499 20.7 6.52499 20.775 6.82499 20.775C8.54999 20.775 10.125 20.175 11.4 19.2C9.74999 19.2 8.39999 18.075 7.94999 16.65C8.17499 16.725 8.39999 16.725 8.62499 16.725C8.99999 16.725 9.29999 16.65 9.59999 16.575C7.87499 16.2 6.59999 14.7 6.59999 12.975C6.59999 12.975 6.59999 12.975 6.59999 12.9C7.12499 13.2 7.64999 13.35 8.24999 13.35C7.34999 12.6 6.74999 11.475 6.74999 10.2C6.74999 9.52498 6.89999 8.84998 7.27499 8.32498C9.07499 10.575 11.85 12.075 14.925 12.225C14.85 11.925 14.85 11.7 14.85 11.4C14.85 9.37498 16.5 7.72498 18.525 7.72498C19.575 7.72498 20.55 8.17498 21.225 8.92498C22.05 8.77498 22.875 8.47498 23.55 8.02498C23.25 8.92498 22.65 9.59997 21.9 10.05C22.65 9.97497 23.4 9.74998 24 9.44998C23.55 10.125 22.875 10.8 22.2 11.325Z"></path></svg></a><a target="_blank" rel="noreferrer noopener" href="https://www.instagram.com/wevisdemo/" aria-label="Instagram"><svg width="30" height="30" viewBox="0 0 30 30"><rect x="6" y="7" width="17" height="16" rx="5"></rect><path d="M18.25 15C18.25 16.9049 16.6001 18.5 14.5 18.5C12.3999 18.5 10.75 16.9049 10.75 15C10.75 13.0951 12.3999 11.5 14.5 11.5C16.6001 11.5 18.25 13.0951 18.25 15Z" stroke="black"></path><ellipse cx="19.8125" cy="10" rx="1.0625" ry="1" fill="black"></ellipse></svg></a><a target="_blank" rel="noreferrer noopener" href="https://medium.com/wevisdemo" aria-label="Medium"><svg width="30" height="30" viewBox="0 0 30 30"><path d="M16.1015 15.0993C16.1015 19.0199 12.9447 22.1983 9.05087 22.1983C5.15701 22.1983 2 19.0192 2 15.0993C2 11.1793 5.15677 8 9.05087 8C12.945 8 16.1015 11.1786 16.1015 15.0993ZM23.8363 15.0993C23.8363 18.7897 22.2579 21.7827 20.3108 21.7827C18.3638 21.7827 16.7854 18.7897 16.7854 15.0993C16.7854 11.4088 18.3636 8.41586 20.3106 8.41586C22.2577 8.41586 23.836 11.4078 23.836 15.0993H23.8363ZM27 15.0993C27 18.405 26.445 21.0865 25.7601 21.0865C25.0752 21.0865 24.5204 18.4057 24.5204 15.0993C24.5204 11.7928 25.0755 9.11198 25.7601 9.11198C26.4447 9.11198 27 11.7925 27 15.0993Z"></path></svg></a><a target="_blank" rel="noreferrer noopener" href="https://github.com/wevisdemo" aria-label="GitHub"><svg width="30" height="30" viewBox="0 0 30 30"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.2782 5.0377C12.7824 5.03522 10.3673 5.89886 8.4656 7.47383C6.56392 9.0488 5.30002 11.2322 4.90041 13.6326C4.5008 16.0331 4.9916 18.4938 6.28483 20.5737C7.57807 22.6536 9.58923 24.2168 11.9579 24.9832C12.4801 25.0774 12.6735 24.757 12.6735 24.4869C12.6735 24.2168 12.6735 23.6011 12.6735 22.7468C9.75291 23.375 9.13397 21.3773 9.13397 21.3773C8.93935 20.7581 8.52591 20.2262 7.96701 19.8759C7.01926 19.2477 8.04437 19.2477 8.04437 19.2477C8.3766 19.2934 8.69379 19.4122 8.97193 19.595C9.25007 19.7779 9.48186 20.02 9.64975 20.3031C9.79241 20.5551 9.98473 20.7772 10.2157 20.9566C10.4467 21.1361 10.7117 21.2693 10.9957 21.3487C11.2796 21.4281 11.5768 21.452 11.8703 21.4192C12.1637 21.3864 12.4477 21.2974 12.7058 21.1574C12.7462 20.6406 12.9749 20.1549 13.3505 19.7879C11.0166 19.5304 8.5666 18.6509 8.5666 14.7309C8.55058 13.7151 8.93608 12.7321 9.6433 11.9856C9.32768 11.1025 9.36451 10.136 9.74646 9.27807C9.74646 9.27807 10.6297 9.00166 12.6348 10.3272C14.3566 9.86655 16.174 9.86655 17.8958 10.3272C19.9009 9.00166 20.7778 9.27807 20.7778 9.27807C21.1637 10.1348 21.2029 11.102 20.8874 11.9856C21.5946 12.7321 21.9801 13.7151 21.9641 14.7309C21.9641 18.6634 19.5077 19.5241 17.1673 19.7565C17.4182 20.0023 17.612 20.2978 17.7355 20.623C17.859 20.9481 17.9093 21.2954 17.8829 21.6411C17.8829 23.0106 17.8829 24.1163 17.8829 24.4492C17.8829 24.7822 18.0699 25.0397 18.605 24.9455C20.9662 24.1719 22.9686 22.6062 24.2551 20.5277C25.5415 18.4491 26.0284 15.9929 25.6288 13.5971C25.2292 11.2013 23.9691 9.02168 22.0733 7.44706C20.1775 5.87244 17.7693 5.00519 15.2782 5V5.0377Z"></path></svg></a></div></div>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
   </body></html>
