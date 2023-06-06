@@ -184,7 +184,7 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
                         })
                       }
                     />
-                    <span>{option} Cookies</span>
+                    <span>{`${option} Cookies`}</span>
                   </label>
                 )}
               </For>

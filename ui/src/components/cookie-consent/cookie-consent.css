@@ -44,7 +44,11 @@
 }
 
 .wv_cookie-consent__options > label {
-  @apply flex flex-row items-center py-4 border-0 border-b border-white border-opacity-20 border-solid space-x-3;
+  @apply flex flex-row items-center py-4 border-0 border-b border-white border-opacity-20 border-solid space-x-3 cursor-pointer first-of-type:cursor-not-allowed;
+}
+
+.wv_cookie-consent__options > label > input {
+  @apply cursor-[inherit];
 }
 
 .wv_cookie-consent__options > h2 {
