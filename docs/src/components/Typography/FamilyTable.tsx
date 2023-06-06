@@ -31,7 +31,7 @@ export default () => {
   return (
     <>
       <div className="wv-b6">You can click at "Aก" to copy the style.</div>
-      <table className="text-center mb-2 mt-0">
+      <table className="!mb-2 !mt-0" style={{ textAlign: 'center' }}>
         <thead>
           <tr>
             <td></td>
