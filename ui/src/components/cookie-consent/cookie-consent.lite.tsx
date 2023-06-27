@@ -146,14 +146,14 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
           </button>
         </Show>
 
-        <div class="wv_cookie-consent__container wv-baijamjuri">
+        <div class="wv_cookie-consent__container wv-ibmplex">
           <div class="wv_cookie-consent__lang wv-b7">
             <For each={langs}>
               {(lang) => (
                 <button
                   key={lang}
                   type="button"
-                  class={`wv-baijamjuri ${
+                  class={`wv-kondolar ${
                     state.activeLang === lang ? '' : 'inactive'
                   }`}
                   onClick={() => (state.activeLang = lang)}

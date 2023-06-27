@@ -43,15 +43,6 @@ export default () => {
               <span>IBM Plex Sans Thai</span><br/>
               <code>wv-ibmplex</code>
             </th>
-            <th className="leading-normal" scope="col">
-              <span>Bai Jamjuri</span><br/>
-              <code>wv-baijamjuri</code>
-            </th>
-            <th className="leading-normal" scope="col">
-              <small className="font-normal">[DEPRECATED]</small><br/>
-              <span>Anuphan</span><br/>
-              <code>wv-anuphan</code>
-            </th>
           </tr>
         </thead>
         <tbody>
@@ -59,8 +50,6 @@ export default () => {
             <th scope="row" className="text-right leading-normal"><span>400</span></th>
             <td><StyleButton onHover={setCurrentStyle} s="wv-kondolar" /></td>
             <td><StyleButton onHover={setCurrentStyle} s="wv-ibmplex" /></td>
-            <td><StyleButton onHover={setCurrentStyle} s="wv-baijamjuri" /></td>
-            <td><StyleButton onHover={setCurrentStyle} s="wv-anuphan" /></td>
           </tr>
           <tr>
             <th scope="row" className="text-right leading-normal">
@@ -68,8 +57,6 @@ export default () => {
             </th>
             <td></td>
             <td><StyleButton onHover={setCurrentStyle} s="wv-ibmplex wv-semibold" /></td>
-            <td></td>
-            <td><StyleButton onHover={setCurrentStyle} s="wv-anuphan wv-semibold" /></td>
           </tr>
           <tr>
             <th scope="row" className="text-right leading-normal">
@@ -77,16 +64,12 @@ export default () => {
             </th>
             <td><StyleButton onHover={setCurrentStyle} s="wv-kondolar wv-bold" /></td>
             <td><StyleButton onHover={setCurrentStyle} s="wv-ibmplex wv-bold" /></td>
-            <td><StyleButton onHover={setCurrentStyle} s="wv-baijamjuri wv-bold" /></td>
-            <td><StyleButton onHover={setCurrentStyle} s="wv-anuphan wv-bold" /></td>
           </tr>
           <tr>
             <th scope="row" className="text-right leading-normal">
               <span>900</span><br/><code>wv-black</code>
             </th>
             <td><StyleButton onHover={setCurrentStyle} s="wv-kondolar wv-black" /></td>
-            <td></td>
-            <td></td>
             <td></td>
           </tr>
         </tbody>

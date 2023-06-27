@@ -39,39 +39,6 @@
   src: url(https://design-systems.wevis.info/IBMPlexSansThai-Bold.otf)
     format('opentype');
 }
-@font-face {
-  font-family: 'Anuphan';
-  font-display: swap;
-  src: url(https://design-systems.wevis.info/Anuphan-Regular.otf)
-    format('opentype');
-}
-@font-face {
-  font-family: 'Anuphan';
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://design-systems.wevis.info/Anuphan-SemiBold.otf)
-    format('opentype');
-}
-@font-face {
-  font-family: 'Anuphan';
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://design-systems.wevis.info/Anuphan-Bold.otf)
-    format('opentype');
-}
-@font-face {
-  font-family: 'Bai Jamjuri';
-  font-display: swap;
-  src: url(https://design-systems.wevis.info/BaiJamjuree-Regular.ttf)
-    format('truetype');
-}
-@font-face {
-  font-family: 'Bai Jamjuri';
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://design-systems.wevis.info/BaiJamjuree-Bold.ttf)
-    format('truetype');
-}
 
 /* Font family */
 .wv-kondolar {
@@ -82,20 +49,6 @@
 
 .wv-ibmplex {
   font-family: 'IBM Plex Sans Thai', ui-sans-serif, system-ui, -apple-system,
-    BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    'Noto Color Emoji';
-}
-
-.wv-anuphan {
-  font-family: 'Anuphan', ui-sans-serif, system-ui, -apple-system,
-    BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    'Noto Color Emoji';
-}
-
-.wv-baijamjuri {
-  font-family: 'Bai Jamjuri', ui-sans-serif, system-ui, -apple-system,
     BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     'Noto Color Emoji';
