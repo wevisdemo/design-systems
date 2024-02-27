@@ -11,7 +11,7 @@ Monorepo is managed by [Turborepo](https://turborepo.org/)
 - `/docs`: Documentation site with [Vuepress](https://vuepress.vuejs.org/)
 - `/packages`
   - `/typography`: Fonts and CSS with font-family definition
-  - `/ui`: Cross-library components with [Mitosis](https://mitosis.builder.io/) (build to Vue, Svelte and React) and CSS stylesheets for components and typography system with [TailwindCSS](https://tailwindcss.com/)
+  - `/ui`: Cross-library components with [Mitosis](https://github.com/BuilderIO/mitosis) (build to Vue, Svelte and React) and CSS stylesheets for components and typography system with [TailwindCSS](https://tailwindcss.com/)
 
 ## Commands
 
