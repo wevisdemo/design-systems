@@ -8,10 +8,10 @@
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "outDir": "vue2",
+    "outDir": "vue",
     "declaration": true,
     "types": ["vite/client"],
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
-  "include": [".mitosis/vue2"]
+  "include": [".mitosis/vue"]
 }

@@ -2,7 +2,7 @@ node_modules
 build
 /react
 /svelte
-/vue2
+/vue
 /styles
 .mitosis
 .svelte-kit
