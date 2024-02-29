@@ -1,12 +1,14 @@
+/** @type {import('@builder.io/mitosis').MitosisConfig} */
 module.exports = {
   files: 'src/components/**',
-  targets: ['vue2', 'svelte', 'react'],
+  targets: ['vue', 'svelte', 'react'],
   dest: '.mitosis',
   getTargetPath: function (prop) {
     return prop.target;
   },
   options: {
-    vue2: {
+    vue: {
+      api: "composition",
       typescript: true,
     },
     svelte: {

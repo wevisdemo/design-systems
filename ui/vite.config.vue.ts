@@ -2,7 +2,7 @@ import { readdirSync } from 'fs';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue2';
 
-const SOURCE_PATH = '.mitosis/vue2';
+const SOURCE_PATH = '.mitosis/vue';
 
 export default defineConfig({
   plugins: [vue()],
@@ -19,6 +19,6 @@ export default defineConfig({
         },
       },
     },
-    outDir: 'vue2',
+    outDir: 'vue',
   },
 });

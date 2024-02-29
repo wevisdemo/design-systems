@@ -8,11 +8,11 @@
     "dev:component": "chokidar \"src/components/**/*.tsx\" --initial -c \"npm run build:mitosis\"",
     "dev:stylesheet": "postcss src/styles/**/*.css --dir styles --watch",
     "build": "npm run build:component && npm run build:stylesheet",
-    "build:component": "npm run build:mitosis && npm run build:react && npm run build:svelte && npm run build:vue2",
+    "build:component": "npm run build:mitosis && npm run build:react && npm run build:svelte && npm run build:vue",
     "build:mitosis": "sh scripts/build-mitosis.sh",
     "build:react": "tsc -p tsconfig.react.json",
     "build:svelte": "svelte-kit sync && svelte-package && rm svelte/.gitignore svelte/package.json",
-    "build:vue2": "vite build --config vite.config.vue2.ts",
+    "build:vue": "vite build --config vite.config.vue.ts",
     "build:stylesheet": "postcss src/styles/**/*.css --dir styles --env production"
   },
   "devDependencies": {
@@ -50,7 +50,7 @@
   "files": [
     "/react",
     "/svelte",
-    "/vue2",
+    "/vue",
     "/styles"
   ]
 }
