@@ -9,12 +9,12 @@ import WvNavButton from '@wevisdemo/ui/.mitosis/react/nav-button';
 A button for navigation bar
 
 <div class="not-prose component-preview">
-<WvNavButton>About</WvNavButton>
+  <WvNavButton>About</WvNavButton>
 </div>
 
 ```jsx
 import '@wevisdemo/ui/styles/nav-button.css';
-import WvNavButton from '@wevisdemo/ui/{react,vue2,svelte}/nav-button';
+import WvNavButton from '@wevisdemo/ui/{react,vue,svelte}/nav-button';
 ```
 
 ```jsx
@@ -38,7 +38,7 @@ Button content
 **Active button**
 
 <div class="not-prose component-preview">
-<WvNavButton active>About</WvNavButton>
+  <WvNavButton active>About</WvNavButton>
 </div>
 
 ```jsx
@@ -48,8 +48,10 @@ Button content
 **With dark theme**
 
 <div class="not-prose component-preview-dark">
-<WvNavButton dark active>About</WvNavButton>
-<WvNavButton dark>Report</WvNavButton>
+  <WvNavButton dark active>
+    About
+  </WvNavButton>
+  <WvNavButton dark>Report</WvNavButton>
 </div>
 
 ```jsx

@@ -1,6 +1,6 @@
 import { readdirSync } from 'fs';
 import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue2';
+import vue from '@vitejs/plugin-vue';
 
 const SOURCE_PATH = '.mitosis/vue';
 
