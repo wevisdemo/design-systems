@@ -44,11 +44,11 @@ const translation: Record<string, Record<string, string>> = {
   },
   setting: {
     ไทย: 'การตั้งค่าคุกกี้',
-    EN: 'Cookie setting',
+    EN: 'Cookie settings',
   },
   save: {
     ไทย: 'บันทึกการตั้งค่า',
-    EN: 'Save setting',
+    EN: 'Save settings',
   },
 };
 
