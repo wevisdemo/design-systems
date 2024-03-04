@@ -1,9 +1,9 @@
 .wv_cookie-consent {
-  @apply fixed z-50 bg-black text-white bg-opacity-80;
+  @apply fixed z-50 bg-black bg-opacity-80 text-white;
 }
 
 .wv_cookie-consent button {
-  @apply bg-transparent border-none cursor-pointer;
+  @apply cursor-pointer border-none bg-transparent;
 }
 
 .wv_cookie-consent--banner {
@@ -11,20 +11,20 @@
 }
 
 .wv_cookie-consent--popup {
-  @apply top-1/2 left-1/2 w-[600px] max-w-[100vw];
+  @apply left-1/2 top-1/2 w-[600px] max-w-[100vw];
   transform: translate(-50%, -50%);
 }
 
 .wv_cookie-consent__container {
-  @apply flex flex-col p-5 md:p-8 space-y-6;
+  @apply flex flex-col space-y-6 p-5 md:p-8;
 }
 
 .wv_cookie-consent--banner > .wv_cookie-consent__container {
-  @apply w-full max-w-screen-xl mx-auto md:flex-row md:space-y-0 md:space-x-4;
+  @apply mx-auto w-full max-w-screen-xl md:flex-row md:space-x-4 md:space-y-0;
 }
 
 .wv_cookie-consent__close {
-  @apply absolute top-4 right-4 p-2;
+  @apply absolute right-4 top-4 p-2;
 }
 
 .wv_cookie-consent__lang {
@@ -32,7 +32,7 @@
 }
 
 .wv_cookie-consent__lang > button {
-  @apply text-white px-2;
+  @apply px-2 text-white;
 }
 
 .wv_cookie-consent__lang > button.inactive {
@@ -40,11 +40,11 @@
 }
 
 .wv_cookie-consent__lang > button:not(:last-child) {
-  @apply border-opacity-50 border-0 border-r border-white border-solid;
+  @apply border-0 border-r border-solid border-white border-opacity-50;
 }
 
 .wv_cookie-consent__options > label {
-  @apply flex flex-row items-center py-4 border-0 border-b border-white border-opacity-20 border-solid space-x-3 cursor-pointer first-of-type:cursor-not-allowed;
+  @apply flex cursor-pointer flex-row items-center space-x-3 border-0 border-b border-solid border-white border-opacity-20 py-4 first-of-type:cursor-not-allowed;
 }
 
 .wv_cookie-consent__options > label > input {
@@ -52,7 +52,7 @@
 }
 
 .wv_cookie-consent__options > h2 {
-  @apply m-0;
+  @apply m-0 text-white;
 }
 
 .wv_cookie-consent__body {
@@ -64,17 +64,17 @@
 }
 
 .wv_cookie-consent__actions {
-  @apply flex flex-row w-full max-w-xs items-center space-x-3;
+  @apply flex w-full max-w-xs flex-row items-center space-x-3;
 }
 
 .wv_cookie-consent__actions > button {
-  @apply flex-1 rounded-[2px] border-solid border-white border-[1px] px-4 py-3;
+  @apply flex-1 rounded-[2px] border-[1px] border-solid border-white px-4 py-3;
 }
 
 .wv_cookie-consent__actions > button:first-child {
-  @apply text-white bg-transparent hover:bg-white hover:bg-opacity-20;
+  @apply bg-transparent text-white hover:bg-white hover:bg-opacity-20;
 }
 
 .wv_cookie-consent__actions > button:last-child {
-  @apply text-black bg-white hover:bg-mint hover:border-mint;
+  @apply hover:bg-mint hover:border-mint bg-white text-black;
 }
