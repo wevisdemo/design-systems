@@ -9,12 +9,12 @@ import WvSharer from '@wevisdemo/ui/.mitosis/react/sharer';
 Social media share buttons
 
 <div class="not-prose component-preview">
-<WvSharer client:idle url="https://wevis.info" />
+  <WvSharer client:idle url="https://wevis.info" />
 </div>
 
 ```jsx
 import '@wevisdemo/ui/styles/sharer.css';
-import WvSharer from '@wevisdemo/ui/{react,vue2,svelte}/sharer';
+import WvSharer from '@wevisdemo/ui/{react,vue,svelte}/sharer';
 ```
 
 ```jsx
@@ -38,8 +38,8 @@ import WvSharer from '@wevisdemo/ui/{react,vue2,svelte}/sharer';
 **Custom or hide label**
 
 <div class="not-prose component-preview">
-<WvSharer client:idle label="Custom Label" />
-<WvSharer client:idle hideLabel />
+  <WvSharer client:idle label="Custom Label" />
+  <WvSharer client:idle hideLabel />
 </div>
 
 ```jsx
@@ -50,7 +50,7 @@ import WvSharer from '@wevisdemo/ui/{react,vue2,svelte}/sharer';
 **Light**
 
 <div class="not-prose component-preview-dark">
-<WvSharer client:idle light />
+  <WvSharer client:idle light />
 </div>
 
 ```jsx
@@ -59,12 +59,12 @@ import WvSharer from '@wevisdemo/ui/{react,vue2,svelte}/sharer';
 
 **Outline**
 
-<div class="flex gap-2 -my-2">
+<div class="-my-2 flex gap-2">
   <div class="not-prose component-preview">
-  <WvSharer client:idle outline />
+    <WvSharer client:idle outline />
   </div>
   <div class="not-prose component-preview-dark">
-  <WvSharer client:idle light outline />
+    <WvSharer client:idle light outline />
   </div>
 </div>
 
@@ -76,7 +76,7 @@ import WvSharer from '@wevisdemo/ui/{react,vue2,svelte}/sharer';
 **Center**
 
 <div class="not-prose component-preview">
-<WvSharer client:idle center />
+  <WvSharer client:idle center />
 </div>
 
 ```jsx
@@ -85,16 +85,16 @@ import WvSharer from '@wevisdemo/ui/{react,vue2,svelte}/sharer';
 
 **Allow copy link to clipboard**
 
-<div class="flex gap-2 -my-2">
+<div class="-my-2 flex gap-2">
   <div class="not-prose component-preview">
-  <WvSharer client:idle allowCopyLink />
-  <div class="h-2" />
-  <WvSharer client:idle allowCopyLink outline />
+    <WvSharer client:idle allowCopyLink />
+    <div class="h-2" />
+    <WvSharer client:idle allowCopyLink outline />
   </div>
   <div class="not-prose component-preview-dark">
-  <WvSharer client:idle allowCopyLink light />
-  <div class="h-2" />
-  <WvSharer client:idle allowCopyLink outline light />
+    <WvSharer client:idle allowCopyLink light />
+    <div class="h-2" />
+    <WvSharer client:idle allowCopyLink outline light />
   </div>
 </div>
 

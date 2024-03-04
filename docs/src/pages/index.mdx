@@ -45,34 +45,34 @@ import '@wevisdemo/ui/styles/index.css';
 
 ## 3. Use the components
 
-Components are available for **Vue 2**, **React**, and **Svelte** which separated in package sub-directoy. Recommends to import with `Wv` name prefix to avoid duplicated component name. For example:
+Components are available for **Vue 3**, **React**, and **Svelte** which separated in package sub-directoy. Recommends to import with `Wv` name prefix to avoid duplicated component name. For example:
 
 ```jsx
 import '@wevisdemo/ui/styles/button.css';
-import WvButton from '@wevisdemo/ui/{react,vue2,svelte}/button';
+import WvButton from '@wevisdemo/ui/{react,vue,svelte}/button';
 
-<WvButton>Hello</WvButton>
+<WvButton>Hello</WvButton>;
 ```
 
 ## Notes
 
-### Vue 2
+### Vue 3
 
 According to [Mitosis bug with Vue props type](https://github.com/BuilderIO/mitosis/issues/847), no declaration files in the package until the bug is solve. Use `/* @ts-ignore */` over import statement in Typescript project.
 
 ```ts
 /* @ts-ignore */
-import WvNavbar from '@wevisdemo/ui/vue2/navbar';
+import WvNavbar from '@wevisdemo/ui/vue/navbar';
 ```
 
-### Nuxt 2
+### Nuxt 3
 
-Nuxt 2 don't support ESModule out of the box. Need to add the library into `build.transpile` in `nuxt.config.js`
+Nuxt 3 don't support ESModule out of the box. Need to add the library into `build.transpile` in `nuxt.config.ts`
 
 ```js
-// nuxt.config.js
+// nuxt.config.ts
 build: {
-  transpile: ['@wevisdemo/ui/vue2'],
+  transpile: ['@wevisdemo/ui/vue'],
 }
 ```
 
