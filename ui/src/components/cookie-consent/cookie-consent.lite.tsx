@@ -218,19 +218,32 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
               <button
                 type="button"
                 class="wv-ibmplex"
+                onClick={() => state.save(state.createCookieSetting(true))}
+              >
+                {translation.acceptAll[state.activeLang]}
+              </button>
+            </Show>
+
+            <Show
+              when={state.isSettingOpen}
+              else={
+                <button
+                  type="button"
+                  class="wv-ibmplex"
+                  onClick={() => state.save(state.createCookieSetting(true))}
+                >
+                  {translation.acceptAll[state.activeLang]}
+                </button>
+              }
+            >
+              <button
+                type="button"
+                class="wv-ibmplex"
                 onClick={() => state.save(state.selectedCookies)}
               >
                 {translation.save[state.activeLang]}
               </button>
             </Show>
-
-            <button
-              type="button"
-              class="wv-ibmplex"
-              onClick={() => state.save(state.createCookieSetting(true))}
-            >
-              {translation.acceptAll[state.activeLang]}
-            </button>
           </div>
         </div>
       </div>
