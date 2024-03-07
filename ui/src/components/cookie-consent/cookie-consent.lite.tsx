@@ -15,8 +15,8 @@ type CookieSetting = Partial<Record<CookieType, boolean>>;
 
 interface WvCookieBannerProps {
   policyUrl: string;
-  cookieOptions?: CookieType[];
-  daysToExpire?: number;
+  cookieOptions: CookieType[];
+  daysToExpire: number;
   onAccept?: (selectedCookies: CookieSetting) => void;
 }
 

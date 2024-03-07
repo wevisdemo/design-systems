@@ -65,17 +65,6 @@ According to [Mitosis bug with Vue props type](https://github.com/BuilderIO/mito
 import WvNavbar from '@wevisdemo/ui/vue/navbar';
 ```
 
-### Nuxt 3
-
-Nuxt 3 don't support ESModule out of the box. Need to add the library into `build.transpile` in `nuxt.config.ts`
-
-```js
-// nuxt.config.ts
-build: {
-  transpile: ['@wevisdemo/ui/vue'],
-}
-```
-
 ### Svelte
 
 Mitosis has [issue generating optional props for Svelte](https://github.com/BuilderIO/mitosis/issues/913) Optional string props now use `''` as a default for a workaround. But `function` props are still have problem. Please provide empty function `() => {}` until futher updates.

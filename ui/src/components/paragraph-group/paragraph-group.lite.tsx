@@ -2,8 +2,8 @@ import { JSX } from '@builder.io/mitosis/jsx-runtime';
 import { Show, useDefaultProps } from '@builder.io/mitosis';
 
 interface WvParagraphGroupProps {
-  small?: boolean;
-  heading?: string;
+  small: boolean;
+  heading: string;
   children?: JSX.Element | JSX.Element[] | string | number;
 }
 
