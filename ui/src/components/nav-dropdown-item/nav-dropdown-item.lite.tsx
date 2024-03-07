@@ -2,7 +2,7 @@ import { useDefaultProps } from '@builder.io/mitosis';
 import { JSX } from '@builder.io/mitosis/jsx-runtime';
 
 interface WvNavDropdownItemProps {
-  dark?: boolean;
+  dark: boolean;
   children?: JSX.Element | JSX.Element[] | string | number;
 }
 

@@ -2,7 +2,7 @@ import { useDefaultProps } from '@builder.io/mitosis';
 import { JSX } from '@builder.io/mitosis/jsx-runtime';
 
 interface WvButtonGroupProps {
-  center?: boolean;
+  center: boolean;
   children?: JSX.Element | JSX.Element[] | string | number;
 }
 

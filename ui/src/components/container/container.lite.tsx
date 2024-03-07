@@ -2,7 +2,7 @@ import { JSX } from '@builder.io/mitosis/jsx-runtime';
 import { Show, useDefaultProps } from '@builder.io/mitosis';
 
 interface WvContainerProps {
-  heading?: string;
+  heading: string;
   children?: JSX.Element | JSX.Element[] | string | number;
 }
 

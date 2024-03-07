@@ -20,5 +20,6 @@ export default defineConfig({
       },
     },
     outDir: 'vue',
+    minify: false,
   },
 });

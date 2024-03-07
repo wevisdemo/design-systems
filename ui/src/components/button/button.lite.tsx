@@ -2,8 +2,8 @@ import { useDefaultProps } from '@builder.io/mitosis';
 import { JSX } from '@builder.io/mitosis/jsx-runtime';
 
 interface WvButtonProps {
-  color?: 'blue' | 'black' | 'white';
-  small?: boolean;
+  color: 'blue' | 'black' | 'white';
+  small: boolean;
   onClick?: () => void;
   children?: JSX.Element | JSX.Element[] | string | number;
 }

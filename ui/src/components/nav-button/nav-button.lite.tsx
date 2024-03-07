@@ -2,8 +2,8 @@ import { useDefaultProps } from '@builder.io/mitosis';
 import { JSX } from '@builder.io/mitosis/jsx-runtime';
 
 interface WvNavButtonProps {
-  dark?: boolean;
-  active?: boolean;
+  dark: boolean;
+  active: boolean;
   onClick?: () => void;
   children?: JSX.Element | JSX.Element[] | string | number;
 }

@@ -3,15 +3,15 @@ import { JSX } from '@builder.io/mitosis/jsx-runtime';
 
 interface WvButtonLinkProps {
   href: string;
-  color?: 'blue' | 'black' | 'white';
-  small?: boolean;
-  target?: string | undefined;
-  rel?: string | undefined;
+  color: 'blue' | 'black' | 'white';
+  small: boolean;
+  target: string | undefined;
+  rel: string | undefined;
   children?: JSX.Element | JSX.Element[] | string | number;
 }
 
 export default function WvButtonLink(props: WvButtonLinkProps) {
-  useDefaultProps<Omit<WvButtonLinkProps,'href'>>({
+  useDefaultProps<Omit<WvButtonLinkProps, 'href'>>({
     color: 'blue',
     small: false,
     target: '_blank',

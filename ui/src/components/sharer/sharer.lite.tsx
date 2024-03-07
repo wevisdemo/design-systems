@@ -1,13 +1,13 @@
 import { onMount, useStore, Show, useDefaultProps } from '@builder.io/mitosis';
 
 interface WvSharerProps {
-  url?: string;
-  label?: string;
-  hideLabel?: boolean;
-  light?: boolean;
-  center?: boolean;
-  outline?: boolean;
-  allowCopyLink?: boolean;
+  url: string;
+  label: string;
+  hideLabel: boolean;
+  light: boolean;
+  center: boolean;
+  outline: boolean;
+  allowCopyLink: boolean;
 }
 
 export default function WvSharer(props: WvSharerProps) {
@@ -114,9 +114,9 @@ export default function WvSharer(props: WvSharerProps) {
           </svg>
         </Show>
         <Show when={!props.outline}>
-        <svg viewBox="0 0 30 30">
-          <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30ZM23.0388 6L16.482 13.6218H16.4817L23.6128 24H18.3682L13.5661 17.0113L7.55383 24H6L12.8762 16.0074L6 6H11.2446L15.7918 12.6179L21.4851 6H23.0388ZM13.6571 15.0991L14.3538 16.0956V16.096L19.0992 22.8835H21.4858L15.6706 14.5655L14.9739 13.5689L10.5003 7.16971H8.1137L13.6571 15.0991Z" />
-        </svg>
+          <svg viewBox="0 0 30 30">
+            <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30ZM23.0388 6L16.482 13.6218H16.4817L23.6128 24H18.3682L13.5661 17.0113L7.55383 24H6L12.8762 16.0074L6 6H11.2446L15.7918 12.6179L21.4851 6H23.0388ZM13.6571 15.0991L14.3538 16.0956V16.096L19.0992 22.8835H21.4858L15.6706 14.5655L14.9739 13.5689L10.5003 7.16971H8.1137L13.6571 15.0991Z" />
+          </svg>
         </Show>
       </a>
 
