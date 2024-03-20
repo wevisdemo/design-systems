@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths-ignore:
       - 'README.md'
-      - '.github/workflows'
+      - '.github/workflows/publish-package.yml'
 
 concurrency:
   group: doc
@@ -15,11 +15,11 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 16
-          registry-url: https://registry.npmjs.org/
+          node-version: 20
+          cache: yarn
       - name: Install dependencies
         run: yarn
       - name: Build
@@ -27,7 +27,7 @@ jobs:
         env:
           PUBLIC_ASTRO_BASE: /design-systems
       - name: Deploy doc to Github Page
-        uses: JamesIves/github-pages-deploy-action@v4.2.2
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: docs/dist
