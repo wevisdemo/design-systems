@@ -1,5 +1,3 @@
-// vue-tsc -p tsconfig.vue.json --emitDeclarationOnly
-// Blcoked by Mitosis issue https://github.com/BuilderIO/mitosis/issues/847
 {
   "compilerOptions": {
     "target": "esnext",
