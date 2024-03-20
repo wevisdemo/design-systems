@@ -17,7 +17,7 @@ interface WvCookieBannerProps {
   policyUrl: string;
   cookieOptions: CookieType[];
   daysToExpire: number;
-  onAccept?: (selectedCookies: CookieSetting) => void;
+  onAccept: (selectedCookies: CookieSetting) => void;
 }
 
 const LOCALSTORAGE_COOKIE_KEY = 'cookieSetting';
@@ -55,7 +55,7 @@ const translation: Record<string, Record<string, string>> = {
 export default function WvCookieBanner(props: WvCookieBannerProps) {
   useDefaultProps<Omit<WvCookieBannerProps, 'policyUrl'>>({
     cookieOptions: [],
-    onAccept: undefined,
+    onAccept: () => {},
     daysToExpire: 30,
   });
 
@@ -84,7 +84,7 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
       localStorage.setItem(LOCALSTORAGE_COOKIE_KEY, JSON.stringify(options));
       localStorage.setItem(LOCALSTORAGE_COOKIE_EXPIRE_AT_KEY, `${expiredAtMs}`);
 
-      props.onAccept?.(options);
+      props.onAccept(options);
       state.isShow = false;
     },
   });
