@@ -10,6 +10,7 @@ export default defineConfig({
     vue(),
     dts({
       tsconfigPath: 'tsconfig.vue.json',
+      cleanVueFileName: true,
     }),
   ],
   build: {
