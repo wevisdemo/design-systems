@@ -24,9 +24,9 @@ yarn add @wevisdemo/ui
 
 ## 2. Import the stylesheet
 
-In the latest release, you can import individual component style from `@wevisdemo/ui/styles/<component-name>.css` as shown in step 3.
+### 2.1 Single global stylesheet
 
-You can also import all component style by importing `@wevisdemo/ui/styles/index.css` as a global according to your framework.
+You can import all component style by importing `@wevisdemo/ui/styles/index.css` as a global according to your framework.
 
 For example, with **Nuxt.js**:
 
@@ -43,6 +43,13 @@ Most framework can be imported to main JavaScript or template file directly:
 import '@wevisdemo/ui/styles/index.css';
 ```
 
+### 2.2 Typography + per component stylesheet
+
+To minimized build output, you can also import typography and individual component style:
+
+- Import `@wevisdemo/ui/styles/typography.css` instead of `index.css` as shown in step 2.1.
+- Import per component `@wevisdemo/ui/styles/<component-name>.css` as shown in step 3.
+
 ## 3. Use the components
 
 Components are available for **Vue 3**, **React**, and **Svelte** which separated in package sub-directoy. Recommends to import with `Wv` name prefix to avoid duplicated component name. For example:
@@ -51,24 +58,5 @@ Components are available for **Vue 3**, **React**, and **Svelte** which separate
 import '@wevisdemo/ui/styles/button.css';
 import WvButton from '@wevisdemo/ui/{react,vue,svelte}/button';
 
-<WvButton>Hello</WvButton>
-```
-
-## Notes
-
-### Vue 3
-
-According to [Mitosis bug with Vue props type](https://github.com/BuilderIO/mitosis/issues/847), no declaration files in the package until the bug is solve. Use `/* @ts-ignore */` over import statement in Typescript project.
-
-```ts
-/* @ts-ignore */
-import WvNavbar from '@wevisdemo/ui/vue/navbar';
-```
-
-### Svelte
-
-Mitosis has [issue generating optional props for Svelte](https://github.com/BuilderIO/mitosis/issues/913) Optional string props now use `''` as a default for a workaround. But `function` props are still have problem. Please provide empty function `() => {}` until futher updates.
-
-```svelte
-<WvButton onClick={() => {}} />
+<WvButton>Hello</WvButton>;
 ```
