@@ -7,5 +7,6 @@ find .mitosis/svelte/src -wholename "*.svelte" -exec mv '{}' .mitosis/svelte \;
 find .mitosis/vue/src -wholename "*.vue" -exec mv '{}' .mitosis/vue \;
 rm -r .mitosis/*/src
 
-# Remove JSX type from vue file
+# Remove JSX type from Vue and Svelte file
 find .mitosis/vue -type f -wholename "*.vue" -exec sed -i 's/JSX.Element/Element/g' {} \;
+find .mitosis/svelte -type f -wholename "*.svelte" -exec sed -i 's/JSX.Element/Element/g' {} \;
