@@ -1,11 +1,17 @@
 import { readdirSync } from 'fs';
 import { defineConfig } from 'vite';
+import dts from 'vite-plugin-dts';
 import vue from '@vitejs/plugin-vue';
 
 const SOURCE_PATH = '.mitosis/vue';
 
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    dts({
+      tsconfigPath: 'tsconfig.vue.json',
+    }),
+  ],
   build: {
     lib: {
       entry: readdirSync(SOURCE_PATH).map((file) => `${SOURCE_PATH}/${file}`),
