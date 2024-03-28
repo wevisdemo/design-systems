@@ -1,5 +1,5 @@
 .wv_cookie-consent {
-  @apply fixed z-50 bg-black bg-opacity-80 text-white;
+  @apply fixed z-[99] bg-black bg-opacity-80 text-white;
 }
 
 .wv_cookie-consent button {
