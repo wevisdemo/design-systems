@@ -1,5 +1,5 @@
-import { JSX } from '@builder.io/mitosis/jsx-runtime';
 import { useStore, Show, useDefaultProps } from '@builder.io/mitosis';
+import { JSX } from '@builder.io/mitosis/jsx-runtime';
 
 interface WvNavbarProps {
   homeHref: string;

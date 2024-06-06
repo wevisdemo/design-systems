@@ -3,8 +3,8 @@ title: Cookie Consent
 layout: ../../layouts/MainLayout.astro
 ---
 
-import '@wevisdemo/ui/styles/cookie-consent.css';
 import WvCookieConsent from '@wevisdemo/ui/.mitosis/react/cookie-consent';
+import '@wevisdemo/ui/styles/cookie-consent.css';
 
 Cookie consent banner and popup with action callback after user consent.
 
@@ -32,7 +32,7 @@ function onCookieAccept(option) {
   policyUrl="https://punchup.world"
   cookieOptions={cookieOptions}
   onAccept={onCookieAccept}
-/>
+/>;
 ```
 
 ## Props

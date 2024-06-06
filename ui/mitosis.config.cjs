@@ -8,7 +8,7 @@ module.exports = {
   },
   options: {
     vue: {
-      api: "composition",
+      api: 'composition',
       typescript: true,
     },
     svelte: {

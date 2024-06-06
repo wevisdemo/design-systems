@@ -11,13 +11,13 @@
 }
 
 .main-content pre > code {
-  @apply p-0 bg-transparent text-inherit rounded-none;
+  @apply rounded-none bg-transparent p-0 text-inherit;
 }
 
 .component-preview {
-  @apply border border-neutral-500 rounded-md border-dashed p-2 my-2;
+  @apply my-2 rounded-md border border-dashed border-neutral-500 p-2;
 }
 
 .component-preview-dark {
-  @apply bg-black border border-white rounded-md border-dashed p-2 my-2;
+  @apply my-2 rounded-md border border-dashed border-white bg-black p-2;
 }

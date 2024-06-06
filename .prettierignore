@@ -1,0 +1,7 @@
+dist
+ui/.mitosis
+ui/.svelte-kit
+ui/vue
+ui/react
+ui/svelte
+docs/dist

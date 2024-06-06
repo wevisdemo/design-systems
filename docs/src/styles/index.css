@@ -4,6 +4,6 @@ html {
 
 .sidebar-li-a {
   @apply mb-1 inline-block w-full px-3 py-1.5;
-  @apply hover:bg-neutral-200 hover:rounded-md;
-  @apply aria-[current=page]:bg-black aria-[current=page]:text-white aria-[current=page]:rounded-md;
+  @apply hover:rounded-md hover:bg-neutral-200;
+  @apply aria-[current=page]:rounded-md aria-[current=page]:bg-black aria-[current=page]:text-white;
 }

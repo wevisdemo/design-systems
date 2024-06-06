@@ -3,41 +3,41 @@ title: Navigation Bar
 layout: ../../layouts/MainLayout.astro
 ---
 
-import '@wevisdemo/ui/styles/navbar.css';
-import '@wevisdemo/ui/styles/nav-dropdown.css';
-import '@wevisdemo/ui/styles/nav-dropdown-item.css';
-import '@wevisdemo/ui/styles/nav-button.css';
-import WvNavbar from '@wevisdemo/ui/.mitosis/react/navbar';
+import WvNavButton from '@wevisdemo/ui/.mitosis/react/nav-button';
 import WvNavDropdown from '@wevisdemo/ui/.mitosis/react/nav-dropdown';
 import WvNavDropdownItem from '@wevisdemo/ui/.mitosis/react/nav-dropdown-item';
-import WvNavButton from '@wevisdemo/ui/.mitosis/react/nav-button';
+import WvNavbar from '@wevisdemo/ui/.mitosis/react/navbar';
+import '@wevisdemo/ui/styles/nav-button.css';
+import '@wevisdemo/ui/styles/nav-dropdown-item.css';
+import '@wevisdemo/ui/styles/nav-dropdown.css';
+import '@wevisdemo/ui/styles/navbar.css';
 
 ```jsx
-import '@wevisdemo/ui/styles/navbar.css';
-import '@wevisdemo/ui/styles/nav-dropdown.css';
-import '@wevisdemo/ui/styles/nav-dropdown-item.css';
 import '@wevisdemo/ui/styles/nav-button.css';
+import '@wevisdemo/ui/styles/nav-dropdown-item.css';
+import '@wevisdemo/ui/styles/nav-dropdown.css';
+import '@wevisdemo/ui/styles/navbar.css';
 ```
 
 ```jsx
-import WvNavbar from '@wevisdemo/ui/react/navbar';
+import WvNavButton from '@wevisdemo/ui/react/nav-button';
 import WvNavDropdown from '@wevisdemo/ui/react/nav-dropdown';
 import WvNavDropdownItem from '@wevisdemo/ui/react/nav-dropdown-item';
-import WvNavButton from '@wevisdemo/ui/react/nav-button';
+import WvNavbar from '@wevisdemo/ui/react/navbar';
 ```
 
 ## Light
 
 <div class="not-prose component-preview">
-<WvNavbar client:idle title="SOME PROJECT">
-  <WvNavDropdown client:idle label="Topic">
-    <WvNavDropdownItem>Topic 1</WvNavDropdownItem>
-    <WvNavDropdownItem>Topic 2</WvNavDropdownItem>
-    <WvNavDropdownItem>Topic Something</WvNavDropdownItem>
-  </WvNavDropdown>
-  <WvNavButton active>About</WvNavButton>
-  <WvNavButton>Report</WvNavButton>
-</WvNavbar>
+  <WvNavbar client:idle title="SOME PROJECT">
+    <WvNavDropdown client:idle label="Topic">
+      <WvNavDropdownItem>Topic 1</WvNavDropdownItem>
+      <WvNavDropdownItem>Topic 2</WvNavDropdownItem>
+      <WvNavDropdownItem>Topic Something</WvNavDropdownItem>
+    </WvNavDropdown>
+    <WvNavButton active>About</WvNavButton>
+    <WvNavButton>Report</WvNavButton>
+  </WvNavbar>
 </div>
 
 ```jsx
@@ -55,15 +55,17 @@ import WvNavButton from '@wevisdemo/ui/react/nav-button';
 ## Dark
 
 <div class="not-prose component-preview-dark">
-<WvNavbar client:idle dark title="SOME PROJECT">
-  <WvNavDropdown client:idle dark label="Topic">
-    <WvNavDropdownItem dark>Topic 1</WvNavDropdownItem>
-    <WvNavDropdownItem dark>Topic 2</WvNavDropdownItem>
-    <WvNavDropdownItem dark>Topic Something</WvNavDropdownItem>
-  </WvNavDropdown>
-  <WvNavButton dark active>About</WvNavButton>
-  <WvNavButton dark>Report</WvNavButton>
-</WvNavbar>
+  <WvNavbar client:idle dark title="SOME PROJECT">
+    <WvNavDropdown client:idle dark label="Topic">
+      <WvNavDropdownItem dark>Topic 1</WvNavDropdownItem>
+      <WvNavDropdownItem dark>Topic 2</WvNavDropdownItem>
+      <WvNavDropdownItem dark>Topic Something</WvNavDropdownItem>
+    </WvNavDropdown>
+    <WvNavButton dark active>
+      About
+    </WvNavButton>
+    <WvNavButton dark>Report</WvNavButton>
+  </WvNavbar>
 </div>
 
 ```jsx

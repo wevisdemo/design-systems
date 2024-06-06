@@ -19,8 +19,8 @@ module.exports = {
         content: '1fr 4fr 1fr',
       },
       colors: {
-        ultramarine: '#3904E9'
-      }
+        ultramarine: '#3904E9',
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],

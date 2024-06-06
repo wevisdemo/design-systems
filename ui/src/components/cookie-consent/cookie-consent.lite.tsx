@@ -68,7 +68,7 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
       return props.cookieOptions
         ? props.cookieOptions.reduce(
             (obj, option) => ({ ...obj, [option]: value }),
-            {} as CookieSetting
+            {} as CookieSetting,
           )
         : ({} as CookieSetting);
     },
@@ -91,11 +91,11 @@ export default function WvCookieBanner(props: WvCookieBannerProps) {
 
   onMount(() => {
     const localStorageCookieSetting = localStorage.getItem(
-      LOCALSTORAGE_COOKIE_KEY
+      LOCALSTORAGE_COOKIE_KEY,
     );
 
     const localStorageCookieExpireAt = localStorage.getItem(
-      LOCALSTORAGE_COOKIE_EXPIRE_AT_KEY
+      LOCALSTORAGE_COOKIE_EXPIRE_AT_KEY,
     );
 
     if (

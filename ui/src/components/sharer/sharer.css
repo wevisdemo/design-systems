@@ -7,7 +7,7 @@
 }
 
 .wv_sharer svg {
-  @apply w-[30px] h-[30px];
+  @apply h-[30px] w-[30px];
 }
 
 .wv_sharer__share-link svg.copy-outline .outline,
@@ -16,7 +16,7 @@
 }
 
 .wv_sharer__share-link {
-  @apply cursor-pointer bg-transparent border-none p-0 flex;
+  @apply flex cursor-pointer border-none bg-transparent p-0;
 }
 
 .wv_sharer__share-link svg.copy-outline path {

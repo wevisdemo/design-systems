@@ -1,17 +1,17 @@
 .wv_button {
-  @apply flex flex-row space-x-2 justify-center items-center bg-transparent rounded-[2px] border-[2px] border-solid min-w-[190px] px-4 py-3 cursor-pointer;
+  @apply flex min-w-[190px] cursor-pointer flex-row items-center justify-center space-x-2 rounded-[2px] border-[2px] border-solid bg-transparent px-4 py-3;
 }
 
 .wv_button--blue {
-  @apply text-ultramarine border-ultramarine hover:text-white hover:bg-ultramarine;
+  @apply text-ultramarine border-ultramarine hover:bg-ultramarine hover:text-white;
 }
 
 .wv_button--black {
-  @apply text-black border-black hover:text-white hover:bg-black;
+  @apply border-black text-black hover:bg-black hover:text-white;
 }
 
 .wv_button--white {
-  @apply text-white border-white hover:text-black hover:bg-white;
+  @apply border-white text-white hover:bg-white hover:text-black;
 }
 
 .wv_button--small {

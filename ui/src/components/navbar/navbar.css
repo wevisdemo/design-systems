@@ -1,8 +1,10 @@
 @keyframes showTittle {
-  0%,11.11% {
+  0%,
+  11.11% {
     opacity: 1;
   }
-  11.12%,to {
+  11.12%,
+  to {
     opacity: 0;
   }
 }
@@ -30,11 +32,11 @@
 }
 
 .wv_navbar__logo {
-  @apply flex-1 flex justify-start;
+  @apply flex flex-1 justify-start;
 }
 
 .wv_navbar__logo__link {
-  @apply flex flex-row space-x-1 items-baseline;
+  @apply flex flex-row items-baseline space-x-1;
 }
 
 .wv_navbar__logo__wevis,
@@ -43,7 +45,7 @@
 }
 
 .wv_navbar__logo__wevis--animated {
-  --duration-per-one: .25s;
+  --duration-per-one: 0.25s;
 }
 
 .wv_navbar__logo__wevis--animated > :not(:first-child):not(:nth-child(2)) {
@@ -55,43 +57,51 @@
 }
 
 .wv_navbar__logo__wevis--animated > :nth-child(3) {
-  animation: showTittle calc(var(--duration-per-one) * 9) linear calc(var(--duration-per-one) * 1) infinite;
+  animation: showTittle calc(var(--duration-per-one) * 9) linear
+    calc(var(--duration-per-one) * 1) infinite;
 }
 
 .wv_navbar__logo__wevis--animated > :nth-child(4) {
-  animation: showTittle calc(var(--duration-per-one) * 9) linear calc(var(--duration-per-one) * 2) infinite;
+  animation: showTittle calc(var(--duration-per-one) * 9) linear
+    calc(var(--duration-per-one) * 2) infinite;
 }
 
 .wv_navbar__logo__wevis--animated > :nth-child(5) {
-  animation: showTittle calc(var(--duration-per-one) * 9) linear calc(var(--duration-per-one) * 3) infinite;
+  animation: showTittle calc(var(--duration-per-one) * 9) linear
+    calc(var(--duration-per-one) * 3) infinite;
 }
 
 .wv_navbar__logo__wevis--animated > :nth-child(6) {
-  animation: showTittle calc(var(--duration-per-one) * 9) linear calc(var(--duration-per-one) * 4) infinite;
+  animation: showTittle calc(var(--duration-per-one) * 9) linear
+    calc(var(--duration-per-one) * 4) infinite;
 }
 
 .wv_navbar__logo__wevis--animated > :nth-child(7) {
-  animation: showTittle calc(var(--duration-per-one) * 9) linear calc(var(--duration-per-one) * 5) infinite;
+  animation: showTittle calc(var(--duration-per-one) * 9) linear
+    calc(var(--duration-per-one) * 5) infinite;
 }
 
 .wv_navbar__logo__wevis--animated > :nth-child(8) {
-  animation: showTittle calc(var(--duration-per-one) * 9) linear calc(var(--duration-per-one) * 6) infinite;
+  animation: showTittle calc(var(--duration-per-one) * 9) linear
+    calc(var(--duration-per-one) * 6) infinite;
 }
 
 .wv_navbar__logo__wevis--animated > :nth-child(9) {
-  animation: showTittle calc(var(--duration-per-one) * 9) linear calc(var(--duration-per-one) * 7) infinite;
+  animation: showTittle calc(var(--duration-per-one) * 9) linear
+    calc(var(--duration-per-one) * 7) infinite;
 }
 
 .wv_navbar__logo__wevis--animated > :nth-child(10) {
-  animation: showTittle calc(var(--duration-per-one) * 9) linear calc(var(--duration-per-one) * 8) infinite;
+  animation: showTittle calc(var(--duration-per-one) * 9) linear
+    calc(var(--duration-per-one) * 8) infinite;
 }
 
 .wv_navbar__logo__addon {
-  @apply h-full max-h-6 md:max-h-7 w-auto object-contain object-left;
+  @apply h-full max-h-6 w-auto object-contain object-left md:max-h-7;
 }
 
 .wv_navbar__title {
-  @apply hidden md:flex items-center -mb-2;
+  @apply -mb-2 hidden items-center md:flex;
 }
 
 .wv_navbar__title--uppercase {
@@ -99,7 +109,7 @@
 }
 
 .wv_navbar__menu {
-  @apply md:flex-1 items-stretch;
+  @apply items-stretch md:flex-1;
 }
 
 .wv_navbar__menu--desktop {
@@ -115,21 +125,21 @@
 }
 
 .wv_navbar__menu--always-show .wv_nav-dropdown-list {
-  @apply absolute z-20 mt-3 md:mt-4 rounded shadow border border-solid;
+  @apply absolute z-20 mt-3 rounded border border-solid shadow md:mt-4;
 }
 
 .wv_navbar__menu--always-show .wv_nav-dropdown-item--white {
-  @apply bg-white text-black hover:bg-opacity-10 hover:bg-black;
+  @apply bg-white text-black hover:bg-black hover:bg-opacity-10;
 }
 
 .wv_navbar__menu--always-show .wv_nav-dropdown-item--black {
-  @apply bg-black text-white hover:bg-opacity-25 hover:bg-white;
+  @apply bg-black text-white hover:bg-white hover:bg-opacity-25;
 }
 
 .wv_navbar__menu--mobile {
-  @apply flex md:hidden z-10 absolute top-full inset-x-0 flex-col justify-end pb-2;
+  @apply absolute inset-x-0 top-full z-10 flex flex-col justify-end pb-2 md:hidden;
 }
 
 .wv_navbar__hamburger-button {
-  @apply md:hidden flex justify-center items-center border-none bg-transparent cursor-pointer px-2;
+  @apply flex cursor-pointer items-center justify-center border-none bg-transparent px-2 md:hidden;
 }
