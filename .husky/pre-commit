@@ -1,1 +1,1 @@
-yarn lint-staged
+cd ui && yarn lint && cd .. && yarn lint-staged

@@ -23,8 +23,8 @@ export default function WvSharer(props: WvSharerProps) {
 
   const state = useStore({
     encodedURL: '',
-    copyToClipboard() {
-      window.navigator.clipboard.writeText(state.encodedURL);
+    copyToClipboard: (value: string) => {
+      window.navigator.clipboard.writeText(value);
     },
   });
 
@@ -46,7 +46,7 @@ export default function WvSharer(props: WvSharerProps) {
         <button
           type="button"
           class="wv_sharer__share-link"
-          onClick={state.copyToClipboard}
+          onClick={() => state.copyToClipboard(state.encodedURL)}
           aria-label="Copy link"
         >
           <Show when={props.outline}>

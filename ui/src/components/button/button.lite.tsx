@@ -21,7 +21,7 @@ export default function WvButton(props: WvButtonProps) {
       class={`wv_button wv-ibmplex wv_button--${props.color} ${
         props.small ? 'wv-b5 wv_button--small' : 'wv-b4'
       }`}
-      onClick={props.onClick}
+      onClick={() => props.onClick()}
     >
       {props.children}
     </button>

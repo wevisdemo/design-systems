@@ -21,7 +21,7 @@ export default function WvNavButton(props: WvNavButtonProps) {
       class={`wv_nav-button wv-ibmplex wv-b7 ${
         props.dark ? 'wv_nav-button--white' : 'wv_nav-button--black'
       } ${props.active ? 'wv_nav-button--active' : ''}`}
-      onClick={props.onClick}
+      onClick={() => props.onClick()}
     >
       {props.children}
     </button>

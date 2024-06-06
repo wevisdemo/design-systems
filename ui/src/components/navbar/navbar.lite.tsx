@@ -133,7 +133,7 @@ export default function WvNavbar(props: WvNavbarProps) {
           onClick={() => (state.isMobileMenuOpened = !state.isMobileMenuOpened)}
           aria-label="Open Menu"
         >
-          {state.isMobileMenuOpened ? (
+          {state.isMobileMenuOpened && (
             <svg width="13" height="14" viewBox="0 0 13 14">
               <rect
                 x="13"
@@ -150,7 +150,8 @@ export default function WvNavbar(props: WvNavbarProps) {
                 transform="rotate(45 2.3934 1.00525)"
               />
             </svg>
-          ) : (
+          )}
+          {!state.isMobileMenuOpened && (
             <svg width="15" height="12" viewBox="0 0 15 12">
               <rect width="15" height="2" />
               <rect y="5" width="15" height="2" />
