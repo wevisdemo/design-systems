@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently --kill-others \"npm run dev:component\" \"npm run dev:stylesheet\"",
-    "dev:component": "chokidar \"src/components/**/*.tsx\" --initial -c \"npm run build:mitosis\"",
+    "dev:component": "chokidar \"src/components/**/*.tsx\" --initial -c \"npm run build:mitosis && npm run build:react\"",
     "dev:stylesheet": "postcss src/styles/**/*.css --dir styles --watch",
     "build": "concurrently \"npm run build:component\" \"npm run build:stylesheet\"",
     "build:component": "npm run build:mitosis && concurrently \"npm run build:react\" \"npm run build:svelte\" \"npm run build:vue\"",

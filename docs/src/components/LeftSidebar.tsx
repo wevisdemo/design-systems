@@ -1,5 +1,5 @@
 import type { Sidebar } from '../config';
-import WvButton from '@wevisdemo/ui/.mitosis/react/button';
+import WvButton from '@wevisdemo/ui/react/button';
 import '@wevisdemo/ui/styles/button.css';
 import { useState } from 'react';
 

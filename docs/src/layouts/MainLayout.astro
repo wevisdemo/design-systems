@@ -11,11 +11,11 @@ import type { MarkdownHeading } from 'astro';
 
 import '@wevisdemo/ui/styles/navbar.css';
 import '@wevisdemo/ui/styles/nav-button-link.css';
-import WvNavbar from '@wevisdemo/ui/.mitosis/react/navbar';
-import WvNavButtonLink from '@wevisdemo/ui/.mitosis/react/nav-button-link';
+import WvNavbar from '@wevisdemo/ui/react/navbar';
+import WvNavButtonLink from '@wevisdemo/ui/react/nav-button-link';
 
 import '@wevisdemo/ui/styles/footer.css';
-import WvFooter from '@wevisdemo/ui/.mitosis/react/footer'
+import WvFooter from '@wevisdemo/ui/react/footer';
 
 type Props = {
   frontmatter: CONFIG.Frontmatter;
@@ -60,22 +60,29 @@ const currentPage = Astro.url.pathname;
     <main
       class="grid-cols-1 lg:grid-cols-content mx-auto grid w-full gap-8 p-4 md:max-w-[1280px] my-8"
     >
-      <LeftSidebar client:idle currentPage={currentPage} sidebar={CONFIG.SIDEBAR}/>
-      <div
-        id="content"
-        class="main-content !max-w-none overflow-hidden"
-      >
+      <LeftSidebar
+        client:idle
+        currentPage={currentPage}
+        sidebar={CONFIG.SIDEBAR}
+      />
+      <div id="content" class="main-content !max-w-none overflow-hidden">
         <h1>{frontmatter.title}</h1>
         <slot />
       </div>
       {
-        headings.filter(({ depth }) => depth > 1 && depth < 4).length > 0 &&
-        <aside id="grid-right" class="hidden lg:block" title="Table of Contents">
-          <nav class="sticky top-4 max-h-[calc(100vh_-_2rem)] overflow-y-auto" aria-labelledby="grid-right">
-            <h2 class="wv-kondolar wv-h9 wv-bold mb-1">On this page</h2>
-            <ul>
-              {
-                headings
+        headings.filter(({ depth }) => depth > 1 && depth < 4).length > 0 && (
+          <aside
+            id="grid-right"
+            class="hidden lg:block"
+            title="Table of Contents"
+          >
+            <nav
+              class="sticky top-4 max-h-[calc(100vh_-_2rem)] overflow-y-auto"
+              aria-labelledby="grid-right"
+            >
+              <h2 class="wv-kondolar wv-h9 wv-bold mb-1">On this page</h2>
+              <ul>
+                {headings
                   .filter(({ depth }) => depth > 1 && depth < 4)
                   .map((heading) => (
                     <li>
@@ -83,11 +90,11 @@ const currentPage = Astro.url.pathname;
                         {heading.text}
                       </a>
                     </li>
-                  ))
-              }
-            </ul>
-          </nav>
-        </aside>
+                  ))}
+              </ul>
+            </nav>
+          </aside>
+        )
       }
     </main>
 
