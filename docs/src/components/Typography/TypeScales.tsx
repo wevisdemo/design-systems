@@ -40,19 +40,7 @@ const U_SPEC: Record<
   u4: { size: 14, leading: { regular: 125, semibold: 125 } },
   u5: { size: 12, leading: { regular: 125, semibold: 125 } },
 };
-const U_SPEC: Record<
-  string,
-  {
-    size: number;
-    leading: { regular: number; semibold: number };
-  }
-> = {
-  u1: { size: 20, leading: { regular: 125, semibold: 130 } },
-  u2: { size: 18, leading: { regular: 125, semibold: 130 } },
-  u3: { size: 16, leading: { regular: 125, semibold: 125 } },
-  u4: { size: 14, leading: { regular: 125, semibold: 125 } },
-  u5: { size: 12, leading: { regular: 125, semibold: 125 } },
-};
+
 
 const BODY_FIXED_SPEC: Record<
   string,
@@ -61,18 +49,17 @@ const BODY_FIXED_SPEC: Record<
     leading: number;
   }
 > = {
-  'b-fixed-1': { size: 21, leading: 150 },
-  'b-fixed-2': { size: 18, leading: 150 },
-  'b-fixed-3': { size: 16, leading: 150 },
-  'b-fixed-4': { size: 14, leading: 150 },
-  'b-fixed-5': { size: 12, leading: 150 },
+  'fixed-2': { size: 18, leading: 150 },
+  'fixed-3': { size: 16, leading: 150 },
+  'fixed-4': { size: 14, leading: 150 },
+  'fixed-5': { size: 12, leading: 150 },
+  'fixed-1': { size: 21, leading: 150 },
 };
 
 const DESC: Record<string, string> = {
   h: 'For headers',
   b: 'For body text',
   u: 'For UI components (such as buttons)',
-};
   fixed: 'For body text (Fixed size)',
 };
 
@@ -118,39 +105,17 @@ export default () => {
   return (
     <>
       <div className="-mb-1.5 mt-2 font-bold">Header</div>
-      <div className="wv-kondolar relative flex items-baseline">
-        {new Array(11).fill``.map((_, i) => (
-          <StyleButton key={i} s={`h${i + 1}`} onHover={setCurrentScale} />
-        ))}
-      <div className="-mb-1.5 mt-2 font-bold">Header</div>
-      <div className="wv-kondolar relative flex flex-wrap items-baseline">
+      <div className="wv-kondolar relative flex items-baseline flex-wrap">
         {new Array(11).fill``.map((_, i) => (
           <StyleButton key={i} s={`h${i + 1}`} onHover={setCurrentScale} />
         ))}
       </div>
-      <div className="flex items-end">
-        <div className="flex-1">
+      <div className="flex flex-col items-end sm:flex-row">
+        <div className="basis-7/12">
           <div className="-mb-1.5 mt-2 font-bold">Body</div>
           <div className="relative flex items-baseline">
             {new Array(7).fill``.map((_, i) => (
               <StyleButton key={i} s={`b${i + 1}`} onHover={setCurrentScale} />
-            ))}
-      <div className="flex flex-col items-end sm:flex-row">
-        <div className="basis-7/12">
-          <div className="-mb-1.5 mt-2 font-bold">Body</div>
-          <div className="relative flex  items-baseline">
-            {new Array(7).fill``.map((_, i) => (
-              <StyleButton key={i} s={`b${i + 1}`} onHover={setCurrentScale} />
-            ))}
-          </div>
-          <div className="-mb-1.5 mt-2 font-bold">Body-Fixed</div>
-          <div className="relative flex flex-wrap items-baseline">
-            {new Array(5).fill``.map((_, i) => (
-              <StyleButton
-                key={i}
-                s={`b-fixed-${i + 1}`}
-                onHover={setCurrentScale}
-              />
             ))}
           </div>
           <div className="-mb-1.5 mt-2 font-bold">UI</div>
@@ -159,9 +124,14 @@ export default () => {
               <StyleButton key={i} s={`u${i + 1}`} onHover={setCurrentScale} />
             ))}
           </div>
+          <div className="-mb-1.5 mt-2 font-bold">Body Fixed</div>
+          <div className="relative flex items-baseline flex-wrap">
+            {new Array(5).fill``.map((_, i) => (
+              <StyleButton key={i} s={`fixed-${i + 1}`} onHover={setCurrentScale} />
+            ))}
+          </div>
           <div className="wv-b6 mt-2">You can click at the style to copy.</div>
         </div>
-        <div className="mt-4 flex h-[127px] items-center gap-4">
         <div className="mt-4 flex h-[127px] basis-5/12 items-center gap-2">
           <div className="flex flex-col items-end">
             <div className="wv-b3">
@@ -182,16 +152,6 @@ export default () => {
               </>
             ) : (
               <>
-                <div>
-                  <span className="font-bold">Desktop:</span>{' '}
-                  {SPEC[currentScale]?.size.desktop}px/
-                  {SPEC[currentScale]?.leading}%
-                </div>
-                <div>
-                  <span className="font-bold">Mobile:</span>{' '}
-                  {SPEC[currentScale]?.size.mobile}px/
-                  {SPEC[currentScale]?.leading}%
-                </div>
                 <div>
                   <span className="font-bold">Desktop:</span>{' '}
                   {currentScale.includes('fixed')
@@ -216,22 +176,12 @@ export default () => {
                 </div>
               </>
             )}
-            <div className="wv-b5">{DESC[currentScale[0]]}</div>
-            )}
-
-            <div className="wv-b5 text-right">
-              {currentScale.includes('fixed')
+            <div className="wv-b5">  {currentScale.includes('fixed')
                 ? DESC['fixed']
-                : DESC[currentScale[0]]}
-            </div>
+                : DESC[currentScale[0]]}</div>
           </div>
           <div
-            className={`flex h-full w-[138px] items-center justify-center rounded-md border border-dashed border-neutral-500 p-1 uppercase !leading-none wv-${currentScale} ${currentScale.includes('h') ? 'wv-kondolar' : ''}`}
-          >
-          <div
-            className={`flex h-full min-h-[110px] min-w-[138px] items-center justify-center rounded-md border border-dashed border-neutral-500 p-1 uppercase !leading-none wv-${currentScale} ${
-              currentScale.includes('h') ? 'wv-kondolar' : ''
-            }`}
+            className={`flex  h-full min-h-[110px] min-w-[138px] items-center justify-center rounded-md border border-dashed border-neutral-500 p-1 uppercase !leading-none wv-${currentScale} ${currentScale.includes('h') ? 'wv-kondolar' : ''}`}
           >
             {currentScale}
           </div>

@@ -209,18 +209,18 @@
 }
 
 /* Body fixed size */
-.wv-b-fixed-1 {
+.wv-fixed-1 {
   @apply text-[21px] leading-[1.5];
 }
-.wv-b-fixed-2 {
+.wv-fixed-2 {
   @apply text-[18px] leading-[1.5];
 }
-.wv-b-fixed-3 {
+.wv-fixed-3 {
   @apply text-[16px] leading-[1.5];
 }
-.wv-b-fixed-4 {
+.wv-fixed-4 {
   @apply text-[14px] leading-[1.5];
 }
-.wv-b-fixed-5 {
+.wv-fixed-5 {
   @apply text-[12px] leading-[1.5];
 }
