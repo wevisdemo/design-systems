@@ -49,11 +49,11 @@ const BODY_FIXED_SPEC: Record<
     leading: number;
   }
 > = {
-  'fixed-2': { size: 18, leading: 150 },
-  'fixed-3': { size: 16, leading: 150 },
-  'fixed-4': { size: 14, leading: 150 },
-  'fixed-5': { size: 12, leading: 150 },
-  'fixed-1': { size: 21, leading: 150 },
+  'fixed-b1': { size: 21, leading: 150 },
+  'fixed-b2': { size: 18, leading: 150 },
+  'fixed-b3': { size: 16, leading: 150 },
+  'fixed-b4': { size: 14, leading: 150 },
+  'fixed-b5': { size: 12, leading: 150 },
 };
 
 const DESC: Record<string, string> = {
@@ -127,7 +127,7 @@ export default () => {
           <div className="-mb-1.5 mt-2 font-bold">Body Fixed</div>
           <div className="relative flex items-baseline flex-wrap">
             {new Array(5).fill``.map((_, i) => (
-              <StyleButton key={i} s={`fixed-${i + 1}`} onHover={setCurrentScale} />
+              <StyleButton key={i} s={`fixed-b${i + 1}`} onHover={setCurrentScale} />
             ))}
           </div>
           <div className="wv-b6 mt-2">You can click at the style to copy.</div>
