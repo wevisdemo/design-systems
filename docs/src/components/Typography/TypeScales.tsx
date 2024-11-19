@@ -41,7 +41,6 @@ const U_SPEC: Record<
   u5: { size: 12, leading: { regular: 125, semibold: 125 } },
 };
 
-
 const BODY_FIXED_SPEC: Record<
   string,
   {
@@ -105,7 +104,7 @@ export default () => {
   return (
     <>
       <div className="-mb-1.5 mt-2 font-bold">Header</div>
-      <div className="wv-kondolar relative flex items-baseline flex-wrap">
+      <div className="wv-kondolar relative flex flex-wrap items-baseline">
         {new Array(11).fill``.map((_, i) => (
           <StyleButton key={i} s={`h${i + 1}`} onHover={setCurrentScale} />
         ))}
@@ -125,9 +124,13 @@ export default () => {
             ))}
           </div>
           <div className="-mb-1.5 mt-2 font-bold">Body Fixed</div>
-          <div className="relative flex items-baseline flex-wrap">
+          <div className="relative flex flex-wrap items-baseline">
             {new Array(5).fill``.map((_, i) => (
-              <StyleButton key={i} s={`fixed-b${i + 1}`} onHover={setCurrentScale} />
+              <StyleButton
+                key={i}
+                s={`fixed-b${i + 1}`}
+                onHover={setCurrentScale}
+              />
             ))}
           </div>
           <div className="wv-b6 mt-2">You can click at the style to copy.</div>
@@ -176,12 +179,15 @@ export default () => {
                 </div>
               </>
             )}
-            <div className="wv-b5">  {currentScale.includes('fixed')
+            <div className="wv-b5">
+              {' '}
+              {currentScale.includes('fixed')
                 ? DESC['fixed']
-                : DESC[currentScale[0]]}</div>
+                : DESC[currentScale[0]]}
+            </div>
           </div>
           <div
-            className={`flex  h-full min-h-[110px] min-w-[138px] items-center justify-center rounded-md border border-dashed border-neutral-500 p-1 uppercase !leading-none wv-${currentScale} ${currentScale.includes('h') ? 'wv-kondolar' : ''}`}
+            className={`flex h-full min-h-[110px] min-w-[138px] items-center justify-center rounded-md border border-dashed border-neutral-500 p-1 uppercase !leading-none wv-${currentScale} ${currentScale.includes('h') ? 'wv-kondolar' : ''}`}
           >
             {currentScale}
           </div>
