@@ -41,10 +41,25 @@ const U_SPEC: Record<
   u5: { size: 12, leading: { regular: 125, semibold: 125 } },
 };
 
+const BODY_FIXED_SPEC: Record<
+  string,
+  {
+    size: number;
+    leading: number;
+  }
+> = {
+  'fixed-b1': { size: 21, leading: 150 },
+  'fixed-b2': { size: 18, leading: 150 },
+  'fixed-b3': { size: 16, leading: 150 },
+  'fixed-b4': { size: 14, leading: 150 },
+  'fixed-b5': { size: 12, leading: 150 },
+};
+
 const DESC: Record<string, string> = {
   h: 'For headers',
   b: 'For body text',
   u: 'For UI components (such as buttons)',
+  fixed: 'For body text (Fixed size)',
 };
 
 const StyleButton = ({
@@ -89,13 +104,13 @@ export default () => {
   return (
     <>
       <div className="-mb-1.5 mt-2 font-bold">Header</div>
-      <div className="wv-kondolar relative flex items-baseline">
+      <div className="wv-kondolar relative flex flex-wrap items-baseline">
         {new Array(11).fill``.map((_, i) => (
           <StyleButton key={i} s={`h${i + 1}`} onHover={setCurrentScale} />
         ))}
       </div>
-      <div className="flex items-end">
-        <div className="flex-1">
+      <div className="flex flex-col items-end sm:flex-row">
+        <div className="basis-7/12">
           <div className="-mb-1.5 mt-2 font-bold">Body</div>
           <div className="relative flex items-baseline">
             {new Array(7).fill``.map((_, i) => (
@@ -108,9 +123,19 @@ export default () => {
               <StyleButton key={i} s={`u${i + 1}`} onHover={setCurrentScale} />
             ))}
           </div>
+          <div className="-mb-1.5 mt-2 font-bold">Body Fixed</div>
+          <div className="relative flex flex-wrap items-baseline">
+            {new Array(5).fill``.map((_, i) => (
+              <StyleButton
+                key={i}
+                s={`fixed-b${i + 1}`}
+                onHover={setCurrentScale}
+              />
+            ))}
+          </div>
           <div className="wv-b6 mt-2">You can click at the style to copy.</div>
         </div>
-        <div className="mt-4 flex h-[127px] items-center gap-4">
+        <div className="mt-4 flex h-[127px] basis-5/12 items-center gap-2">
           <div className="flex flex-col items-end">
             <div className="wv-b3">
               <code>wv-{currentScale}</code>
@@ -132,20 +157,37 @@ export default () => {
               <>
                 <div>
                   <span className="font-bold">Desktop:</span>{' '}
-                  {SPEC[currentScale]?.size.desktop}px/
-                  {SPEC[currentScale]?.leading}%
+                  {currentScale.includes('fixed')
+                    ? BODY_FIXED_SPEC[currentScale]?.size
+                    : SPEC[currentScale]?.size.desktop}
+                  px/
+                  {currentScale.includes('fixed')
+                    ? BODY_FIXED_SPEC[currentScale]?.leading
+                    : SPEC[currentScale]?.leading}
+                  %
                 </div>
                 <div>
                   <span className="font-bold">Mobile:</span>{' '}
-                  {SPEC[currentScale]?.size.mobile}px/
-                  {SPEC[currentScale]?.leading}%
+                  {currentScale.includes('fixed')
+                    ? BODY_FIXED_SPEC[currentScale]?.size
+                    : SPEC[currentScale]?.size.mobile}
+                  px/
+                  {currentScale.includes('fixed')
+                    ? BODY_FIXED_SPEC[currentScale]?.leading
+                    : SPEC[currentScale]?.leading}
+                  %
                 </div>
               </>
             )}
-            <div className="wv-b5">{DESC[currentScale[0]]}</div>
+            <div className="wv-b5">
+              {' '}
+              {currentScale.includes('fixed')
+                ? DESC['fixed']
+                : DESC[currentScale[0]]}
+            </div>
           </div>
           <div
-            className={`flex h-full w-[138px] items-center justify-center rounded-md border border-dashed border-neutral-500 p-1 uppercase !leading-none wv-${currentScale} ${currentScale.includes('h') ? 'wv-kondolar' : ''}`}
+            className={`flex h-full min-h-[110px] min-w-[138px] items-center justify-center rounded-md border border-dashed border-neutral-500 p-1 uppercase !leading-none wv-${currentScale} ${currentScale.includes('h') ? 'wv-kondolar' : ''}`}
           >
             {currentScale}
           </div>

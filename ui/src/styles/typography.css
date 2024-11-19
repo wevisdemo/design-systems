@@ -207,3 +207,20 @@
 .wv-u5 {
   @apply text-[12px] leading-[1.25];
 }
+
+/* Body fixed size */
+.wv-fixed-b1 {
+  @apply text-[21px] leading-[1.5];
+}
+.wv-fixed-b2 {
+  @apply text-[18px] leading-[1.5];
+}
+.wv-fixed-b3 {
+  @apply text-[16px] leading-[1.5];
+}
+.wv-fixed-b4 {
+  @apply text-[14px] leading-[1.5];
+}
+.wv-fixed-b5 {
+  @apply text-[12px] leading-[1.5];
+}
