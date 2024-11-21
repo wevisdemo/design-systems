@@ -3,6 +3,11 @@
   "version": "8.1.0",
   "license": "MIT",
   "type": "module",
+  "homepage": "https://wevisdemo.github.io/design-system/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wevisdemo/design-system.git"
+  },
   "scripts": {
     "dev": "concurrently --kill-others \"npm run dev:component\" \"npm run dev:stylesheet\"",
     "dev:component": "chokidar \"src/components/**/*.tsx\" --initial -c \"npm run build:mitosis && npm run build:react\"",
@@ -43,10 +48,6 @@
     "vite": "^5.1.4",
     "vite-plugin-dts": "^3.7.3",
     "vue": "^3.4.21"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wevisdemo/design-systems.git"
   },
   "files": [
     "/react",
