@@ -1,7 +1,7 @@
 import { readdirSync } from 'fs';
 
 export const SITE = {
-  title: 'WeVis Design Systems',
+  title: 'WeVis Design System',
   description:
     'WeVis design system documentation and cross-framework UI components',
   defaultLanguage: 'en_US',

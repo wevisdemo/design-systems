@@ -1,4 +1,4 @@
-# Wevis's Design Systems
+# Wevis's Design System
 
 Monorepo for WeVis design system documentation and cross-framework UI components
 
@@ -15,7 +15,7 @@ Monorepo is managed by [Turborepo](https://turborepo.org)
 
 ## 🏗️ How cross-framework UI package work
 
-Mitosis allowed us to write a single .lite.tsx component and compiled to TypeScript React, Vue, and Svelte. Then, to make it importable by both JavaScript/TypeScript project, each component is transformed into a JavaScript format with corresponded type declaration (.d.ts) file.
+Mitosis allowed us to write a single `.lite.tsx` component and compiled to TypeScript React, Vue, and Svelte. Then, to make it importable by both JavaScript/TypeScript project, each component is transformed into a JavaScript format with corresponded type declaration (.d.ts) file.
 
 ```mermaid
 flowchart TD
